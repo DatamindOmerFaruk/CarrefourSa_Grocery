@@ -1,0 +1,271 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\15\\collages\\collage_011.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Elma",
+    "2": "Elma",
+    "3": "Elma",
+    "4": "Elma",
+    "5": "Elma",
+    "6": "Elma",
+    "7": "Elma",
+    "8": "Elma",
+    "9": "Elma",
+    "10": "Elma",
+    "11": "Elma",
+    "12": "Elma",
+    "13": "Elma",
+    "14": "Elma",
+    "15": "Elma",
+    "16": "Elma",
+    "17": "Elma",
+    "18": "Elma",
+    "19": "Elma",
+    "20": "Elma",
+    "21": "Elma",
+    "22": "Elma",
+    "23": "Elma",
+    "24": "Elma",
+    "25": "Elma"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 22,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "konum10_153540_021_0.87",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_021_0.87.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_027_0.84",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_027_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_029_0.84",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_029_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_031_0.84",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_031_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_032_0.84",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_032_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_035_0.79",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_035_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_037_0.76",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_037_0.76.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_038_0.76",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_038_0.76.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_043_0.74",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_043_0.74.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_044_0.74",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_044_0.74.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_049_0.69",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_049_0.69.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_052_0.64",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_052_0.64.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_062_0.59",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_062_0.59.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_066_0.54",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_066_0.54.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_067_0.53",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_067_0.53.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_073_0.51",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_073_0.51.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_074_0.50",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_074_0.50.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_086_0.37",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_086_0.37.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_090_0.34",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_090_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_100_0.28",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_100_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_101_0.27",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_101_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_107_0.26",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_107_0.26.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "konum16_153745_004_0.90",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum16_153745_004_0.90.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_089_0.49",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum16_153745_089_0.49.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_125_0.27",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum16_153745_125_0.27.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_073.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v1",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Tatl Patates",
+    "2": "Tatl Patates",
+    "3": "Tatl Patates",
+    "4": "Tatl Patates",
+    "5": "Tatl Patates",
+    "6": "Tatl Patates",
+    "7": "Tatl Patates",
+    "8": "Tatl Patates",
+    "9": "Tatl Patates",
+    "10": "Tatl Patates",
+    "11": "Tatl Patates",
+    "12": "Tatl Patates",
+    "13": "Tatl Patates",
+    "14": "Tatl Patates",
+    "15": "Tatl Patates",
+    "16": "Tatl Patates",
+    "17": "Tatl Patates",
+    "18": "Tatl Patates",
+    "19": "Tatl Patates",
+    "20": "Tatl Patates",
+    "21": "Tatl Patates",
+    "22": "Tatl Patates",
+    "23": "Tatl Patates",
+    "24": "Tatl Patates",
+    "25": "Tatl Patates"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": []
+  },
+  "items": [
+    {
+      "id": "muz_122749_036_0.86",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_036_0.86.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_037_0.85",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_037_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_038_0.85",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_038_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_041_0.85",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_041_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_043_0.85",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_043_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_045_0.84",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_045_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_049_0.84",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_049_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_050_0.84",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_050_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_052_0.84",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_052_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_053_0.83",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_053_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_056_0.83",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_056_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_057_0.83",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_057_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_064_0.83",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_064_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_067_0.82",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_067_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_069_0.82",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_069_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_070_0.82",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_070_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_072_0.81",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_072_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_074_0.81",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_074_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_075_0.81",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_075_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_077_0.81",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_077_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_081_0.80",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_081_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_089_0.78",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_089_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_090_0.78",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_090_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_092_0.78",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_092_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_100_0.77",
+      "urun": "Tatl Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Tatl Patates\\muz_122749_100_0.77.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

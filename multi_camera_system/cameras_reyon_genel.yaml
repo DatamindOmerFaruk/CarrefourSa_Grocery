@@ -1,0 +1,147 @@
+# Multi-Camera Configuration - REYON GENEL
+# Günlük reyon genel görüntüleri için özel PTZ hedefleri
+
+cameras:
+  camera_001:
+    name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
+    host: "10.85.4.100:80"
+    username: "datamind"
+    password: "Data321321."
+    ptz_channel: 1
+    stream_channel: 101
+    store_name: "Carrefoursa Maltepe"
+    move_settle_seconds: 12
+    azimuth_scale: 10
+    elevation_scale: 10
+    zoom_scale: 10
+    ptz_targets:
+      genel_gorunum_1:
+        azimuth: 355
+        elevation: -5
+        zoom: 6
+
+      genel_gorunum_2:
+        azimuth: 351
+        elevation: 2
+        zoom: 4
+
+      genel_gorunum_3:
+        azimuth: 6
+        elevation: 2
+        zoom: 4
+
+      genel_gorunum_4:
+        azimuth: 38
+        elevation: 28
+        zoom: 1
+
+
+      genel_gorunum_5:
+        azimuth: 39
+        elevation: 23
+        zoom: 1
+
+  camera_002:
+    name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
+    host: "10.101.128.160:80"
+    username: "datamind"
+    password: "Data321321."
+    ptz_channel: 1
+    stream_channel: 101
+    store_name: "Carrefoursa Kartal"
+    move_settle_seconds: 12
+    azimuth_scale: 10
+    elevation_scale: 10
+    zoom_scale: 10
+    ptz_targets:
+      genel_gorunum_1:
+        azimuth: 266
+        elevation: 19
+        zoom: 2
+      genel_gorunum_2:
+        azimuth: 277
+        elevation: 09
+        zoom: 3
+      genel_gorunum_3:
+        azimuth: 296
+        elevation: 14
+        zoom: 2
+      genel_gorunum_4:
+        azimuth: 319
+        elevation: 16
+        zoom: 3
+  
+  camera_003:
+    name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
+    host: "10.101.150.161:80"
+    username: "datamind"
+    password: "Data321321."
+    ptz_channel: 1
+    stream_channel: 101
+    store_name: "Carrefoursa Ataşehir"
+    move_settle_seconds: 12
+    azimuth_scale: 10
+    elevation_scale: 10
+    zoom_scale: 10
+    ptz_targets:
+      genel_gorunum_1:
+        azimuth: 8
+        elevation: 20
+        zoom: 1
+  
+  camera_004:
+    name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
+    host: "10.101.150.160:80"
+    username: "datamind"
+    password: "Data321321."
+    ptz_channel: 1
+    stream_channel: 101
+    store_name: "Carrefoursa Pendik"
+    move_settle_seconds: 20
+    azimuth_scale: 10
+    elevation_scale: 10
+    zoom_scale: 10
+    ptz_targets:
+      genel_gorunum_1:
+        azimuth: 300
+        elevation: 49
+        zoom: 1
+      genel_gorunum_2:
+        azimuth: 312
+        elevation: 20
+        zoom: 5
+      genel_gorunum_3:
+        azimuth: 250
+        elevation: 50
+        zoom: 2
+      genel_gorunum_4:
+        azimuth: 256
+        elevation: 27
+        zoom: 3
+      genel_gorunum_5:
+        azimuth: 161
+        elevation: 40
+        zoom: 5
+      genel_gorunum_6:
+        azimuth: 110
+        elevation: 70
+        zoom: 1
+      genel_gorunum_7:
+        azimuth: 15
+        elevation: 48
+        zoom: 1
+
+# Global Settings
+global_settings:
+  # Dosya yolları - REYON GENEL klasörüne kaydet
+  snapshots_root: "../snapshots/reyon_genel"
+  
+  # Worker ayarları
+  max_retries: 3
+  retry_delay: 60  # saniye
+  task_timeout: 600  # saniye
+  
+  # Monitoring
+  enable_flower: true
+  flower_port: 5555
+

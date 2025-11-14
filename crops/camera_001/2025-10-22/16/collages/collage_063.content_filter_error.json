@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:31:43.100772",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_063.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_049_0.71.jpg",
+      "id": "mandalina1_164628_049_0.71"
+    },
+    {
+      "index": 2,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_050_0.71.jpg",
+      "id": "mandalina1_164628_050_0.71"
+    },
+    {
+      "index": 3,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_052_0.71.jpg",
+      "id": "mandalina1_164628_052_0.71"
+    },
+    {
+      "index": 4,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_059_0.68.jpg",
+      "id": "mandalina1_164628_059_0.68"
+    },
+    {
+      "index": 5,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_063_0.66.jpg",
+      "id": "mandalina1_164628_063_0.66"
+    },
+    {
+      "index": 6,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_083_0.58.jpg",
+      "id": "mandalina1_164628_083_0.58"
+    },
+    {
+      "index": 7,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_104_0.48.jpg",
+      "id": "mandalina1_164628_104_0.48"
+    },
+    {
+      "index": 8,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_107_0.48.jpg",
+      "id": "mandalina1_164628_107_0.48"
+    },
+    {
+      "index": 9,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_119_0.42.jpg",
+      "id": "mandalina1_164628_119_0.42"
+    },
+    {
+      "index": 10,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_123_0.41.jpg",
+      "id": "mandalina1_164628_123_0.41"
+    },
+    {
+      "index": 11,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_136_0.35.jpg",
+      "id": "mandalina1_164628_136_0.35"
+    },
+    {
+      "index": 12,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_148_0.32.jpg",
+      "id": "mandalina1_164628_148_0.32"
+    },
+    {
+      "index": 13,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_165_0.29.jpg",
+      "id": "mandalina1_164628_165_0.29"
+    },
+    {
+      "index": 14,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina1_164628_177_0.26.jpg",
+      "id": "mandalina1_164628_177_0.26"
+    },
+    {
+      "index": 15,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_000_0.92.jpg",
+      "id": "mandalina2_164649_000_0.92"
+    },
+    {
+      "index": 16,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_003_0.87.jpg",
+      "id": "mandalina2_164649_003_0.87"
+    },
+    {
+      "index": 17,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_007_0.84.jpg",
+      "id": "mandalina2_164649_007_0.84"
+    },
+    {
+      "index": 18,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_013_0.81.jpg",
+      "id": "mandalina2_164649_013_0.81"
+    },
+    {
+      "index": 19,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_016_0.80.jpg",
+      "id": "mandalina2_164649_016_0.80"
+    },
+    {
+      "index": 20,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_017_0.80.jpg",
+      "id": "mandalina2_164649_017_0.80"
+    },
+    {
+      "index": 21,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_018_0.80.jpg",
+      "id": "mandalina2_164649_018_0.80"
+    },
+    {
+      "index": 22,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_026_0.78.jpg",
+      "id": "mandalina2_164649_026_0.78"
+    },
+    {
+      "index": 23,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_030_0.77.jpg",
+      "id": "mandalina2_164649_030_0.77"
+    },
+    {
+      "index": 24,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_032_0.76.jpg",
+      "id": "mandalina2_164649_032_0.76"
+    },
+    {
+      "index": 25,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\mandalina2_164649_038_0.74.jpg",
+      "id": "mandalina2_164649_038_0.74"
+    }
+  ]
+}

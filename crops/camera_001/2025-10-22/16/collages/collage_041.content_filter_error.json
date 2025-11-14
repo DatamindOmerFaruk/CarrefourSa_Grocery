@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:19:30.281335",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_041.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_082_0.60.jpg",
+      "id": "mandalina2_164649_082_0.60"
+    },
+    {
+      "index": 2,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_084_0.60.jpg",
+      "id": "mandalina2_164649_084_0.60"
+    },
+    {
+      "index": 3,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_085_0.59.jpg",
+      "id": "mandalina2_164649_085_0.59"
+    },
+    {
+      "index": 4,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_086_0.59.jpg",
+      "id": "mandalina2_164649_086_0.59"
+    },
+    {
+      "index": 5,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_090_0.58.jpg",
+      "id": "mandalina2_164649_090_0.58"
+    },
+    {
+      "index": 6,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_091_0.58.jpg",
+      "id": "mandalina2_164649_091_0.58"
+    },
+    {
+      "index": 7,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_092_0.58.jpg",
+      "id": "mandalina2_164649_092_0.58"
+    },
+    {
+      "index": 8,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_094_0.57.jpg",
+      "id": "mandalina2_164649_094_0.57"
+    },
+    {
+      "index": 9,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_096_0.57.jpg",
+      "id": "mandalina2_164649_096_0.57"
+    },
+    {
+      "index": 10,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_097_0.57.jpg",
+      "id": "mandalina2_164649_097_0.57"
+    },
+    {
+      "index": 11,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_099_0.56.jpg",
+      "id": "mandalina2_164649_099_0.56"
+    },
+    {
+      "index": 12,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_100_0.56.jpg",
+      "id": "mandalina2_164649_100_0.56"
+    },
+    {
+      "index": 13,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_101_0.56.jpg",
+      "id": "mandalina2_164649_101_0.56"
+    },
+    {
+      "index": 14,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_102_0.56.jpg",
+      "id": "mandalina2_164649_102_0.56"
+    },
+    {
+      "index": 15,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_105_0.54.jpg",
+      "id": "mandalina2_164649_105_0.54"
+    },
+    {
+      "index": 16,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_106_0.54.jpg",
+      "id": "mandalina2_164649_106_0.54"
+    },
+    {
+      "index": 17,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_107_0.54.jpg",
+      "id": "mandalina2_164649_107_0.54"
+    },
+    {
+      "index": 18,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_108_0.54.jpg",
+      "id": "mandalina2_164649_108_0.54"
+    },
+    {
+      "index": 19,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_109_0.54.jpg",
+      "id": "mandalina2_164649_109_0.54"
+    },
+    {
+      "index": 20,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_110_0.54.jpg",
+      "id": "mandalina2_164649_110_0.54"
+    },
+    {
+      "index": 21,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_111_0.53.jpg",
+      "id": "mandalina2_164649_111_0.53"
+    },
+    {
+      "index": 22,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_114_0.52.jpg",
+      "id": "mandalina2_164649_114_0.52"
+    },
+    {
+      "index": 23,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_115_0.52.jpg",
+      "id": "mandalina2_164649_115_0.52"
+    },
+    {
+      "index": 24,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_118_0.52.jpg",
+      "id": "mandalina2_164649_118_0.52"
+    },
+    {
+      "index": 25,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\mandalina2_164649_119_0.51.jpg",
+      "id": "mandalina2_164649_119_0.51"
+    }
+  ]
+}

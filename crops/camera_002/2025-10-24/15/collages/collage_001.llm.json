@@ -1,0 +1,271 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\15\\collages\\collage_001.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Ananas",
+    "2": "Ananas",
+    "3": "Ananas",
+    "4": "Ananas",
+    "5": "Ananas",
+    "6": "Ananas",
+    "7": "Armut",
+    "8": "Armut",
+    "9": "Armut",
+    "10": "Armut",
+    "11": "Armut",
+    "12": "Armut",
+    "13": "Armut",
+    "14": "Armut",
+    "15": "Armut",
+    "16": "Armut",
+    "17": "Armut",
+    "18": "Armut",
+    "19": "Armut",
+    "20": "Armut",
+    "21": "Armut",
+    "22": "Armut",
+    "23": "Armut",
+    "24": "Armut",
+    "25": "Armut"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 8,
+        "guven": 0.9
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "konum12_153621_024_0.38",
+      "urun": "Ananas",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ananas\\konum12_153621_024_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_044_0.25",
+      "urun": "Ananas",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ananas\\konum12_153621_044_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_056_0.70",
+      "urun": "Ananas",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ananas\\konum16_153745_056_0.70.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_103_0.38",
+      "urun": "Ananas",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ananas\\konum16_153745_103_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_129_0.26",
+      "urun": "Ananas",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ananas\\konum16_153745_129_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_130_0.26",
+      "urun": "Ananas",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ananas\\konum16_153745_130_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_001_0.81",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_001_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_005_0.70",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_005_0.70.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "konum12_153621_008_0.64",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_008_0.64.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_010_0.59",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_010_0.59.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_011_0.59",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_011_0.59.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_022_0.40",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_022_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_036_0.28",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_036_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_042_0.26",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_042_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_045_0.25",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum12_153621_045_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_013_0.47",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum13_153642_013_0.47.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_014_0.45",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum13_153642_014_0.45.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_015_0.44",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum13_153642_015_0.44.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_019_0.31",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum13_153642_019_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_020_0.31",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum13_153642_020_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_005_0.71",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum14_153703_005_0.71.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_007_0.66",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum14_153703_007_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_008_0.63",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum14_153703_008_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_009_0.62",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum14_153703_009_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_014_0.59",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Armut\\konum14_153703_014_0.59.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

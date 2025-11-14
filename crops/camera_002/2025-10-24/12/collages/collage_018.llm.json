@@ -1,0 +1,265 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\12\\collages\\collage_018.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v1",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Hindistan Cevizi",
+    "2": "Hindistan Cevizi",
+    "3": "Hindistan Cevizi",
+    "4": "Hindistan Cevizi",
+    "5": "Hindistan Cevizi",
+    "6": "Hindistan Cevizi",
+    "7": "Hindistan Cevizi",
+    "8": "Hindistan Cevizi",
+    "9": "Hindistan Cevizi",
+    "10": "Hindistan Cevizi",
+    "11": "Hindistan Cevizi",
+    "12": "Hindistan Cevizi",
+    "13": "Hindistan Cevizi",
+    "14": "Hindistan Cevizi",
+    "15": "Hindistan Cevizi",
+    "16": "Kabak",
+    "17": "Kabak",
+    "18": "Kabak",
+    "19": "Kabak",
+    "20": "Kabak",
+    "21": "Kabak",
+    "22": "Kabak",
+    "23": "Kabak",
+    "24": "Kabak",
+    "25": "Kabak"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": []
+  },
+  "items": [
+    {
+      "id": "konum18_123336_014_0.87",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_014_0.87.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_019_0.85",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_019_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_020_0.85",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_020_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_025_0.83",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_025_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_026_0.83",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_026_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_031_0.81",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_031_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_034_0.80",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_034_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_047_0.66",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_047_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_049_0.66",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_049_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_054_0.62",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_054_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_056_0.62",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_056_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_069_0.49",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_069_0.49.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_073_0.45",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_073_0.45.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_075_0.43",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_075_0.43.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_099_0.28",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum18_123336_099_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_123201_024_0.32",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum12_123201_024_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_105_0.26",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum18_123336_105_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_123351_002_0.82",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum19_123351_002_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_123351_008_0.58",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum19_123351_008_0.58.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_123351_011_0.44",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum19_123351_011_0.44.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_123351_014_0.38",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum19_123351_014_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_123351_017_0.30",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum19_123351_017_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_123351_018_0.28",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum19_123351_018_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_123351_019_0.28",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum19_123351_019_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_123351_020_0.28",
+      "urun": "Kabak",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kabak\\konum19_123351_020_0.28.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

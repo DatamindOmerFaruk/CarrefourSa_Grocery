@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\17\\collages\\collage_056.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Portakal",
+    "2": "Portakal",
+    "3": "Portakal",
+    "4": "Portakal",
+    "5": "Portakal",
+    "6": "Portakal",
+    "7": "Portakal",
+    "8": "Portakal",
+    "9": "Portakal",
+    "10": "Portakal",
+    "11": "Portakal",
+    "12": "Portakal",
+    "13": "Portakal",
+    "14": "Portakal",
+    "15": "Portakal",
+    "16": "Portakal",
+    "17": "Portakal",
+    "18": "Portakal",
+    "19": "Portakal",
+    "20": "Portakal",
+    "21": "Portakal",
+    "22": "Portakal",
+    "23": "Portakal",
+    "24": "Portakal",
+    "25": "Portakal"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 8,
+        "guven": 0.9
+      },
+      {
+        "id": 19,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "mandalina1_153009_011_0.90",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_011_0.90.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_012_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_012_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_013_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_013_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_018_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_018_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_019_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_019_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_020_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_020_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_021_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_021_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_025_0.87",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_025_0.87.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "mandalina1_153009_027_0.86",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_027_0.86.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_028_0.86",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_028_0.86.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_031_0.86",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_031_0.86.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_032_0.85",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_032_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_033_0.85",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_033_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_038_0.84",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_038_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_039_0.83",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_039_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_042_0.83",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_042_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_044_0.82",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_044_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_053_0.79",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_053_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_055_0.79",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_055_0.79.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "mandalina1_153009_057_0.79",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_057_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_065_0.76",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_065_0.76.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_072_0.75",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_072_0.75.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_074_0.74",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_074_0.74.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_084_0.69",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_084_0.69.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_086_0.68",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\mandalina1_153009_086_0.68.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T14:29:14.079488",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_022.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_083_0.62.jpg",
+      "id": "mandalina1_122717_083_0.62"
+    },
+    {
+      "index": 2,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_088_0.60.jpg",
+      "id": "mandalina1_122717_088_0.60"
+    },
+    {
+      "index": 3,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_093_0.57.jpg",
+      "id": "mandalina1_122717_093_0.57"
+    },
+    {
+      "index": 4,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_097_0.57.jpg",
+      "id": "mandalina1_122717_097_0.57"
+    },
+    {
+      "index": 5,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_102_0.55.jpg",
+      "id": "mandalina1_122717_102_0.55"
+    },
+    {
+      "index": 6,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_103_0.55.jpg",
+      "id": "mandalina1_122717_103_0.55"
+    },
+    {
+      "index": 7,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_107_0.53.jpg",
+      "id": "mandalina1_122717_107_0.53"
+    },
+    {
+      "index": 8,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_111_0.51.jpg",
+      "id": "mandalina1_122717_111_0.51"
+    },
+    {
+      "index": 9,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_113_0.49.jpg",
+      "id": "mandalina1_122717_113_0.49"
+    },
+    {
+      "index": 10,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_118_0.46.jpg",
+      "id": "mandalina1_122717_118_0.46"
+    },
+    {
+      "index": 11,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_122_0.44.jpg",
+      "id": "mandalina1_122717_122_0.44"
+    },
+    {
+      "index": 12,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_123_0.44.jpg",
+      "id": "mandalina1_122717_123_0.44"
+    },
+    {
+      "index": 13,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_128_0.43.jpg",
+      "id": "mandalina1_122717_128_0.43"
+    },
+    {
+      "index": 14,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_135_0.41.jpg",
+      "id": "mandalina1_122717_135_0.41"
+    },
+    {
+      "index": 15,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_136_0.41.jpg",
+      "id": "mandalina1_122717_136_0.41"
+    },
+    {
+      "index": 16,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_143_0.39.jpg",
+      "id": "mandalina1_122717_143_0.39"
+    },
+    {
+      "index": 17,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_144_0.39.jpg",
+      "id": "mandalina1_122717_144_0.39"
+    },
+    {
+      "index": 18,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_147_0.38.jpg",
+      "id": "mandalina1_122717_147_0.38"
+    },
+    {
+      "index": 19,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_152_0.38.jpg",
+      "id": "mandalina1_122717_152_0.38"
+    },
+    {
+      "index": 20,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_154_0.37.jpg",
+      "id": "mandalina1_122717_154_0.37"
+    },
+    {
+      "index": 21,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_157_0.36.jpg",
+      "id": "mandalina1_122717_157_0.36"
+    },
+    {
+      "index": 22,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_158_0.36.jpg",
+      "id": "mandalina1_122717_158_0.36"
+    },
+    {
+      "index": 23,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_163_0.34.jpg",
+      "id": "mandalina1_122717_163_0.34"
+    },
+    {
+      "index": 24,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_166_0.32.jpg",
+      "id": "mandalina1_122717_166_0.32"
+    },
+    {
+      "index": 25,
+      "urun": "Kavun",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kavun\\mandalina1_122717_169_0.30.jpg",
+      "id": "mandalina1_122717_169_0.30"
+    }
+  ]
+}

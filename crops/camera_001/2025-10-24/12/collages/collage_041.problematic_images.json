@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-24T14:41:30.979368",
+  "batch_index": 41,
+  "total_in_batch": 25,
+  "problematic_count": 2,
+  "problematic_images": [
+    {
+      "index": 1,
+      "path": "crops\\camera_001\\2025-10-24\\12\\Mango\\muz_122749_017_0.90.jpg",
+      "urun": "Mango",
+      "id": "muz_122749_017_0.90"
+    },
+    {
+      "index": 18,
+      "path": "crops\\camera_001\\2025-10-24\\12\\Mango\\muz_122749_042_0.85.jpg",
+      "urun": "Mango",
+      "id": "muz_122749_042_0.85"
+    }
+  ]
+}

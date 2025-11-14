@@ -1,0 +1,271 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\17\\collages\\collage_063.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Portakal",
+    "2": "Portakal",
+    "3": "Portakal",
+    "4": "Portakal",
+    "5": "Portakal",
+    "6": "Portakal",
+    "7": "Portakal",
+    "8": "Portakal",
+    "9": "Portakal",
+    "10": "Portakal",
+    "11": "Portakal",
+    "12": "Portakal",
+    "13": "Portakal",
+    "14": "Portakal",
+    "15": "Portakal",
+    "16": "Portakal",
+    "17": "Portakal",
+    "18": "Portakal",
+    "19": "Portakal",
+    "20": "Portakal",
+    "21": "Portakal",
+    "22": "Portakal",
+    "23": "Portakal",
+    "24": "Portakal",
+    "25": "Portakal"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 4,
+        "guven": 0.9
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "portakal_152948_066_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_066_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_067_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_067_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_068_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_068_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_069_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_069_0.89.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "portakal_152948_070_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_070_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_071_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_071_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_072_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_072_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_073_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_073_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_074_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_074_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_075_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_075_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_076_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_076_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_077_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_077_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_078_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_078_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_079_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_079_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_080_0.89",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_080_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_081_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_081_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_082_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_082_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_083_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_083_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_084_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_084_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_086_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_086_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_087_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_087_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_090_0.88",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_090_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_092_0.87",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_092_0.87.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_093_0.87",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_093_0.87.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_096_0.87",
+      "urun": "Portakal",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Portakal\\portakal_152948_096_0.87.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

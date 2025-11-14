@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-10-24T13:38:22.422929",
+  "batch_index": 75,
+  "total_in_batch": 25,
+  "problematic_count": 4,
+  "problematic_images": [
+    {
+      "index": 4,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_027_0.87.jpg",
+      "urun": "Tatl Patates",
+      "id": "muz_164710_027_0.87"
+    },
+    {
+      "index": 10,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_062_0.81.jpg",
+      "urun": "Tatl Patates",
+      "id": "muz_164710_062_0.81"
+    },
+    {
+      "index": 13,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_070_0.81.jpg",
+      "urun": "Tatl Patates",
+      "id": "muz_164710_070_0.81"
+    },
+    {
+      "index": 17,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_080_0.79.jpg",
+      "urun": "Tatl Patates",
+      "id": "muz_164710_080_0.79"
+    }
+  ]
+}

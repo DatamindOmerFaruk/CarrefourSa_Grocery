@@ -1,0 +1,265 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\15\\collages\\collage_030.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Mandalina",
+    "2": "Mandalina",
+    "3": "Mandalina",
+    "4": "Mandalina",
+    "5": "Mandalina",
+    "6": "Mandalina",
+    "7": "Mandalina",
+    "8": "Mango",
+    "9": "Mango",
+    "10": "Mango",
+    "11": "Mango",
+    "12": "Mango",
+    "13": "Mango",
+    "14": "Mango",
+    "15": "Mango",
+    "16": "Mango",
+    "17": "Mango",
+    "18": "Mango",
+    "19": "Mango",
+    "20": "Mango",
+    "21": "Mango",
+    "22": "marul",
+    "23": "mor sogan",
+    "24": "Muz",
+    "25": "Muz"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": []
+  },
+  "items": [
+    {
+      "id": "konum6_153417_029_0.51",
+      "urun": "Mandalina",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mandalina\\konum6_153417_029_0.51.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum6_153417_033_0.45",
+      "urun": "Mandalina",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mandalina\\konum6_153417_033_0.45.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum6_153417_037_0.36",
+      "urun": "Mandalina",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mandalina\\konum6_153417_037_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum6_153417_045_0.27",
+      "urun": "Mandalina",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mandalina\\konum6_153417_045_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_018_0.69",
+      "urun": "Mandalina",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mandalina\\konum9_153519_018_0.69.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_026_0.60",
+      "urun": "Mandalina",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mandalina\\konum9_153519_026_0.60.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_031_0.49",
+      "urun": "Mandalina",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mandalina\\konum9_153519_031_0.49.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_000_0.91",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_000_0.91.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_001_0.90",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_001_0.90.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_002_0.85",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_002_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_003_0.80",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_003_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_005_0.67",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_005_0.67.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_006_0.63",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_006_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_008_0.55",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_008_0.55.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_009_0.54",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_009_0.54.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum13_153642_011_0.51",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum13_153642_011_0.51.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_053_0.53",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum15_153724_053_0.53.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_153805_032_0.31",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum17_153805_032_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_153847_003_0.41",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum19_153847_003_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum3_153316_017_0.36",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum3_153316_017_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum3_153316_018_0.35",
+      "urun": "Mango",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Mango\\konum3_153316_018_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum7_153438_012_0.26",
+      "urun": "marul",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\marul\\konum7_153438_012_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_119_0.28",
+      "urun": "mor sogan",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\mor sogan\\konum16_153745_119_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum20_153908_000_0.66",
+      "urun": "Muz",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Muz\\konum20_153908_000_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum20_153908_001_0.66",
+      "urun": "Muz",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Muz\\konum20_153908_001_0.66.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

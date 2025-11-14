@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T14:55:18.224316",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_067.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\portakal_122700_277_0.72.jpg",
+      "id": "portakal_122700_277_0.72"
+    },
+    {
+      "index": 2,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\portakal_122700_288_0.70.jpg",
+      "id": "portakal_122700_288_0.70"
+    },
+    {
+      "index": 3,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\portakal_122700_293_0.69.jpg",
+      "id": "portakal_122700_293_0.69"
+    },
+    {
+      "index": 4,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\portakal_122700_299_0.69.jpg",
+      "id": "portakal_122700_299_0.69"
+    },
+    {
+      "index": 5,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_021_0.90.jpg",
+      "id": "salkım_122805_021_0.90"
+    },
+    {
+      "index": 6,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_023_0.89.jpg",
+      "id": "salkım_122805_023_0.89"
+    },
+    {
+      "index": 7,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_026_0.87.jpg",
+      "id": "salkım_122805_026_0.87"
+    },
+    {
+      "index": 8,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_027_0.87.jpg",
+      "id": "salkım_122805_027_0.87"
+    },
+    {
+      "index": 9,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_028_0.86.jpg",
+      "id": "salkım_122805_028_0.86"
+    },
+    {
+      "index": 10,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_029_0.86.jpg",
+      "id": "salkım_122805_029_0.86"
+    },
+    {
+      "index": 11,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_030_0.86.jpg",
+      "id": "salkım_122805_030_0.86"
+    },
+    {
+      "index": 12,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_035_0.85.jpg",
+      "id": "salkım_122805_035_0.85"
+    },
+    {
+      "index": 13,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_036_0.85.jpg",
+      "id": "salkım_122805_036_0.85"
+    },
+    {
+      "index": 14,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_037_0.85.jpg",
+      "id": "salkım_122805_037_0.85"
+    },
+    {
+      "index": 15,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_038_0.85.jpg",
+      "id": "salkım_122805_038_0.85"
+    },
+    {
+      "index": 16,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_040_0.84.jpg",
+      "id": "salkım_122805_040_0.84"
+    },
+    {
+      "index": 17,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_041_0.84.jpg",
+      "id": "salkım_122805_041_0.84"
+    },
+    {
+      "index": 18,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_042_0.84.jpg",
+      "id": "salkım_122805_042_0.84"
+    },
+    {
+      "index": 19,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_043_0.84.jpg",
+      "id": "salkım_122805_043_0.84"
+    },
+    {
+      "index": 20,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_044_0.83.jpg",
+      "id": "salkım_122805_044_0.83"
+    },
+    {
+      "index": 21,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_051_0.83.jpg",
+      "id": "salkım_122805_051_0.83"
+    },
+    {
+      "index": 22,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_058_0.82.jpg",
+      "id": "salkım_122805_058_0.82"
+    },
+    {
+      "index": 23,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_060_0.82.jpg",
+      "id": "salkım_122805_060_0.82"
+    },
+    {
+      "index": 24,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_063_0.82.jpg",
+      "id": "salkım_122805_063_0.82"
+    },
+    {
+      "index": 25,
+      "urun": "Salatalik",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Salatalik\\salkım_122805_064_0.82.jpg",
+      "id": "salkım_122805_064_0.82"
+    }
+  ]
+}

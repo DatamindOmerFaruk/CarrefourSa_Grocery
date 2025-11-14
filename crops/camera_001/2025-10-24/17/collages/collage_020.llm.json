@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\17\\collages\\collage_020.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Kavun",
+    "2": "Kavun",
+    "3": "Kavun",
+    "4": "Kavun",
+    "5": "Kavun",
+    "6": "Kavun",
+    "7": "Kavun",
+    "8": "Kavun",
+    "9": "Kavun",
+    "10": "Kavun",
+    "11": "Kavun",
+    "12": "Kavun",
+    "13": "Kavun",
+    "14": "Kavun",
+    "15": "Kavun",
+    "16": "Kavun",
+    "17": "Kavun",
+    "18": "Kavun",
+    "19": "Kavun",
+    "20": "Kavun",
+    "21": "Kavun",
+    "22": "Kavun",
+    "23": "Kavun",
+    "24": "Kavun",
+    "25": "Kavun"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 2,
+        "guven": 0.9
+      },
+      {
+        "id": 14,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "mandalina1_153009_076_0.73",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_076_0.73.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_077_0.73",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_077_0.73.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "mandalina1_153009_078_0.72",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_078_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_079_0.72",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_079_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_080_0.72",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_080_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_081_0.72",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_081_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_082_0.70",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_082_0.70.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_083_0.69",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_083_0.69.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_087_0.67",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_087_0.67.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_088_0.67",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_088_0.67.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_090_0.66",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_090_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_091_0.66",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_091_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_093_0.66",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_093_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_094_0.65",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_094_0.65.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "mandalina1_153009_096_0.65",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_096_0.65.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_097_0.64",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_097_0.64.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_100_0.62",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_100_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_103_0.60",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_103_0.60.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_104_0.60",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_104_0.60.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_105_0.60",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_105_0.60.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_106_0.59",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_106_0.59.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_107_0.58",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_107_0.58.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_109_0.57",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_109_0.57.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_110_0.57",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_110_0.57.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina1_153009_112_0.55",
+      "urun": "Kavun",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Kavun\\mandalina1_153009_112_0.55.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

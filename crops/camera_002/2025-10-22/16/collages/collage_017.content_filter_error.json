@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:47:17.623189",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_002\\2025-10-22\\16\\collages\\collage_017.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_019_0.59.jpg",
+      "id": "konum19_165508_019_0.59"
+    },
+    {
+      "index": 2,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_020_0.56.jpg",
+      "id": "konum19_165508_020_0.56"
+    },
+    {
+      "index": 3,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_023_0.50.jpg",
+      "id": "konum19_165508_023_0.50"
+    },
+    {
+      "index": 4,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_025_0.48.jpg",
+      "id": "konum19_165508_025_0.48"
+    },
+    {
+      "index": 5,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_026_0.47.jpg",
+      "id": "konum19_165508_026_0.47"
+    },
+    {
+      "index": 6,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_028_0.46.jpg",
+      "id": "konum19_165508_028_0.46"
+    },
+    {
+      "index": 7,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_029_0.45.jpg",
+      "id": "konum19_165508_029_0.45"
+    },
+    {
+      "index": 8,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_030_0.45.jpg",
+      "id": "konum19_165508_030_0.45"
+    },
+    {
+      "index": 9,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_034_0.41.jpg",
+      "id": "konum19_165508_034_0.41"
+    },
+    {
+      "index": 10,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_036_0.40.jpg",
+      "id": "konum19_165508_036_0.40"
+    },
+    {
+      "index": 11,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_037_0.38.jpg",
+      "id": "konum19_165508_037_0.38"
+    },
+    {
+      "index": 12,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_044_0.32.jpg",
+      "id": "konum19_165508_044_0.32"
+    },
+    {
+      "index": 13,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum19_165508_048_0.29.jpg",
+      "id": "konum19_165508_048_0.29"
+    },
+    {
+      "index": 14,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum20_165528_001_0.66.jpg",
+      "id": "konum20_165528_001_0.66"
+    },
+    {
+      "index": 15,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum20_165528_005_0.46.jpg",
+      "id": "konum20_165528_005_0.46"
+    },
+    {
+      "index": 16,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum20_165528_006_0.44.jpg",
+      "id": "konum20_165528_006_0.44"
+    },
+    {
+      "index": 17,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum20_165528_009_0.39.jpg",
+      "id": "konum20_165528_009_0.39"
+    },
+    {
+      "index": 18,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum20_165528_010_0.38.jpg",
+      "id": "konum20_165528_010_0.38"
+    },
+    {
+      "index": 19,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum20_165528_013_0.32.jpg",
+      "id": "konum20_165528_013_0.32"
+    },
+    {
+      "index": 20,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum20_165528_015_0.28.jpg",
+      "id": "konum20_165528_015_0.28"
+    },
+    {
+      "index": 21,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum3_164936_000_0.79.jpg",
+      "id": "konum3_164936_000_0.79"
+    },
+    {
+      "index": 22,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum3_164936_001_0.79.jpg",
+      "id": "konum3_164936_001_0.79"
+    },
+    {
+      "index": 23,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum3_164936_002_0.76.jpg",
+      "id": "konum3_164936_002_0.76"
+    },
+    {
+      "index": 24,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum3_164936_003_0.66.jpg",
+      "id": "konum3_164936_003_0.66"
+    },
+    {
+      "index": 25,
+      "urun": "Kabak",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Kabak\\konum3_164936_004_0.65.jpg",
+      "id": "konum3_164936_004_0.65"
+    }
+  ]
+}

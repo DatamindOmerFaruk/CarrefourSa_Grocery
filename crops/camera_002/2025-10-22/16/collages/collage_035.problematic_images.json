@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-24T13:57:56.767507",
+  "batch_index": 35,
+  "total_in_batch": 25,
+  "problematic_count": 2,
+  "problematic_images": [
+    {
+      "index": 5,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum8_165119_011_0.79.jpg",
+      "urun": "Patlican",
+      "id": "konum8_165119_011_0.79"
+    },
+    {
+      "index": 6,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum8_165119_016_0.74.jpg",
+      "urun": "Patlican",
+      "id": "konum8_165119_016_0.74"
+    }
+  ]
+}

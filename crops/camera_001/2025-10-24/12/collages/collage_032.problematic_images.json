@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-24T14:34:58.117869",
+  "batch_index": 32,
+  "total_in_batch": 25,
+  "problematic_count": 2,
+  "problematic_images": [
+    {
+      "index": 15,
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_286_0.70.jpg",
+      "urun": "Kivi",
+      "id": "portakal_122700_286_0.70"
+    },
+    {
+      "index": 24,
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_297_0.69.jpg",
+      "urun": "Kivi",
+      "id": "portakal_122700_297_0.69"
+    }
+  ]
+}

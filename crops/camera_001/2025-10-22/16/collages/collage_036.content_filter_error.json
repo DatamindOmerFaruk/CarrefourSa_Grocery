@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:16:35.753807",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_036.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_184_0.59.jpg",
+      "id": "karpuz_164546_184_0.59"
+    },
+    {
+      "index": 2,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_186_0.59.jpg",
+      "id": "karpuz_164546_186_0.59"
+    },
+    {
+      "index": 3,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_188_0.58.jpg",
+      "id": "karpuz_164546_188_0.58"
+    },
+    {
+      "index": 4,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_191_0.58.jpg",
+      "id": "karpuz_164546_191_0.58"
+    },
+    {
+      "index": 5,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_193_0.57.jpg",
+      "id": "karpuz_164546_193_0.57"
+    },
+    {
+      "index": 6,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_194_0.57.jpg",
+      "id": "karpuz_164546_194_0.57"
+    },
+    {
+      "index": 7,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_199_0.56.jpg",
+      "id": "karpuz_164546_199_0.56"
+    },
+    {
+      "index": 8,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_201_0.55.jpg",
+      "id": "karpuz_164546_201_0.55"
+    },
+    {
+      "index": 9,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_203_0.55.jpg",
+      "id": "karpuz_164546_203_0.55"
+    },
+    {
+      "index": 10,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_211_0.54.jpg",
+      "id": "karpuz_164546_211_0.54"
+    },
+    {
+      "index": 11,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_212_0.54.jpg",
+      "id": "karpuz_164546_212_0.54"
+    },
+    {
+      "index": 12,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_218_0.52.jpg",
+      "id": "karpuz_164546_218_0.52"
+    },
+    {
+      "index": 13,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_222_0.52.jpg",
+      "id": "karpuz_164546_222_0.52"
+    },
+    {
+      "index": 14,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_223_0.52.jpg",
+      "id": "karpuz_164546_223_0.52"
+    },
+    {
+      "index": 15,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_227_0.51.jpg",
+      "id": "karpuz_164546_227_0.51"
+    },
+    {
+      "index": 16,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_238_0.49.jpg",
+      "id": "karpuz_164546_238_0.49"
+    },
+    {
+      "index": 17,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_240_0.49.jpg",
+      "id": "karpuz_164546_240_0.49"
+    },
+    {
+      "index": 18,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_241_0.49.jpg",
+      "id": "karpuz_164546_241_0.49"
+    },
+    {
+      "index": 19,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_242_0.48.jpg",
+      "id": "karpuz_164546_242_0.48"
+    },
+    {
+      "index": 20,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_243_0.48.jpg",
+      "id": "karpuz_164546_243_0.48"
+    },
+    {
+      "index": 21,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_245_0.48.jpg",
+      "id": "karpuz_164546_245_0.48"
+    },
+    {
+      "index": 22,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_247_0.48.jpg",
+      "id": "karpuz_164546_247_0.48"
+    },
+    {
+      "index": 23,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_250_0.47.jpg",
+      "id": "karpuz_164546_250_0.47"
+    },
+    {
+      "index": 24,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_255_0.46.jpg",
+      "id": "karpuz_164546_255_0.46"
+    },
+    {
+      "index": 25,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Limon\\karpuz_164546_257_0.46.jpg",
+      "id": "karpuz_164546_257_0.46"
+    }
+  ]
+}

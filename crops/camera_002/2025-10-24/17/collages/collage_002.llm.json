@@ -1,0 +1,271 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\17\\collages\\collage_002.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Armut",
+    "2": "Armut",
+    "3": "Armut",
+    "4": "Armut",
+    "5": "Armut",
+    "6": "Armut",
+    "7": "Armut",
+    "8": "Armut",
+    "9": "Armut",
+    "10": "Armut",
+    "11": "Armut",
+    "12": "Armut",
+    "13": "Armut",
+    "14": "Armut",
+    "15": "Armut",
+    "16": "Armut",
+    "17": "Armut",
+    "18": "Armut",
+    "19": "Armut",
+    "20": "Armut",
+    "21": "Armut",
+    "22": "Avokado",
+    "23": "Avokado",
+    "24": "Avokado",
+    "25": "Ayva"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 16,
+        "guven": 0.92
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "konum14_153703_017_0.56",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_017_0.56.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_018_0.52",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_018_0.52.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_021_0.50",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_021_0.50.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_022_0.49",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_022_0.49.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_027_0.47",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_027_0.47.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_034_0.42",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_034_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_036_0.40",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_036_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_041_0.39",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_041_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_043_0.38",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_043_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_046_0.35",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_046_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_048_0.35",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_048_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_049_0.34",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_049_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_050_0.32",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_050_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_051_0.32",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_051_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_056_0.30",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_056_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_057_0.30",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_057_0.30.jpg",
+      "durum": "çürük",
+      "guven": 0.92
+    },
+    {
+      "id": "konum14_153703_058_0.30",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_058_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_059_0.28",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_059_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_064_0.26",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum14_153703_064_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_047_0.56",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum15_153724_047_0.56.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum20_153908_010_0.32",
+      "urun": "Armut",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Armut\\konum20_153908_010_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_062_0.27",
+      "urun": "Avokado",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Avokado\\konum14_153703_062_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum14_153703_066_0.26",
+      "urun": "Avokado",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Avokado\\konum14_153703_066_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum2_153255_020_0.29",
+      "urun": "Avokado",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Avokado\\konum2_153255_020_0.29.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_009_0.61",
+      "urun": "Ayva",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Ayva\\konum12_153621_009_0.61.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

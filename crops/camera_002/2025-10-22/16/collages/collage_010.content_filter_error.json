@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:43:29.196450",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_002\\2025-10-22\\16\\collages\\collage_010.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum6_165038_011_0.83.jpg",
+      "id": "konum6_165038_011_0.83"
+    },
+    {
+      "index": 2,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum6_165038_018_0.79.jpg",
+      "id": "konum6_165038_018_0.79"
+    },
+    {
+      "index": 3,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum6_165038_022_0.65.jpg",
+      "id": "konum6_165038_022_0.65"
+    },
+    {
+      "index": 4,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum6_165038_024_0.62.jpg",
+      "id": "konum6_165038_024_0.62"
+    },
+    {
+      "index": 5,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum6_165038_025_0.54.jpg",
+      "id": "konum6_165038_025_0.54"
+    },
+    {
+      "index": 6,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum6_165038_026_0.49.jpg",
+      "id": "konum6_165038_026_0.49"
+    },
+    {
+      "index": 7,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum6_165038_028_0.35.jpg",
+      "id": "konum6_165038_028_0.35"
+    },
+    {
+      "index": 8,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_002_0.90.jpg",
+      "id": "konum9_165140_002_0.90"
+    },
+    {
+      "index": 9,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_004_0.89.jpg",
+      "id": "konum9_165140_004_0.89"
+    },
+    {
+      "index": 10,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_005_0.88.jpg",
+      "id": "konum9_165140_005_0.88"
+    },
+    {
+      "index": 11,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_018_0.76.jpg",
+      "id": "konum9_165140_018_0.76"
+    },
+    {
+      "index": 12,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_019_0.71.jpg",
+      "id": "konum9_165140_019_0.71"
+    },
+    {
+      "index": 13,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_021_0.65.jpg",
+      "id": "konum9_165140_021_0.65"
+    },
+    {
+      "index": 14,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_025_0.48.jpg",
+      "id": "konum9_165140_025_0.48"
+    },
+    {
+      "index": 15,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_028_0.40.jpg",
+      "id": "konum9_165140_028_0.40"
+    },
+    {
+      "index": 16,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_031_0.33.jpg",
+      "id": "konum9_165140_031_0.33"
+    },
+    {
+      "index": 17,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_034_0.27.jpg",
+      "id": "konum9_165140_034_0.27"
+    },
+    {
+      "index": 18,
+      "urun": "Domates",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_035_0.26.jpg",
+      "id": "konum9_165140_035_0.26"
+    },
+    {
+      "index": 19,
+      "urun": "Elma",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum12_165242_028_0.38.jpg",
+      "id": "konum12_165242_028_0.38"
+    },
+    {
+      "index": 20,
+      "urun": "Elma",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum16_165405_053_0.68.jpg",
+      "id": "konum16_165405_053_0.68"
+    },
+    {
+      "index": 21,
+      "urun": "Elma",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum16_165405_060_0.63.jpg",
+      "id": "konum16_165405_060_0.63"
+    },
+    {
+      "index": 22,
+      "urun": "Elma",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum16_165405_078_0.54.jpg",
+      "id": "konum16_165405_078_0.54"
+    },
+    {
+      "index": 23,
+      "urun": "Elma",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum16_165405_083_0.49.jpg",
+      "id": "konum16_165405_083_0.49"
+    },
+    {
+      "index": 24,
+      "urun": "Elma",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum16_165405_088_0.45.jpg",
+      "id": "konum16_165405_088_0.45"
+    },
+    {
+      "index": 25,
+      "urun": "Elma",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum16_165405_105_0.32.jpg",
+      "id": "konum16_165405_105_0.32"
+    }
+  ]
+}

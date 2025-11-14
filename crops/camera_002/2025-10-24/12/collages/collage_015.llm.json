@@ -1,0 +1,265 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\12\\collages\\collage_015.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v1",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Hindistan Cevizi",
+    "2": "Hindistan Cevizi",
+    "3": "Hindistan Cevizi",
+    "4": "Hindistan Cevizi",
+    "5": "Hindistan Cevizi",
+    "6": "Hindistan Cevizi",
+    "7": "Hindistan Cevizi",
+    "8": "Hindistan Cevizi",
+    "9": "Hindistan Cevizi",
+    "10": "Hindistan Cevizi",
+    "11": "Hindistan Cevizi",
+    "12": "Hindistan Cevizi",
+    "13": "Hindistan Cevizi",
+    "14": "Hindistan Cevizi",
+    "15": "Hindistan Cevizi",
+    "16": "Hindistan Cevizi",
+    "17": "Hindistan Cevizi",
+    "18": "Hindistan Cevizi",
+    "19": "Hindistan Cevizi",
+    "20": "Hindistan Cevizi",
+    "21": "Hindistan Cevizi",
+    "22": "Hindistan Cevizi",
+    "23": "Hindistan Cevizi",
+    "24": "Hindistan Cevizi",
+    "25": "Hindistan Cevizi"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": []
+  },
+  "items": [
+    {
+      "id": "konum15_123248_055_0.56",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_055_0.56.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_060_0.54",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_060_0.54.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_061_0.52",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_061_0.52.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_063_0.51",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_063_0.51.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_064_0.49",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_064_0.49.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_069_0.48",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_069_0.48.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_070_0.48",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_070_0.48.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_076_0.44",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_076_0.44.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_077_0.44",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_077_0.44.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_083_0.41",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_083_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_084_0.41",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_084_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_088_0.40",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_088_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_090_0.37",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_090_0.37.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_091_0.37",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_091_0.37.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_092_0.37",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_092_0.37.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_095_0.36",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_095_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_097_0.36",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_097_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_098_0.36",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_098_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_099_0.36",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_099_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_101_0.35",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_101_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_104_0.33",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_104_0.33.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_105_0.32",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_105_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_110_0.30",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_110_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_117_0.28",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_117_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_123248_122_0.27",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Hindistan Cevizi\\konum15_123248_122_0.27.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

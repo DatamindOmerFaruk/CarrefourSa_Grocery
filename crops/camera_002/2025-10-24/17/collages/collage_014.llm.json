@@ -1,0 +1,281 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\17\\collages\\collage_014.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Karpuz",
+    "2": "Karpuz",
+    "3": "Karpuz",
+    "4": "Kavun",
+    "5": "Kavun",
+    "6": "Kavun",
+    "7": "Kavun",
+    "8": "Kavun",
+    "9": "Kavun",
+    "10": "Kavun",
+    "11": "Kavun",
+    "12": "Kavun",
+    "13": "Kavun",
+    "14": "Kavun",
+    "15": "Kavun",
+    "16": "Kavun",
+    "17": "Kavun",
+    "18": "Kavun",
+    "19": "Kavun",
+    "20": "Kavun",
+    "21": "Kavun",
+    "22": "Kavun",
+    "23": "Kavun",
+    "24": "Kavun",
+    "25": "Kavun"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 12,
+        "guven": 0.9
+      },
+      {
+        "id": 19,
+        "guven": 0.87
+      },
+      {
+        "id": 24,
+        "guven": 0.86
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "konum2_153255_013_0.43",
+      "urun": "Karpuz",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Karpuz\\konum2_153255_013_0.43.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum2_153255_018_0.32",
+      "urun": "Karpuz",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Karpuz\\konum2_153255_018_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum5_153356_073_0.54",
+      "urun": "Karpuz",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Karpuz\\konum5_153356_073_0.54.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_051_0.65",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum10_153540_051_0.65.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_058_0.62",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum10_153540_058_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_064_0.57",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum10_153540_064_0.57.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_069_0.52",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum10_153540_069_0.52.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_088_0.35",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum10_153540_088_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_099_0.28",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum10_153540_099_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_106_0.26",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum10_153540_106_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum11_153600_042_0.62",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum11_153600_042_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum11_153600_049_0.35",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum11_153600_049_0.35.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "konum11_153600_050_0.34",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum11_153600_050_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum11_153600_051_0.32",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum11_153600_051_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum11_153600_052_0.31",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum11_153600_052_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum11_153600_058_0.25",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum11_153600_058_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_003_0.72",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_003_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_004_0.70",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_004_0.70.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_006_0.69",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_006_0.69.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "konum12_153621_007_0.67",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_007_0.67.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_012_0.56",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_012_0.56.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_014_0.50",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_014_0.50.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_015_0.50",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_015_0.50.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_017_0.46",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_017_0.46.jpg",
+      "durum": "çürük",
+      "guven": 0.86
+    },
+    {
+      "id": "konum12_153621_018_0.46",
+      "urun": "Kavun",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Kavun\\konum12_153621_018_0.46.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:54:47.814135",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_002\\2025-10-22\\16\\collages\\collage_030.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum20_165528_000_0.70.jpg",
+      "id": "konum20_165528_000_0.70"
+    },
+    {
+      "index": 2,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum20_165528_004_0.48.jpg",
+      "id": "konum20_165528_004_0.48"
+    },
+    {
+      "index": 3,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum20_165528_007_0.40.jpg",
+      "id": "konum20_165528_007_0.40"
+    },
+    {
+      "index": 4,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum20_165528_008_0.39.jpg",
+      "id": "konum20_165528_008_0.39"
+    },
+    {
+      "index": 5,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum20_165528_014_0.31.jpg",
+      "id": "konum20_165528_014_0.31"
+    },
+    {
+      "index": 6,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_000_0.86.jpg",
+      "id": "konum2_164916_000_0.86"
+    },
+    {
+      "index": 7,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_002_0.67.jpg",
+      "id": "konum2_164916_002_0.67"
+    },
+    {
+      "index": 8,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_003_0.62.jpg",
+      "id": "konum2_164916_003_0.62"
+    },
+    {
+      "index": 9,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_004_0.62.jpg",
+      "id": "konum2_164916_004_0.62"
+    },
+    {
+      "index": 10,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_005_0.57.jpg",
+      "id": "konum2_164916_005_0.57"
+    },
+    {
+      "index": 11,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_006_0.54.jpg",
+      "id": "konum2_164916_006_0.54"
+    },
+    {
+      "index": 12,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_008_0.48.jpg",
+      "id": "konum2_164916_008_0.48"
+    },
+    {
+      "index": 13,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_010_0.34.jpg",
+      "id": "konum2_164916_010_0.34"
+    },
+    {
+      "index": 14,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_011_0.31.jpg",
+      "id": "konum2_164916_011_0.31"
+    },
+    {
+      "index": 15,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_012_0.30.jpg",
+      "id": "konum2_164916_012_0.30"
+    },
+    {
+      "index": 16,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_013_0.30.jpg",
+      "id": "konum2_164916_013_0.30"
+    },
+    {
+      "index": 17,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_014_0.28.jpg",
+      "id": "konum2_164916_014_0.28"
+    },
+    {
+      "index": 18,
+      "urun": "Muz",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Muz\\konum2_164916_015_0.26.jpg",
+      "id": "konum2_164916_015_0.26"
+    },
+    {
+      "index": 19,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum11_165221_000_0.95.jpg",
+      "id": "konum11_165221_000_0.95"
+    },
+    {
+      "index": 20,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum11_165221_001_0.94.jpg",
+      "id": "konum11_165221_001_0.94"
+    },
+    {
+      "index": 21,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum11_165221_002_0.94.jpg",
+      "id": "konum11_165221_002_0.94"
+    },
+    {
+      "index": 22,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum11_165221_003_0.94.jpg",
+      "id": "konum11_165221_003_0.94"
+    },
+    {
+      "index": 23,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum11_165221_004_0.93.jpg",
+      "id": "konum11_165221_004_0.93"
+    },
+    {
+      "index": 24,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum11_165221_005_0.93.jpg",
+      "id": "konum11_165221_005_0.93"
+    },
+    {
+      "index": 25,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum11_165221_006_0.92.jpg",
+      "id": "konum11_165221_006_0.92"
+    }
+  ]
+}

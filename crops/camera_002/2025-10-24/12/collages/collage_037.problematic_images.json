@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-24T15:18:39.005092",
+  "batch_index": 37,
+  "total_in_batch": 25,
+  "problematic_count": 2,
+  "problematic_images": [
+    {
+      "index": 21,
+      "path": "crops\\camera_002\\2025-10-24\\12\\Nar\\konum11_123145_013_0.90.jpg",
+      "urun": "Nar",
+      "id": "konum11_123145_013_0.90"
+    },
+    {
+      "index": 24,
+      "path": "crops\\camera_002\\2025-10-24\\12\\Nar\\konum11_123145_025_0.83.jpg",
+      "urun": "Nar",
+      "id": "konum11_123145_025_0.83"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_041.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Limon",
+    "2": "Limon",
+    "3": "Limon",
+    "4": "Limon",
+    "5": "Limon",
+    "6": "Limon",
+    "7": "Limon",
+    "8": "Limon",
+    "9": "Limon",
+    "10": "Limon",
+    "11": "Limon",
+    "12": "Limon",
+    "13": "Mandalina",
+    "14": "Mandalina",
+    "15": "Mandalina",
+    "16": "Mandalina",
+    "17": "Mandalina",
+    "18": "Mandalina",
+    "19": "Mandalina",
+    "20": "Mandalina",
+    "21": "Mango",
+    "22": "Mango",
+    "23": "Mango",
+    "24": "Mango",
+    "25": "Mango"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 2,
+        "guven": 0.95
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "mandalina2_153030_206_0.36",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_206_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_207_0.36",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_207_0.36.jpg",
+      "durum": "çürük",
+      "guven": 0.95
+    },
+    {
+      "id": "mandalina2_153030_208_0.35",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_208_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_210_0.34",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_210_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_211_0.34",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_211_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_213_0.33",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_213_0.33.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_217_0.30",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_217_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_221_0.29",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_221_0.29.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_227_0.28",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_227_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_231_0.26",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_231_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_233_0.26",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_233_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "mandalina2_153030_234_0.26",
+      "urun": "Limon",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Limon\\mandalina2_153030_234_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_145_0.51",
+      "urun": "Mandalina",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mandalina\\muz_153051_145_0.51.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_155_0.49",
+      "urun": "Mandalina",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mandalina\\muz_153051_155_0.49.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_164_0.47",
+      "urun": "Mandalina",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mandalina\\muz_153051_164_0.47.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_191_0.38",
+      "urun": "Mandalina",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mandalina\\muz_153051_191_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_234_0.27",
+      "urun": "Mandalina",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mandalina\\muz_153051_234_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_239_0.27",
+      "urun": "Mandalina",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mandalina\\muz_153051_239_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_243_0.26",
+      "urun": "Mandalina",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mandalina\\muz_153051_243_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_152948_268_0.76",
+      "urun": "Mandalina",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mandalina\\portakal_152948_268_0.76.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_000_0.93",
+      "urun": "Mango",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mango\\muz_153051_000_0.93.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_001_0.93",
+      "urun": "Mango",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mango\\muz_153051_001_0.93.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_002_0.92",
+      "urun": "Mango",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mango\\muz_153051_002_0.92.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_003_0.92",
+      "urun": "Mango",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mango\\muz_153051_003_0.92.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_004_0.91",
+      "urun": "Mango",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Mango\\muz_153051_004_0.91.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

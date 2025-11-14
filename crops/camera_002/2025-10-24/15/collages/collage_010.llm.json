@@ -1,0 +1,286 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\15\\collages\\collage_010.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Domates",
+    "2": "Domates",
+    "3": "Domates",
+    "4": "Domates",
+    "5": "Domates",
+    "6": "Domates",
+    "7": "Domates",
+    "8": "Domates",
+    "9": "Domates",
+    "10": "Domates",
+    "11": "Domates",
+    "12": "Domates",
+    "13": "Domates",
+    "14": "Domates",
+    "15": "Domates",
+    "16": "Ejder Meyvesi",
+    "17": "Ejder Meyvesi",
+    "18": "Ejder Meyvesi",
+    "19": "Ejder Meyvesi",
+    "20": "Ejder Meyvesi",
+    "21": "Ejder Meyvesi",
+    "22": "Ejder Meyvesi",
+    "23": "Ejder Meyvesi",
+    "24": "Ejder Meyvesi",
+    "25": "Elma"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 18,
+        "guven": 0.92
+      },
+      {
+        "id": 19,
+        "guven": 0.9
+      },
+      {
+        "id": 22,
+        "guven": 0.87
+      },
+      {
+        "id": 23,
+        "guven": 0.9
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "konum5_153356_086_0.44",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum5_153356_086_0.44.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum5_153356_087_0.42",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum5_153356_087_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum5_153356_091_0.41",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum5_153356_091_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum5_153356_093_0.40",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum5_153356_093_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum5_153356_101_0.26",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum5_153356_101_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum6_153417_015_0.72",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum6_153417_015_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum6_153417_036_0.36",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum6_153417_036_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum6_153417_039_0.34",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum6_153417_039_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum6_153417_048_0.25",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum6_153417_048_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_023_0.63",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum9_153519_023_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_029_0.56",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum9_153519_029_0.56.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_030_0.50",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum9_153519_030_0.50.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_037_0.40",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum9_153519_037_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_040_0.34",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum9_153519_040_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum9_153519_046_0.28",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Domates\\konum9_153519_046_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_070_0.42",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_070_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_072_0.40",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_072_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_074_0.37",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_074_0.37.jpg",
+      "durum": "çürük",
+      "guven": 0.92
+    },
+    {
+      "id": "konum15_153724_079_0.32",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_079_0.32.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "konum15_153724_085_0.29",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_085_0.29.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_087_0.27",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_087_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_089_0.27",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_089_0.27.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "konum15_153724_091_0.26",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_091_0.26.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "konum15_153724_092_0.26",
+      "urun": "Ejder Meyvesi",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Ejder Meyvesi\\konum15_153724_092_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum10_153540_020_0.87",
+      "urun": "Elma",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Elma\\konum10_153540_020_0.87.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

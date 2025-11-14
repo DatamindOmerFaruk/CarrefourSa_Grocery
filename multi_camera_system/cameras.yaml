@@ -1,0 +1,295 @@
+# Multi-Camera Configuration
+# Her kamera için özel PTZ hedefleri ve ayarlar
+
+cameras:
+  # Kamera 1 - Meyve Reyonu
+  camera_001:
+    name: "Meyve Reyonu - Ana Kamera"
+    host: "10.85.4.100:80"
+    username: "datamind"
+    password: "Data321321."
+    ptz_channel: 1
+    stream_channel: 101
+    store_name: "Carrefoursa Maltepe"
+    move_settle_seconds: 12
+    azimuth_scale: 10
+    elevation_scale: 10
+    zoom_scale: 10
+    ptz_targets:
+      konum1:
+        azimuth: 319
+        elevation: 21
+        zoom: 2
+      konum2:
+        azimuth: 10
+        elevation: 26
+        zoom: 2
+      konum3:
+        azimuth: 343
+        elevation: 20
+        zoom: 4
+      konum4:
+        azimuth: 342
+        elevation: 29
+        zoom: 4
+      konum5:
+        azimuth: 41
+        elevation: 19
+        zoom: 2
+      konum6:
+        azimuth: 0
+        elevation: 0
+        zoom: 8
+      konum7:
+        azimuth: 10
+        elevation: 0
+        zoom: 9
+      konum8:
+        azimuth: 22
+        elevation: 0
+        zoom: 10
+      konum9:
+        azimuth: 358
+        elevation: -4
+        zoom: 16
+
+  # Kamera 2 - Sebze Reyonu
+  camera_002:
+    name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
+    host: "10.101.128.160:80"
+    username: "datamind"
+    password: "Data321321."
+    ptz_channel: 1
+    stream_channel: 101
+    store_name: "Carrefoursa Kartal"
+    move_settle_seconds: 12
+    azimuth_scale: 10
+    elevation_scale: 10
+    zoom_scale: 10
+    ptz_targets:
+      konum1:
+        azimuth: 265
+        elevation: 15
+        zoom: 5
+
+      konum2:
+        azimuth: 271
+        elevation: 22
+        zoom: 4
+
+      konum7:
+        azimuth: 271
+        elevation: 6
+        zoom: 9
+
+      konum8:
+        azimuth: 277
+        elevation: 7
+        zoom: 7
+
+      konum9:
+        azimuth: 279
+        elevation: 19
+        zoom: 9
+
+      konum10:
+        azimuth: 285
+        elevation: 9
+        zoom: 9
+
+      konum11:
+        azimuth: 292
+        elevation: 10
+        zoom: 8
+
+      konum12:
+        azimuth: 300
+        elevation: 11
+        zoom: 8
+
+      konum13:
+        azimuth: 308
+        elevation: 12
+        zoom: 9
+
+      konum14:
+        azimuth: 315
+        elevation: 12
+        zoom: 7
+
+      konum15:
+        azimuth: 313
+        elevation: 19
+        zoom: 7
+
+      konum16:
+        azimuth: 303
+        elevation: 18
+        zoom: 6
+
+      konum17:
+        azimuth: 294
+        elevation: 17
+        zoom: 7
+
+      konum18:
+        azimuth: 285
+        elevation: 14
+        zoom: 8
+
+      konum19:
+        azimuth: 277
+        elevation: 12
+        zoom: 8
+
+      konum20:
+        azimuth: 273
+        elevation: 11
+        zoom: 15
+    
+  camera_003:
+    name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
+    host: "10.101.150.161:80"
+    username: "datamind"
+    password: "Data321321."
+    ptz_channel: 1
+    stream_channel: 101
+    store_name: "Carrefoursa Ataşehir"
+    move_settle_seconds: 12
+    azimuth_scale: 10
+    elevation_scale: 10
+    zoom_scale: 10
+    ptz_targets:
+      konum1:
+        azimuth: 345
+        elevation: 12
+        zoom: 12
+      konum2:
+        azimuth: 351
+        elevation: 15
+        zoom: 9
+      konum3:
+        azimuth: 355
+        elevation: 18
+        zoom: 10
+      konum4:
+        azimuth: 0
+        elevation: 19
+        zoom: 14
+      konum5:
+        azimuth: 8
+        elevation: 35
+        zoom: 6
+      konum6:
+        azimuth: 29
+        elevation: 30
+        zoom: 3
+      konum7:
+        azimuth: 13
+        elevation: 18
+        zoom: 5
+      konum8:
+        azimuth: 3
+        elevation: 15
+        zoom: 6
+      konum9:
+        azimuth: 354
+        elevation: 11
+        zoom: 10
+      konum10:
+        azimuth: 348
+        elevation: 8
+        zoom: 9
+  
+  camera_004:
+    name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
+    host: "10.101.150.160:80"
+    username: "datamind"
+    password: "Data321321."
+    ptz_channel: 1
+    stream_channel: 101
+    store_name: "Carrefoursa Pendik"
+    move_settle_seconds: 12
+    azimuth_scale: 10
+    elevation_scale: 10
+    zoom_scale: 10
+
+    ptz_targets:
+      konum1:
+        azimuth: 12
+        elevation: 38
+        zoom: 4
+      konum2:
+        azimuth: 38
+        elevation: 45
+        zoom: 2
+      konum3:
+        azimuth: 3
+        elevation: 50
+        zoom: 2
+      konum4:
+        azimuth: 15
+        elevation: 64
+        zoom: 2
+      konum5:
+        azimuth: 43
+        elevation: 55
+        zoom: 4
+      konum6:
+        azimuth: 90
+        elevation: 61
+        zoom: 2
+      konum7:
+        azimuth: 88
+        elevation: 77
+        zoom: 2
+      konum8:
+        azimuth: 150
+        elevation: 63
+        zoom: 3
+      konum9:
+        azimuth: 175
+        elevation: 69
+        zoom: 5
+      konum10:
+        azimuth: 257
+        elevation: 27
+        zoom: 4
+      konum11:
+        azimuth: 312
+        elevation: 20
+        zoom: 5
+      konum12:
+        azimuth: 316
+        elevation: 45
+        zoom: 2
+      konum13:
+        azimuth: 295
+        elevation: 53
+        zoom: 2
+      konum14:
+        azimuth: 284
+        elevation: 41
+        zoom: 3
+      konum15:
+        azimuth: 305
+        elevation: 36
+        zoom: 5
+      konum16:
+        azimuth: 265
+        elevation: 41
+        zoom: 4
+
+# Global Settings
+global_settings:
+  # Dosya yolları
+  snapshots_root: "../snapshots"
+  
+  # Worker ayarları
+  max_retries: 3
+  retry_delay: 60  # saniye
+  task_timeout: 600  # saniye
+  
+  # Monitoring
+  enable_flower: true
+  flower_port: 5555

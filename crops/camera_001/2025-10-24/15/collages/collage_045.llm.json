@@ -1,0 +1,286 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_045.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Muz",
+    "2": "Muz",
+    "3": "Muz",
+    "4": "Nar",
+    "5": "pancar",
+    "6": "Patates",
+    "7": "Patates",
+    "8": "Patlican",
+    "9": "Patlican",
+    "10": "Patlican",
+    "11": "Patlican",
+    "12": "Patlican",
+    "13": "Patlican",
+    "14": "Patlican",
+    "15": "Patlican",
+    "16": "Patlican",
+    "17": "Patlican",
+    "18": "Patlican",
+    "19": "Patlican",
+    "20": "Patlican",
+    "21": "Patlican",
+    "22": "Patlican",
+    "23": "Patlican",
+    "24": "Patlican",
+    "25": "Patlican"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 4,
+        "guven": 0.95
+      },
+      {
+        "id": 9,
+        "guven": 0.9
+      },
+      {
+        "id": 10,
+        "guven": 0.9
+      },
+      {
+        "id": 15,
+        "guven": 0.9
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "muz_153051_226_0.31",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Muz\\muz_153051_226_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_227_0.31",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Muz\\muz_153051_227_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_229_0.30",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Muz\\muz_153051_229_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_103_0.72",
+      "urun": "Nar",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Nar\\muz_153051_103_0.72.jpg",
+      "durum": "çürük",
+      "guven": 0.95
+    },
+    {
+      "id": "biber_153133_161_0.28",
+      "urun": "pancar",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\pancar\\biber_153133_161_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "patates_153153_000_0.46",
+      "urun": "Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patates\\patates_153153_000_0.46.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "patates_153153_001_0.25",
+      "urun": "Patates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patates\\patates_153153_001_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_032_0.87",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_032_0.87.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_049_0.84",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_049_0.84.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "biber_153133_051_0.84",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_051_0.84.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "biber_153133_061_0.80",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_061_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_085_0.73",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_085_0.73.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_091_0.71",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_091_0.71.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_096_0.69",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_096_0.69.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_100_0.68",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_100_0.68.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "biber_153133_104_0.65",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_104_0.65.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_122_0.57",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_122_0.57.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_125_0.54",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_125_0.54.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_133_0.48",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_133_0.48.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_134_0.46",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_134_0.46.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_139_0.43",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_139_0.43.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_140_0.42",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_140_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_143_0.39",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_143_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_154_0.31",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_154_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_153133_166_0.26",
+      "urun": "Patlican",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Patlican\\biber_153133_166_0.26.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

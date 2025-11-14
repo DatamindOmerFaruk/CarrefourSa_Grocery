@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-24T13:27:53.055884",
+  "batch_index": 55,
+  "total_in_batch": 25,
+  "problematic_count": 2,
+  "problematic_images": [
+    {
+      "index": 8,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Patlican\\salkım_164731_009_0.90.jpg",
+      "urun": "Patlican",
+      "id": "salkım_164731_009_0.90"
+    },
+    {
+      "index": 14,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Patlican\\salkım_164731_019_0.86.jpg",
+      "urun": "Patlican",
+      "id": "salkım_164731_019_0.86"
+    }
+  ]
+}

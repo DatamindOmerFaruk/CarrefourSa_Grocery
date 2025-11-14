@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:37:57.019459",
+  "error": "Error code: 400 - {'error': {'inner_error': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_results': {'sexual': {'filtered': True, 'severity': 'high'}, 'violence': {'filtered': False, 'severity': 'safe'}, 'hate': {'filtered': False, 'severity': 'safe'}, 'self_harm': {'filtered': False, 'severity': 'safe'}}}, 'code': 'content_filter', 'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: \\r\\nhttps://go.microsoft.com/fwlink/?linkid=2198766.\", 'param': 'prompt', 'type': None}}",
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_075.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Sivri Biber",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Sivri Biber\\biber_164753_263_0.26.jpg",
+      "id": "biber_164753_263_0.26"
+    },
+    {
+      "index": 2,
+      "urun": "Sivri Biber",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Sivri Biber\\biber_164753_266_0.26.jpg",
+      "id": "biber_164753_266_0.26"
+    },
+    {
+      "index": 3,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_016_0.88.jpg",
+      "id": "muz_164710_016_0.88"
+    },
+    {
+      "index": 4,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_027_0.87.jpg",
+      "id": "muz_164710_027_0.87"
+    },
+    {
+      "index": 5,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_034_0.85.jpg",
+      "id": "muz_164710_034_0.85"
+    },
+    {
+      "index": 6,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_037_0.84.jpg",
+      "id": "muz_164710_037_0.84"
+    },
+    {
+      "index": 7,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_049_0.83.jpg",
+      "id": "muz_164710_049_0.83"
+    },
+    {
+      "index": 8,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_055_0.83.jpg",
+      "id": "muz_164710_055_0.83"
+    },
+    {
+      "index": 9,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_060_0.82.jpg",
+      "id": "muz_164710_060_0.82"
+    },
+    {
+      "index": 10,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_062_0.81.jpg",
+      "id": "muz_164710_062_0.81"
+    },
+    {
+      "index": 11,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_063_0.81.jpg",
+      "id": "muz_164710_063_0.81"
+    },
+    {
+      "index": 12,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_069_0.81.jpg",
+      "id": "muz_164710_069_0.81"
+    },
+    {
+      "index": 13,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_070_0.81.jpg",
+      "id": "muz_164710_070_0.81"
+    },
+    {
+      "index": 14,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_075_0.80.jpg",
+      "id": "muz_164710_075_0.80"
+    },
+    {
+      "index": 15,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_077_0.79.jpg",
+      "id": "muz_164710_077_0.79"
+    },
+    {
+      "index": 16,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_079_0.79.jpg",
+      "id": "muz_164710_079_0.79"
+    },
+    {
+      "index": 17,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_080_0.79.jpg",
+      "id": "muz_164710_080_0.79"
+    },
+    {
+      "index": 18,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_081_0.79.jpg",
+      "id": "muz_164710_081_0.79"
+    },
+    {
+      "index": 19,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_083_0.79.jpg",
+      "id": "muz_164710_083_0.79"
+    },
+    {
+      "index": 20,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_085_0.79.jpg",
+      "id": "muz_164710_085_0.79"
+    },
+    {
+      "index": 21,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_088_0.78.jpg",
+      "id": "muz_164710_088_0.78"
+    },
+    {
+      "index": 22,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_089_0.78.jpg",
+      "id": "muz_164710_089_0.78"
+    },
+    {
+      "index": 23,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_093_0.77.jpg",
+      "id": "muz_164710_093_0.77"
+    },
+    {
+      "index": 24,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_095_0.77.jpg",
+      "id": "muz_164710_095_0.77"
+    },
+    {
+      "index": 25,
+      "urun": "Tatl Patates",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Tatl Patates\\muz_164710_096_0.77.jpg",
+      "id": "muz_164710_096_0.77"
+    }
+  ]
+}

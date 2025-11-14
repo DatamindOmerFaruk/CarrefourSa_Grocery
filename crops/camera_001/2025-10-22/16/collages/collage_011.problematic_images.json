@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-24T13:06:05.116105",
+  "batch_index": 11,
+  "total_in_batch": 25,
+  "problematic_count": 1,
+  "problematic_images": [
+    {
+      "index": 3,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_102_0.77.jpg",
+      "urun": "Domates",
+      "id": "salkım_164731_102_0.77"
+    }
+  ]
+}

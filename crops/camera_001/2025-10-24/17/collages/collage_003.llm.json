@@ -1,0 +1,271 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\17\\collages\\collage_003.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Armut",
+    "2": "Armut",
+    "3": "Armut",
+    "4": "Armut",
+    "5": "Armut",
+    "6": "Armut",
+    "7": "Armut",
+    "8": "Armut",
+    "9": "Armut",
+    "10": "Armut",
+    "11": "Armut",
+    "12": "Armut",
+    "13": "Armut",
+    "14": "Armut",
+    "15": "Armut",
+    "16": "Armut",
+    "17": "Armut",
+    "18": "Armut",
+    "19": "Armut",
+    "20": "Armut",
+    "21": "Armut",
+    "22": "Armut",
+    "23": "Armut",
+    "24": "Armut",
+    "25": "Armut"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 23,
+        "guven": 0.92
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "muz_153051_176_0.42",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_176_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_178_0.41",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_178_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_181_0.41",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_181_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_184_0.40",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_184_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_187_0.39",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_187_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_188_0.38",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_188_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_190_0.38",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_190_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_192_0.38",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_192_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_195_0.37",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_195_0.37.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_197_0.37",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_197_0.37.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_204_0.35",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_204_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_209_0.34",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_209_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_211_0.34",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_211_0.34.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_215_0.33",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_215_0.33.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_219_0.32",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_219_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_221_0.32",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_221_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_222_0.32",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_222_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_223_0.31",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_223_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_224_0.31",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_224_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_228_0.30",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_228_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_231_0.29",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_231_0.29.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_233_0.28",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_233_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_235_0.27",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_235_0.27.jpg",
+      "durum": "çürük",
+      "guven": 0.92
+    },
+    {
+      "id": "muz_153051_237_0.27",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_237_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_238_0.27",
+      "urun": "Armut",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Armut\\muz_153051_238_0.27.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

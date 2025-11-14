@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\17\\collages\\collage_041.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Muz",
+    "2": "Muz",
+    "3": "Muz",
+    "4": "Muz",
+    "5": "Muz",
+    "6": "Muz",
+    "7": "Muz",
+    "8": "Muz",
+    "9": "Muz",
+    "10": "Muz",
+    "11": "Muz",
+    "12": "Muz",
+    "13": "Muz",
+    "14": "Muz",
+    "15": "Muz",
+    "16": "Muz",
+    "17": "Muz",
+    "18": "Muz",
+    "19": "Muz",
+    "20": "Muz",
+    "21": "Muz",
+    "22": "Muz",
+    "23": "Muz",
+    "24": "Muz",
+    "25": "Muz"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 18,
+        "guven": 0.9
+      },
+      {
+        "id": 20,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "muz_153051_078_0.77",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_078_0.77.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_082_0.76",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_082_0.76.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_083_0.76",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_083_0.76.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_091_0.75",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_091_0.75.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_095_0.74",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_095_0.74.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_096_0.74",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_096_0.74.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_098_0.73",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_098_0.73.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_099_0.73",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_099_0.73.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_102_0.72",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_102_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_114_0.64",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_114_0.64.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_115_0.64",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_115_0.64.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_116_0.63",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_116_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_118_0.62",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_118_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_129_0.57",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_129_0.57.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_133_0.53",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_133_0.53.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_136_0.52",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_136_0.52.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_138_0.52",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_138_0.52.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_153_0.49",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_153_0.49.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "muz_153051_154_0.49",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_154_0.49.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_162_0.47",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_162_0.47.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "muz_153051_168_0.45",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_168_0.45.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_173_0.44",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_173_0.44.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_182_0.41",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_182_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_183_0.40",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_183_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_153051_194_0.37",
+      "urun": "Muz",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Muz\\muz_153051_194_0.37.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

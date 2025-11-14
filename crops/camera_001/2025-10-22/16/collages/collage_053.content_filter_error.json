@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:26:12.300151",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_053.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_196_0.56.jpg",
+      "id": "muz_164710_196_0.56"
+    },
+    {
+      "index": 2,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_238_0.47.jpg",
+      "id": "muz_164710_238_0.47"
+    },
+    {
+      "index": 3,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_241_0.47.jpg",
+      "id": "muz_164710_241_0.47"
+    },
+    {
+      "index": 4,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_291_0.35.jpg",
+      "id": "muz_164710_291_0.35"
+    },
+    {
+      "index": 5,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\mandalina1_164628_066_0.65.jpg",
+      "id": "mandalina1_164628_066_0.65"
+    },
+    {
+      "index": 6,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\mandalina1_164628_067_0.64.jpg",
+      "id": "mandalina1_164628_067_0.64"
+    },
+    {
+      "index": 7,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_044_0.84.jpg",
+      "id": "muz_164710_044_0.84"
+    },
+    {
+      "index": 8,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_102_0.76.jpg",
+      "id": "muz_164710_102_0.76"
+    },
+    {
+      "index": 9,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_129_0.71.jpg",
+      "id": "muz_164710_129_0.71"
+    },
+    {
+      "index": 10,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_133_0.70.jpg",
+      "id": "muz_164710_133_0.70"
+    },
+    {
+      "index": 11,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_160_0.63.jpg",
+      "id": "muz_164710_160_0.63"
+    },
+    {
+      "index": 12,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_178_0.60.jpg",
+      "id": "muz_164710_178_0.60"
+    },
+    {
+      "index": 13,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_185_0.58.jpg",
+      "id": "muz_164710_185_0.58"
+    },
+    {
+      "index": 14,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_186_0.58.jpg",
+      "id": "muz_164710_186_0.58"
+    },
+    {
+      "index": 15,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_190_0.57.jpg",
+      "id": "muz_164710_190_0.57"
+    },
+    {
+      "index": 16,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_197_0.55.jpg",
+      "id": "muz_164710_197_0.55"
+    },
+    {
+      "index": 17,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_198_0.55.jpg",
+      "id": "muz_164710_198_0.55"
+    },
+    {
+      "index": 18,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_207_0.54.jpg",
+      "id": "muz_164710_207_0.54"
+    },
+    {
+      "index": 19,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_211_0.53.jpg",
+      "id": "muz_164710_211_0.53"
+    },
+    {
+      "index": 20,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_215_0.52.jpg",
+      "id": "muz_164710_215_0.52"
+    },
+    {
+      "index": 21,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_229_0.49.jpg",
+      "id": "muz_164710_229_0.49"
+    },
+    {
+      "index": 22,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_248_0.45.jpg",
+      "id": "muz_164710_248_0.45"
+    },
+    {
+      "index": 23,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_260_0.41.jpg",
+      "id": "muz_164710_260_0.41"
+    },
+    {
+      "index": 24,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_275_0.39.jpg",
+      "id": "muz_164710_275_0.39"
+    },
+    {
+      "index": 25,
+      "urun": "Muz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Muz\\muz_164710_278_0.39.jpg",
+      "id": "muz_164710_278_0.39"
+    }
+  ]
+}

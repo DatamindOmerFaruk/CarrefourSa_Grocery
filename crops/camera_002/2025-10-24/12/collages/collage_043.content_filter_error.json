@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T15:21:30.058730",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_002\\2025-10-24\\12\\collages\\collage_043.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum10_123129_071_0.63.jpg",
+      "id": "konum10_123129_071_0.63"
+    },
+    {
+      "index": 2,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum10_123129_077_0.59.jpg",
+      "id": "konum10_123129_077_0.59"
+    },
+    {
+      "index": 3,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum10_123129_082_0.55.jpg",
+      "id": "konum10_123129_082_0.55"
+    },
+    {
+      "index": 4,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum10_123129_085_0.54.jpg",
+      "id": "konum10_123129_085_0.54"
+    },
+    {
+      "index": 5,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_014_0.90.jpg",
+      "id": "konum11_123145_014_0.90"
+    },
+    {
+      "index": 6,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_026_0.83.jpg",
+      "id": "konum11_123145_026_0.83"
+    },
+    {
+      "index": 7,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_027_0.82.jpg",
+      "id": "konum11_123145_027_0.82"
+    },
+    {
+      "index": 8,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_030_0.77.jpg",
+      "id": "konum11_123145_030_0.77"
+    },
+    {
+      "index": 9,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_032_0.75.jpg",
+      "id": "konum11_123145_032_0.75"
+    },
+    {
+      "index": 10,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_033_0.74.jpg",
+      "id": "konum11_123145_033_0.74"
+    },
+    {
+      "index": 11,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_034_0.74.jpg",
+      "id": "konum11_123145_034_0.74"
+    },
+    {
+      "index": 12,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_035_0.72.jpg",
+      "id": "konum11_123145_035_0.72"
+    },
+    {
+      "index": 13,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_038_0.67.jpg",
+      "id": "konum11_123145_038_0.67"
+    },
+    {
+      "index": 14,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_042_0.60.jpg",
+      "id": "konum11_123145_042_0.60"
+    },
+    {
+      "index": 15,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_043_0.59.jpg",
+      "id": "konum11_123145_043_0.59"
+    },
+    {
+      "index": 16,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_044_0.59.jpg",
+      "id": "konum11_123145_044_0.59"
+    },
+    {
+      "index": 17,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_045_0.56.jpg",
+      "id": "konum11_123145_045_0.56"
+    },
+    {
+      "index": 18,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_046_0.54.jpg",
+      "id": "konum11_123145_046_0.54"
+    },
+    {
+      "index": 19,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_048_0.48.jpg",
+      "id": "konum11_123145_048_0.48"
+    },
+    {
+      "index": 20,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_049_0.46.jpg",
+      "id": "konum11_123145_049_0.46"
+    },
+    {
+      "index": 21,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_050_0.44.jpg",
+      "id": "konum11_123145_050_0.44"
+    },
+    {
+      "index": 22,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum11_123145_054_0.39.jpg",
+      "id": "konum11_123145_054_0.39"
+    },
+    {
+      "index": 23,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum15_123248_001_0.89.jpg",
+      "id": "konum15_123248_001_0.89"
+    },
+    {
+      "index": 24,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum15_123248_004_0.85.jpg",
+      "id": "konum15_123248_004_0.85"
+    },
+    {
+      "index": 25,
+      "urun": "Portakal",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Portakal\\konum15_123248_005_0.85.jpg",
+      "id": "konum15_123248_005_0.85"
+    }
+  ]
+}

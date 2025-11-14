@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:08:50.104273",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_024.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_019_0.83.jpg",
+      "id": "mandalina1_164628_019_0.83"
+    },
+    {
+      "index": 2,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_020_0.83.jpg",
+      "id": "mandalina1_164628_020_0.83"
+    },
+    {
+      "index": 3,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_023_0.80.jpg",
+      "id": "mandalina1_164628_023_0.80"
+    },
+    {
+      "index": 4,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_024_0.80.jpg",
+      "id": "mandalina1_164628_024_0.80"
+    },
+    {
+      "index": 5,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_025_0.79.jpg",
+      "id": "mandalina1_164628_025_0.79"
+    },
+    {
+      "index": 6,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_031_0.78.jpg",
+      "id": "mandalina1_164628_031_0.78"
+    },
+    {
+      "index": 7,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_033_0.77.jpg",
+      "id": "mandalina1_164628_033_0.77"
+    },
+    {
+      "index": 8,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_039_0.74.jpg",
+      "id": "mandalina1_164628_039_0.74"
+    },
+    {
+      "index": 9,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_046_0.72.jpg",
+      "id": "mandalina1_164628_046_0.72"
+    },
+    {
+      "index": 10,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_047_0.72.jpg",
+      "id": "mandalina1_164628_047_0.72"
+    },
+    {
+      "index": 11,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_054_0.69.jpg",
+      "id": "mandalina1_164628_054_0.69"
+    },
+    {
+      "index": 12,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_057_0.68.jpg",
+      "id": "mandalina1_164628_057_0.68"
+    },
+    {
+      "index": 13,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_061_0.67.jpg",
+      "id": "mandalina1_164628_061_0.67"
+    },
+    {
+      "index": 14,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_069_0.63.jpg",
+      "id": "mandalina1_164628_069_0.63"
+    },
+    {
+      "index": 15,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_071_0.63.jpg",
+      "id": "mandalina1_164628_071_0.63"
+    },
+    {
+      "index": 16,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_073_0.61.jpg",
+      "id": "mandalina1_164628_073_0.61"
+    },
+    {
+      "index": 17,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_074_0.61.jpg",
+      "id": "mandalina1_164628_074_0.61"
+    },
+    {
+      "index": 18,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_075_0.60.jpg",
+      "id": "mandalina1_164628_075_0.60"
+    },
+    {
+      "index": 19,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_081_0.58.jpg",
+      "id": "mandalina1_164628_081_0.58"
+    },
+    {
+      "index": 20,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_084_0.57.jpg",
+      "id": "mandalina1_164628_084_0.57"
+    },
+    {
+      "index": 21,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_088_0.56.jpg",
+      "id": "mandalina1_164628_088_0.56"
+    },
+    {
+      "index": 22,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_089_0.56.jpg",
+      "id": "mandalina1_164628_089_0.56"
+    },
+    {
+      "index": 23,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_094_0.53.jpg",
+      "id": "mandalina1_164628_094_0.53"
+    },
+    {
+      "index": 24,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_095_0.53.jpg",
+      "id": "mandalina1_164628_095_0.53"
+    },
+    {
+      "index": 25,
+      "urun": "Karpuz",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Karpuz\\mandalina1_164628_099_0.51.jpg",
+      "id": "mandalina1_164628_099_0.51"
+    }
+  ]
+}

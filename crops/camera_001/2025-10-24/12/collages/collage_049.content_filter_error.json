@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T14:45:27.468740",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_049.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_076_0.84.jpg",
+      "id": "karpuz_122644_076_0.84"
+    },
+    {
+      "index": 2,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_077_0.84.jpg",
+      "id": "karpuz_122644_077_0.84"
+    },
+    {
+      "index": 3,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_078_0.84.jpg",
+      "id": "karpuz_122644_078_0.84"
+    },
+    {
+      "index": 4,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_079_0.84.jpg",
+      "id": "karpuz_122644_079_0.84"
+    },
+    {
+      "index": 5,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_080_0.84.jpg",
+      "id": "karpuz_122644_080_0.84"
+    },
+    {
+      "index": 6,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_081_0.84.jpg",
+      "id": "karpuz_122644_081_0.84"
+    },
+    {
+      "index": 7,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_082_0.84.jpg",
+      "id": "karpuz_122644_082_0.84"
+    },
+    {
+      "index": 8,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_083_0.84.jpg",
+      "id": "karpuz_122644_083_0.84"
+    },
+    {
+      "index": 9,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_084_0.84.jpg",
+      "id": "karpuz_122644_084_0.84"
+    },
+    {
+      "index": 10,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_085_0.84.jpg",
+      "id": "karpuz_122644_085_0.84"
+    },
+    {
+      "index": 11,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_086_0.84.jpg",
+      "id": "karpuz_122644_086_0.84"
+    },
+    {
+      "index": 12,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_087_0.84.jpg",
+      "id": "karpuz_122644_087_0.84"
+    },
+    {
+      "index": 13,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_088_0.84.jpg",
+      "id": "karpuz_122644_088_0.84"
+    },
+    {
+      "index": 14,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_089_0.84.jpg",
+      "id": "karpuz_122644_089_0.84"
+    },
+    {
+      "index": 15,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_090_0.84.jpg",
+      "id": "karpuz_122644_090_0.84"
+    },
+    {
+      "index": 16,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_091_0.84.jpg",
+      "id": "karpuz_122644_091_0.84"
+    },
+    {
+      "index": 17,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_092_0.84.jpg",
+      "id": "karpuz_122644_092_0.84"
+    },
+    {
+      "index": 18,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_093_0.84.jpg",
+      "id": "karpuz_122644_093_0.84"
+    },
+    {
+      "index": 19,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_094_0.84.jpg",
+      "id": "karpuz_122644_094_0.84"
+    },
+    {
+      "index": 20,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_095_0.84.jpg",
+      "id": "karpuz_122644_095_0.84"
+    },
+    {
+      "index": 21,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_096_0.84.jpg",
+      "id": "karpuz_122644_096_0.84"
+    },
+    {
+      "index": 22,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_097_0.83.jpg",
+      "id": "karpuz_122644_097_0.83"
+    },
+    {
+      "index": 23,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_098_0.83.jpg",
+      "id": "karpuz_122644_098_0.83"
+    },
+    {
+      "index": 24,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_099_0.83.jpg",
+      "id": "karpuz_122644_099_0.83"
+    },
+    {
+      "index": 25,
+      "urun": "Portakal",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Portakal\\karpuz_122644_100_0.83.jpg",
+      "id": "karpuz_122644_100_0.83"
+    }
+  ]
+}

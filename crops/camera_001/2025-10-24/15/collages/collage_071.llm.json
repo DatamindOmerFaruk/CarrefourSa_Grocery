@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_071.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Salatalik",
+    "2": "Salatalik",
+    "3": "Salatalik",
+    "4": "Salatalik",
+    "5": "Salatalik",
+    "6": "Salatalik",
+    "7": "Salatalik",
+    "8": "Salatalik",
+    "9": "Salatalik",
+    "10": "Salatalik",
+    "11": "Salatalik",
+    "12": "Salatalik",
+    "13": "Salatalik",
+    "14": "Salatalik",
+    "15": "Salatalik",
+    "16": "Salatalik",
+    "17": "Salatalik",
+    "18": "Salatalik",
+    "19": "Salatalik",
+    "20": "Salatalik",
+    "21": "Salatalik",
+    "22": "Salatalik",
+    "23": "Salatalik",
+    "24": "Salatalik",
+    "25": "Salatalik"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 20,
+        "guven": 0.92
+      },
+      {
+        "id": 24,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "salkım_153112_216_0.65",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_216_0.65.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_217_0.64",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_217_0.64.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_219_0.64",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_219_0.64.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_220_0.64",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_220_0.64.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_221_0.63",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_221_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_222_0.63",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_222_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_223_0.63",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_223_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_227_0.62",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_227_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_228_0.62",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_228_0.62.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_229_0.61",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_229_0.61.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_231_0.61",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_231_0.61.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_235_0.60",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_235_0.60.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_236_0.60",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_236_0.60.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_237_0.59",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_237_0.59.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_238_0.59",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_238_0.59.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_240_0.59",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_240_0.59.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_242_0.59",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_242_0.59.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_243_0.58",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_243_0.58.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_244_0.58",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_244_0.58.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_245_0.58",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_245_0.58.jpg",
+      "durum": "çürük",
+      "guven": 0.92
+    },
+    {
+      "id": "salkım_153112_246_0.58",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_246_0.58.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_248_0.58",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_248_0.58.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_250_0.57",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_250_0.57.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_251_0.57",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_251_0.57.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "salkım_153112_253_0.57",
+      "urun": "Salatalik",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\Salatalik\\salkım_153112_253_0.57.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

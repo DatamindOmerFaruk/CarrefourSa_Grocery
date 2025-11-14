@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T14:25:00.860497",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_005.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Armut",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Armut\\muz_122749_277_0.41.jpg",
+      "id": "muz_122749_277_0.41"
+    },
+    {
+      "index": 2,
+      "urun": "Armut",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Armut\\muz_122749_278_0.41.jpg",
+      "id": "muz_122749_278_0.41"
+    },
+    {
+      "index": 3,
+      "urun": "Armut",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Armut\\muz_122749_283_0.39.jpg",
+      "id": "muz_122749_283_0.39"
+    },
+    {
+      "index": 4,
+      "urun": "Armut",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Armut\\muz_122749_288_0.38.jpg",
+      "id": "muz_122749_288_0.38"
+    },
+    {
+      "index": 5,
+      "urun": "Armut",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Armut\\muz_122749_295_0.36.jpg",
+      "id": "muz_122749_295_0.36"
+    },
+    {
+      "index": 6,
+      "urun": "Armut",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Armut\\muz_122749_297_0.36.jpg",
+      "id": "muz_122749_297_0.36"
+    },
+    {
+      "index": 7,
+      "urun": "Armut",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Armut\\muz_122749_298_0.35.jpg",
+      "id": "muz_122749_298_0.35"
+    },
+    {
+      "index": 8,
+      "urun": "Armut",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Armut\\muz_122749_299_0.35.jpg",
+      "id": "muz_122749_299_0.35"
+    },
+    {
+      "index": 9,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_051_0.84.jpg",
+      "id": "muz_122749_051_0.84"
+    },
+    {
+      "index": 10,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_119_0.74.jpg",
+      "id": "muz_122749_119_0.74"
+    },
+    {
+      "index": 11,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_134_0.71.jpg",
+      "id": "muz_122749_134_0.71"
+    },
+    {
+      "index": 12,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_179_0.62.jpg",
+      "id": "muz_122749_179_0.62"
+    },
+    {
+      "index": 13,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_198_0.58.jpg",
+      "id": "muz_122749_198_0.58"
+    },
+    {
+      "index": 14,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_220_0.53.jpg",
+      "id": "muz_122749_220_0.53"
+    },
+    {
+      "index": 15,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_258_0.45.jpg",
+      "id": "muz_122749_258_0.45"
+    },
+    {
+      "index": 16,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_264_0.44.jpg",
+      "id": "muz_122749_264_0.44"
+    },
+    {
+      "index": 17,
+      "urun": "Avokado",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Avokado\\muz_122749_284_0.39.jpg",
+      "id": "muz_122749_284_0.39"
+    },
+    {
+      "index": 18,
+      "urun": "Dolmalik Biber",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Dolmalik Biber\\biber_122822_000_0.92.jpg",
+      "id": "biber_122822_000_0.92"
+    },
+    {
+      "index": 19,
+      "urun": "Dolmalik Biber",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Dolmalik Biber\\biber_122822_001_0.92.jpg",
+      "id": "biber_122822_001_0.92"
+    },
+    {
+      "index": 20,
+      "urun": "Dolmalik Biber",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Dolmalik Biber\\biber_122822_002_0.92.jpg",
+      "id": "biber_122822_002_0.92"
+    },
+    {
+      "index": 21,
+      "urun": "Dolmalik Biber",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Dolmalik Biber\\biber_122822_003_0.92.jpg",
+      "id": "biber_122822_003_0.92"
+    },
+    {
+      "index": 22,
+      "urun": "Dolmalik Biber",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Dolmalik Biber\\biber_122822_004_0.92.jpg",
+      "id": "biber_122822_004_0.92"
+    },
+    {
+      "index": 23,
+      "urun": "Dolmalik Biber",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Dolmalik Biber\\biber_122822_005_0.92.jpg",
+      "id": "biber_122822_005_0.92"
+    },
+    {
+      "index": 24,
+      "urun": "Dolmalik Biber",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Dolmalik Biber\\biber_122822_006_0.91.jpg",
+      "id": "biber_122822_006_0.91"
+    },
+    {
+      "index": 25,
+      "urun": "Dolmalik Biber",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Dolmalik Biber\\biber_122822_007_0.91.jpg",
+      "id": "biber_122822_007_0.91"
+    }
+  ]
+}

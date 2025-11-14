@@ -1,0 +1,271 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_009.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v1",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Dolmalik Biber",
+    "2": "Dolmalik Biber",
+    "3": "Dolmalik Biber",
+    "4": "Dolmalik Biber",
+    "5": "Dolmalik Biber",
+    "6": "Dolmalik Biber",
+    "7": "Dolmalik Biber",
+    "8": "Dolmalik Biber",
+    "9": "Dolmalik Biber",
+    "10": "Dolmalik Biber",
+    "11": "Dolmalik Biber",
+    "12": "Dolmalik Biber",
+    "13": "Dolmalik Biber",
+    "14": "Dolmalik Biber",
+    "15": "Dolmalik Biber",
+    "16": "Dolmalik Biber",
+    "17": "Dolmalik Biber",
+    "18": "Domates",
+    "19": "Domates",
+    "20": "Domates",
+    "21": "Domates",
+    "22": "Domates",
+    "23": "Domates",
+    "24": "Domates",
+    "25": "Domates"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 23,
+        "guven": 0.92
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "biber_164753_222_0.40",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_222_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_224_0.39",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_224_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_226_0.39",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_226_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_227_0.38",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_227_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_228_0.38",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_228_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_237_0.36",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_237_0.36.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_242_0.35",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_242_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_243_0.31",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_243_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_244_0.31",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_244_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_245_0.31",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_245_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_248_0.30",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_248_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_250_0.30",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_250_0.30.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_252_0.28",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_252_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_255_0.28",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_255_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_259_0.27",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_259_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_265_0.26",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_265_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_268_0.25",
+      "urun": "Dolmalik Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Dolmalik Biber\\biber_164753_268_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_164731_035_0.83",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_035_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_164731_045_0.81",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_045_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_164731_047_0.81",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_047_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_164731_051_0.81",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_051_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_164731_054_0.81",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_054_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_164731_055_0.81",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_055_0.81.jpg",
+      "durum": "çürük",
+      "guven": 0.92
+    },
+    {
+      "id": "salkım_164731_058_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_058_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_164731_059_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Domates\\salkım_164731_059_0.80.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

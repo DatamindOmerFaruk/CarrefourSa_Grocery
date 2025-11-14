@@ -1,0 +1,929 @@
+id,urun,magaza,tarih,saat,durum,guven,dosya
+konum12_153621_024_0.38,Ananas,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ananas\konum12_153621_024_0.38.jpg
+konum12_153621_044_0.25,Ananas,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ananas\konum12_153621_044_0.25.jpg
+konum16_153745_056_0.70,Ananas,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ananas\konum16_153745_056_0.70.jpg
+konum16_153745_103_0.38,Ananas,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ananas\konum16_153745_103_0.38.jpg
+konum16_153745_129_0.26,Ananas,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ananas\konum16_153745_129_0.26.jpg
+konum16_153745_130_0.26,Ananas,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ananas\konum16_153745_130_0.26.jpg
+konum12_153621_001_0.81,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum12_153621_001_0.81.jpg
+konum12_153621_005_0.70,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Armut\konum12_153621_005_0.70.jpg
+konum12_153621_008_0.64,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum12_153621_008_0.64.jpg
+konum12_153621_010_0.59,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum12_153621_010_0.59.jpg
+konum12_153621_011_0.59,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum12_153621_011_0.59.jpg
+konum12_153621_022_0.40,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum12_153621_022_0.40.jpg
+konum12_153621_036_0.28,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum12_153621_036_0.28.jpg
+konum12_153621_042_0.26,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum12_153621_042_0.26.jpg
+konum12_153621_045_0.25,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum12_153621_045_0.25.jpg
+konum13_153642_013_0.47,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum13_153642_013_0.47.jpg
+konum13_153642_014_0.45,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum13_153642_014_0.45.jpg
+konum13_153642_015_0.44,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum13_153642_015_0.44.jpg
+konum13_153642_019_0.31,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum13_153642_019_0.31.jpg
+konum13_153642_020_0.31,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum13_153642_020_0.31.jpg
+konum14_153703_005_0.71,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_005_0.71.jpg
+konum14_153703_007_0.66,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_007_0.66.jpg
+konum14_153703_008_0.63,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_008_0.63.jpg
+konum14_153703_009_0.62,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_009_0.62.jpg
+konum14_153703_014_0.59,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_014_0.59.jpg
+konum14_153703_017_0.56,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_017_0.56.jpg
+konum14_153703_018_0.52,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_018_0.52.jpg
+konum14_153703_021_0.50,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_021_0.50.jpg
+konum14_153703_022_0.49,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_022_0.49.jpg
+konum14_153703_027_0.47,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_027_0.47.jpg
+konum14_153703_034_0.42,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_034_0.42.jpg
+konum14_153703_036_0.40,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_036_0.40.jpg
+konum14_153703_041_0.39,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_041_0.39.jpg
+konum14_153703_043_0.38,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_043_0.38.jpg
+konum14_153703_046_0.35,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_046_0.35.jpg
+konum14_153703_048_0.35,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_048_0.35.jpg
+konum14_153703_049_0.34,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_049_0.34.jpg
+konum14_153703_050_0.32,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_050_0.32.jpg
+konum14_153703_051_0.32,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_051_0.32.jpg
+konum14_153703_056_0.30,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_056_0.30.jpg
+konum14_153703_057_0.30,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Armut\konum14_153703_057_0.30.jpg
+konum14_153703_058_0.30,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_058_0.30.jpg
+konum14_153703_059_0.28,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_059_0.28.jpg
+konum14_153703_064_0.26,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum14_153703_064_0.26.jpg
+konum15_153724_047_0.56,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum15_153724_047_0.56.jpg
+konum20_153908_010_0.32,Armut,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Armut\konum20_153908_010_0.32.jpg
+konum14_153703_062_0.27,Avokado,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Avokado\konum14_153703_062_0.27.jpg
+konum14_153703_066_0.26,Avokado,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Avokado\konum14_153703_066_0.26.jpg
+konum2_153255_020_0.29,Avokado,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Avokado\konum2_153255_020_0.29.jpg
+konum12_153621_009_0.61,Ayva,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ayva\konum12_153621_009_0.61.jpg
+konum12_153621_013_0.52,Ayva,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ayva\konum12_153621_013_0.52.jpg
+konum12_153621_020_0.41,Ayva,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ayva\konum12_153621_020_0.41.jpg
+konum12_153621_025_0.37,Ayva,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ayva\konum12_153621_025_0.37.jpg
+konum12_153621_033_0.32,Ayva,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ayva\konum12_153621_033_0.32.jpg
+konum12_153621_035_0.28,Ayva,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Ayva\konum12_153621_035_0.28.jpg
+konum12_153621_041_0.26,Ayva,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ayva\konum12_153621_041_0.26.jpg
+konum12_153621_029_0.36,Butternut Squash,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Butternut Squash\konum12_153621_029_0.36.jpg
+konum20_153908_002_0.63,Butternut Squash,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Butternut Squash\konum20_153908_002_0.63.jpg
+konum10_153540_000_0.92,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_000_0.92.jpg
+konum10_153540_001_0.92,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_001_0.92.jpg
+konum10_153540_002_0.92,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_002_0.92.jpg
+konum10_153540_003_0.91,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_003_0.91.jpg
+konum10_153540_004_0.91,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_004_0.91.jpg
+konum10_153540_005_0.91,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_005_0.91.jpg
+konum10_153540_006_0.91,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_006_0.91.jpg
+konum10_153540_007_0.91,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_007_0.91.jpg
+konum10_153540_008_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_008_0.90.jpg
+konum10_153540_009_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_009_0.90.jpg
+konum10_153540_010_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_010_0.90.jpg
+konum10_153540_011_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_011_0.90.jpg
+konum10_153540_012_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_012_0.90.jpg
+konum10_153540_013_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_013_0.90.jpg
+konum10_153540_014_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_014_0.90.jpg
+konum10_153540_015_0.89,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_015_0.89.jpg
+konum10_153540_016_0.89,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_016_0.89.jpg
+konum10_153540_017_0.89,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_017_0.89.jpg
+konum10_153540_018_0.89,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_018_0.89.jpg
+konum10_153540_019_0.88,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_019_0.88.jpg
+konum10_153540_022_0.87,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_022_0.87.jpg
+konum10_153540_023_0.86,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_023_0.86.jpg
+konum10_153540_024_0.86,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_024_0.86.jpg
+konum10_153540_026_0.85,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_026_0.85.jpg
+konum10_153540_028_0.84,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_028_0.84.jpg
+konum10_153540_030_0.84,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_030_0.84.jpg
+konum10_153540_033_0.82,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_033_0.82.jpg
+konum10_153540_034_0.80,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_034_0.80.jpg
+konum10_153540_036_0.79,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_036_0.79.jpg
+konum10_153540_039_0.76,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_039_0.76.jpg
+konum10_153540_040_0.75,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_040_0.75.jpg
+konum10_153540_041_0.75,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_041_0.75.jpg
+konum10_153540_042_0.75,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_042_0.75.jpg
+konum10_153540_046_0.71,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_046_0.71.jpg
+konum10_153540_047_0.69,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_047_0.69.jpg
+konum10_153540_048_0.69,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_048_0.69.jpg
+konum10_153540_053_0.64,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_053_0.64.jpg
+konum10_153540_054_0.64,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_054_0.64.jpg
+konum10_153540_055_0.64,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_055_0.64.jpg
+konum10_153540_057_0.62,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_057_0.62.jpg
+konum10_153540_059_0.62,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_059_0.62.jpg
+konum10_153540_063_0.59,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_063_0.59.jpg
+konum10_153540_070_0.51,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_070_0.51.jpg
+konum10_153540_071_0.51,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_071_0.51.jpg
+konum10_153540_072_0.51,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_072_0.51.jpg
+konum10_153540_075_0.49,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_075_0.49.jpg
+konum10_153540_076_0.49,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_076_0.49.jpg
+konum10_153540_079_0.47,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_079_0.47.jpg
+konum10_153540_081_0.43,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_081_0.43.jpg
+konum10_153540_082_0.42,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_082_0.42.jpg
+konum10_153540_083_0.41,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_083_0.41.jpg
+konum10_153540_087_0.36,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_087_0.36.jpg
+konum10_153540_089_0.34,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_089_0.34.jpg
+konum10_153540_091_0.34,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_091_0.34.jpg
+konum10_153540_092_0.33,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_092_0.33.jpg
+konum10_153540_093_0.32,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_093_0.32.jpg
+konum10_153540_094_0.32,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_094_0.32.jpg
+konum10_153540_095_0.31,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_095_0.31.jpg
+konum10_153540_096_0.30,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_096_0.30.jpg
+konum10_153540_097_0.30,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_097_0.30.jpg
+konum10_153540_103_0.27,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_103_0.27.jpg
+konum10_153540_104_0.27,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum10_153540_104_0.27.jpg
+konum11_153600_006_0.92,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Domates\konum11_153600_006_0.92.jpg
+konum11_153600_015_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_015_0.90.jpg
+konum11_153600_017_0.89,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_017_0.89.jpg
+konum11_153600_019_0.87,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_019_0.87.jpg
+konum11_153600_020_0.86,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_020_0.86.jpg
+konum11_153600_021_0.86,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_021_0.86.jpg
+konum11_153600_022_0.85,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_022_0.85.jpg
+konum11_153600_023_0.85,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_023_0.85.jpg
+konum11_153600_035_0.73,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_035_0.73.jpg
+konum11_153600_044_0.51,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_044_0.51.jpg
+konum11_153600_047_0.44,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_047_0.44.jpg
+konum11_153600_055_0.28,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.95,crops\camera_002\2025-10-24\17\Domates\konum11_153600_055_0.28.jpg
+konum11_153600_057_0.27,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum11_153600_057_0.27.jpg
+konum12_153621_028_0.36,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Domates\konum12_153621_028_0.36.jpg
+konum16_153745_005_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_005_0.90.jpg
+konum16_153745_006_0.89,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_006_0.89.jpg
+konum16_153745_014_0.88,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.88,crops\camera_002\2025-10-24\17\Domates\konum16_153745_014_0.88.jpg
+konum16_153745_017_0.87,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_017_0.87.jpg
+konum16_153745_018_0.87,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_018_0.87.jpg
+konum16_153745_028_0.83,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_028_0.83.jpg
+konum16_153745_036_0.81,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_036_0.81.jpg
+konum16_153745_060_0.67,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_060_0.67.jpg
+konum16_153745_069_0.62,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_069_0.62.jpg
+konum16_153745_084_0.51,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_084_0.51.jpg
+konum16_153745_094_0.44,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_094_0.44.jpg
+konum16_153745_098_0.42,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_098_0.42.jpg
+konum16_153745_114_0.30,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_114_0.30.jpg
+konum16_153745_123_0.28,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum16_153745_123_0.28.jpg
+konum17_153805_027_0.39,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum17_153805_027_0.39.jpg
+konum18_153826_000_0.92,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_000_0.92.jpg
+konum18_153826_001_0.91,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_001_0.91.jpg
+konum18_153826_002_0.91,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_002_0.91.jpg
+konum18_153826_003_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_003_0.90.jpg
+konum18_153826_004_0.90,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_004_0.90.jpg
+konum18_153826_006_0.89,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_006_0.89.jpg
+konum18_153826_007_0.89,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_007_0.89.jpg
+konum18_153826_009_0.87,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Domates\konum18_153826_009_0.87.jpg
+konum18_153826_012_0.86,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.87,crops\camera_002\2025-10-24\17\Domates\konum18_153826_012_0.86.jpg
+konum18_153826_013_0.85,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_013_0.85.jpg
+konum18_153826_016_0.85,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_016_0.85.jpg
+konum18_153826_018_0.84,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_018_0.84.jpg
+konum18_153826_021_0.83,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_021_0.83.jpg
+konum18_153826_025_0.81,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_025_0.81.jpg
+konum18_153826_034_0.77,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_034_0.77.jpg
+konum18_153826_051_0.66,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_051_0.66.jpg
+konum18_153826_067_0.57,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_067_0.57.jpg
+konum18_153826_068_0.57,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_068_0.57.jpg
+konum18_153826_072_0.52,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_072_0.52.jpg
+konum18_153826_078_0.46,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum18_153826_078_0.46.jpg
+konum19_153847_002_0.51,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum19_153847_002_0.51.jpg
+konum3_153316_000_0.88,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum3_153316_000_0.88.jpg
+konum3_153316_002_0.72,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum3_153316_002_0.72.jpg
+konum3_153316_003_0.66,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum3_153316_003_0.66.jpg
+konum3_153316_004_0.53,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum3_153316_004_0.53.jpg
+konum3_153316_008_0.49,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum3_153316_008_0.49.jpg
+konum3_153316_021_0.30,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum3_153316_021_0.30.jpg
+konum3_153316_022_0.28,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum3_153316_022_0.28.jpg
+konum5_153356_035_0.79,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_035_0.79.jpg
+konum5_153356_050_0.75,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_050_0.75.jpg
+konum5_153356_051_0.74,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_051_0.74.jpg
+konum5_153356_066_0.61,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_066_0.61.jpg
+konum5_153356_067_0.59,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_067_0.59.jpg
+konum5_153356_070_0.55,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Domates\konum5_153356_070_0.55.jpg
+konum5_153356_072_0.54,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.89,crops\camera_002\2025-10-24\17\Domates\konum5_153356_072_0.54.jpg
+konum5_153356_085_0.44,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_085_0.44.jpg
+konum5_153356_086_0.44,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_086_0.44.jpg
+konum5_153356_087_0.42,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_087_0.42.jpg
+konum5_153356_091_0.41,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_091_0.41.jpg
+konum5_153356_093_0.40,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_093_0.40.jpg
+konum5_153356_101_0.26,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum5_153356_101_0.26.jpg
+konum6_153417_015_0.72,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum6_153417_015_0.72.jpg
+konum6_153417_036_0.36,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum6_153417_036_0.36.jpg
+konum6_153417_039_0.34,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum6_153417_039_0.34.jpg
+konum6_153417_048_0.25,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum6_153417_048_0.25.jpg
+konum9_153519_023_0.63,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum9_153519_023_0.63.jpg
+konum9_153519_029_0.56,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum9_153519_029_0.56.jpg
+konum9_153519_030_0.50,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum9_153519_030_0.50.jpg
+konum9_153519_037_0.40,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum9_153519_037_0.40.jpg
+konum9_153519_040_0.34,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum9_153519_040_0.34.jpg
+konum9_153519_046_0.28,Domates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Domates\konum9_153519_046_0.28.jpg
+konum15_153724_070_0.42,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_070_0.42.jpg
+konum15_153724_072_0.40,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_072_0.40.jpg
+konum15_153724_074_0.37,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_074_0.37.jpg
+konum15_153724_079_0.32,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_079_0.32.jpg
+konum15_153724_085_0.29,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_085_0.29.jpg
+konum15_153724_087_0.27,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_087_0.27.jpg
+konum15_153724_089_0.27,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_089_0.27.jpg
+konum15_153724_091_0.26,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_091_0.26.jpg
+konum15_153724_092_0.26,Ejder Meyvesi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Ejder Meyvesi\konum15_153724_092_0.26.jpg
+konum10_153540_020_0.87,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_020_0.87.jpg
+konum10_153540_021_0.87,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_021_0.87.jpg
+konum10_153540_027_0.84,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_027_0.84.jpg
+konum10_153540_029_0.84,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_029_0.84.jpg
+konum10_153540_031_0.84,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_031_0.84.jpg
+konum10_153540_032_0.84,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_032_0.84.jpg
+konum10_153540_035_0.79,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_035_0.79.jpg
+konum10_153540_037_0.76,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_037_0.76.jpg
+konum10_153540_038_0.76,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_038_0.76.jpg
+konum10_153540_043_0.74,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_043_0.74.jpg
+konum10_153540_044_0.74,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_044_0.74.jpg
+konum10_153540_049_0.69,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_049_0.69.jpg
+konum10_153540_052_0.64,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_052_0.64.jpg
+konum10_153540_062_0.59,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_062_0.59.jpg
+konum10_153540_066_0.54,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_066_0.54.jpg
+konum10_153540_067_0.53,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_067_0.53.jpg
+konum10_153540_073_0.51,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_073_0.51.jpg
+konum10_153540_074_0.50,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_074_0.50.jpg
+konum10_153540_086_0.37,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_086_0.37.jpg
+konum10_153540_090_0.34,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_090_0.34.jpg
+konum10_153540_100_0.28,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_100_0.28.jpg
+konum10_153540_101_0.27,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_101_0.27.jpg
+konum10_153540_107_0.26,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum10_153540_107_0.26.jpg
+konum16_153745_004_0.90,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum16_153745_004_0.90.jpg
+konum16_153745_089_0.49,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum16_153745_089_0.49.jpg
+konum16_153745_125_0.27,Elma,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Elma\konum16_153745_125_0.27.jpg
+konum12_153621_039_0.27,gobek marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\gobek marul\konum12_153621_039_0.27.jpg
+konum13_153642_023_0.29,gobek marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\gobek marul\konum13_153642_023_0.29.jpg
+konum3_153316_025_0.27,gobek marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\gobek marul\konum3_153316_025_0.27.jpg
+konum8_153458_002_0.87,gobek marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\gobek marul\konum8_153458_002_0.87.jpg
+konum8_153458_007_0.72,gobek marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\gobek marul\konum8_153458_007_0.72.jpg
+konum8_153458_014_0.57,gobek marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\gobek marul\konum8_153458_014_0.57.jpg
+konum8_153458_021_0.38,gobek marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\gobek marul\konum8_153458_021_0.38.jpg
+konum8_153458_023_0.34,gobek marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\gobek marul\konum8_153458_023_0.34.jpg
+konum11_153600_053_0.30,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum11_153600_053_0.30.jpg
+konum15_153724_027_0.70,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum15_153724_027_0.70.jpg
+konum15_153724_036_0.64,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum15_153724_036_0.64.jpg
+konum15_153724_038_0.62,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum15_153724_038_0.62.jpg
+konum15_153724_044_0.57,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum15_153724_044_0.57.jpg
+konum15_153724_077_0.34,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum15_153724_077_0.34.jpg
+konum16_153745_003_0.90,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_003_0.90.jpg
+konum16_153745_065_0.64,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_065_0.64.jpg
+konum16_153745_068_0.63,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_068_0.63.jpg
+konum16_153745_070_0.61,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_070_0.61.jpg
+konum16_153745_071_0.60,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_071_0.60.jpg
+konum16_153745_072_0.60,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_072_0.60.jpg
+konum16_153745_076_0.58,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_076_0.58.jpg
+konum16_153745_080_0.52,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_080_0.52.jpg
+konum16_153745_081_0.52,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_081_0.52.jpg
+konum16_153745_083_0.51,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_083_0.51.jpg
+konum16_153745_085_0.50,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_085_0.50.jpg
+konum16_153745_104_0.38,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_104_0.38.jpg
+konum16_153745_113_0.30,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_113_0.30.jpg
+konum16_153745_117_0.28,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_117_0.28.jpg
+konum16_153745_118_0.28,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_118_0.28.jpg
+konum16_153745_124_0.28,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum16_153745_124_0.28.jpg
+konum18_153826_014_0.85,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_014_0.85.jpg
+konum18_153826_031_0.79,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_031_0.79.jpg
+konum18_153826_038_0.73,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_038_0.73.jpg
+konum18_153826_042_0.71,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_042_0.71.jpg
+konum18_153826_049_0.68,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_049_0.68.jpg
+konum18_153826_054_0.63,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_054_0.63.jpg
+konum18_153826_061_0.60,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_061_0.60.jpg
+konum18_153826_070_0.53,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_070_0.53.jpg
+konum18_153826_076_0.47,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_076_0.47.jpg
+konum18_153826_090_0.33,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum18_153826_090_0.33.jpg
+konum5_153356_060_0.65,Hindistan Cevizi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Hindistan Cevizi\konum5_153356_060_0.65.jpg
+konum18_153826_079_0.45,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum18_153826_079_0.45.jpg
+konum18_153826_091_0.32,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum18_153826_091_0.32.jpg
+konum19_153847_000_0.64,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum19_153847_000_0.64.jpg
+konum2_153255_011_0.43,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum2_153255_011_0.43.jpg
+konum3_153316_001_0.76,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_001_0.76.jpg
+konum3_153316_005_0.53,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_005_0.53.jpg
+konum3_153316_006_0.52,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.87,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_006_0.52.jpg
+konum3_153316_007_0.51,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_007_0.51.jpg
+konum3_153316_009_0.48,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_009_0.48.jpg
+konum3_153316_010_0.44,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_010_0.44.jpg
+konum3_153316_011_0.42,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_011_0.42.jpg
+konum3_153316_014_0.39,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.88,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_014_0.39.jpg
+konum3_153316_015_0.37,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_015_0.37.jpg
+konum3_153316_016_0.37,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_016_0.37.jpg
+konum3_153316_019_0.33,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_019_0.33.jpg
+konum3_153316_020_0.32,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_020_0.32.jpg
+konum3_153316_023_0.28,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_023_0.28.jpg
+konum3_153316_024_0.27,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_024_0.27.jpg
+konum3_153316_026_0.26,Kabak,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kabak\konum3_153316_026_0.26.jpg
+konum14_153703_026_0.48,Karpuz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Karpuz\konum14_153703_026_0.48.jpg
+konum14_153703_039_0.39,Karpuz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Karpuz\konum14_153703_039_0.39.jpg
+konum14_153703_054_0.31,Karpuz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Karpuz\konum14_153703_054_0.31.jpg
+konum18_153826_074_0.49,Karpuz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Karpuz\konum18_153826_074_0.49.jpg
+konum18_153826_088_0.35,Karpuz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Karpuz\konum18_153826_088_0.35.jpg
+konum2_153255_013_0.43,Karpuz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Karpuz\konum2_153255_013_0.43.jpg
+konum2_153255_018_0.32,Karpuz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Karpuz\konum2_153255_018_0.32.jpg
+konum5_153356_073_0.54,Karpuz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Karpuz\konum5_153356_073_0.54.jpg
+konum10_153540_051_0.65,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum10_153540_051_0.65.jpg
+konum10_153540_058_0.62,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum10_153540_058_0.62.jpg
+konum10_153540_064_0.57,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum10_153540_064_0.57.jpg
+konum10_153540_069_0.52,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum10_153540_069_0.52.jpg
+konum10_153540_088_0.35,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum10_153540_088_0.35.jpg
+konum10_153540_099_0.28,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum10_153540_099_0.28.jpg
+konum10_153540_106_0.26,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum10_153540_106_0.26.jpg
+konum11_153600_042_0.62,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum11_153600_042_0.62.jpg
+konum11_153600_049_0.35,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Kavun\konum11_153600_049_0.35.jpg
+konum11_153600_050_0.34,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum11_153600_050_0.34.jpg
+konum11_153600_051_0.32,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum11_153600_051_0.32.jpg
+konum11_153600_052_0.31,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum11_153600_052_0.31.jpg
+konum11_153600_058_0.25,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum11_153600_058_0.25.jpg
+konum12_153621_003_0.72,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_003_0.72.jpg
+konum12_153621_004_0.70,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_004_0.70.jpg
+konum12_153621_006_0.69,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.87,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_006_0.69.jpg
+konum12_153621_007_0.67,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_007_0.67.jpg
+konum12_153621_012_0.56,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_012_0.56.jpg
+konum12_153621_014_0.50,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_014_0.50.jpg
+konum12_153621_015_0.50,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_015_0.50.jpg
+konum12_153621_017_0.46,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.86,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_017_0.46.jpg
+konum12_153621_018_0.46,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_018_0.46.jpg
+konum12_153621_019_0.45,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_019_0.45.jpg
+konum12_153621_021_0.40,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_021_0.40.jpg
+konum12_153621_023_0.39,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_023_0.39.jpg
+konum12_153621_026_0.36,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_026_0.36.jpg
+konum12_153621_027_0.36,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_027_0.36.jpg
+konum12_153621_030_0.35,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_030_0.35.jpg
+konum12_153621_031_0.34,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_031_0.34.jpg
+konum12_153621_037_0.28,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_037_0.28.jpg
+konum12_153621_038_0.27,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_038_0.27.jpg
+konum12_153621_043_0.25,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum12_153621_043_0.25.jpg
+konum13_153642_007_0.60,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum13_153642_007_0.60.jpg
+konum13_153642_010_0.51,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum13_153642_010_0.51.jpg
+konum13_153642_018_0.38,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum13_153642_018_0.38.jpg
+konum13_153642_021_0.30,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum13_153642_021_0.30.jpg
+konum13_153642_025_0.26,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.95,crops\camera_002\2025-10-24\17\Kavun\konum13_153642_025_0.26.jpg
+konum14_153703_000_0.81,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_000_0.81.jpg
+konum14_153703_001_0.77,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_001_0.77.jpg
+konum14_153703_003_0.76,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_003_0.76.jpg
+konum14_153703_004_0.75,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_004_0.75.jpg
+konum14_153703_006_0.67,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_006_0.67.jpg
+konum14_153703_010_0.61,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_010_0.61.jpg
+konum14_153703_011_0.61,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_011_0.61.jpg
+konum14_153703_012_0.60,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_012_0.60.jpg
+konum14_153703_013_0.59,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_013_0.59.jpg
+konum14_153703_015_0.58,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_015_0.58.jpg
+konum14_153703_020_0.51,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_020_0.51.jpg
+konum14_153703_023_0.49,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_023_0.49.jpg
+konum14_153703_024_0.49,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_024_0.49.jpg
+konum14_153703_025_0.49,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_025_0.49.jpg
+konum14_153703_029_0.45,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_029_0.45.jpg
+konum14_153703_033_0.43,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_033_0.43.jpg
+konum14_153703_038_0.40,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_038_0.40.jpg
+konum14_153703_040_0.39,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_040_0.39.jpg
+konum14_153703_042_0.39,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_042_0.39.jpg
+konum14_153703_045_0.38,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_045_0.38.jpg
+konum14_153703_052_0.32,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_052_0.32.jpg
+konum14_153703_053_0.32,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_053_0.32.jpg
+konum14_153703_055_0.31,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_055_0.31.jpg
+konum14_153703_060_0.27,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum14_153703_060_0.27.jpg
+konum15_153724_051_0.55,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum15_153724_051_0.55.jpg
+konum15_153724_057_0.50,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum15_153724_057_0.50.jpg
+konum15_153724_078_0.33,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum15_153724_078_0.33.jpg
+konum16_153745_102_0.39,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum16_153745_102_0.39.jpg
+konum16_153745_105_0.38,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum16_153745_105_0.38.jpg
+konum17_153805_012_0.74,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum17_153805_012_0.74.jpg
+konum17_153805_016_0.59,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum17_153805_016_0.59.jpg
+konum17_153805_035_0.29,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum17_153805_035_0.29.jpg
+konum19_153847_001_0.58,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum19_153847_001_0.58.jpg
+konum19_153847_005_0.28,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum19_153847_005_0.28.jpg
+konum5_153356_082_0.45,Kavun,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kavun\konum5_153356_082_0.45.jpg
+konum15_153724_002_0.88,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_002_0.88.jpg
+konum15_153724_004_0.85,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_004_0.85.jpg
+konum15_153724_005_0.85,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_005_0.85.jpg
+konum15_153724_008_0.84,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_008_0.84.jpg
+konum15_153724_009_0.82,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_009_0.82.jpg
+konum15_153724_012_0.81,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_012_0.81.jpg
+konum15_153724_020_0.74,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_020_0.74.jpg
+konum15_153724_022_0.74,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_022_0.74.jpg
+konum15_153724_026_0.71,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_026_0.71.jpg
+konum15_153724_028_0.70,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_028_0.70.jpg
+konum15_153724_030_0.69,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_030_0.69.jpg
+konum15_153724_034_0.66,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_034_0.66.jpg
+konum15_153724_035_0.65,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_035_0.65.jpg
+konum15_153724_040_0.60,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_040_0.60.jpg
+konum15_153724_042_0.60,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_042_0.60.jpg
+konum15_153724_045_0.57,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_045_0.57.jpg
+konum15_153724_048_0.56,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_048_0.56.jpg
+konum15_153724_049_0.56,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_049_0.56.jpg
+konum15_153724_050_0.55,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_050_0.55.jpg
+konum15_153724_052_0.55,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_052_0.55.jpg
+konum15_153724_054_0.53,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_054_0.53.jpg
+konum15_153724_058_0.49,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_058_0.49.jpg
+konum15_153724_063_0.46,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_063_0.46.jpg
+konum15_153724_064_0.45,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_064_0.45.jpg
+konum15_153724_065_0.43,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.87,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_065_0.43.jpg
+konum15_153724_066_0.43,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_066_0.43.jpg
+konum15_153724_068_0.42,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_068_0.42.jpg
+konum15_153724_076_0.35,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_076_0.35.jpg
+konum15_153724_080_0.32,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_080_0.32.jpg
+konum15_153724_088_0.27,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_088_0.27.jpg
+konum15_153724_090_0.26,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum15_153724_090_0.26.jpg
+konum16_153745_055_0.70,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_055_0.70.jpg
+konum16_153745_067_0.63,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_067_0.63.jpg
+konum16_153745_078_0.53,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_078_0.53.jpg
+konum16_153745_079_0.53,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_079_0.53.jpg
+konum16_153745_087_0.49,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_087_0.49.jpg
+konum16_153745_091_0.48,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_091_0.48.jpg
+konum16_153745_099_0.41,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_099_0.41.jpg
+konum16_153745_108_0.36,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_108_0.36.jpg
+konum16_153745_110_0.32,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_110_0.32.jpg
+konum16_153745_128_0.27,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum16_153745_128_0.27.jpg
+konum18_153826_017_0.84,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_017_0.84.jpg
+konum18_153826_019_0.84,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_019_0.84.jpg
+konum18_153826_035_0.77,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_035_0.77.jpg
+konum18_153826_036_0.76,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_036_0.76.jpg
+konum18_153826_043_0.70,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_043_0.70.jpg
+konum18_153826_052_0.65,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_052_0.65.jpg
+konum18_153826_057_0.62,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_057_0.62.jpg
+konum18_153826_066_0.57,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_066_0.57.jpg
+konum18_153826_071_0.53,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_071_0.53.jpg
+konum18_153826_075_0.48,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_075_0.48.jpg
+konum18_153826_081_0.44,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_081_0.44.jpg
+konum18_153826_083_0.41,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_083_0.41.jpg
+konum18_153826_085_0.39,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_085_0.39.jpg
+konum18_153826_086_0.39,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_086_0.39.jpg
+konum18_153826_093_0.31,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_093_0.31.jpg
+konum18_153826_098_0.29,Kirmizi Erik,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Kirmizi Erik\konum18_153826_098_0.29.jpg
+konum16_153745_086_0.49,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum16_153745_086_0.49.jpg
+konum16_153745_092_0.45,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum16_153745_092_0.45.jpg
+konum16_153745_095_0.44,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum16_153745_095_0.44.jpg
+konum16_153745_111_0.32,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum16_153745_111_0.32.jpg
+konum16_153745_115_0.29,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum16_153745_115_0.29.jpg
+konum16_153745_120_0.28,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum16_153745_120_0.28.jpg
+konum16_153745_126_0.27,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum16_153745_126_0.27.jpg
+konum18_153826_015_0.85,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum18_153826_015_0.85.jpg
+konum18_153826_056_0.62,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum18_153826_056_0.62.jpg
+konum18_153826_060_0.60,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum18_153826_060_0.60.jpg
+konum18_153826_084_0.40,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum18_153826_084_0.40.jpg
+konum18_153826_096_0.29,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum18_153826_096_0.29.jpg
+konum7_153438_000_0.93,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_000_0.93.jpg
+konum7_153438_001_0.90,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_001_0.90.jpg
+konum7_153438_002_0.90,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_002_0.90.jpg
+konum7_153438_003_0.84,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_003_0.84.jpg
+konum7_153438_004_0.82,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_004_0.82.jpg
+konum7_153438_005_0.80,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_005_0.80.jpg
+konum7_153438_006_0.68,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_006_0.68.jpg
+konum7_153438_007_0.61,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_007_0.61.jpg
+konum7_153438_008_0.58,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_008_0.58.jpg
+konum7_153438_009_0.52,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_009_0.52.jpg
+konum7_153438_010_0.37,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_010_0.37.jpg
+konum7_153438_011_0.36,kirmizilahana,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\kirmizilahana\konum7_153438_011_0.36.jpg
+konum16_153745_090_0.48,Kivi,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Kivi\konum16_153745_090_0.48.jpg
+konum12_153621_032_0.33,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum12_153621_032_0.33.jpg
+konum13_153642_012_0.51,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum13_153642_012_0.51.jpg
+konum8_153458_003_0.85,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_003_0.85.jpg
+konum8_153458_005_0.78,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_005_0.78.jpg
+konum8_153458_008_0.71,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_008_0.71.jpg
+konum8_153458_012_0.68,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_012_0.68.jpg
+konum8_153458_013_0.58,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_013_0.58.jpg
+konum8_153458_015_0.53,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_015_0.53.jpg
+konum8_153458_016_0.51,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_016_0.51.jpg
+konum8_153458_017_0.49,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_017_0.49.jpg
+konum8_153458_018_0.44,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_018_0.44.jpg
+konum8_153458_019_0.42,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_019_0.42.jpg
+konum8_153458_025_0.25,lahana,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\lahana\konum8_153458_025_0.25.jpg
+konum10_153540_056_0.62,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum10_153540_056_0.62.jpg
+konum10_153540_065_0.55,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum10_153540_065_0.55.jpg
+konum10_153540_080_0.45,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum10_153540_080_0.45.jpg
+konum10_153540_084_0.40,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum10_153540_084_0.40.jpg
+konum10_153540_102_0.27,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum10_153540_102_0.27.jpg
+konum12_153621_016_0.50,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum12_153621_016_0.50.jpg
+konum14_153703_002_0.76,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_002_0.76.jpg
+konum14_153703_016_0.56,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_016_0.56.jpg
+konum14_153703_019_0.51,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_019_0.51.jpg
+konum14_153703_028_0.46,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_028_0.46.jpg
+konum14_153703_030_0.45,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_030_0.45.jpg
+konum14_153703_031_0.44,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_031_0.44.jpg
+konum14_153703_032_0.43,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_032_0.43.jpg
+konum14_153703_035_0.41,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_035_0.41.jpg
+konum14_153703_037_0.40,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_037_0.40.jpg
+konum14_153703_044_0.38,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_044_0.38.jpg
+konum14_153703_047_0.35,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_047_0.35.jpg
+konum14_153703_061_0.27,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_061_0.27.jpg
+konum14_153703_063_0.26,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_063_0.26.jpg
+konum14_153703_065_0.26,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum14_153703_065_0.26.jpg
+konum17_153805_000_0.88,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.95,crops\camera_002\2025-10-24\17\Limon\konum17_153805_000_0.88.jpg
+konum17_153805_001_0.87,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_001_0.87.jpg
+konum17_153805_002_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_002_0.86.jpg
+konum17_153805_003_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_003_0.86.jpg
+konum17_153805_005_0.85,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_005_0.85.jpg
+konum17_153805_006_0.84,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_006_0.84.jpg
+konum17_153805_007_0.83,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_007_0.83.jpg
+konum17_153805_008_0.80,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_008_0.80.jpg
+konum17_153805_009_0.78,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_009_0.78.jpg
+konum17_153805_010_0.77,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_010_0.77.jpg
+konum17_153805_011_0.77,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_011_0.77.jpg
+konum17_153805_013_0.74,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_013_0.74.jpg
+konum17_153805_014_0.70,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_014_0.70.jpg
+konum17_153805_015_0.61,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_015_0.61.jpg
+konum17_153805_017_0.59,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_017_0.59.jpg
+konum17_153805_018_0.53,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_018_0.53.jpg
+konum17_153805_020_0.48,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_020_0.48.jpg
+konum17_153805_033_0.31,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_033_0.31.jpg
+konum17_153805_036_0.28,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum17_153805_036_0.28.jpg
+konum5_153356_000_0.90,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_000_0.90.jpg
+konum5_153356_001_0.89,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_001_0.89.jpg
+konum5_153356_002_0.89,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_002_0.89.jpg
+konum5_153356_003_0.89,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_003_0.89.jpg
+konum5_153356_004_0.89,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_004_0.89.jpg
+konum5_153356_006_0.89,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_006_0.89.jpg
+konum5_153356_007_0.88,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Limon\konum5_153356_007_0.88.jpg
+konum5_153356_008_0.88,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_008_0.88.jpg
+konum5_153356_009_0.88,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_009_0.88.jpg
+konum5_153356_010_0.88,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_010_0.88.jpg
+konum5_153356_011_0.87,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_011_0.87.jpg
+konum5_153356_012_0.87,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_012_0.87.jpg
+konum5_153356_013_0.87,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_013_0.87.jpg
+konum5_153356_014_0.87,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_014_0.87.jpg
+konum5_153356_015_0.87,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_015_0.87.jpg
+konum5_153356_016_0.87,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_016_0.87.jpg
+konum5_153356_017_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_017_0.86.jpg
+konum5_153356_018_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Limon\konum5_153356_018_0.86.jpg
+konum5_153356_019_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_019_0.86.jpg
+konum5_153356_020_0.85,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_020_0.85.jpg
+konum5_153356_022_0.85,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_022_0.85.jpg
+konum5_153356_023_0.85,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_023_0.85.jpg
+konum5_153356_024_0.84,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_024_0.84.jpg
+konum5_153356_025_0.84,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_025_0.84.jpg
+konum5_153356_027_0.84,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_027_0.84.jpg
+konum5_153356_029_0.82,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_029_0.82.jpg
+konum5_153356_030_0.82,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_030_0.82.jpg
+konum5_153356_031_0.81,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_031_0.81.jpg
+konum5_153356_032_0.81,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_032_0.81.jpg
+konum5_153356_033_0.80,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_033_0.80.jpg
+konum5_153356_036_0.79,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_036_0.79.jpg
+konum5_153356_037_0.79,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_037_0.79.jpg
+konum5_153356_038_0.79,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_038_0.79.jpg
+konum5_153356_041_0.79,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_041_0.79.jpg
+konum5_153356_042_0.79,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_042_0.79.jpg
+konum5_153356_043_0.78,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_043_0.78.jpg
+konum5_153356_044_0.78,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_044_0.78.jpg
+konum5_153356_047_0.76,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_047_0.76.jpg
+konum5_153356_048_0.76,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_048_0.76.jpg
+konum5_153356_049_0.76,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_049_0.76.jpg
+konum5_153356_053_0.72,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_053_0.72.jpg
+konum5_153356_057_0.69,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_057_0.69.jpg
+konum5_153356_058_0.69,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_058_0.69.jpg
+konum5_153356_061_0.65,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_061_0.65.jpg
+konum5_153356_062_0.64,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_062_0.64.jpg
+konum5_153356_063_0.63,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_063_0.63.jpg
+konum5_153356_065_0.62,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_065_0.62.jpg
+konum5_153356_068_0.58,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_068_0.58.jpg
+konum5_153356_069_0.56,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_069_0.56.jpg
+konum5_153356_071_0.54,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_071_0.54.jpg
+konum5_153356_075_0.52,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_075_0.52.jpg
+konum5_153356_076_0.51,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_076_0.51.jpg
+konum5_153356_077_0.51,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_077_0.51.jpg
+konum5_153356_081_0.46,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Limon\konum5_153356_081_0.46.jpg
+konum5_153356_083_0.45,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_083_0.45.jpg
+konum5_153356_084_0.45,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_084_0.45.jpg
+konum5_153356_089_0.42,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_089_0.42.jpg
+konum5_153356_092_0.41,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_092_0.41.jpg
+konum5_153356_094_0.38,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_094_0.38.jpg
+konum5_153356_096_0.33,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_096_0.33.jpg
+konum5_153356_098_0.30,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_098_0.30.jpg
+konum5_153356_100_0.26,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum5_153356_100_0.26.jpg
+konum6_153417_000_0.89,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_000_0.89.jpg
+konum6_153417_001_0.89,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_001_0.89.jpg
+konum6_153417_002_0.88,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_002_0.88.jpg
+konum6_153417_003_0.87,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_003_0.87.jpg
+konum6_153417_004_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_004_0.86.jpg
+konum6_153417_005_0.85,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_005_0.85.jpg
+konum6_153417_006_0.84,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_006_0.84.jpg
+konum6_153417_007_0.84,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_007_0.84.jpg
+konum6_153417_008_0.84,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_008_0.84.jpg
+konum6_153417_009_0.83,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_009_0.83.jpg
+konum6_153417_010_0.81,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_010_0.81.jpg
+konum6_153417_011_0.80,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Limon\konum6_153417_011_0.80.jpg
+konum6_153417_012_0.78,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_012_0.78.jpg
+konum6_153417_013_0.74,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_013_0.74.jpg
+konum6_153417_014_0.73,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_014_0.73.jpg
+konum6_153417_016_0.72,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_016_0.72.jpg
+konum6_153417_017_0.70,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_017_0.70.jpg
+konum6_153417_018_0.68,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_018_0.68.jpg
+konum6_153417_019_0.68,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_019_0.68.jpg
+konum6_153417_020_0.63,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_020_0.63.jpg
+konum6_153417_021_0.62,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_021_0.62.jpg
+konum6_153417_022_0.61,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_022_0.61.jpg
+konum6_153417_024_0.60,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_024_0.60.jpg
+konum6_153417_025_0.59,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_025_0.59.jpg
+konum6_153417_026_0.56,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_026_0.56.jpg
+konum6_153417_028_0.53,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_028_0.53.jpg
+konum6_153417_030_0.50,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.87,crops\camera_002\2025-10-24\17\Limon\konum6_153417_030_0.50.jpg
+konum6_153417_031_0.47,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_031_0.47.jpg
+konum6_153417_032_0.45,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_032_0.45.jpg
+konum6_153417_034_0.42,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_034_0.42.jpg
+konum6_153417_035_0.37,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_035_0.37.jpg
+konum6_153417_038_0.35,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_038_0.35.jpg
+konum6_153417_040_0.33,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_040_0.33.jpg
+konum6_153417_041_0.30,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_041_0.30.jpg
+konum6_153417_042_0.29,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_042_0.29.jpg
+konum6_153417_043_0.29,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_043_0.29.jpg
+konum6_153417_044_0.28,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_044_0.28.jpg
+konum6_153417_046_0.26,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_046_0.26.jpg
+konum6_153417_047_0.26,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum6_153417_047_0.26.jpg
+konum8_153458_010_0.69,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum8_153458_010_0.69.jpg
+konum8_153458_020_0.41,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum8_153458_020_0.41.jpg
+konum9_153519_000_0.89,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_000_0.89.jpg
+konum9_153519_001_0.88,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Limon\konum9_153519_001_0.88.jpg
+konum9_153519_002_0.88,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_002_0.88.jpg
+konum9_153519_003_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_003_0.86.jpg
+konum9_153519_004_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_004_0.86.jpg
+konum9_153519_005_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_005_0.86.jpg
+konum9_153519_006_0.86,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_006_0.86.jpg
+konum9_153519_007_0.85,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_007_0.85.jpg
+konum9_153519_008_0.84,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_008_0.84.jpg
+konum9_153519_009_0.82,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.87,crops\camera_002\2025-10-24\17\Limon\konum9_153519_009_0.82.jpg
+konum9_153519_010_0.82,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_010_0.82.jpg
+konum9_153519_011_0.77,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_011_0.77.jpg
+konum9_153519_012_0.76,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_012_0.76.jpg
+konum9_153519_013_0.74,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_013_0.74.jpg
+konum9_153519_014_0.73,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_014_0.73.jpg
+konum9_153519_015_0.71,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_015_0.71.jpg
+konum9_153519_016_0.71,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_016_0.71.jpg
+konum9_153519_017_0.70,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_017_0.70.jpg
+konum9_153519_019_0.68,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_019_0.68.jpg
+konum9_153519_020_0.67,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_020_0.67.jpg
+konum9_153519_021_0.65,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Limon\konum9_153519_021_0.65.jpg
+konum9_153519_022_0.64,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_022_0.64.jpg
+konum9_153519_024_0.63,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_024_0.63.jpg
+konum9_153519_025_0.62,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_025_0.62.jpg
+konum9_153519_027_0.60,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_027_0.60.jpg
+konum9_153519_028_0.59,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_028_0.59.jpg
+konum9_153519_033_0.49,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_033_0.49.jpg
+konum9_153519_034_0.48,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_034_0.48.jpg
+konum9_153519_035_0.43,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.87,crops\camera_002\2025-10-24\17\Limon\konum9_153519_035_0.43.jpg
+konum9_153519_036_0.42,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_036_0.42.jpg
+konum9_153519_038_0.40,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.88,crops\camera_002\2025-10-24\17\Limon\konum9_153519_038_0.40.jpg
+konum9_153519_039_0.36,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_039_0.36.jpg
+konum9_153519_041_0.33,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_041_0.33.jpg
+konum9_153519_042_0.33,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_042_0.33.jpg
+konum9_153519_043_0.32,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_043_0.32.jpg
+konum9_153519_044_0.30,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_044_0.30.jpg
+konum9_153519_045_0.30,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_045_0.30.jpg
+konum9_153519_048_0.26,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_048_0.26.jpg
+konum9_153519_049_0.25,Limon,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Limon\konum9_153519_049_0.25.jpg
+konum17_153805_019_0.52,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum17_153805_019_0.52.jpg
+konum17_153805_021_0.48,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum17_153805_021_0.48.jpg
+konum17_153805_023_0.47,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum17_153805_023_0.47.jpg
+konum17_153805_025_0.42,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum17_153805_025_0.42.jpg
+konum17_153805_028_0.34,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum17_153805_028_0.34.jpg
+konum17_153805_029_0.33,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum17_153805_029_0.33.jpg
+konum17_153805_031_0.32,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum17_153805_031_0.32.jpg
+konum5_153356_088_0.42,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum5_153356_088_0.42.jpg
+konum6_153417_023_0.60,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum6_153417_023_0.60.jpg
+konum6_153417_029_0.51,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum6_153417_029_0.51.jpg
+konum6_153417_033_0.45,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum6_153417_033_0.45.jpg
+konum6_153417_037_0.36,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum6_153417_037_0.36.jpg
+konum6_153417_045_0.27,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum6_153417_045_0.27.jpg
+konum9_153519_018_0.69,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum9_153519_018_0.69.jpg
+konum9_153519_026_0.60,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum9_153519_026_0.60.jpg
+konum9_153519_031_0.49,Mandalina,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mandalina\konum9_153519_031_0.49.jpg
+konum13_153642_000_0.91,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum13_153642_000_0.91.jpg
+konum13_153642_001_0.90,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum13_153642_001_0.90.jpg
+konum13_153642_002_0.85,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Mango\konum13_153642_002_0.85.jpg
+konum13_153642_003_0.80,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum13_153642_003_0.80.jpg
+konum13_153642_005_0.67,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum13_153642_005_0.67.jpg
+konum13_153642_006_0.63,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum13_153642_006_0.63.jpg
+konum13_153642_008_0.55,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum13_153642_008_0.55.jpg
+konum13_153642_009_0.54,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum13_153642_009_0.54.jpg
+konum13_153642_011_0.51,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum13_153642_011_0.51.jpg
+konum15_153724_053_0.53,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum15_153724_053_0.53.jpg
+konum17_153805_032_0.31,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum17_153805_032_0.31.jpg
+konum19_153847_003_0.41,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum19_153847_003_0.41.jpg
+konum3_153316_017_0.36,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum3_153316_017_0.36.jpg
+konum3_153316_018_0.35,Mango,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Mango\konum3_153316_018_0.35.jpg
+konum7_153438_012_0.26,marul,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\marul\konum7_153438_012_0.26.jpg
+konum16_153745_119_0.28,mor sogan,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\mor sogan\konum16_153745_119_0.28.jpg
+konum20_153908_000_0.66,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum20_153908_000_0.66.jpg
+konum20_153908_001_0.66,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum20_153908_001_0.66.jpg
+konum20_153908_003_0.60,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum20_153908_003_0.60.jpg
+konum20_153908_004_0.58,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum20_153908_004_0.58.jpg
+konum20_153908_005_0.57,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum20_153908_005_0.57.jpg
+konum20_153908_007_0.47,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum20_153908_007_0.47.jpg
+konum20_153908_008_0.41,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum20_153908_008_0.41.jpg
+konum20_153908_011_0.27,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum20_153908_011_0.27.jpg
+konum2_153255_000_0.84,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_000_0.84.jpg
+konum2_153255_001_0.76,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Muz\konum2_153255_001_0.76.jpg
+konum2_153255_002_0.76,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_002_0.76.jpg
+konum2_153255_003_0.76,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_003_0.76.jpg
+konum2_153255_004_0.68,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_004_0.68.jpg
+konum2_153255_005_0.58,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_005_0.58.jpg
+konum2_153255_006_0.53,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_006_0.53.jpg
+konum2_153255_007_0.51,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_007_0.51.jpg
+konum2_153255_008_0.50,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_008_0.50.jpg
+konum2_153255_009_0.50,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_009_0.50.jpg
+konum2_153255_010_0.44,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_010_0.44.jpg
+konum2_153255_012_0.43,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_012_0.43.jpg
+konum2_153255_014_0.42,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_014_0.42.jpg
+konum2_153255_015_0.38,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_015_0.38.jpg
+konum2_153255_016_0.33,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_016_0.33.jpg
+konum2_153255_017_0.32,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_017_0.32.jpg
+konum2_153255_019_0.30,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_019_0.30.jpg
+konum2_153255_021_0.28,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_021_0.28.jpg
+konum2_153255_022_0.28,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_022_0.28.jpg
+konum2_153255_023_0.26,Muz,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Muz\konum2_153255_023_0.26.jpg
+konum11_153600_000_0.94,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_000_0.94.jpg
+konum11_153600_001_0.93,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_001_0.93.jpg
+konum11_153600_002_0.93,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_002_0.93.jpg
+konum11_153600_003_0.93,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_003_0.93.jpg
+konum11_153600_004_0.93,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_004_0.93.jpg
+konum11_153600_005_0.93,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_005_0.93.jpg
+konum11_153600_007_0.92,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Nar\konum11_153600_007_0.92.jpg
+konum11_153600_008_0.92,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_008_0.92.jpg
+konum11_153600_009_0.92,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_009_0.92.jpg
+konum11_153600_010_0.92,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_010_0.92.jpg
+konum11_153600_011_0.91,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_011_0.91.jpg
+konum11_153600_012_0.91,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_012_0.91.jpg
+konum11_153600_013_0.90,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_013_0.90.jpg
+konum11_153600_014_0.90,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_014_0.90.jpg
+konum11_153600_016_0.90,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_016_0.90.jpg
+konum11_153600_018_0.89,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_018_0.89.jpg
+konum11_153600_024_0.84,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_024_0.84.jpg
+konum11_153600_025_0.82,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_025_0.82.jpg
+konum11_153600_028_0.80,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_028_0.80.jpg
+konum11_153600_038_0.69,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_038_0.69.jpg
+konum11_153600_045_0.51,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Nar\konum11_153600_045_0.51.jpg
+konum11_153600_048_0.36,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum11_153600_048_0.36.jpg
+konum12_153621_000_0.86,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum12_153621_000_0.86.jpg
+konum12_153621_002_0.76,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.87,crops\camera_002\2025-10-24\17\Nar\konum12_153621_002_0.76.jpg
+konum12_153621_034_0.29,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum12_153621_034_0.29.jpg
+konum12_153621_040_0.26,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum12_153621_040_0.26.jpg
+konum15_153724_007_0.84,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_007_0.84.jpg
+konum15_153724_013_0.81,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_013_0.81.jpg
+konum15_153724_025_0.71,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_025_0.71.jpg
+konum15_153724_031_0.68,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_031_0.68.jpg
+konum15_153724_033_0.66,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_033_0.66.jpg
+konum15_153724_037_0.63,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_037_0.63.jpg
+konum15_153724_041_0.60,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_041_0.60.jpg
+konum15_153724_055_0.52,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_055_0.52.jpg
+konum15_153724_059_0.48,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_059_0.48.jpg
+konum15_153724_062_0.47,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_062_0.47.jpg
+konum15_153724_071_0.41,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_071_0.41.jpg
+konum15_153724_073_0.39,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_073_0.39.jpg
+konum15_153724_075_0.37,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_075_0.37.jpg
+konum15_153724_082_0.29,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_082_0.29.jpg
+konum15_153724_083_0.29,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_083_0.29.jpg
+konum15_153724_086_0.27,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_086_0.27.jpg
+konum15_153724_093_0.25,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum15_153724_093_0.25.jpg
+konum16_153745_000_0.92,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_000_0.92.jpg
+konum16_153745_001_0.92,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_001_0.92.jpg
+konum16_153745_002_0.91,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_002_0.91.jpg
+konum16_153745_007_0.89,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_007_0.89.jpg
+konum16_153745_009_0.89,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_009_0.89.jpg
+konum16_153745_010_0.89,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_010_0.89.jpg
+konum16_153745_011_0.89,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_011_0.89.jpg
+konum16_153745_013_0.89,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_013_0.89.jpg
+konum16_153745_015_0.88,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_015_0.88.jpg
+konum16_153745_019_0.86,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_019_0.86.jpg
+konum16_153745_021_0.86,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_021_0.86.jpg
+konum16_153745_022_0.86,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_022_0.86.jpg
+konum16_153745_023_0.86,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_023_0.86.jpg
+konum16_153745_024_0.85,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_024_0.85.jpg
+konum16_153745_027_0.83,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_027_0.83.jpg
+konum16_153745_032_0.82,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_032_0.82.jpg
+konum16_153745_033_0.82,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_033_0.82.jpg
+konum16_153745_038_0.81,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_038_0.81.jpg
+konum16_153745_041_0.78,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_041_0.78.jpg
+konum16_153745_044_0.76,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_044_0.76.jpg
+konum16_153745_047_0.74,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_047_0.74.jpg
+konum16_153745_048_0.74,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_048_0.74.jpg
+konum16_153745_050_0.74,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_050_0.74.jpg
+konum16_153745_061_0.67,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.95,crops\camera_002\2025-10-24\17\Nar\konum16_153745_061_0.67.jpg
+konum16_153745_066_0.63,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_066_0.63.jpg
+konum16_153745_073_0.60,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_073_0.60.jpg
+konum16_153745_075_0.59,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_075_0.59.jpg
+konum16_153745_077_0.55,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_077_0.55.jpg
+konum16_153745_082_0.51,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_082_0.51.jpg
+konum16_153745_088_0.49,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_088_0.49.jpg
+konum16_153745_097_0.43,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_097_0.43.jpg
+konum16_153745_100_0.39,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_100_0.39.jpg
+konum16_153745_106_0.37,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.95,crops\camera_002\2025-10-24\17\Nar\konum16_153745_106_0.37.jpg
+konum16_153745_109_0.34,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_109_0.34.jpg
+konum16_153745_116_0.29,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_116_0.29.jpg
+konum16_153745_121_0.28,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_121_0.28.jpg
+konum16_153745_127_0.27,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum16_153745_127_0.27.jpg
+konum17_153805_024_0.46,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum17_153805_024_0.46.jpg
+konum17_153805_030_0.33,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum17_153805_030_0.33.jpg
+konum18_153826_053_0.65,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum18_153826_053_0.65.jpg
+konum18_153826_097_0.29,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Nar\konum18_153826_097_0.29.jpg
+konum3_153316_012_0.40,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum3_153316_012_0.40.jpg
+konum5_153356_005_0.89,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_005_0.89.jpg
+konum5_153356_021_0.85,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_021_0.85.jpg
+konum5_153356_026_0.84,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_026_0.84.jpg
+konum5_153356_028_0.84,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_028_0.84.jpg
+konum5_153356_034_0.80,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_034_0.80.jpg
+konum5_153356_039_0.79,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_039_0.79.jpg
+konum5_153356_040_0.79,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_040_0.79.jpg
+konum5_153356_045_0.78,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Nar\konum5_153356_045_0.78.jpg
+konum5_153356_046_0.77,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_046_0.77.jpg
+konum5_153356_052_0.72,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_052_0.72.jpg
+konum5_153356_054_0.71,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_054_0.71.jpg
+konum5_153356_055_0.70,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_055_0.70.jpg
+konum5_153356_056_0.70,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_056_0.70.jpg
+konum5_153356_059_0.67,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_059_0.67.jpg
+konum5_153356_064_0.62,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_064_0.62.jpg
+konum5_153356_074_0.52,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_074_0.52.jpg
+konum5_153356_078_0.50,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_078_0.50.jpg
+konum5_153356_079_0.49,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_079_0.49.jpg
+konum5_153356_080_0.49,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_080_0.49.jpg
+konum5_153356_090_0.41,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_090_0.41.jpg
+konum5_153356_095_0.34,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_095_0.34.jpg
+konum5_153356_097_0.33,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_097_0.33.jpg
+konum5_153356_099_0.27,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum5_153356_099_0.27.jpg
+konum9_153519_047_0.27,Nar,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nar\konum9_153519_047_0.27.jpg
+konum6_153417_027_0.53,Nektarin,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nektarin\konum6_153417_027_0.53.jpg
+konum9_153519_032_0.49,Nektarin,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Nektarin\konum9_153519_032_0.49.jpg
+konum16_153745_096_0.44,Patates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Patates\konum16_153745_096_0.44.jpg
+konum3_153316_013_0.39,Patates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Patates\konum3_153316_013_0.39.jpg
+konum10_153540_025_0.86,Patlican,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Patlican\konum10_153540_025_0.86.jpg
+konum11_153600_034_0.74,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_034_0.74.jpg
+konum11_153600_036_0.72,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_036_0.72.jpg
+konum11_153600_037_0.70,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_037_0.70.jpg
+konum11_153600_039_0.67,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_039_0.67.jpg
+konum11_153600_040_0.65,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_040_0.65.jpg
+konum11_153600_041_0.63,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_041_0.63.jpg
+konum11_153600_043_0.57,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_043_0.57.jpg
+konum11_153600_046_0.50,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_046_0.50.jpg
+konum11_153600_054_0.29,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.9,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_054_0.29.jpg
+konum11_153600_056_0.27,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum11_153600_056_0.27.jpg
+konum15_153724_000_0.89,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_000_0.89.jpg
+konum15_153724_001_0.89,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_001_0.89.jpg
+konum15_153724_003_0.87,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_003_0.87.jpg
+konum15_153724_006_0.84,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_006_0.84.jpg
+konum15_153724_010_0.82,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_010_0.82.jpg
+konum15_153724_011_0.82,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_011_0.82.jpg
+konum15_153724_014_0.80,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_014_0.80.jpg
+konum15_153724_015_0.79,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_015_0.79.jpg
+konum15_153724_016_0.78,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_016_0.78.jpg
+konum15_153724_017_0.77,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_017_0.77.jpg
+konum15_153724_018_0.76,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_018_0.76.jpg
+konum15_153724_019_0.74,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_019_0.74.jpg
+konum15_153724_021_0.74,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.88,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_021_0.74.jpg
+konum15_153724_023_0.72,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_023_0.72.jpg
+konum15_153724_024_0.71,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_024_0.71.jpg
+konum15_153724_029_0.69,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_029_0.69.jpg
+konum15_153724_032_0.68,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_032_0.68.jpg
+konum15_153724_039_0.61,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_039_0.61.jpg
+konum15_153724_043_0.59,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_043_0.59.jpg
+konum15_153724_046_0.56,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_046_0.56.jpg
+konum15_153724_056_0.51,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_056_0.51.jpg
+konum15_153724_060_0.48,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_060_0.48.jpg
+konum15_153724_061_0.47,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_061_0.47.jpg
+konum15_153724_067_0.43,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_067_0.43.jpg
+konum15_153724_069_0.42,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_069_0.42.jpg
+konum15_153724_081_0.31,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_081_0.31.jpg
+konum15_153724_084_0.29,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_084_0.29.jpg
+konum15_153724_094_0.25,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum15_153724_094_0.25.jpg
+konum16_153745_016_0.87,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum16_153745_016_0.87.jpg
+konum16_153745_042_0.76,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum16_153745_042_0.76.jpg
+konum16_153745_054_0.71,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum16_153745_054_0.71.jpg
+konum16_153745_074_0.60,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum16_153745_074_0.60.jpg
+konum16_153745_101_0.39,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum16_153745_101_0.39.jpg
+konum16_153745_112_0.31,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum16_153745_112_0.31.jpg
+konum17_153805_004_0.86,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum17_153805_004_0.86.jpg
+konum17_153805_022_0.48,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum17_153805_022_0.48.jpg
+konum17_153805_026_0.41,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum17_153805_026_0.41.jpg
+konum17_153805_034_0.30,Portakal,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Portakal\konum17_153805_034_0.30.jpg
+konum13_153642_017_0.38,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum13_153642_017_0.38.jpg
+konum13_153642_024_0.28,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum13_153642_024_0.28.jpg
+konum16_153745_062_0.65,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum16_153745_062_0.65.jpg
+konum16_153745_093_0.45,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum16_153745_093_0.45.jpg
+konum16_153745_107_0.36,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum16_153745_107_0.36.jpg
+konum16_153745_122_0.28,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum16_153745_122_0.28.jpg
+konum16_153745_131_0.25,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum16_153745_131_0.25.jpg
+konum18_153826_005_0.89,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_005_0.89.jpg
+konum18_153826_008_0.88,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_008_0.88.jpg
+konum18_153826_010_0.86,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_010_0.86.jpg
+konum18_153826_011_0.86,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_011_0.86.jpg
+konum18_153826_020_0.84,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_020_0.84.jpg
+konum18_153826_022_0.83,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_022_0.83.jpg
+konum18_153826_023_0.82,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_023_0.82.jpg
+konum18_153826_024_0.82,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_024_0.82.jpg
+konum18_153826_026_0.80,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_026_0.80.jpg
+konum18_153826_027_0.80,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_027_0.80.jpg
+konum18_153826_028_0.80,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_028_0.80.jpg
+konum18_153826_029_0.80,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_029_0.80.jpg
+konum18_153826_030_0.79,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_030_0.79.jpg
+konum18_153826_032_0.79,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_032_0.79.jpg
+konum18_153826_033_0.79,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_033_0.79.jpg
+konum18_153826_037_0.75,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_037_0.75.jpg
+konum18_153826_039_0.73,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_039_0.73.jpg
+konum18_153826_040_0.72,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_040_0.72.jpg
+konum18_153826_041_0.71,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_041_0.71.jpg
+konum18_153826_044_0.70,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_044_0.70.jpg
+konum18_153826_045_0.70,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.92,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_045_0.70.jpg
+konum18_153826_046_0.69,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_046_0.69.jpg
+konum18_153826_047_0.69,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_047_0.69.jpg
+konum18_153826_048_0.68,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_048_0.68.jpg
+konum18_153826_050_0.67,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_050_0.67.jpg
+konum18_153826_055_0.62,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_055_0.62.jpg
+konum18_153826_058_0.61,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_058_0.61.jpg
+konum18_153826_059_0.60,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_059_0.60.jpg
+konum18_153826_062_0.59,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_062_0.59.jpg
+konum18_153826_063_0.59,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_063_0.59.jpg
+konum18_153826_064_0.58,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_064_0.58.jpg
+konum18_153826_065_0.58,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,çürük,0.89,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_065_0.58.jpg
+konum18_153826_069_0.54,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_069_0.54.jpg
+konum18_153826_073_0.50,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_073_0.50.jpg
+konum18_153826_077_0.47,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_077_0.47.jpg
+konum18_153826_080_0.45,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_080_0.45.jpg
+konum18_153826_082_0.43,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_082_0.43.jpg
+konum18_153826_087_0.37,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_087_0.37.jpg
+konum18_153826_089_0.34,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_089_0.34.jpg
+konum18_153826_092_0.31,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_092_0.31.jpg
+konum18_153826_094_0.31,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_094_0.31.jpg
+konum18_153826_095_0.30,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum18_153826_095_0.30.jpg
+konum20_153908_009_0.39,Salatalik,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Salatalik\konum20_153908_009_0.39.jpg
+konum13_153642_004_0.72,Seftali,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Seftali\konum13_153642_004_0.72.jpg
+konum13_153642_016_0.39,Seftali,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Seftali\konum13_153642_016_0.39.jpg
+konum13_153642_022_0.30,Seftali,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Seftali\konum13_153642_022_0.30.jpg
+konum19_153847_004_0.37,Tatl Patates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Tatl Patates\konum19_153847_004_0.37.jpg
+konum20_153908_006_0.48,Tatl Patates,Carrefoursa Maltepe,2025-10-24,17:00:00,sağlıklı,,crops\camera_002\2025-10-24\17\Tatl Patates\konum20_153908_006_0.48.jpg

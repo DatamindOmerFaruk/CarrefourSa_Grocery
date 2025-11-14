@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-10-24T13:42:54.023017",
+  "batch_index": 8,
+  "total_in_batch": 25,
+  "problematic_count": 4,
+  "problematic_images": [
+    {
+      "index": 4,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum16_165405_017_0.85.jpg",
+      "urun": "Domates",
+      "id": "konum16_165405_017_0.85"
+    },
+    {
+      "index": 5,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum16_165405_023_0.83.jpg",
+      "urun": "Domates",
+      "id": "konum16_165405_023_0.83"
+    },
+    {
+      "index": 10,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum16_165405_081_0.50.jpg",
+      "urun": "Domates",
+      "id": "konum16_165405_081_0.50"
+    },
+    {
+      "index": 14,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum16_165405_104_0.32.jpg",
+      "urun": "Domates",
+      "id": "konum16_165405_104_0.32"
+    }
+  ]
+}

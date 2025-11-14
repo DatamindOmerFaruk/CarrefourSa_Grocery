@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T14:35:00.060759",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_033.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_009_0.88.jpg",
+      "id": "lahana_122853_009_0.88"
+    },
+    {
+      "index": 2,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_010_0.88.jpg",
+      "id": "lahana_122853_010_0.88"
+    },
+    {
+      "index": 3,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_012_0.85.jpg",
+      "id": "lahana_122853_012_0.85"
+    },
+    {
+      "index": 4,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_014_0.85.jpg",
+      "id": "lahana_122853_014_0.85"
+    },
+    {
+      "index": 5,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_015_0.84.jpg",
+      "id": "lahana_122853_015_0.84"
+    },
+    {
+      "index": 6,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_018_0.81.jpg",
+      "id": "lahana_122853_018_0.81"
+    },
+    {
+      "index": 7,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_019_0.79.jpg",
+      "id": "lahana_122853_019_0.79"
+    },
+    {
+      "index": 8,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_020_0.78.jpg",
+      "id": "lahana_122853_020_0.78"
+    },
+    {
+      "index": 9,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_022_0.72.jpg",
+      "id": "lahana_122853_022_0.72"
+    },
+    {
+      "index": 10,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_023_0.69.jpg",
+      "id": "lahana_122853_023_0.69"
+    },
+    {
+      "index": 11,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_026_0.60.jpg",
+      "id": "lahana_122853_026_0.60"
+    },
+    {
+      "index": 12,
+      "urun": "lahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\lahana\\lahana_122853_028_0.30.jpg",
+      "id": "lahana_122853_028_0.30"
+    },
+    {
+      "index": 13,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_031_0.85.jpg",
+      "id": "mandalina1_122717_031_0.85"
+    },
+    {
+      "index": 14,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_034_0.83.jpg",
+      "id": "mandalina1_122717_034_0.83"
+    },
+    {
+      "index": 15,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_037_0.81.jpg",
+      "id": "mandalina1_122717_037_0.81"
+    },
+    {
+      "index": 16,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_040_0.80.jpg",
+      "id": "mandalina1_122717_040_0.80"
+    },
+    {
+      "index": 17,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_042_0.80.jpg",
+      "id": "mandalina1_122717_042_0.80"
+    },
+    {
+      "index": 18,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_045_0.79.jpg",
+      "id": "mandalina1_122717_045_0.79"
+    },
+    {
+      "index": 19,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_053_0.74.jpg",
+      "id": "mandalina1_122717_053_0.74"
+    },
+    {
+      "index": 20,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_059_0.72.jpg",
+      "id": "mandalina1_122717_059_0.72"
+    },
+    {
+      "index": 21,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_060_0.71.jpg",
+      "id": "mandalina1_122717_060_0.71"
+    },
+    {
+      "index": 22,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_063_0.70.jpg",
+      "id": "mandalina1_122717_063_0.70"
+    },
+    {
+      "index": 23,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_066_0.69.jpg",
+      "id": "mandalina1_122717_066_0.69"
+    },
+    {
+      "index": 24,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_067_0.69.jpg",
+      "id": "mandalina1_122717_067_0.69"
+    },
+    {
+      "index": 25,
+      "urun": "Limon",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Limon\\mandalina1_122717_069_0.68.jpg",
+      "id": "mandalina1_122717_069_0.68"
+    }
+  ]
+}

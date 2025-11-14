@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_030.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v1",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "kirmizilahana",
+    "2": "kirmizilahana",
+    "3": "kirmizilahana",
+    "4": "kirmizilahana",
+    "5": "kirmizilahana",
+    "6": "kirmizilahana",
+    "7": "kirmizilahana",
+    "8": "kirmizilahana",
+    "9": "kirmizilahana",
+    "10": "kirmizilahana",
+    "11": "kirmizilahana",
+    "12": "kirmizilahana",
+    "13": "kirmizilahana",
+    "14": "kirmizilahana",
+    "15": "kirmizilahana",
+    "16": "kirmizilahana",
+    "17": "kirmizilahana",
+    "18": "kirmizilahana",
+    "19": "Kivi",
+    "20": "Kivi",
+    "21": "Kivi",
+    "22": "Kivi",
+    "23": "Kivi",
+    "24": "Kivi",
+    "25": "Kivi"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 5,
+        "guven": 0.9
+      },
+      {
+        "id": 6,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "lahana_164834_008_0.90",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_008_0.90.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_009_0.90",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_009_0.90.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_010_0.90",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_010_0.90.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_011_0.87",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_011_0.87.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_012_0.87",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_012_0.87.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "lahana_164834_013_0.84",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_013_0.84.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "lahana_164834_014_0.84",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_014_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_017_0.78",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_017_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_019_0.73",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_019_0.73.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_020_0.73",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_020_0.73.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_021_0.72",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_021_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_022_0.67",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_022_0.67.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_023_0.67",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_023_0.67.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_028_0.52",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_028_0.52.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_029_0.49",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_029_0.49.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_030_0.47",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_030_0.47.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_032_0.41",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_032_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "lahana_164834_035_0.25",
+      "urun": "kirmizilahana",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\kirmizilahana\\lahana_164834_035_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_164607_128_0.83",
+      "urun": "Kivi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kivi\\portakal_164607_128_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_164607_129_0.83",
+      "urun": "Kivi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kivi\\portakal_164607_129_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_164607_135_0.82",
+      "urun": "Kivi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kivi\\portakal_164607_135_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_164607_136_0.82",
+      "urun": "Kivi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kivi\\portakal_164607_136_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_164607_137_0.81",
+      "urun": "Kivi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kivi\\portakal_164607_137_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_164607_141_0.81",
+      "urun": "Kivi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kivi\\portakal_164607_141_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_164607_142_0.81",
+      "urun": "Kivi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kivi\\portakal_164607_142_0.81.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

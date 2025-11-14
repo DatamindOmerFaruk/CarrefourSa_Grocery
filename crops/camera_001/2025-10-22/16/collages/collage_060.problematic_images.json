@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-24T13:30:38.820630",
+  "batch_index": 60,
+  "total_in_batch": 25,
+  "problematic_count": 1,
+  "problematic_images": [
+    {
+      "index": 9,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Portakal\\karpuz_164546_176_0.60.jpg",
+      "urun": "Portakal",
+      "id": "karpuz_164546_176_0.60"
+    }
+  ]
+}

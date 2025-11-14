@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\17\\collages\\collage_007.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Domates",
+    "2": "Domates",
+    "3": "Domates",
+    "4": "Domates",
+    "5": "Domates",
+    "6": "Domates",
+    "7": "Domates",
+    "8": "Domates",
+    "9": "Domates",
+    "10": "Domates",
+    "11": "Domates",
+    "12": "Domates",
+    "13": "Domates",
+    "14": "Domates",
+    "15": "Domates",
+    "16": "Domates",
+    "17": "Domates",
+    "18": "Domates",
+    "19": "Domates",
+    "20": "Domates",
+    "21": "Domates",
+    "22": "Domates",
+    "23": "Domates",
+    "24": "Domates",
+    "25": "Domates"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 7,
+        "guven": 0.92
+      },
+      {
+        "id": 8,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "konum18_153826_001_0.91",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_001_0.91.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_002_0.91",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_002_0.91.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_003_0.90",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_003_0.90.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_004_0.90",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_004_0.90.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_006_0.89",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_006_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_007_0.89",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_007_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_009_0.87",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_009_0.87.jpg",
+      "durum": "çürük",
+      "guven": 0.92
+    },
+    {
+      "id": "konum18_153826_012_0.86",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_012_0.86.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "konum18_153826_013_0.85",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_013_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_016_0.85",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_016_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_018_0.84",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_018_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_021_0.83",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_021_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_025_0.81",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_025_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_034_0.77",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_034_0.77.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_051_0.66",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_051_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_067_0.57",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_067_0.57.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_068_0.57",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_068_0.57.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_072_0.52",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_072_0.52.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_153826_078_0.46",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum18_153826_078_0.46.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum19_153847_002_0.51",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum19_153847_002_0.51.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum3_153316_000_0.88",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum3_153316_000_0.88.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum3_153316_002_0.72",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum3_153316_002_0.72.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum3_153316_003_0.66",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum3_153316_003_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum3_153316_004_0.53",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum3_153316_004_0.53.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum3_153316_008_0.49",
+      "urun": "Domates",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\17\\Domates\\konum3_153316_008_0.49.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

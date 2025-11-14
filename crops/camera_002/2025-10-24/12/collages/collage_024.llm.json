@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\12\\collages\\collage_024.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v1",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Kirmizi Erik",
+    "2": "Kirmizi Erik",
+    "3": "Kirmizi Erik",
+    "4": "Kirmizi Erik",
+    "5": "Kirmizi Erik",
+    "6": "Kirmizi Erik",
+    "7": "Kirmizi Erik",
+    "8": "Kirmizi Erik",
+    "9": "Kirmizi Erik",
+    "10": "Kirmizi Erik",
+    "11": "Kirmizi Erik",
+    "12": "Kirmizi Erik",
+    "13": "kirmizilahana",
+    "14": "kirmizilahana",
+    "15": "kirmizilahana",
+    "16": "kirmizilahana",
+    "17": "kirmizilahana",
+    "18": "kirmizilahana",
+    "19": "kirmizilahana",
+    "20": "kirmizilahana",
+    "21": "kirmizilahana",
+    "22": "kirmizilahana",
+    "23": "kirmizilahana",
+    "24": "kirmizilahana",
+    "25": "kirmizilahana"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 8,
+        "guven": 0.92
+      },
+      {
+        "id": 11,
+        "guven": 0.9
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "konum16_123304_114_0.35",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum16_123304_114_0.35.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_123304_120_0.32",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum16_123304_120_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_123304_129_0.28",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum16_123304_129_0.28.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_123304_133_0.25",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum16_123304_133_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_063_0.32",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum17_123320_063_0.32.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_078_0.25",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum17_123320_078_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_048_0.66",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum18_123336_048_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_055_0.62",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum18_123336_055_0.62.jpg",
+      "durum": "çürük",
+      "guven": 0.92
+    },
+    {
+      "id": "konum18_123336_076_0.42",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum18_123336_076_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_079_0.39",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum18_123336_079_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_080_0.38",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum18_123336_080_0.38.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "konum3_122940_013_0.42",
+      "urun": "Kirmizi Erik",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\Kirmizi Erik\\konum3_122940_013_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_123304_067_0.60",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum16_123304_067_0.60.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_123304_077_0.50",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum16_123304_077_0.50.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_123304_089_0.45",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum16_123304_089_0.45.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_123304_095_0.43",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum16_123304_095_0.43.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_123304_125_0.31",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum16_123304_125_0.31.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_013_0.84",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum17_123320_013_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_022_0.79",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum17_123320_022_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_033_0.70",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum17_123320_033_0.70.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_038_0.63",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum17_123320_038_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_046_0.51",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum17_123320_046_0.51.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_054_0.41",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum17_123320_054_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum17_123320_056_0.37",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum17_123320_056_0.37.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum18_123336_010_0.88",
+      "urun": "kirmizilahana",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\12\\kirmizilahana\\konum18_123336_010_0.88.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

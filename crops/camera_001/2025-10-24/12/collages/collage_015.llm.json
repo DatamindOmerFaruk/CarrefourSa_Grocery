@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_015.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v1",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Domates",
+    "2": "Domates",
+    "3": "Domates",
+    "4": "Domates",
+    "5": "Domates",
+    "6": "Domates",
+    "7": "Domates",
+    "8": "Domates",
+    "9": "Domates",
+    "10": "Elma",
+    "11": "Elma",
+    "12": "Elma",
+    "13": "Greyfurt",
+    "14": "Greyfurt",
+    "15": "Hindistan Cevizi",
+    "16": "Hindistan Cevizi",
+    "17": "Hindistan Cevizi",
+    "18": "Hindistan Cevizi",
+    "19": "Hindistan Cevizi",
+    "20": "Hindistan Cevizi",
+    "21": "Hindistan Cevizi",
+    "22": "Hindistan Cevizi",
+    "23": "Hindistan Cevizi",
+    "24": "Hindistan Cevizi",
+    "25": "Hindistan Cevizi"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 14,
+        "guven": 0.9
+      },
+      {
+        "id": 21,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "salkım_122805_281_0.42",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_281_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_122805_282_0.42",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_282_0.42.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_122805_284_0.41",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_284_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_122805_285_0.40",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_285_0.40.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_122805_287_0.39",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_287_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_122805_288_0.39",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_288_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_122805_289_0.39",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_289_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_122805_290_0.38",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_290_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_122805_292_0.38",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_292_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "karpuz_122644_256_0.73",
+      "urun": "Elma",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Elma\\karpuz_122644_256_0.73.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "karpuz_122644_281_0.69",
+      "urun": "Elma",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Elma\\karpuz_122644_281_0.69.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "karpuz_122644_291_0.67",
+      "urun": "Elma",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Elma\\karpuz_122644_291_0.67.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_290_0.38",
+      "urun": "Greyfurt",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Greyfurt\\muz_122749_290_0.38.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "portakal_122700_247_0.74",
+      "urun": "Greyfurt",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Greyfurt\\portakal_122700_247_0.74.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "biber_122822_178_0.43",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\biber_122822_178_0.43.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_039_0.85",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_039_0.85.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_047_0.84",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_047_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_048_0.84",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_048_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_054_0.83",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_054_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_061_0.83",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_061_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_068_0.82",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_068_0.82.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "muz_122749_071_0.82",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_071_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_079_0.80",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_079_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_080_0.80",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_080_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "muz_122749_082_0.80",
+      "urun": "Hindistan Cevizi",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "12:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\12\\Hindistan Cevizi\\muz_122749_082_0.80.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

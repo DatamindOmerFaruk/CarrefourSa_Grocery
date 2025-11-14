@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T14:31:24.554732",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_026.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_005_0.91.jpg",
+      "id": "lahana_122853_005_0.91"
+    },
+    {
+      "index": 2,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_006_0.91.jpg",
+      "id": "lahana_122853_006_0.91"
+    },
+    {
+      "index": 3,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_007_0.90.jpg",
+      "id": "lahana_122853_007_0.90"
+    },
+    {
+      "index": 4,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_008_0.90.jpg",
+      "id": "lahana_122853_008_0.90"
+    },
+    {
+      "index": 5,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_011_0.86.jpg",
+      "id": "lahana_122853_011_0.86"
+    },
+    {
+      "index": 6,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_013_0.85.jpg",
+      "id": "lahana_122853_013_0.85"
+    },
+    {
+      "index": 7,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_016_0.84.jpg",
+      "id": "lahana_122853_016_0.84"
+    },
+    {
+      "index": 8,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_017_0.83.jpg",
+      "id": "lahana_122853_017_0.83"
+    },
+    {
+      "index": 9,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_021_0.74.jpg",
+      "id": "lahana_122853_021_0.74"
+    },
+    {
+      "index": 10,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_024_0.67.jpg",
+      "id": "lahana_122853_024_0.67"
+    },
+    {
+      "index": 11,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_025_0.65.jpg",
+      "id": "lahana_122853_025_0.65"
+    },
+    {
+      "index": 12,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_027_0.34.jpg",
+      "id": "lahana_122853_027_0.34"
+    },
+    {
+      "index": 13,
+      "urun": "kirmizilahana",
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_029_0.30.jpg",
+      "id": "lahana_122853_029_0.30"
+    },
+    {
+      "index": 14,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\muz_122749_202_0.57.jpg",
+      "id": "muz_122749_202_0.57"
+    },
+    {
+      "index": 15,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\muz_122749_228_0.52.jpg",
+      "id": "muz_122749_228_0.52"
+    },
+    {
+      "index": 16,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\muz_122749_262_0.44.jpg",
+      "id": "muz_122749_262_0.44"
+    },
+    {
+      "index": 17,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_093_0.87.jpg",
+      "id": "portakal_122700_093_0.87"
+    },
+    {
+      "index": 18,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_103_0.86.jpg",
+      "id": "portakal_122700_103_0.86"
+    },
+    {
+      "index": 19,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_106_0.86.jpg",
+      "id": "portakal_122700_106_0.86"
+    },
+    {
+      "index": 20,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_107_0.86.jpg",
+      "id": "portakal_122700_107_0.86"
+    },
+    {
+      "index": 21,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_111_0.86.jpg",
+      "id": "portakal_122700_111_0.86"
+    },
+    {
+      "index": 22,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_113_0.86.jpg",
+      "id": "portakal_122700_113_0.86"
+    },
+    {
+      "index": 23,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_114_0.86.jpg",
+      "id": "portakal_122700_114_0.86"
+    },
+    {
+      "index": 24,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_117_0.85.jpg",
+      "id": "portakal_122700_117_0.85"
+    },
+    {
+      "index": 25,
+      "urun": "Kivi",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Kivi\\portakal_122700_120_0.85.jpg",
+      "id": "portakal_122700_120_0.85"
+    }
+  ]
+}

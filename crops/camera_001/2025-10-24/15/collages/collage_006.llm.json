@@ -1,0 +1,265 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_006.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "collages",
+    "2": "collages",
+    "3": "collages",
+    "4": "collages",
+    "5": "collages",
+    "6": "collages",
+    "7": "collages",
+    "8": "collages",
+    "9": "collages",
+    "10": "collages",
+    "11": "collages",
+    "12": "collages",
+    "13": "collages",
+    "14": "collages",
+    "15": "collages",
+    "16": "collages",
+    "17": "collages",
+    "18": "collages",
+    "19": "collages",
+    "20": "collages",
+    "21": "collages",
+    "22": "collages",
+    "23": "collages",
+    "24": "collages",
+    "25": "collages"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": []
+  },
+  "items": [
+    {
+      "id": "collage_030",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_030.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_031",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_031.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_032",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_032.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_033",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_033.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_034",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_034.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_035",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_035.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_036",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_036.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_037",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_037.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_038",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_038.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_039",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_039.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_040",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_040.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_041",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_041.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_042",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_042.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_043",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_043.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_044",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_044.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_045",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_045.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_046",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_046.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_047",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_047.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_048",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_048.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_049",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_049.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_050",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_050.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_051",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_051.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_052",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_052.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_053",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_053.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "collage_054",
+      "urun": "collages",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\15\\collages\\collage_054.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-24T13:45:04.982545",
+  "batch_index": 12,
+  "total_in_batch": 25,
+  "problematic_count": 1,
+  "problematic_images": [
+    {
+      "index": 25,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum6_165038_001_0.90.jpg",
+      "urun": "Elma",
+      "id": "konum6_165038_001_0.90"
+    }
+  ]
+}

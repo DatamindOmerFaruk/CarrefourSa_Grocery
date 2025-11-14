@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:25:08.346709",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_051.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\muz_164710_288_0.36.jpg",
+      "id": "muz_164710_288_0.36"
+    },
+    {
+      "index": 2,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\muz_164710_289_0.36.jpg",
+      "id": "muz_164710_289_0.36"
+    },
+    {
+      "index": 3,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\muz_164710_293_0.35.jpg",
+      "id": "muz_164710_293_0.35"
+    },
+    {
+      "index": 4,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\muz_164710_295_0.35.jpg",
+      "id": "muz_164710_295_0.35"
+    },
+    {
+      "index": 5,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\muz_164710_296_0.35.jpg",
+      "id": "muz_164710_296_0.35"
+    },
+    {
+      "index": 6,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\portakal_164607_087_0.87.jpg",
+      "id": "portakal_164607_087_0.87"
+    },
+    {
+      "index": 7,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\portakal_164607_099_0.86.jpg",
+      "id": "portakal_164607_099_0.86"
+    },
+    {
+      "index": 8,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\portakal_164607_102_0.86.jpg",
+      "id": "portakal_164607_102_0.86"
+    },
+    {
+      "index": 9,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\portakal_164607_111_0.85.jpg",
+      "id": "portakal_164607_111_0.85"
+    },
+    {
+      "index": 10,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\portakal_164607_171_0.78.jpg",
+      "id": "portakal_164607_171_0.78"
+    },
+    {
+      "index": 11,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\portakal_164607_196_0.75.jpg",
+      "id": "portakal_164607_196_0.75"
+    },
+    {
+      "index": 12,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\portakal_164607_220_0.71.jpg",
+      "id": "portakal_164607_220_0.71"
+    },
+    {
+      "index": 13,
+      "urun": "Mandalina",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\portakal_164607_236_0.69.jpg",
+      "id": "portakal_164607_236_0.69"
+    },
+    {
+      "index": 14,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_000_0.92.jpg",
+      "id": "muz_164710_000_0.92"
+    },
+    {
+      "index": 15,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_001_0.92.jpg",
+      "id": "muz_164710_001_0.92"
+    },
+    {
+      "index": 16,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_002_0.92.jpg",
+      "id": "muz_164710_002_0.92"
+    },
+    {
+      "index": 17,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_004_0.90.jpg",
+      "id": "muz_164710_004_0.90"
+    },
+    {
+      "index": 18,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_006_0.90.jpg",
+      "id": "muz_164710_006_0.90"
+    },
+    {
+      "index": 19,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_008_0.89.jpg",
+      "id": "muz_164710_008_0.89"
+    },
+    {
+      "index": 20,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_009_0.89.jpg",
+      "id": "muz_164710_009_0.89"
+    },
+    {
+      "index": 21,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_010_0.89.jpg",
+      "id": "muz_164710_010_0.89"
+    },
+    {
+      "index": 22,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_011_0.89.jpg",
+      "id": "muz_164710_011_0.89"
+    },
+    {
+      "index": 23,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_013_0.88.jpg",
+      "id": "muz_164710_013_0.88"
+    },
+    {
+      "index": 24,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_015_0.88.jpg",
+      "id": "muz_164710_015_0.88"
+    },
+    {
+      "index": 25,
+      "urun": "Mango",
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mango\\muz_164710_017_0.88.jpg",
+      "id": "muz_164710_017_0.88"
+    }
+  ]
+}

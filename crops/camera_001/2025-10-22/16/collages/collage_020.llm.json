@@ -1,0 +1,265 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-22\\16\\collages\\collage_020.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v1",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Kapya Biber",
+    "2": "Kapya Biber",
+    "3": "Kapya Biber",
+    "4": "Kapya Biber",
+    "5": "Kapya Biber",
+    "6": "Kapya Biber",
+    "7": "Kapya Biber",
+    "8": "Kapya Biber",
+    "9": "Kapya Biber",
+    "10": "Kapya Biber",
+    "11": "Kapya Biber",
+    "12": "Kapya Biber",
+    "13": "Kapya Biber",
+    "14": "Kapya Biber",
+    "15": "Kapya Biber",
+    "16": "Kapya Biber",
+    "17": "Kapya Biber",
+    "18": "Kapya Biber",
+    "19": "Kapya Biber",
+    "20": "Kapya Biber",
+    "21": "Kapya Biber",
+    "22": "Kapya Biber",
+    "23": "Kapya Biber",
+    "24": "Kapya Biber",
+    "25": "Kapya Biber"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": []
+  },
+  "items": [
+    {
+      "id": "biber_164753_052_0.84",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_052_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_053_0.84",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_053_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_057_0.84",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_057_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_058_0.84",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_058_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_060_0.84",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_060_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_062_0.83",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_062_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_063_0.83",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_063_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_066_0.83",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_066_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_069_0.83",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_069_0.83.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_073_0.82",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_073_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_076_0.82",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_076_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_077_0.82",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_077_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_078_0.82",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_078_0.82.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_079_0.81",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_079_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_082_0.81",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_082_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_095_0.79",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_095_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_096_0.79",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_096_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_103_0.78",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_103_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_104_0.78",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_104_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_105_0.77",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_105_0.77.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_107_0.77",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_107_0.77.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_109_0.77",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_109_0.77.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_113_0.76",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_113_0.76.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_114_0.76",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_114_0.76.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "biber_164753_117_0.76",
+      "urun": "Kapya Biber",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-22",
+      "saat": "16:00:00",
+      "dosya": "crops\\camera_001\\2025-10-22\\16\\Kapya Biber\\biber_164753_117_0.76.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

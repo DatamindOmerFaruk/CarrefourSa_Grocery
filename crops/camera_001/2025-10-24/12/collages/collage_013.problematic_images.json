@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-10-24T14:27:22.868807",
+  "batch_index": 13,
+  "total_in_batch": 25,
+  "problematic_count": 3,
+  "problematic_images": [
+    {
+      "index": 5,
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_160_0.74.jpg",
+      "urun": "Domates",
+      "id": "salkım_122805_160_0.74"
+    },
+    {
+      "index": 10,
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_172_0.72.jpg",
+      "urun": "Domates",
+      "id": "salkım_122805_172_0.72"
+    },
+    {
+      "index": 25,
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_203_0.64.jpg",
+      "urun": "Domates",
+      "id": "salkım_122805_203_0.64"
+    }
+  ]
+}

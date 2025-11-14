@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:56:51.035537",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_002\\2025-10-22\\16\\collages\\collage_034.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum5_165017_025_0.41.jpg",
+      "id": "konum5_165017_025_0.41"
+    },
+    {
+      "index": 2,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum5_165017_027_0.38.jpg",
+      "id": "konum5_165017_027_0.38"
+    },
+    {
+      "index": 3,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum5_165017_030_0.35.jpg",
+      "id": "konum5_165017_030_0.35"
+    },
+    {
+      "index": 4,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum5_165017_031_0.32.jpg",
+      "id": "konum5_165017_031_0.32"
+    },
+    {
+      "index": 5,
+      "urun": "Nar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nar\\konum6_165038_029_0.35.jpg",
+      "id": "konum6_165038_029_0.35"
+    },
+    {
+      "index": 6,
+      "urun": "Nektarin",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Nektarin\\konum5_165017_036_0.26.jpg",
+      "id": "konum5_165017_036_0.26"
+    },
+    {
+      "index": 7,
+      "urun": "pancar",
+      "path": "crops\\camera_002\\2025-10-22\\16\\pancar\\konum18_165447_082_0.46.jpg",
+      "id": "konum18_165447_082_0.46"
+    },
+    {
+      "index": 8,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_020_0.87.jpg",
+      "id": "konum10_165201_020_0.87"
+    },
+    {
+      "index": 9,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_028_0.86.jpg",
+      "id": "konum10_165201_028_0.86"
+    },
+    {
+      "index": 10,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_033_0.86.jpg",
+      "id": "konum10_165201_033_0.86"
+    },
+    {
+      "index": 11,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_045_0.83.jpg",
+      "id": "konum10_165201_045_0.83"
+    },
+    {
+      "index": 12,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_048_0.82.jpg",
+      "id": "konum10_165201_048_0.82"
+    },
+    {
+      "index": 13,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_050_0.82.jpg",
+      "id": "konum10_165201_050_0.82"
+    },
+    {
+      "index": 14,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_059_0.79.jpg",
+      "id": "konum10_165201_059_0.79"
+    },
+    {
+      "index": 15,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_067_0.76.jpg",
+      "id": "konum10_165201_067_0.76"
+    },
+    {
+      "index": 16,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_068_0.75.jpg",
+      "id": "konum10_165201_068_0.75"
+    },
+    {
+      "index": 17,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_070_0.74.jpg",
+      "id": "konum10_165201_070_0.74"
+    },
+    {
+      "index": 18,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_073_0.70.jpg",
+      "id": "konum10_165201_073_0.70"
+    },
+    {
+      "index": 19,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_075_0.67.jpg",
+      "id": "konum10_165201_075_0.67"
+    },
+    {
+      "index": 20,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum10_165201_094_0.48.jpg",
+      "id": "konum10_165201_094_0.48"
+    },
+    {
+      "index": 21,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum8_165119_000_0.90.jpg",
+      "id": "konum8_165119_000_0.90"
+    },
+    {
+      "index": 22,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum8_165119_001_0.86.jpg",
+      "id": "konum8_165119_001_0.86"
+    },
+    {
+      "index": 23,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum8_165119_002_0.85.jpg",
+      "id": "konum8_165119_002_0.85"
+    },
+    {
+      "index": 24,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum8_165119_003_0.84.jpg",
+      "id": "konum8_165119_003_0.84"
+    },
+    {
+      "index": 25,
+      "urun": "Patlican",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Patlican\\konum8_165119_005_0.82.jpg",
+      "id": "konum8_165119_005_0.82"
+    }
+  ]
+}

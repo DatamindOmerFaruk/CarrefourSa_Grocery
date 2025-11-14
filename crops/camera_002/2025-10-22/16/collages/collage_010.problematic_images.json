@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-24T13:43:59.254591",
+  "batch_index": 10,
+  "total_in_batch": 25,
+  "problematic_count": 2,
+  "problematic_images": [
+    {
+      "index": 11,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Domates\\konum9_165140_018_0.76.jpg",
+      "urun": "Domates",
+      "id": "konum9_165140_018_0.76"
+    },
+    {
+      "index": 25,
+      "path": "crops\\camera_002\\2025-10-22\\16\\Elma\\konum16_165405_105_0.32.jpg",
+      "urun": "Elma",
+      "id": "konum16_165405_105_0.32"
+    }
+  ]
+}

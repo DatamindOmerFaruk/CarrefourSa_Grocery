@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T14:27:24.754712",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_001\\2025-10-24\\12\\collages\\collage_014.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_204_0.64.jpg",
+      "id": "salkım_122805_204_0.64"
+    },
+    {
+      "index": 2,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_206_0.62.jpg",
+      "id": "salkım_122805_206_0.62"
+    },
+    {
+      "index": 3,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_210_0.62.jpg",
+      "id": "salkım_122805_210_0.62"
+    },
+    {
+      "index": 4,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_213_0.61.jpg",
+      "id": "salkım_122805_213_0.61"
+    },
+    {
+      "index": 5,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_214_0.61.jpg",
+      "id": "salkım_122805_214_0.61"
+    },
+    {
+      "index": 6,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_221_0.60.jpg",
+      "id": "salkım_122805_221_0.60"
+    },
+    {
+      "index": 7,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_223_0.59.jpg",
+      "id": "salkım_122805_223_0.59"
+    },
+    {
+      "index": 8,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_231_0.57.jpg",
+      "id": "salkım_122805_231_0.57"
+    },
+    {
+      "index": 9,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_234_0.55.jpg",
+      "id": "salkım_122805_234_0.55"
+    },
+    {
+      "index": 10,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_237_0.54.jpg",
+      "id": "salkım_122805_237_0.54"
+    },
+    {
+      "index": 11,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_246_0.53.jpg",
+      "id": "salkım_122805_246_0.53"
+    },
+    {
+      "index": 12,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_248_0.52.jpg",
+      "id": "salkım_122805_248_0.52"
+    },
+    {
+      "index": 13,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_250_0.52.jpg",
+      "id": "salkım_122805_250_0.52"
+    },
+    {
+      "index": 14,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_254_0.49.jpg",
+      "id": "salkım_122805_254_0.49"
+    },
+    {
+      "index": 15,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_256_0.49.jpg",
+      "id": "salkım_122805_256_0.49"
+    },
+    {
+      "index": 16,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_260_0.48.jpg",
+      "id": "salkım_122805_260_0.48"
+    },
+    {
+      "index": 17,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_261_0.48.jpg",
+      "id": "salkım_122805_261_0.48"
+    },
+    {
+      "index": 18,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_262_0.48.jpg",
+      "id": "salkım_122805_262_0.48"
+    },
+    {
+      "index": 19,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_265_0.48.jpg",
+      "id": "salkım_122805_265_0.48"
+    },
+    {
+      "index": 20,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_266_0.48.jpg",
+      "id": "salkım_122805_266_0.48"
+    },
+    {
+      "index": 21,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_269_0.46.jpg",
+      "id": "salkım_122805_269_0.46"
+    },
+    {
+      "index": 22,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_274_0.44.jpg",
+      "id": "salkım_122805_274_0.44"
+    },
+    {
+      "index": 23,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_275_0.44.jpg",
+      "id": "salkım_122805_275_0.44"
+    },
+    {
+      "index": 24,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_276_0.44.jpg",
+      "id": "salkım_122805_276_0.44"
+    },
+    {
+      "index": 25,
+      "urun": "Domates",
+      "path": "crops\\camera_001\\2025-10-24\\12\\Domates\\salkım_122805_278_0.43.jpg",
+      "id": "salkım_122805_278_0.43"
+    }
+  ]
+}

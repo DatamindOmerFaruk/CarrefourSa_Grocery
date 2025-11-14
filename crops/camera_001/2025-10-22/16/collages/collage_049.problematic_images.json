@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-24T13:24:36.598975",
+  "batch_index": 49,
+  "total_in_batch": 25,
+  "problematic_count": 1,
+  "problematic_images": [
+    {
+      "index": 25,
+      "path": "crops\\camera_001\\2025-10-22\\16\\Mandalina\\muz_164710_240_0.47.jpg",
+      "urun": "Mandalina",
+      "id": "muz_164710_240_0.47"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+# Ana Proje Bağımlılıkları
+# Python 3.10+ gereklidir
+
+# HTTP İstekleri
+requests>=2.32.0
+
+# Görüntü İşleme
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# YAML Konfigürasyon
+PyYAML>=6.0.1
+
+# YOLO Model (Object Detection)
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Yüz Algılama (Face Blur için)
+facenet-pytorch
+
+# FastAPI ve Uvicorn (Manav Analiz API)
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# S3 Object Storage
+boto3>=1.34.0
+
+# PostgreSQL
+psycopg2-binary>=2.9.0,<3.0.0
+
+# Azure Storage (Batch Processor için)
+azure-storage-blob==12.19.0
+
+# Azure OpenAI (LLM için)
+openai>=1.30.0
+

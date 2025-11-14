@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-24T14:31:21.309846",
+  "batch_index": 25,
+  "total_in_batch": 25,
+  "problematic_count": 1,
+  "problematic_images": [
+    {
+      "index": 22,
+      "path": "crops\\camera_001\\2025-10-24\\12\\kirmizilahana\\lahana_122853_001_0.94.jpg",
+      "urun": "kirmizilahana",
+      "id": "lahana_122853_001_0.94"
+    }
+  ]
+}

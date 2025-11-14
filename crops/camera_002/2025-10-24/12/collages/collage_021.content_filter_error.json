@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T15:10:22.168427",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_002\\2025-10-24\\12\\collages\\collage_021.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_002_0.82.jpg",
+      "id": "konum14_123232_002_0.82"
+    },
+    {
+      "index": 2,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_005_0.77.jpg",
+      "id": "konum14_123232_005_0.77"
+    },
+    {
+      "index": 3,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_006_0.76.jpg",
+      "id": "konum14_123232_006_0.76"
+    },
+    {
+      "index": 4,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_007_0.75.jpg",
+      "id": "konum14_123232_007_0.75"
+    },
+    {
+      "index": 5,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_008_0.74.jpg",
+      "id": "konum14_123232_008_0.74"
+    },
+    {
+      "index": 6,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_010_0.73.jpg",
+      "id": "konum14_123232_010_0.73"
+    },
+    {
+      "index": 7,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_012_0.70.jpg",
+      "id": "konum14_123232_012_0.70"
+    },
+    {
+      "index": 8,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_013_0.68.jpg",
+      "id": "konum14_123232_013_0.68"
+    },
+    {
+      "index": 9,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_014_0.67.jpg",
+      "id": "konum14_123232_014_0.67"
+    },
+    {
+      "index": 10,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_015_0.65.jpg",
+      "id": "konum14_123232_015_0.65"
+    },
+    {
+      "index": 11,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_016_0.65.jpg",
+      "id": "konum14_123232_016_0.65"
+    },
+    {
+      "index": 12,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_018_0.63.jpg",
+      "id": "konum14_123232_018_0.63"
+    },
+    {
+      "index": 13,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_025_0.60.jpg",
+      "id": "konum14_123232_025_0.60"
+    },
+    {
+      "index": 14,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_027_0.59.jpg",
+      "id": "konum14_123232_027_0.59"
+    },
+    {
+      "index": 15,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_029_0.58.jpg",
+      "id": "konum14_123232_029_0.58"
+    },
+    {
+      "index": 16,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_032_0.56.jpg",
+      "id": "konum14_123232_032_0.56"
+    },
+    {
+      "index": 17,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_034_0.54.jpg",
+      "id": "konum14_123232_034_0.54"
+    },
+    {
+      "index": 18,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_035_0.54.jpg",
+      "id": "konum14_123232_035_0.54"
+    },
+    {
+      "index": 19,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_036_0.53.jpg",
+      "id": "konum14_123232_036_0.53"
+    },
+    {
+      "index": 20,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_041_0.50.jpg",
+      "id": "konum14_123232_041_0.50"
+    },
+    {
+      "index": 21,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_043_0.50.jpg",
+      "id": "konum14_123232_043_0.50"
+    },
+    {
+      "index": 22,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_046_0.48.jpg",
+      "id": "konum14_123232_046_0.48"
+    },
+    {
+      "index": 23,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_050_0.45.jpg",
+      "id": "konum14_123232_050_0.45"
+    },
+    {
+      "index": 24,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_051_0.44.jpg",
+      "id": "konum14_123232_051_0.44"
+    },
+    {
+      "index": 25,
+      "urun": "Kavun",
+      "path": "crops\\camera_002\\2025-10-24\\12\\Kavun\\konum14_123232_056_0.43.jpg",
+      "id": "konum14_123232_056_0.43"
+    }
+  ]
+}

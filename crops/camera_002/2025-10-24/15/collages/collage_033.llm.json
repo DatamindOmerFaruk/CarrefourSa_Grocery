@@ -1,0 +1,265 @@
+{
+  "collage_path": "crops\\camera_002\\2025-10-24\\15\\collages\\collage_033.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Nar",
+    "2": "Nar",
+    "3": "Nar",
+    "4": "Nar",
+    "5": "Nar",
+    "6": "Nar",
+    "7": "Nar",
+    "8": "Nar",
+    "9": "Nar",
+    "10": "Nar",
+    "11": "Nar",
+    "12": "Nar",
+    "13": "Nar",
+    "14": "Nar",
+    "15": "Nar",
+    "16": "Nar",
+    "17": "Nar",
+    "18": "Nar",
+    "19": "Nar",
+    "20": "Nar",
+    "21": "Nar",
+    "22": "Nar",
+    "23": "Nar",
+    "24": "Nar",
+    "25": "Nar"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": []
+  },
+  "items": [
+    {
+      "id": "konum12_153621_034_0.29",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum12_153621_034_0.29.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum12_153621_040_0.26",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum12_153621_040_0.26.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_007_0.84",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_007_0.84.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_013_0.81",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_013_0.81.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_025_0.71",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_025_0.71.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_031_0.68",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_031_0.68.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_033_0.66",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_033_0.66.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_037_0.63",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_037_0.63.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_041_0.60",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_041_0.60.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_055_0.52",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_055_0.52.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_059_0.48",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_059_0.48.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_062_0.47",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_062_0.47.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_071_0.41",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_071_0.41.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_073_0.39",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_073_0.39.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_075_0.37",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_075_0.37.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_082_0.29",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_082_0.29.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_083_0.29",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_083_0.29.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_086_0.27",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_086_0.27.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum15_153724_093_0.25",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum15_153724_093_0.25.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_000_0.92",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum16_153745_000_0.92.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_001_0.92",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum16_153745_001_0.92.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_002_0.91",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum16_153745_002_0.91.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_007_0.89",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum16_153745_007_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_009_0.89",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum16_153745_009_0.89.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "konum16_153745_010_0.89",
+      "urun": "Nar",
+      "magaza": "Carrefoursa Maltepe",
+      "tarih": "2025-10-24",
+      "saat": "15:00:00",
+      "dosya": "crops\\camera_002\\2025-10-24\\15\\Nar\\konum16_153745_010_0.89.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

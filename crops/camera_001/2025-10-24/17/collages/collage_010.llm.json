@@ -1,0 +1,276 @@
+{
+  "collage_path": "crops\\camera_001\\2025-10-24\\17\\collages\\collage_010.jpg",
+  "batch_size": 25,
+  "model_name": "gpt-4.1",
+  "prompt_version": "rotten_only_v2_safe",
+  "latency_ms": null,
+  "num_to_class": {
+    "1": "Domates",
+    "2": "Domates",
+    "3": "Domates",
+    "4": "Domates",
+    "5": "Domates",
+    "6": "Domates",
+    "7": "Domates",
+    "8": "Domates",
+    "9": "Domates",
+    "10": "Domates",
+    "11": "Domates",
+    "12": "Domates",
+    "13": "Domates",
+    "14": "Domates",
+    "15": "Domates",
+    "16": "Domates",
+    "17": "Domates",
+    "18": "Domates",
+    "19": "Domates",
+    "20": "Domates",
+    "21": "Domates",
+    "22": "Domates",
+    "23": "Domates",
+    "24": "Domates",
+    "25": "Domates"
+  },
+  "min_conf_rotten": 0.85,
+  "raw_llm": {
+    "rotten": [
+      {
+        "id": 14,
+        "guven": 0.9
+      },
+      {
+        "id": 17,
+        "guven": 0.87
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "salkım_153112_089_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_089_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_090_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_090_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_091_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_091_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_092_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_092_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_093_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_093_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_095_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_095_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_096_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_096_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_097_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_097_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_098_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_098_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_099_0.80",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_099_0.80.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_100_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_100_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_101_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_101_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_102_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_102_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_104_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_104_0.79.jpg",
+      "durum": "çürük",
+      "guven": 0.9
+    },
+    {
+      "id": "salkım_153112_106_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_106_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_107_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_107_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_110_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_110_0.79.jpg",
+      "durum": "çürük",
+      "guven": 0.87
+    },
+    {
+      "id": "salkım_153112_111_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_111_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_112_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_112_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_113_0.79",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_113_0.79.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_114_0.78",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_114_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_115_0.78",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_115_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_117_0.78",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_117_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_119_0.78",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_119_0.78.jpg",
+      "durum": "sağlıklı"
+    },
+    {
+      "id": "salkım_153112_123_0.78",
+      "urun": "Domates",
+      "magaza": "Genel Müdürlük CarrefourSA",
+      "tarih": "2025-10-24",
+      "saat": "17:00:00",
+      "dosya": "crops\\camera_001\\2025-10-24\\17\\Domates\\salkım_153112_123_0.78.jpg",
+      "durum": "sağlıklı"
+    }
+  ]
+}

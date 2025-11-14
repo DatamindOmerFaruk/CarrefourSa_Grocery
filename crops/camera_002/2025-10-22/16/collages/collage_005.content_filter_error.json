@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-24T13:41:27.344705",
+  "error": "Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}}",
+  "collage_path": "crops\\camera_002\\2025-10-22\\16\\collages\\collage_005.jpg",
+  "batch_size": 25,
+  "images": [
+    {
+      "index": 1,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_080_0.39.jpg",
+      "id": "konum14_165323_080_0.39"
+    },
+    {
+      "index": 2,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_082_0.39.jpg",
+      "id": "konum14_165323_082_0.39"
+    },
+    {
+      "index": 3,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_086_0.38.jpg",
+      "id": "konum14_165323_086_0.38"
+    },
+    {
+      "index": 4,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_087_0.38.jpg",
+      "id": "konum14_165323_087_0.38"
+    },
+    {
+      "index": 5,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_088_0.37.jpg",
+      "id": "konum14_165323_088_0.37"
+    },
+    {
+      "index": 6,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_089_0.36.jpg",
+      "id": "konum14_165323_089_0.36"
+    },
+    {
+      "index": 7,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_090_0.35.jpg",
+      "id": "konum14_165323_090_0.35"
+    },
+    {
+      "index": 8,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_092_0.35.jpg",
+      "id": "konum14_165323_092_0.35"
+    },
+    {
+      "index": 9,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_096_0.35.jpg",
+      "id": "konum14_165323_096_0.35"
+    },
+    {
+      "index": 10,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_101_0.33.jpg",
+      "id": "konum14_165323_101_0.33"
+    },
+    {
+      "index": 11,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_105_0.30.jpg",
+      "id": "konum14_165323_105_0.30"
+    },
+    {
+      "index": 12,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_106_0.30.jpg",
+      "id": "konum14_165323_106_0.30"
+    },
+    {
+      "index": 13,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_109_0.30.jpg",
+      "id": "konum14_165323_109_0.30"
+    },
+    {
+      "index": 14,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_118_0.26.jpg",
+      "id": "konum14_165323_118_0.26"
+    },
+    {
+      "index": 15,
+      "urun": "Armut",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Armut\\konum14_165323_122_0.25.jpg",
+      "id": "konum14_165323_122_0.25"
+    },
+    {
+      "index": 16,
+      "urun": "Avokado",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Avokado\\konum14_165323_067_0.43.jpg",
+      "id": "konum14_165323_067_0.43"
+    },
+    {
+      "index": 17,
+      "urun": "Avokado",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Avokado\\konum14_165323_083_0.38.jpg",
+      "id": "konum14_165323_083_0.38"
+    },
+    {
+      "index": 18,
+      "urun": "Avokado",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Avokado\\konum14_165323_084_0.38.jpg",
+      "id": "konum14_165323_084_0.38"
+    },
+    {
+      "index": 19,
+      "urun": "Avokado",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Avokado\\konum14_165323_119_0.26.jpg",
+      "id": "konum14_165323_119_0.26"
+    },
+    {
+      "index": 20,
+      "urun": "Avokado",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Avokado\\konum16_165405_091_0.44.jpg",
+      "id": "konum16_165405_091_0.44"
+    },
+    {
+      "index": 21,
+      "urun": "Avokado",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Avokado\\konum16_165405_102_0.36.jpg",
+      "id": "konum16_165405_102_0.36"
+    },
+    {
+      "index": 22,
+      "urun": "Avokado",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Avokado\\konum16_165405_107_0.30.jpg",
+      "id": "konum16_165405_107_0.30"
+    },
+    {
+      "index": 23,
+      "urun": "Avokado",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Avokado\\konum17_165426_087_0.29.jpg",
+      "id": "konum17_165426_087_0.29"
+    },
+    {
+      "index": 24,
+      "urun": "Ayva",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Ayva\\konum12_165242_015_0.58.jpg",
+      "id": "konum12_165242_015_0.58"
+    },
+    {
+      "index": 25,
+      "urun": "Ayva",
+      "path": "crops\\camera_002\\2025-10-22\\16\\Ayva\\konum12_165242_031_0.33.jpg",
+      "id": "konum12_165242_031_0.33"
+    }
+  ]
+}
