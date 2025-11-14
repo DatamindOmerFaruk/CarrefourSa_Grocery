@@ -2,93 +2,53 @@
 
 Multi-camera snapshot sistemi, manav analiz API'si ve batch processor.
 
-## 🚀 Hızlı Başlangıç (Docker ile)
+## 🚀 Hızlı Başlangıç
 
 ### Linux Sunucuda Kurulum
 
 ```bash
-# 1. Docker kur (sadece ilk kurulumda)
-sudo apt-get update
-sudo apt-get install -y docker.io docker-compose
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo usermod -aG docker $USER
-newgrp docker
-
-# 2. Projeyi kopyala
+# 1. Projeyi kopyala
 cd /opt
 sudo mkdir -p carrefoursa-kamera
 sudo chown $USER:$USER carrefoursa-kamera
 cd carrefoursa-kamera
 # Proje dosyalarını buraya kopyala
 
+# 2. Kurulum script'ini çalıştır
+sudo bash install.sh
+
 # 3. .env dosyası oluştur
 nano .env
-# Aşağıdaki içeriği yapıştır ve düzenle
+# DEPLOYMENT.md'deki .env içeriğini yapıştır
 
-# 4. Dizinleri oluştur
-mkdir -p snapshots crops logs
-
-# 5. Build ve başlat
-docker compose build
-docker compose up -d
-
-# 6. Logları izle
-docker compose logs -f
-```
-
-### .env Dosyası İçeriği
-
-```bash
-# S3 Object Storage
-S3_ENDPOINT_URL=https://161cohesity.carrefoursa.com:3000
-S3_ACCESS_KEY_ID=your_access_key
-S3_SECRET_ACCESS_KEY=your_secret_key
-S3_BUCKET_NAME=Grocery
-
-# PostgreSQL
-PG_HOST=45.84.18.76
-PG_PORT=5432
-PG_USER=grocerryadmin
-PG_PASSWORD=a08Iyr95vLHTYY
-PG_DATABASE=grocerryadmin
-PG_DSN=postgresql://grocerryadmin:a08Iyr95vLHTYY@45.84.18.76:5432/grocerryadmin
-
-# Azure OpenAI
-AZURE_OPENAI_ENDPOINT=https://your-endpoint.openai.azure.com/
-AZURE_OPENAI_API_KEY=your-api-key
-AZURE_OPENAI_DEPLOYMENT=gpt-4.1
-AZURE_API_VERSION=2024-06-01
-
-# API Ayarları
-API_BASE_URL=http://manav-api:8000
+# 4. Servisleri başlat (eğer systemd kullanıyorsanız)
+sudo systemctl enable camera-snapshot manav-api batch-processor
+sudo systemctl start camera-snapshot manav-api batch-processor
 ```
 
 ## 📚 Detaylı Dokümantasyon
 
-- **Docker Kurulum:** `DOCKER_KURULUM.md` - Adım adım Docker kurulum rehberi
+- **Kurulum Rehberi:** `DEPLOYMENT.md` - Adım adım Linux kurulum rehberi
 - **Kod Açıklaması:** `multi_camera_system/KOD_ACIKLAMASI.md` - Kod detayları
 
 ## 🔧 Temel Komutlar
 
 ```bash
-# Servisleri başlat
-docker compose up -d
+# Virtual environment'ı aktif et
+source venv/bin/activate
 
-# Servisleri durdur
-docker compose down
+# Camera Snapshot System
+python multi_camera_system/camera_snapshot_system.py
 
-# Logları görüntüle
-docker compose logs -f
+# Manav Analiz API
+cd doluluk&reyonsıralaması/manav_analiz
+uvicorn main:app --host 0.0.0.0 --port 8000
 
-# Durumları kontrol et
-docker compose ps
-
-# Yeniden başlat
-docker compose restart
+# Batch Processor
+python batch_processor.py
 ```
 
 ## 📖 Daha Fazla Bilgi
 
-Detaylı kurulum ve kullanım için `DOCKER_KURULUM.md` dosyasına bakın.
+Detaylı kurulum ve kullanım için `DEPLOYMENT.md` dosyasına bakın.
 
