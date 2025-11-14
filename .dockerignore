@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Environment
+.env
+.env.local
+
+# Data directories (volume olarak mount edilecek)
+snapshots/
+crops/
+runs/
+
+# Large model files (volume olarak mount edilecek veya build sırasında kopyalanacak)
+# best.pt
+# yolov8s.pt
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+test_images/
+*.ipynb
+
+# Cache
+.pytest_cache/
+.coverage
+htmlcov/
+

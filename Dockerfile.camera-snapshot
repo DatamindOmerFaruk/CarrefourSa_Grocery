@@ -1,0 +1,34 @@
+# Camera Snapshot System Dockerfile
+FROM python:3.11-slim
+
+# Sistem bağımlılıkları
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    curl \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Çalışma dizini
+WORKDIR /app
+
+# Python bağımlılıklarını kopyala ve yükle
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Proje dosyalarını kopyala
+COPY multi_camera_system/ ./multi_camera_system/
+COPY best.pt ./
+COPY yolov8s.pt ./
+
+# Gerekli dizinleri oluştur
+RUN mkdir -p snapshots crops logs
+
+# Environment variables (runtime'da override edilebilir)
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Çalıştırılacak komut
+CMD ["python", "multi_camera_system/camera_snapshot_system.py"]
+
