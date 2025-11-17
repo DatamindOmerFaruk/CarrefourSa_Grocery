@@ -351,7 +351,55 @@ Wrapper script'ler, Python script'lerini cron job'lardan çalıştırmak için k
 - **Log Yönetimi**: Tüm çıktıları log dosyalarına yazar
 - **Sıralı Çalıştırma**: Birden fazla script'i sırayla çalıştırabilir
 
-#### 4.2. Batch Processor Wrapper Script Oluşturma
+#### 4.2. Camera Snapshot Wrapper Script Oluşturma
+
+**Adım 1: Proje dizinine gidin**
+```bash
+# Virtual environment aktif olmasa da olur
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
+```
+
+**Adım 2: Script dosyasını oluşturun**
+```bash
+# nano veya vi editörü ile dosyayı oluşturun
+nano run_camera_snapshot.sh
+```
+
+**Adım 3: Aşağıdaki içeriği yapıştırın**
+```bash
+#!/bin/bash
+# Camera Snapshot Wrapper Script
+# Bu script, camera_snapshot_system.py'yi çalıştırmak için kullanılır
+
+# Proje dizinine geç
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
+
+# Virtual environment'ı aktif et
+source venv/bin/activate
+
+# Log dizinini oluştur (yoksa)
+mkdir -p logs
+
+# Camera Snapshot System'i çalıştır
+python multi_camera_system/camera_snapshot_system.py
+```
+
+**Adım 4: Dosyayı kaydedin ve çıkın**
+- `nano` kullanıyorsanız: `Ctrl+X`, sonra `Y`, sonra `Enter`
+- `vi` kullanıyorsanız: `Esc`, sonra `:wq`, sonra `Enter`
+
+**Adım 5: Script'e çalıştırma izni verin**
+```bash
+chmod +x run_camera_snapshot.sh
+```
+
+**Adım 6: Script'in çalıştığını test edin (opsiyonel)**
+```bash
+# Manuel olarak çalıştırarak test edin
+./run_camera_snapshot.sh
+```
+
+#### 4.3. Batch Processor Wrapper Script Oluşturma
 
 **ÖNEMLİ NOT**: Wrapper script'leri oluştururken **virtual environment'ın aktif olmasına gerek yoktur**. Wrapper script'ler bash script'leridir ve Python ortamından bağımsızdır. Virtual environment, script çalıştırıldığında script içinde otomatik olarak aktif edilir.
 
@@ -399,7 +447,7 @@ chmod +x run_batch_processor.sh
 ./run_batch_processor.sh
 ```
 
-#### 4.3. PTZ Analysis Service Wrapper Script Oluşturma
+#### 4.4. PTZ Analysis Service Wrapper Script Oluşturma
 
 Bu script, 3 ayrı Python script'ini sırayla çalıştırır:
 1. `ptz_face_blur.py` (opsiyonel - şu an kapalı)
@@ -498,7 +546,7 @@ tail -f logs/cron-ptz-yolo-llm.log
 tail -f logs/cron-ptz-db-writer.log
 ```
 
-#### 4.4. Script İçeriği Açıklamaları
+#### 4.5. Script İçeriği Açıklamaları
 
 **`#!/bin/bash`**: Script'in bash ile çalıştırılacağını belirtir
 
@@ -516,11 +564,22 @@ tail -f logs/cron-ptz-db-writer.log
 
 **`exit $EXIT_CODE`**: Script'i belirtilen çıkış kodu ile sonlandırır (cron job hata durumunu anlayabilir)
 
-#### 4.5. Alternatif: Tek Komutla Oluşturma
+#### 4.6. Alternatif: Tek Komutla Oluşturma
 
 Eğer yukarıdaki adımları tek tek yapmak istemiyorsanız, aşağıdaki komutları kullanabilirsiniz:
 
 ```bash
+# Camera Snapshot wrapper script
+cat > /data/carrefoursa-kamera/CarrefourSa_Grocery/run_camera_snapshot.sh << 'EOF'
+#!/bin/bash
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
+source venv/bin/activate
+mkdir -p logs
+python multi_camera_system/camera_snapshot_system.py
+EOF
+
+chmod +x /data/carrefoursa-kamera/CarrefourSa_Grocery/run_camera_snapshot.sh
+
 # Batch Processor wrapper script
 cat > /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh << 'EOF'
 #!/bin/bash
@@ -564,7 +623,7 @@ EOF
 chmod +x /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh
 ```
 
-#### 4.6. Script'leri Kontrol Etme
+#### 4.7. Script'leri Kontrol Etme
 
 ```bash
 # Script dosyalarının varlığını kontrol edin
@@ -574,11 +633,12 @@ ls -lh /data/carrefoursa-kamera/CarrefourSa_Grocery/run_*.sh
 ls -l /data/carrefoursa-kamera/CarrefourSa_Grocery/run_*.sh
 
 # Script içeriklerini görüntüleyin
+cat /data/carrefoursa-kamera/CarrefourSa_Grocery/run_camera_snapshot.sh
 cat /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh
 cat /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh
 ```
 
-#### 4.7. Önemli Notlar
+#### 4.8. Önemli Notlar
 
 1. **Virtual Environment Aktif Olması Gerekmez**: Wrapper script'leri oluştururken virtual environment'ın aktif olmasına gerek yoktur. Script'ler bash script'leridir ve Python ortamından bağımsızdır. Virtual environment, script çalıştırıldığında script içinde (`source venv/bin/activate`) otomatik olarak aktif edilir.
 
@@ -603,7 +663,7 @@ crontab -e
 # Aşağıdaki satırları ekle:
 
 # Camera Snapshot: Her gün 09:00-21:00 arası her saat başı çalışır
-0 9-21 * * * cd /data/carrefoursa-kamera/CarrefourSa_Grocery && source venv/bin/activate && python multi_camera_system/camera_snapshot_system.py >> logs/cron-snapshot.log 2>&1
+0 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_camera_snapshot.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-snapshot.log 2>&1
 
 # Batch Processor: Her gün 09:30-21:30 arası çalışır (camera-snapshot'tan 30 dakika sonra)
 30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-batch.log 2>&1
@@ -808,12 +868,12 @@ sudo systemctl start manav-api.service
 ls -lh ptz_*.py
 
 # 8. Wrapper script'leri oluştur
-# run_batch_processor.sh ve run_ptz_analysis.sh script'lerini oluştur (yukarıdaki örneklere göre)
+# run_camera_snapshot.sh, run_batch_processor.sh ve run_ptz_analysis.sh script'lerini oluştur (yukarıdaki örneklere göre)
 
 # 9. Cron job'ları yapılandır
 crontab -e
 # Aşağıdaki satırları ekle:
-# 0 9-21 * * * cd /data/carrefoursa-kamera/CarrefourSa_Grocery && source venv/bin/activate && python multi_camera_system/camera_snapshot_system.py >> logs/cron-snapshot.log 2>&1
+# 0 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_camera_snapshot.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-snapshot.log 2>&1
 # 30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-batch.log 2>&1
 # 30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-analysis.log 2>&1
 

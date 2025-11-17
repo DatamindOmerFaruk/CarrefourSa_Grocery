@@ -38,11 +38,16 @@ if dotenv_path:
 try:
     import boto3
     from botocore.exceptions import ClientError
+    # urllib3 SSL uyarılarını bastır (self-signed certificate için)
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 except Exception:
     import sys, subprocess
     subprocess.check_call([sys.executable, "-m", "pip", "install", "boto3>=1.34.0", "-q"])
     import boto3
     from botocore.exceptions import ClientError
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # S3 Ayarları
 S3_ENDPOINT_URL = os.getenv("S3_ENDPOINT_URL", "https://161cohesity.carrefoursa.com:3000")
@@ -599,6 +604,8 @@ def main(camera_id: str = None):
         cameras_to_process = find_all_cameras_from_s3()
         if not cameras_to_process:
             print("[!] S3 Object Storage'da hiç kamera klasörü bulunamadı")
+            print("[i] Bu normal olabilir - henüz görüntü çekilmemiş olabilir.")
+            print("[i] Camera Snapshot System'in çalıştığından emin olun.")
             return
     
     print(f"[i] İşlenecek kameralar: {', '.join(cameras_to_process)}")

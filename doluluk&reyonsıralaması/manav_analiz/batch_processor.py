@@ -9,6 +9,9 @@ import json
 import boto3
 from botocore.exceptions import ClientError
 from datetime import datetime, timedelta
+# urllib3 SSL uyarılarını bastır (self-signed certificate için)
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import logging
 from typing import List, Dict, Any, Optional
 import time
@@ -75,12 +78,14 @@ class BatchProcessor:
             )
             
             # PostgreSQL bağlantısı
+            # sslmode=prefer: SSL varsa kullanır, yoksa SSL olmadan bağlanır
             self.pg_connection = psycopg2.connect(
                 host=self.pg_host,
                 port=self.pg_port,
                 database=self.pg_database,
                 user=self.pg_user,
-                password=self.pg_password
+                password=self.pg_password,
+                sslmode='prefer'  # SSL desteklenmiyorsa otomatik olarak SSL olmadan bağlanır
             )
             self.pg_connection.autocommit = True
             

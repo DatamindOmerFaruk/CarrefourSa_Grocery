@@ -18,10 +18,15 @@ load_dotenv()
 # === S3 Object Storage Ayarları ===
 try:
     import boto3
+    # urllib3 SSL uyarılarını bastır (self-signed certificate için)
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 except Exception:
     import sys, subprocess
     subprocess.check_call([sys.executable, "-m", "pip", "install", "boto3>=1.34.0", "-q"])
     import boto3
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 S3_ENDPOINT_URL = os.getenv("S3_ENDPOINT_URL", "https://161cohesity.carrefoursa.com:3000")
 S3_ACCESS_KEY_ID = os.getenv("S3_ACCESS_KEY_ID", "sWxdTl3ERx7myBE1qpW06_haVvuhATcdsmBbqaWkXYU")
@@ -84,11 +89,13 @@ PG_DSN = os.getenv(
 
 if not PG_DSN:
     print("[UYARI] PG_DSN ortam değişkeni tanımlı değil!")
-    print("Örnek: postgresql://USER:PASS@HOST:5432/DB?sslmode=require")
+    print("Örnek: postgresql://USER:PASS@HOST:5432/DB?sslmode=prefer")
     print("Veritabanı işlemleri için .env dosyasına PG_DSN ekleyin.")
 
+# SSL mode: prefer (SSL varsa kullanır, yoksa kullanmaz)
+# Sunucu SSL desteklemiyorsa otomatik olarak SSL olmadan bağlanır
 if PG_DSN and "sslmode=" not in PG_DSN:
-    PG_DSN += ("&" if "?" in PG_DSN else "?") + "sslmode=require"
+    PG_DSN += ("&" if "?" in PG_DSN else "?") + "sslmode=prefer"
 
 # === Veritabanı Tabloları ===
 DDL = """
@@ -415,6 +422,8 @@ def main(camera_id: str = None):
         cameras_to_process = find_all_cameras_from_s3()
         if not cameras_to_process:
             print("[!] S3 Object Storage'da hiç kamera klasörü bulunamadı")
+            print("[i] Bu normal olabilir - henüz görüntü çekilmemiş veya işlenmemiş olabilir.")
+            print("[i] Camera Snapshot System ve PTZ YOLO+LLM Analysis'in çalıştığından emin olun.")
             return
     
     print(f"[i] İşlenecek kameralar: {', '.join(cameras_to_process)}")

@@ -21,6 +21,9 @@ from ultralytics import YOLO
 try:
     import boto3
     from botocore.exceptions import ClientError
+    # urllib3 SSL uyarılarını bastır (self-signed certificate için)
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 except ImportError:
     boto3 = None
     ClientError = None

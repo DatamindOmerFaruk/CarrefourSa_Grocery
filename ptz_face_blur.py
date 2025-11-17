@@ -12,6 +12,9 @@ from facenet_pytorch import MTCNN
 import boto3
 from botocore.exceptions import ClientError
 from dotenv import load_dotenv
+# urllib3 SSL uyarılarını bastır (self-signed certificate için)
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # .env dosyasını yükle
 load_dotenv()
