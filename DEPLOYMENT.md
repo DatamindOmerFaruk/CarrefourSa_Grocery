@@ -335,7 +335,190 @@ Notebook kodları 3 ayrı Python script'e ayrılmıştır:
 
 ### 4. Wrapper Script'leri Oluşturma
 
-Analiz servislerinin otomatik çalışması için wrapper script'ler oluşturun:
+Wrapper script'ler, Python script'lerini cron job'lardan çalıştırmak için kullanılan bash script'leridir. Bu script'ler:
+- Virtual environment'ı otomatik aktif eder
+- Doğru dizine geçer
+- Python script'lerini çalıştırır
+- Hata kontrolü yapar
+- Log dosyalarına çıktı yazar
+
+#### 4.1. Wrapper Script Nedir ve Neden Gerekli?
+
+**Wrapper Script'in Faydaları:**
+- **Virtual Environment Yönetimi**: Her çalıştırmada virtual environment'ı otomatik aktif eder
+- **Dizin Yönetimi**: Script'lerin doğru dizinde çalışmasını sağlar
+- **Hata Kontrolü**: Script başarısız olursa cron job'a hata kodu döner
+- **Log Yönetimi**: Tüm çıktıları log dosyalarına yazar
+- **Sıralı Çalıştırma**: Birden fazla script'i sırayla çalıştırabilir
+
+#### 4.2. Batch Processor Wrapper Script Oluşturma
+
+**ÖNEMLİ NOT**: Wrapper script'leri oluştururken **virtual environment'ın aktif olmasına gerek yoktur**. Wrapper script'ler bash script'leridir ve Python ortamından bağımsızdır. Virtual environment, script çalıştırıldığında script içinde otomatik olarak aktif edilir.
+
+**Adım 1: Proje dizinine gidin**
+```bash
+# Virtual environment aktif olmasa da olur
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
+```
+
+**Adım 2: Script dosyasını oluşturun**
+```bash
+# nano veya vi editörü ile dosyayı oluşturun
+nano run_batch_processor.sh
+```
+
+**Adım 3: Aşağıdaki içeriği yapıştırın**
+```bash
+#!/bin/bash
+# Batch Processor Wrapper Script
+# Bu script, batch_processor.py'yi çalıştırmak için kullanılır
+
+# Proje dizinine geç
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery/doluluk\&reyonsıralaması/manav_analiz
+
+# Virtual environment'ı aktif et
+source ../../venv/bin/activate
+
+# Batch processor'ı çalıştır (mod 2: Tam analiz)
+# echo "2" komutu, batch_processor.py'nin interaktif mod seçimine "2" cevabını verir
+echo "2" | python batch_processor.py
+```
+
+**Adım 4: Dosyayı kaydedin ve çıkın**
+- `nano` kullanıyorsanız: `Ctrl+X`, sonra `Y`, sonra `Enter`
+- `vi` kullanıyorsanız: `Esc`, sonra `:wq`, sonra `Enter`
+
+**Adım 5: Script'e çalıştırma izni verin**
+```bash
+chmod +x run_batch_processor.sh
+```
+
+**Adım 6: Script'in çalıştığını test edin (opsiyonel)**
+```bash
+# Manuel olarak çalıştırarak test edin
+./run_batch_processor.sh
+```
+
+#### 4.3. PTZ Analysis Service Wrapper Script Oluşturma
+
+Bu script, 3 ayrı Python script'ini sırayla çalıştırır:
+1. `ptz_face_blur.py` (opsiyonel - şu an kapalı)
+2. `ptz_yolo_llm_analysis.py` (YOLO detection ve LLM analizi)
+3. `ptz_db_writer.py` (Veritabanına yazma)
+
+**ÖNEMLİ NOT**: Virtual environment'ın aktif olmasına gerek yoktur. Script çalıştırıldığında virtual environment otomatik aktif edilir.
+
+**Adım 1: Proje dizinine gidin**
+```bash
+# Virtual environment aktif olmasa da olur
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
+```
+
+**Adım 2: Script dosyasını oluşturun**
+```bash
+nano run_ptz_analysis.sh
+```
+
+**Adım 3: Aşağıdaki içeriği yapıştırın**
+```bash
+#!/bin/bash
+# PTZ Analysis Service Wrapper Script
+# Bu script, PTZ analiz servislerini sırayla çalıştırır
+
+# Proje dizinine geç
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
+
+# Virtual environment'ı aktif et
+source venv/bin/activate
+
+# Log dizinini oluştur (yoksa)
+mkdir -p logs
+
+# ============================================
+# AŞAMA 1: Yüz Blur'lanması (OPSİYONEL)
+# ============================================
+# Şu an kapalı, gerekirse yorum satırını kaldırın
+# echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Face Blur başlatılıyor..."
+# python ptz_face_blur.py >> logs/cron-ptz-face-blur.log 2>&1
+# FACE_BLUR_EXIT_CODE=$?
+# if [ $FACE_BLUR_EXIT_CODE -ne 0 ]; then
+#     echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Face Blur hatası: $FACE_BLUR_EXIT_CODE"
+#     exit $FACE_BLUR_EXIT_CODE
+# fi
+
+# ============================================
+# AŞAMA 2: YOLO Detection ve LLM Analizi
+# ============================================
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis başlatılıyor..."
+python ptz_yolo_llm_analysis.py >> logs/cron-ptz-yolo-llm.log 2>&1
+YOLO_EXIT_CODE=$?
+
+# YOLO analizi başarılı mı kontrol et
+if [ $YOLO_EXIT_CODE -eq 0 ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis tamamlandı"
+    
+    # ============================================
+    # AŞAMA 3: Veritabanına Yazma
+    # ============================================
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer başlatılıyor..."
+    python ptz_db_writer.py >> logs/cron-ptz-db-writer.log 2>&1
+    DB_EXIT_CODE=$?
+    
+    # Veritabanı yazma başarılı mı kontrol et
+    if [ $DB_EXIT_CODE -eq 0 ]; then
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer tamamlandı"
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Tüm PTZ analiz işlemleri başarıyla tamamlandı"
+        exit 0
+    else
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer hatası: $DB_EXIT_CODE"
+        exit $DB_EXIT_CODE
+    fi
+else
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis hatası: $YOLO_EXIT_CODE"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Veritabanı yazma işlemi atlandı (YOLO analizi başarısız)"
+    exit $YOLO_EXIT_CODE
+fi
+```
+
+**Adım 4: Dosyayı kaydedin ve çıkın**
+- `nano` kullanıyorsanız: `Ctrl+X`, sonra `Y`, sonra `Enter`
+
+**Adım 5: Script'e çalıştırma izni verin**
+```bash
+chmod +x run_ptz_analysis.sh
+```
+
+**Adım 6: Script'in çalıştığını test edin (opsiyonel)**
+```bash
+# Manuel olarak çalıştırarak test edin
+./run_ptz_analysis.sh
+
+# Log dosyalarını kontrol edin
+tail -f logs/cron-ptz-yolo-llm.log
+tail -f logs/cron-ptz-db-writer.log
+```
+
+#### 4.4. Script İçeriği Açıklamaları
+
+**`#!/bin/bash`**: Script'in bash ile çalıştırılacağını belirtir
+
+**`cd /path/to/directory`**: Script'in çalışacağı dizini belirtir
+
+**`source venv/bin/activate`**: Virtual environment'ı aktif eder
+
+**`>> logs/file.log 2>&1`**: 
+- `>>`: Çıktıyı dosyaya ekler (üzerine yazmaz)
+- `2>&1`: Hata mesajlarını da aynı dosyaya yazar
+
+**`EXIT_CODE=$?`**: Son çalıştırılan komutun çıkış kodunu saklar (0 = başarılı, 0 dışı = hata)
+
+**`if [ $EXIT_CODE -eq 0 ]`**: Çıkış kodu 0 ise (başarılı) işlem yapar
+
+**`exit $EXIT_CODE`**: Script'i belirtilen çıkış kodu ile sonlandırır (cron job hata durumunu anlayabilir)
+
+#### 4.5. Alternatif: Tek Komutla Oluşturma
+
+Eğer yukarıdaki adımları tek tek yapmak istemiyorsanız, aşağıdaki komutları kullanabilirsiniz:
 
 ```bash
 # Batch Processor wrapper script
@@ -348,30 +531,26 @@ EOF
 
 chmod +x /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh
 
-# PTZ Analysis Service wrapper script (3 script'i sırayla çalıştırır)
+# PTZ Analysis Service wrapper script
 cat > /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh << 'EOF'
 #!/bin/bash
 cd /data/carrefoursa-kamera/CarrefourSa_Grocery
 source venv/bin/activate
+mkdir -p logs
 
-# 1. Yüz blur'lanması (opsiyonel, gerekirse açılabilir)
-# python ptz_face_blur.py >> logs/cron-ptz-face-blur.log 2>&1
-
-# 2. YOLO detection ve LLM analizi
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis başlatılıyor..."
 python ptz_yolo_llm_analysis.py >> logs/cron-ptz-yolo-llm.log 2>&1
 YOLO_EXIT_CODE=$?
 
 if [ $YOLO_EXIT_CODE -eq 0 ]; then
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis tamamlandı"
-    
-    # 3. Veritabanına yazma
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer başlatılıyor..."
     python ptz_db_writer.py >> logs/cron-ptz-db-writer.log 2>&1
     DB_EXIT_CODE=$?
     
     if [ $DB_EXIT_CODE -eq 0 ]; then
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer tamamlandı"
+        exit 0
     else
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer hatası: $DB_EXIT_CODE"
         exit $DB_EXIT_CODE
@@ -385,12 +564,33 @@ EOF
 chmod +x /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh
 ```
 
-**Not**: `run_ptz_analysis.sh` script'i 3 aşamayı sırayla çalıştırır:
-1. `ptz_face_blur.py` (şu an yorum satırı, gerekirse açılabilir)
-2. `ptz_yolo_llm_analysis.py` (YOLO detection ve LLM analizi)
-3. `ptz_db_writer.py` (veritabanına yazma)
+#### 4.6. Script'leri Kontrol Etme
 
-Her aşama başarılı olursa bir sonraki aşamaya geçilir. Bir aşamada hata olursa işlem durdurulur.
+```bash
+# Script dosyalarının varlığını kontrol edin
+ls -lh /data/carrefoursa-kamera/CarrefourSa_Grocery/run_*.sh
+
+# Script'lerin çalıştırılabilir olduğunu kontrol edin (x izni olmalı)
+ls -l /data/carrefoursa-kamera/CarrefourSa_Grocery/run_*.sh
+
+# Script içeriklerini görüntüleyin
+cat /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh
+cat /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh
+```
+
+#### 4.7. Önemli Notlar
+
+1. **Virtual Environment Aktif Olması Gerekmez**: Wrapper script'leri oluştururken virtual environment'ın aktif olmasına gerek yoktur. Script'ler bash script'leridir ve Python ortamından bağımsızdır. Virtual environment, script çalıştırıldığında script içinde (`source venv/bin/activate`) otomatik olarak aktif edilir.
+
+2. **Dizin Yolları**: Script'lerdeki dizin yollarının (`/data/carrefoursa-kamera/CarrefourSa_Grocery`) doğru olduğundan emin olun
+
+3. **Virtual Environment Klasörü**: Virtual environment'ın `venv` klasöründe olduğundan emin olun (script içinde `source venv/bin/activate` komutu bu klasörü kullanır)
+
+4. **İzinler**: Script'lerin çalıştırılabilir (`chmod +x`) olduğundan emin olun
+
+5. **Test**: Cron job'a eklemeden önce script'leri manuel olarak test edin (test ederken virtual environment otomatik aktif edilir)
+
+6. **Log Dizini**: `logs` dizininin mevcut olduğundan emin olun (script otomatik oluşturur)
 
 ### 5. Cron Job Yapılandırması
 

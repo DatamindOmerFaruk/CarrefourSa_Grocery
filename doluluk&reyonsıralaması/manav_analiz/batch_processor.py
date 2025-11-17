@@ -1,12 +1,13 @@
 """
-Azure Storage'dan görselleri alıp API'lara göndererek PostgreSQL'e yazan batch processor
+S3 Object Storage'dan görselleri alıp API'lara göndererek PostgreSQL'e yazan batch processor
 """
 import os
 import requests
 import psycopg2
 from psycopg2.extras import RealDictCursor
 import json
-from azure.storage.blob import BlobServiceClient, generate_blob_sas, BlobSasPermissions
+import boto3
+from botocore.exceptions import ClientError
 from datetime import datetime, timedelta
 import logging
 from typing import List, Dict, Any, Optional
@@ -36,14 +37,11 @@ class BatchProcessor:
         
     def load_config(self):
         """Çevre değişkenlerinden konfigürasyonları yükle"""
-        # Azure Storage
-        self.azure_connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
-        self.container_name = os.getenv('AZURE_CONTAINER_NAME', 'snapshot')
-        self.sas_token = os.getenv('AZURE_SAS_TOKEN')
-        
-        # Connection string'den account name'i çıkar
-        conn_parts = dict(x.split('=', 1) for x in self.azure_connection_string.split(';') if '=' in x)
-        self.account_name = conn_parts.get('AccountName')
+        # S3 Object Storage
+        self.s3_endpoint_url = os.getenv('S3_ENDPOINT_URL', 'https://161cohesity.carrefoursa.com:3000')
+        self.s3_access_key_id = os.getenv('S3_ACCESS_KEY_ID', 'sWxdTl3ERx7myBE1qpW06_haVvuhATcdsmBbqaWkXYU')
+        self.s3_secret_access_key = os.getenv('S3_SECRET_ACCESS_KEY', 'Ti9Fonk3wYyG5PMx5LaGUmlcVyCuqsE5BLVV5vv8PU0')
+        self.s3_bucket_name = os.getenv('S3_BUCKET_NAME', 'Grocery')
         
         # PostgreSQL
         self.pg_host = os.getenv('POSTGRES_HOST', '45.84.18.76')
@@ -61,15 +59,19 @@ class BatchProcessor:
         self.retry_count = int(os.getenv('RETRY_COUNT', '3'))
         self.delay_between_requests = float(os.getenv('REQUEST_DELAY', '1.0'))
         
-        if not all([self.azure_connection_string, self.pg_database, self.pg_user, self.pg_password]):
+        if not all([self.s3_access_key_id, self.s3_secret_access_key, self.pg_database, self.pg_user, self.pg_password]):
             raise ValueError("Gerekli çevre değişkenleri eksik!")
             
     def setup_connections(self):
-        """Azure ve PostgreSQL bağlantılarını kur"""
+        """S3 ve PostgreSQL bağlantılarını kur"""
         try:
-            # Azure Blob Service Client
-            self.blob_service_client = BlobServiceClient.from_connection_string(
-                self.azure_connection_string
+            # S3 Client
+            self.s3_client = boto3.client(
+                's3',
+                endpoint_url=self.s3_endpoint_url,
+                aws_access_key_id=self.s3_access_key_id,
+                aws_secret_access_key=self.s3_secret_access_key,
+                verify=False  # Self-signed certificate için
             )
             
             # PostgreSQL bağlantısı
@@ -82,53 +84,58 @@ class BatchProcessor:
             )
             self.pg_connection.autocommit = True
             
-            logger.info("Azure Storage ve PostgreSQL bağlantıları başarılı")
+            logger.info("S3 Object Storage ve PostgreSQL bağlantıları başarılı")
             
         except Exception as e:
             logger.error(f"Bağlantı hatası: {str(e)}")
             raise
             
     def get_all_images(self) -> List[Dict[str, str]]:
-        """Azure Storage'dan tüm görselleri listele"""
+        """S3 Object Storage'dan tüm görselleri listele"""
         try:
-            container_client = self.blob_service_client.get_container_client(self.container_name)
+            # S3'ten tüm object'leri listele (snapshots prefix'i altında)
+            prefix = "snapshots/"
             blobs = []
             
-            for blob in container_client.list_blobs():
-                # Sadece resim dosyalarını al
-                if blob.name.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif')):
-
-                    # Normal URL ve SAS token'lı URL oluştur
-                    blob_url = f"{container_client.url}/{quote(blob.name)}"
-                    sas_url = f"https://{self.account_name}.blob.core.windows.net/{self.container_name}/{quote(blob.name)}?{self.sas_token}"
-                    
-                    blobs.append({
-                        'name': blob.name,
-                        'url': blob_url,
-                        'sas_url': sas_url,
-                        'folder': '/'.join(blob.name.split('/')[:-1]) if '/' in blob.name else '',
-                        'size': blob.size,
-                        'last_modified': blob.last_modified
-                    })
+            paginator = self.s3_client.get_paginator('list_objects_v2')
+            pages = paginator.paginate(Bucket=self.s3_bucket_name, Prefix=prefix)
+            
+            for page in pages:
+                if 'Contents' in page:
+                    for obj in page['Contents']:
+                        obj_key = obj['Key']
+                        # Sadece resim dosyalarını al
+                        if obj_key.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif')):
+                            # S3 URL oluştur
+                            if self.s3_endpoint_url.endswith('/'):
+                                s3_url = f"{self.s3_endpoint_url}{self.s3_bucket_name}/{obj_key}"
+                            else:
+                                s3_url = f"{self.s3_endpoint_url}/{self.s3_bucket_name}/{obj_key}"
+                            
+                            blobs.append({
+                                'name': obj_key,
+                                'url': s3_url,
+                                'sas_url': s3_url,  # S3'te SAS token gerekmez, direkt URL kullanılır
+                                'folder': '/'.join(obj_key.split('/')[:-1]) if '/' in obj_key else '',
+                                'size': obj.get('Size', 0),
+                                'last_modified': obj.get('LastModified')
+                            })
                     
             logger.info(f"Toplam {len(blobs)} görsel dosyası bulundu")
             return blobs
             
         except Exception as e:
-            logger.error(f"Azure Storage'dan dosya listesi alınamadı: {str(e)}")
+            logger.error(f"S3 Object Storage'dan dosya listesi alınamadı: {str(e)}")
             raise
             
-    def download_image(self, blob_name: str) -> bytes:
-        """Görseli Azure Storage'dan indir"""
+    def download_image(self, s3_key: str) -> bytes:
+        """Görseli S3 Object Storage'dan indir"""
         try:
-            blob_client = self.blob_service_client.get_blob_client(
-                container=self.container_name, 
-                blob=blob_name
-            )
-            return blob_client.download_blob().readall()
+            response = self.s3_client.get_object(Bucket=self.s3_bucket_name, Key=s3_key)
+            return response['Body'].read()
             
-        except Exception as e:
-            logger.error(f"Görsel indirilemedi ({blob_name}): {str(e)}")
+        except ClientError as e:
+            logger.error(f"Görsel indirilemedi ({s3_key}): {str(e)}")
             raise
             
     def call_api(self, endpoint: str, image_bytes: bytes, additional_data: Dict = None) -> Dict:
@@ -153,7 +160,7 @@ class BatchProcessor:
                 if attempt == self.retry_count - 1:
                     raise
     def call_api_with_url(self, endpoint: str, image_url: str, additional_data: Dict = None) -> Dict:
-        """API endpoint'ine SAS URL gönder"""
+        """API endpoint'ine S3 URL gönder"""
         url = f"{self.api_base_url}/{endpoint}"
         
         data = {'image_url': image_url}
@@ -403,23 +410,23 @@ class BatchProcessor:
             
     def process_single_image_stock_only(self, blob_info: Dict) -> Dict:
         """Tek görseli işle - SADECE STOCK ANALİZİ"""
-        sas_url = blob_info['sas_url']  # SAS token'lı URL'i source_url olarak kullan
+        s3_url = blob_info['sas_url']  # S3 URL'i source_url olarak kullan
         blob_name = blob_info['name']
         
         logger.info(f"Stock analizi: {blob_name}")
-        logger.info(f"SAS URL: {sas_url[:100]}...")
+        logger.info(f"S3 URL: {s3_url[:100]}...")
         
         try:
             # Sadece Stock API'sini çağır
-            stock_result = self.process_stock_api(sas_url, sas_url)
+            stock_result = self.process_stock_api(s3_url, s3_url)
             
-            # Sonuçları kaydet (SAS URL'i source_url olarak)
-            self.save_stock_results(sas_url, stock_result)
+            # Sonuçları kaydet (S3 URL'i source_url olarak)
+            self.save_stock_results(s3_url, stock_result)
             
             return {
                 'success': True,
                 'blob_name': blob_name,
-                'source_url': sas_url,
+                'source_url': s3_url,
                 'stock_success': stock_result.get('success', False)
             }
             
@@ -428,39 +435,39 @@ class BatchProcessor:
             return {
                 'success': False,
                 'blob_name': blob_name,
-                'source_url': sas_url,
+                'source_url': s3_url,
                 'error': str(e)
             }
 
     def process_single_image(self, blob_info: Dict) -> Dict:
-        """Tek görseli işle - SAS URL ile"""
-        sas_url = blob_info['sas_url']  # SAS token'lı URL'i source_url olarak kullan
+        """Tek görseli işle - S3 URL ile"""
+        s3_url = blob_info['sas_url']  # S3 URL'i source_url olarak kullan
         blob_name = blob_info['name']
         
         logger.info(f"İşleniyor: {blob_name}")
-        logger.info(f"SAS URL source_url olarak kaydedilecek: {sas_url[:100]}...")
+        logger.info(f"S3 URL source_url olarak kaydedilecek: {s3_url[:100]}...")
         
         try:
-            # API'leri sırayla çağır (SAS URL ile)
-            content_result = self.process_content_api(sas_url, sas_url)
+            # API'leri sırayla çağır (S3 URL ile)
+            content_result = self.process_content_api(s3_url, s3_url)
             time.sleep(self.delay_between_requests)
             
-            stock_result = self.process_stock_api(sas_url, sas_url)
+            stock_result = self.process_stock_api(s3_url, s3_url)
             time.sleep(self.delay_between_requests)
             
             evaluation_result = self.process_evaluation_api(
-                sas_url, sas_url, content_result
+                s3_url, s3_url, content_result
             )
             
-            # Sonuçları kaydet (SAS URL'i source_url olarak)
-            self.save_content_results(sas_url, content_result)
-            self.save_stock_results(sas_url, stock_result)
-            self.save_evaluation_results(sas_url, evaluation_result)
+            # Sonuçları kaydet (S3 URL'i source_url olarak)
+            self.save_content_results(s3_url, content_result)
+            self.save_stock_results(s3_url, stock_result)
+            self.save_evaluation_results(s3_url, evaluation_result)
             
             return {
                 'success': True,
                 'blob_name': blob_name,
-                'source_url': sas_url,
+                'source_url': s3_url,
                 'content_success': content_result.get('success', False),
                 'stock_success': stock_result.get('success', False),
                 'evaluation_success': evaluation_result.get('success', False)
@@ -471,7 +478,7 @@ class BatchProcessor:
             return {
                 'success': False,
                 'blob_name': blob_name,
-                'source_url': sas_url,
+                'source_url': s3_url,
                 'error': str(e)
             }
             
