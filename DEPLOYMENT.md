@@ -48,22 +48,22 @@ sudo apt-get install -y \
 ssh user@your-server-ip
 
 # Proje dizini oluştur
-sudo mkdir -p /opt/carrefoursa-kamera
-sudo chown $USER:$USER /opt/carrefoursa-kamera
-cd /opt/carrefoursa-kamera
+sudo mkdir -p /data/carrefoursa-kamera/CarrefourSa_Grocery
+sudo chown $USER:$USER /data/carrefoursa-kamera
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
 
 # Projeyi kopyala (GitHub'dan veya SCP ile)
 # Örnek: Git kullanıyorsanız
 git clone <repository-url> .
 
 # Veya SCP ile Windows'tan kopyalama:
-# scp -r "C:\Users\test\Desktop\Carrefoursa\reyon\Kamera Entegrasyon" user@server:/opt/carrefoursa-kamera
+# scp -r "C:\Users\test\Desktop\Carrefoursa\reyon\Kamera Entegrasyon" user@server:/data/carrefoursa-kamera/CarrefourSa_Grocery
 ```
 
 ### 2. Python Virtual Environment Oluşturma
 
 ```bash
-cd /opt/carrefoursa-kamera
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
 
 # Virtual environment oluştur
 python3 -m venv venv
@@ -118,7 +118,7 @@ ls -lh best.pt yolov8s.pt
 
 ```bash
 # .env dosyası oluştur
-nano /opt/carrefoursa-kamera/.env
+nano /data/carrefoursa-kamera/CarrefourSa_Grocery/.env
 ```
 
 `.env` dosyası içeriği:
@@ -168,8 +168,8 @@ TEST_MODE=false
 mkdir -p snapshots crops logs
 
 # İzinleri ayarla
-chmod 755 /opt/carrefoursa-kamera
-chmod 644 /opt/carrefoursa-kamera/.env
+chmod 755 /data/carrefoursa-kamera/CarrefourSa_Grocery
+chmod 644 /data/carrefoursa-kamera/CarrefourSa_Grocery/.env
 ```
 
 ### 3. Kamera Konfigürasyon Dosyalarını Kontrol Etme
@@ -187,37 +187,86 @@ nano multi_camera_system/cameras.yaml
 
 ## 🚀 Servisleri Başlatma
 
-### 1. Systemd Service Dosyaları Oluşturma
+### Servisler Hakkında
 
-#### Camera Snapshot System Service
+Sistemde 4 ana servis bulunmaktadır:
 
-```bash
-sudo nano /etc/systemd/system/camera-snapshot.service
+#### 1. **Camera Snapshot System** (`camera_snapshot_system.py`)
+- **Görevi**: PTZ kameralardan görüntü alır, YOLO ile insan tespiti yapar, geçerli görüntüleri S3 Object Storage'a yükler
+- **Çalışma Şekli**: Cron job ile saatlik çalışır (09:00-21:00 arası, her saat başı)
+- **Özellikler**:
+  - Çoklu kamera desteği
+  - İnsan tespiti ile kalite kontrolü
+  - Otomatik retry mekanizması
+  - S3'e otomatik yükleme
+  - Lokal dosyaları S3'e yüklendikten sonra silme
+
+#### 2. **Manav Analiz API** (`manav_analiz/main.py`)
+- **Görevi**: FastAPI tabanlı REST API servisi. Görüntü analizi için endpoint'ler sağlar
+- **Çalışma Şekli**: Systemd service olarak sürekli çalışır (7/24)
+- **Özellikler**:
+  - Content analizi endpoint'i
+  - Stock analizi endpoint'i
+  - Evaluation endpoint'i
+  - Health check endpoint'i
+  - Port: 8000
+- **Not**: Batch Processor bu API'yi kullanıyorsa gerekli, aksi halde kaldırılabilir
+
+#### 3. **Batch Processor** (`doluluk&reyonsıralaması/manav_analiz/batch_processor.py`)
+- **Görevi**: S3'ten görüntüleri alır, Manav Analiz API'ye gönderir, sonuçları PostgreSQL'e kaydeder
+- **Çalışma Şekli**: Cron job ile saatlik çalışır (09:30-21:30 arası, camera-snapshot'tan 30 dakika sonra)
+- **Özellikler**:
+  - S3'ten görüntü listeleme
+  - Batch işleme (toplu analiz)
+  - API çağrıları (Content, Stock, Evaluation)
+  - PostgreSQL'e sonuç kaydetme
+  - Retry mekanizması
+  - İki mod: Tam analiz veya sadece stock analizi
+
+#### 4. **PTZ Analysis Service** (3 ayrı script: `ptz_face_blur.py`, `ptz_yolo_llm_analysis.py`, `ptz_db_writer.py`)
+- **Görevi**: S3'ten snapshot'ları alır, YOLO ile detection yapar, crop'lar oluşturur, collage'lar hazırlar, LLM ile çürük tespiti yapar ve sonuçları PostgreSQL'e kaydeder
+- **Çalışma Şekli**: Cron job ile saatlik çalışır (09:30-21:30 arası, camera-snapshot'tan 30 dakika sonra)
+- **Script'ler**:
+  1. **`ptz_face_blur.py`** (opsiyonel): Yüzlerin blur'lanması - S3'ten snapshot'ları alır, yüzleri tespit edip blur'lar, tekrar S3'e yükler
+  2. **`ptz_yolo_llm_analysis.py`**: YOLO detection ve LLM analizi - S3'ten snapshot'ları alır, YOLOv12 ile detection yapar, crop'lar oluşturur, collage'lar hazırlar, Azure OpenAI ile çürük tespiti yapar, sonuçları `.llm.json` dosyalarına kaydeder ve S3'e yükler
+  3. **`ptz_db_writer.py`**: Veritabanına yazma - S3'ten `.llm.json` dosyalarını okur ve PostgreSQL veritabanına sonuçları yazar
+- **Özellikler**:
+  - 3 aşamalı pipeline (yüz blur → YOLO+LLM analizi → DB yazma)
+  - S3'ten snapshot indirme
+  - YOLO ile meyve/sebze detection ve cropping
+  - Collage oluşturma (batch'ler halinde)
+  - Azure OpenAI (GPT-4.1) ile çürük tespiti
+  - PostgreSQL'e sonuç kaydetme (llm_runs, llm_items tablolarına)
+  - S3'e crop, collage ve rapor yükleme
+  - Script'ler sırayla çalışır (bir hata olursa işlem durdurulur)
+
+### Servis Koordinasyonu
+
+```
+09:00 → Camera Snapshot çalışır → Görüntüler S3'e yüklenir
+09:30 → Batch Processor çalışır → S3'ten görüntüleri alır, API'ye gönderir, DB'ye kaydeder
+09:30 → PTZ Analysis Service çalışır → S3'ten snapshot'ları alır, YOLO+LLM analizi yapar, DB'ye kaydeder
+10:00 → Camera Snapshot çalışır → Yeni görüntüler S3'e yüklenir
+10:30 → Batch Processor çalışır → Yeni görüntüleri işler
+10:30 → PTZ Analysis Service çalışır → Yeni snapshot'ları işler
+...
+21:00 → Camera Snapshot çalışır (son)
+21:30 → Batch Processor çalışır (son)
+21:30 → PTZ Analysis Service çalışır (son)
+
+Manav API → 7/24 sürekli çalışır (systemd service) - Batch Processor tarafından kullanılıyorsa gerekli
 ```
 
-İçerik:
+**Önemli Notlar:**
+- Camera Snapshot her saat başı çalışır (09:00, 10:00, ..., 21:00)
+- Batch Processor ve PTZ Analysis Service her saatin 30. dakikasında çalışır (09:30, 10:30, ..., 21:30)
+- Her iki analiz servisi de aynı S3 snapshot'larını kullanır ama farklı analiz yöntemleri uygular
+- Batch Processor: API tabanlı analiz (doluluk ve reyon sıralaması için)
+- PTZ Analysis Service: YOLO + LLM tabanlı analiz (çürük tespiti için)
 
-```ini
-[Unit]
-Description=Carrefoursa Camera Snapshot System
-After=network.target postgresql.service
+### 1. Systemd Service Dosyası (Sadece Manav API)
 
-[Service]
-Type=simple
-User=your-username
-WorkingDirectory=/opt/carrefoursa-kamera
-Environment="PATH=/opt/carrefoursa-kamera/venv/bin"
-ExecStart=/opt/carrefoursa-kamera/venv/bin/python /opt/carrefoursa-kamera/multi_camera_system/camera_snapshot_system.py
-Restart=always
-RestartSec=10
-StandardOutput=append:/opt/carrefoursa-kamera/logs/camera-snapshot.log
-StandardError=append:/opt/carrefoursa-kamera/logs/camera-snapshot-error.log
-
-[Install]
-WantedBy=multi-user.target
-```
-
-#### API Service (Manav Analiz API)
+Manav API sürekli çalışması gerektiği için systemd service olarak yapılandırılır:
 
 ```bash
 sudo nano /etc/systemd/system/manav-api.service
@@ -232,82 +281,153 @@ After=network.target
 
 [Service]
 Type=simple
-User=your-username
-WorkingDirectory=/opt/carrefoursa-kamera/doluluk&reyonsıralaması/manav_analiz
-Environment="PATH=/opt/carrefoursa-kamera/venv/bin"
-ExecStart=/opt/carrefoursa-kamera/venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+User=pam_aiuser
+WorkingDirectory=/data/carrefoursa-kamera/CarrefourSa_Grocery/doluluk&reyonsıralaması/manav_analiz
+Environment="PATH=/data/carrefoursa-kamera/CarrefourSa_Grocery/venv/bin"
+ExecStart=/data/carrefoursa-kamera/CarrefourSa_Grocery/venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
 Restart=always
 RestartSec=10
-StandardOutput=append:/opt/carrefoursa-kamera/logs/manav-api.log
-StandardError=append:/opt/carrefoursa-kamera/logs/manav-api-error.log
+StandardOutput=append:/data/carrefoursa-kamera/CarrefourSa_Grocery/logs/manav-api.log
+StandardError=append:/data/carrefoursa-kamera/CarrefourSa_Grocery/logs/manav-api-error.log
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-#### Batch Processor Service
-
-```bash
-sudo nano /etc/systemd/system/batch-processor.service
-```
-
-İçerik:
-
-```ini
-[Unit]
-Description=Batch Processor Service
-After=network.target postgresql.service manav-api.service
-
-[Service]
-Type=simple
-User=your-username
-WorkingDirectory=/opt/carrefoursa-kamera/doluluk&reyonsıralaması/manav_analiz
-Environment="PATH=/opt/carrefoursa-kamera/venv/bin"
-ExecStart=/opt/carrefoursa-kamera/venv/bin/python /opt/carrefoursa-kamera/doluluk&reyonsıralaması/manav_analiz/batch_processor.py
-Restart=always
-RestartSec=30
-StandardOutput=append:/opt/carrefoursa-kamera/logs/batch-processor.log
-StandardError=append:/opt/carrefoursa-kamera/logs/batch-processor-error.log
-
-[Install]
-WantedBy=multi-user.target
-```
-
-### 2. Servisleri Başlatma
+### 2. Manav API Servisini Başlatma
 
 ```bash
 # Systemd'yi yeniden yükle
 sudo systemctl daemon-reload
 
-# Servisleri etkinleştir (otomatik başlatma için)
-sudo systemctl enable camera-snapshot.service
+# Servisi etkinleştir (otomatik başlatma için)
 sudo systemctl enable manav-api.service
-sudo systemctl enable batch-processor.service
 
-# Servisleri başlat
-sudo systemctl start camera-snapshot.service
+# Servisi başlat
 sudo systemctl start manav-api.service
-sudo systemctl start batch-processor.service
 
-# Durumlarını kontrol et
-sudo systemctl status camera-snapshot.service
+# Durumunu kontrol et
 sudo systemctl status manav-api.service
-sudo systemctl status batch-processor.service
 ```
 
-### 3. Cron Job (Zamanlanmış Görevler)
+### 3. PTZ Analysis Service Script'leri
 
-Eğer snapshot sistemini belirli saatlerde çalıştırmak istiyorsanız:
+Notebook kodları 3 ayrı Python script'e ayrılmıştır:
+
+1. **`ptz_face_blur.py`** - Yüzlerin blur'lanması (Cell 1)
+   - S3'ten snapshot'ları alır
+   - Yüzleri tespit edip blur'lar
+   - Tekrar S3'e yükler
+
+2. **`ptz_yolo_llm_analysis.py`** - YOLO detection ve LLM analizi (Cell 2)
+   - S3'ten snapshot'ları alır
+   - YOLOv12 ile meyve/sebze tespiti yapar
+   - Crop'ları oluşturur ve S3'e yükler
+   - Collage'lar oluşturur
+   - Azure OpenAI ile çürük tespiti yapar
+   - Sonuçları `.llm.json` dosyalarına kaydeder ve S3'e yükler
+
+3. **`ptz_db_writer.py`** - Veritabanına yazma (Cell 3)
+   - S3'ten `.llm.json` dosyalarını okur
+   - PostgreSQL veritabanına sonuçları yazar
+
+**Not**: Bu script'ler proje içinde mevcuttur. Ek bir oluşturma işlemi gerekmez.
+
+### 4. Wrapper Script'leri Oluşturma
+
+Analiz servislerinin otomatik çalışması için wrapper script'ler oluşturun:
+
+```bash
+# Batch Processor wrapper script
+cat > /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh << 'EOF'
+#!/bin/bash
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery/doluluk\&reyonsıralaması/manav_analiz
+source ../../venv/bin/activate
+echo "2" | python batch_processor.py
+EOF
+
+chmod +x /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh
+
+# PTZ Analysis Service wrapper script (3 script'i sırayla çalıştırır)
+cat > /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh << 'EOF'
+#!/bin/bash
+cd /data/carrefoursa-kamera/CarrefourSa_Grocery
+source venv/bin/activate
+
+# 1. Yüz blur'lanması (opsiyonel, gerekirse açılabilir)
+# python ptz_face_blur.py >> logs/cron-ptz-face-blur.log 2>&1
+
+# 2. YOLO detection ve LLM analizi
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis başlatılıyor..."
+python ptz_yolo_llm_analysis.py >> logs/cron-ptz-yolo-llm.log 2>&1
+YOLO_EXIT_CODE=$?
+
+if [ $YOLO_EXIT_CODE -eq 0 ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis tamamlandı"
+    
+    # 3. Veritabanına yazma
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer başlatılıyor..."
+    python ptz_db_writer.py >> logs/cron-ptz-db-writer.log 2>&1
+    DB_EXIT_CODE=$?
+    
+    if [ $DB_EXIT_CODE -eq 0 ]; then
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer tamamlandı"
+    else
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer hatası: $DB_EXIT_CODE"
+        exit $DB_EXIT_CODE
+    fi
+else
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis hatası: $YOLO_EXIT_CODE"
+    exit $YOLO_EXIT_CODE
+fi
+EOF
+
+chmod +x /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh
+```
+
+**Not**: `run_ptz_analysis.sh` script'i 3 aşamayı sırayla çalıştırır:
+1. `ptz_face_blur.py` (şu an yorum satırı, gerekirse açılabilir)
+2. `ptz_yolo_llm_analysis.py` (YOLO detection ve LLM analizi)
+3. `ptz_db_writer.py` (veritabanına yazma)
+
+Her aşama başarılı olursa bir sonraki aşamaya geçilir. Bir aşamada hata olursa işlem durdurulur.
+
+### 5. Cron Job Yapılandırması
+
+Tüm servisler için cron job'ları yapılandırın:
 
 ```bash
 # Crontab'ı düzenle
 crontab -e
 
-# Örnek: Her gün saat 08:00'de snapshot al
-0 8 * * * cd /opt/carrefoursa-kamera && source venv/bin/activate && python multi_camera_system/camera_snapshot_system.py >> logs/cron-snapshot.log 2>&1
+# Aşağıdaki satırları ekle:
 
-# Örnek: Her saat başı snapshot al
-0 * * * * cd /opt/carrefoursa-kamera && source venv/bin/activate && python multi_camera_system/camera_snapshot_system.py >> logs/cron-snapshot.log 2>&1
+# Camera Snapshot: Her gün 09:00-21:00 arası her saat başı çalışır
+0 9-21 * * * cd /data/carrefoursa-kamera/CarrefourSa_Grocery && source venv/bin/activate && python multi_camera_system/camera_snapshot_system.py >> logs/cron-snapshot.log 2>&1
+
+# Batch Processor: Her gün 09:30-21:30 arası çalışır (camera-snapshot'tan 30 dakika sonra)
+30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-batch.log 2>&1
+
+# PTZ Analysis Service: Her gün 09:30-21:30 arası çalışır (camera-snapshot'tan 30 dakika sonra)
+30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-analysis.log 2>&1
+```
+
+### 6. Cron Job'ları Kontrol Etme
+
+```bash
+# Aktif cron job'ları listele
+crontab -l
+
+# Cron loglarını kontrol et (sistem logları)
+sudo tail -f /var/log/syslog | grep CRON
+
+# Uygulama loglarını kontrol et
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-snapshot.log
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-batch.log
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-analysis.log
+
+# Tüm logları birlikte izle
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-*.log
 ```
 
 ---
@@ -318,34 +438,48 @@ crontab -e
 
 ```bash
 # Log dizinini oluştur
-mkdir -p /opt/carrefoursa-kamera/logs
+mkdir -p /data/carrefoursa-kamera/CarrefourSa_Grocery/logs
 
 # Log dosyalarını izle
-tail -f /opt/carrefoursa-kamera/logs/camera-snapshot.log
-tail -f /opt/carrefoursa-kamera/logs/manav-api.log
-tail -f /opt/carrefoursa-kamera/logs/batch-processor.log
+# Manav API (systemd service)
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/manav-api.log
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/manav-api-error.log
+
+# Camera Snapshot (cron job)
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-snapshot.log
+
+# Batch Processor (cron job)
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-batch.log
+
+# PTZ Analysis Service (cron job)
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-analysis.log
+
+# PTZ Analysis Service alt loglar (ayrı ayrı)
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-face-blur.log
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-yolo-llm.log
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-db-writer.log
 
 # Tüm logları izle
-tail -f /opt/carrefoursa-kamera/logs/*.log
+tail -f /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/*.log
 ```
 
 ### Servis Durumlarını Kontrol Etme
 
 ```bash
-# Tüm servislerin durumunu kontrol et
-sudo systemctl status camera-snapshot.service
+# Manav API servis durumunu kontrol et (systemd)
 sudo systemctl status manav-api.service
-sudo systemctl status batch-processor.service
 
-# Servisleri yeniden başlat
-sudo systemctl restart camera-snapshot.service
+# Manav API'yi yeniden başlat
 sudo systemctl restart manav-api.service
-sudo systemctl restart batch-processor.service
 
-# Servisleri durdur
-sudo systemctl stop camera-snapshot.service
+# Manav API'yi durdur
 sudo systemctl stop manav-api.service
-sudo systemctl stop batch-processor.service
+
+# Aktif cron job'ları kontrol et
+crontab -l
+
+# Son çalışan cron job'ları kontrol et
+sudo grep CRON /var/log/syslog | tail -20
 ```
 
 ### API Health Check
@@ -388,10 +522,10 @@ pip install --force-reinstall <package-name>
 
 ```bash
 # Dosya sahipliklerini kontrol et
-ls -la /opt/carrefoursa-kamera
+ls -la /data/carrefoursa-kamera/CarrefourSa_Grocery
 
 # Gerekirse sahiplik değiştir
-sudo chown -R $USER:$USER /opt/carrefoursa-kamera
+sudo chown -R $USER:$USER /data/carrefoursa-kamera
 ```
 
 ### 4. Port Kullanımı
@@ -441,10 +575,10 @@ print('Buckets:', s3.list_buckets())
 
 ```bash
 # 1. Projeyi kopyala
-cd /opt
-sudo mkdir -p carrefoursa-kamera
+cd /data
+sudo mkdir -p carrefoursa-kamera/CarrefourSa_Grocery
 sudo chown $USER:$USER carrefoursa-kamera
-cd carrefoursa-kamera
+cd carrefoursa-kamera/CarrefourSa_Grocery
 # Projeyi buraya kopyala
 
 # 2. Virtual environment oluştur
@@ -460,22 +594,60 @@ nano .env
 # 4. Dizinleri oluştur
 mkdir -p snapshots crops logs
 
-# 5. Systemd service dosyalarını oluştur
-sudo nano /etc/systemd/system/camera-snapshot.service
+# 5. Manav API systemd service dosyasını oluştur
 sudo nano /etc/systemd/system/manav-api.service
-sudo nano /etc/systemd/system/batch-processor.service
-# Yukarıdaki service içeriklerini yapıştır
+# Yukarıdaki manav-api service içeriğini yapıştır
 
-# 6. Servisleri başlat
+# 6. Manav API servisini başlat
 sudo systemctl daemon-reload
-sudo systemctl enable camera-snapshot manav-api batch-processor
-sudo systemctl start camera-snapshot manav-api batch-processor
+sudo systemctl enable manav-api.service
+sudo systemctl start manav-api.service
 
-# 7. Durumları kontrol et
-sudo systemctl status camera-snapshot
+# 7. PTZ Analysis Service script'leri kontrol et (notebook kodlarından oluşturulmuş)
+# ptz_face_blur.py, ptz_yolo_llm_analysis.py, ptz_db_writer.py dosyaları mevcut olmalı
+ls -lh ptz_*.py
+
+# 8. Wrapper script'leri oluştur
+# run_batch_processor.sh ve run_ptz_analysis.sh script'lerini oluştur (yukarıdaki örneklere göre)
+
+# 9. Cron job'ları yapılandır
+crontab -e
+# Aşağıdaki satırları ekle:
+# 0 9-21 * * * cd /data/carrefoursa-kamera/CarrefourSa_Grocery && source venv/bin/activate && python multi_camera_system/camera_snapshot_system.py >> logs/cron-snapshot.log 2>&1
+# 30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-batch.log 2>&1
+# 30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-analysis.log 2>&1
+
+# 10. Durumları kontrol et
 sudo systemctl status manav-api
-sudo systemctl status batch-processor
+crontab -l
 ```
+
+## ⚠️ Önemli Notlar
+
+### 1. PTZ Analysis Service Script'leri
+
+`ptz_snapshot_notebook.ipynb` dosyasındaki kodlar 3 ayrı Python script'e çevrilmiştir:
+
+- **`ptz_face_blur.py`** - Cell 1 kodları (Yüz blur'lanması, opsiyonel)
+- **`ptz_yolo_llm_analysis.py`** - Cell 2 kodları (YOLO detection + cropping + collage + LLM analizi)
+- **`ptz_db_writer.py`** - Cell 3 kodları (Veritabanına yazma)
+
+Bu script'ler proje içinde mevcuttur ve `run_ptz_analysis.sh` wrapper script'i tarafından sırayla çalıştırılır.
+
+### 2. Silinmesi Gereken Servisler
+
+**Şu anda silinmesi gereken servis yok.** Tüm servisler kullanılıyor:
+- **Manav API**: Batch Processor tarafından kullanılıyor (gerekli)
+- **Camera Snapshot**: Görüntü çekme için gerekli
+- **Batch Processor**: Doluluk ve reyon sıralaması analizi için gerekli
+- **PTZ Analysis Service**: Çürük tespiti analizi için gerekli (3 ayrı script olarak mevcut)
+
+### 3. Servis Bağımlılıkları
+
+- **Manav API** → Batch Processor tarafından kullanılıyor (7/24 çalışmalı)
+- **Camera Snapshot** → Batch Processor ve PTZ Analysis Service tarafından kullanılıyor (S3'e görüntü yükler)
+- **Batch Processor** → Manav API'ye bağımlı (API çalışmalı)
+- **PTZ Analysis Service** → Bağımsız çalışır (sadece S3 ve PostgreSQL'e bağlanır)
 
 ---
 
