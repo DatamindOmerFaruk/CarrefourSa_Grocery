@@ -55,8 +55,8 @@ class BatchProcessor:
         # PostgreSQL
         self.pg_host = os.getenv('POSTGRES_HOST', '45.84.18.76')
         self.pg_port = os.getenv('POSTGRES_PORT', '5432')
-        self.pg_database = os.getenv('POSTGRES_DB', 'grocerryadmin')
-        self.pg_user = os.getenv('POSTGRES_USER', 'grocerryadmin')
+        self.pg_database = os.getenv('POSTGRES_DB', 'postgres')  # Veritabanı adı: postgres
+        self.pg_user = os.getenv('POSTGRES_USER', 'grocerryadmin')  # Kullanıcı adı: grocerryadmin
         self.pg_password = os.getenv('POSTGRES_PASSWORD', 'a08Iyr95vLHTYY')
         
         # API Endpoints
@@ -68,7 +68,10 @@ class BatchProcessor:
         self.retry_count = int(os.getenv('RETRY_COUNT', '3'))
         self.delay_between_requests = float(os.getenv('REQUEST_DELAY', '1.0'))
         
-        # API URL'ini log'a yazdır
+        # Bağlantı bilgilerini log'a yazdır
+        logger.info(f"PostgreSQL Host: {self.pg_host}:{self.pg_port}")
+        logger.info(f"PostgreSQL Database: {self.pg_database}")
+        logger.info(f"PostgreSQL User: {self.pg_user}")
         logger.info(f"API Base URL: {self.api_base_url}")
         
         if not all([self.s3_access_key_id, self.s3_secret_access_key, self.pg_database, self.pg_user, self.pg_password]):
@@ -92,6 +95,7 @@ class BatchProcessor:
             
             # PostgreSQL bağlantısı
             # sslmode=prefer: SSL varsa kullanır, yoksa SSL olmadan bağlanır
+            logger.info(f"PostgreSQL'ye bağlanılıyor: {self.pg_host}:{self.pg_port}/{self.pg_database} (user: {self.pg_user})")
             self.pg_connection = psycopg2.connect(
                 host=self.pg_host,
                 port=self.pg_port,
@@ -102,6 +106,7 @@ class BatchProcessor:
             )
             self.pg_connection.autocommit = True
             
+            logger.info(f"✅ PostgreSQL bağlantısı başarılı: {self.pg_host}:{self.pg_port}/{self.pg_database}")
             logger.info("S3 Object Storage ve PostgreSQL bağlantıları başarılı")
             
             # API health check
