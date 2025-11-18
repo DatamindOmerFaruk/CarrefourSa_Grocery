@@ -22,6 +22,11 @@ from botocore.config import Config
 # .env dosyasını yükle
 load_dotenv()
 
+# AWS checksum hesaplama ve doğrulama için environment variable'ları ayarla
+# Bu, bazı S3 uyumlu sistemlerde (Cohesity gibi) Content-Length sorunlarını çözebilir
+os.environ.setdefault("AWS_REQUEST_CHECKSUM_CALCULATION", "when_required")
+os.environ.setdefault("AWS_RESPONSE_CHECKSUM_VALIDATION", "when_required")
+
 # Türkiye saati (UTC+3) için timezone
 TURKEY_TZ = timezone(timedelta(hours=3))
 
