@@ -34,10 +34,16 @@ dotenv_path = find_dotenv(usecwd=True)
 if dotenv_path:
     load_dotenv(dotenv_path, override=True)
 
+# AWS checksum hesaplama ve doğrulama için environment variable'ları ayarla
+# Bu, bazı S3 uyumlu sistemlerde (Cohesity gibi) Content-Length sorunlarını çözebilir
+os.environ.setdefault("AWS_REQUEST_CHECKSUM_CALCULATION", "when_required")
+os.environ.setdefault("AWS_RESPONSE_CHECKSUM_VALIDATION", "when_required")
+
 # === S3 Object Storage Ayarları ===
 try:
     import boto3
     from botocore.exceptions import ClientError
+    from botocore.config import Config
     # urllib3 SSL uyarılarını bastır (self-signed certificate için)
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -46,6 +52,7 @@ except Exception:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "boto3>=1.34.0", "-q"])
     import boto3
     from botocore.exceptions import ClientError
+    from botocore.config import Config
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -65,11 +72,15 @@ def _ensure_s3_client():
         return None
     if _s3_client is None:
         _s3_client = boto3.client(
-            's3',
+            "s3",
             endpoint_url=S3_ENDPOINT_URL,
             aws_access_key_id=S3_ACCESS_KEY_ID,
             aws_secret_access_key=S3_SECRET_ACCESS_KEY,
-            verify=False  # Self-signed certificate için
+            verify=False,  # self-signed için
+            config=Config(
+                signature_version="s3v4",
+                s3={"addressing_style": "path"},  # ÖNEMLİ: path style
+            ),
         )
     return _s3_client
 
@@ -92,14 +103,23 @@ def upload_file_to_blob(local_path: Path, s3_key: str, content_type: str = "imag
     if not s3:
         return None
     try:
-        s3.upload_file(
-            str(local_path),
-            S3_BUCKET_NAME,
-            s3_key,
-            ExtraArgs={'ContentType': content_type}
+        if not local_path.exists():
+            print(f"⚠️  Lokal dosya bulunamadı: {local_path}")
+            return None
+        
+        # Dosyayı okuyup bytes olarak al
+        with open(local_path, "rb") as f:
+            data = f.read()
+        
+        # put_object kullan (ContentLength otomatik hesaplanır)
+        s3.put_object(
+            Bucket=S3_BUCKET_NAME,
+            Key=s3_key,
+            Body=data,
+            ContentType=content_type
         )
         return s3_key
-    except ClientError as e:
+    except Exception as e:
         print(f"⚠️  S3 upload hatası ({local_path.name}): {e}")
         return None
 

@@ -8,6 +8,7 @@ from psycopg2.extras import RealDictCursor
 import json
 import boto3
 from botocore.exceptions import ClientError
+from botocore.config import Config
 from datetime import datetime, timedelta
 # urllib3 SSL uyarılarını bastır (self-signed certificate için)
 import urllib3
@@ -20,6 +21,11 @@ from dotenv import load_dotenv
 
 # .env dosyasını yükle
 load_dotenv()
+
+# AWS checksum hesaplama ve doğrulama için environment variable'ları ayarla
+# Bu, bazı S3 uyumlu sistemlerde (Cohesity gibi) Content-Length sorunlarını çözebilir
+os.environ.setdefault("AWS_REQUEST_CHECKSUM_CALCULATION", "when_required")
+os.environ.setdefault("AWS_RESPONSE_CHECKSUM_VALIDATION", "when_required")
 
 # Logging ayarları
 logging.basicConfig(
@@ -62,6 +68,9 @@ class BatchProcessor:
         self.retry_count = int(os.getenv('RETRY_COUNT', '3'))
         self.delay_between_requests = float(os.getenv('REQUEST_DELAY', '1.0'))
         
+        # API URL'ini log'a yazdır
+        logger.info(f"API Base URL: {self.api_base_url}")
+        
         if not all([self.s3_access_key_id, self.s3_secret_access_key, self.pg_database, self.pg_user, self.pg_password]):
             raise ValueError("Gerekli çevre değişkenleri eksik!")
             
@@ -70,11 +79,15 @@ class BatchProcessor:
         try:
             # S3 Client
             self.s3_client = boto3.client(
-                's3',
+                "s3",
                 endpoint_url=self.s3_endpoint_url,
                 aws_access_key_id=self.s3_access_key_id,
                 aws_secret_access_key=self.s3_secret_access_key,
-                verify=False  # Self-signed certificate için
+                verify=False,  # self-signed için
+                config=Config(
+                    signature_version="s3v4",
+                    s3={"addressing_style": "path"},  # ÖNEMLİ: path style
+                ),
             )
             
             # PostgreSQL bağlantısı
@@ -91,9 +104,29 @@ class BatchProcessor:
             
             logger.info("S3 Object Storage ve PostgreSQL bağlantıları başarılı")
             
+            # API health check
+            self.check_api_health()
+            
         except Exception as e:
             logger.error(f"Bağlantı hatası: {str(e)}")
             raise
+    
+    def check_api_health(self):
+        """API'nin çalışıp çalışmadığını kontrol et"""
+        try:
+            health_url = f"{self.api_base_url}/health"
+            logger.info(f"API health check: {health_url}")
+            response = requests.get(health_url, timeout=5)
+            if response.status_code == 200:
+                logger.info("API sağlık kontrolü başarılı")
+            else:
+                logger.warning(f"API health check başarısız: Status {response.status_code}")
+        except requests.exceptions.ConnectionError:
+            logger.error(f"API'ye bağlanılamıyor: {self.api_base_url}")
+            logger.error("Lütfen API'nin çalıştığından emin olun (systemd service: manav-api)")
+            logger.error("API kontrolü için: sudo systemctl status manav-api")
+        except Exception as e:
+            logger.warning(f"API health check hatası: {str(e)}")
             
     def get_all_images(self) -> List[Dict[str, str]]:
         """S3 Object Storage'dan tüm görselleri listele"""

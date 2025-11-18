@@ -11,6 +11,7 @@ from datetime import datetime
 from facenet_pytorch import MTCNN
 import boto3
 from botocore.exceptions import ClientError
+from botocore.config import Config
 from dotenv import load_dotenv
 # urllib3 SSL uyarılarını bastır (self-signed certificate için)
 import urllib3
@@ -18,6 +19,11 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # .env dosyasını yükle
 load_dotenv()
+
+# AWS checksum hesaplama ve doğrulama için environment variable'ları ayarla
+# Bu, bazı S3 uyumlu sistemlerde (Cohesity gibi) Content-Length sorunlarını çözebilir
+os.environ.setdefault("AWS_REQUEST_CHECKSUM_CALCULATION", "when_required")
+os.environ.setdefault("AWS_RESPONSE_CHECKSUM_VALIDATION", "when_required")
 
 # === Klasörler ===
 SNAPSHOTS_ROOT = Path("snapshots")  # camera_XXX/YYYY-MM-DD/HH/*.jpg
@@ -37,11 +43,15 @@ def _ensure_s3_client():
         return None
     if _s3_client is None:
         _s3_client = boto3.client(
-            's3',
+            "s3",
             endpoint_url=S3_ENDPOINT_URL,
             aws_access_key_id=S3_ACCESS_KEY_ID,
             aws_secret_access_key=S3_SECRET_ACCESS_KEY,
-            verify=False  # Self-signed certificate için
+            verify=False,  # self-signed için
+            config=Config(
+                signature_version="s3v4",
+                s3={"addressing_style": "path"},  # ÖNEMLİ: path style
+            ),
         )
     return _s3_client
 
@@ -51,15 +61,23 @@ def _upload_file(local_path: Path, s3_key: str, content_type: str = "image/jpeg"
     if not s3:
         return None
     try:
+        if not local_path.exists():
+            print(f"⚠️  Lokal dosya bulunamadı: {local_path}")
+            return None
+        
+        # Dosyayı okuyup bytes olarak al
         with open(local_path, "rb") as f:
-            s3.upload_fileobj(
-                f,
-                S3_BUCKET_NAME,
-                s3_key,
-                ExtraArgs={'ContentType': content_type}
-            )
+            data = f.read()
+        
+        # put_object kullan (ContentLength otomatik hesaplanır)
+        s3.put_object(
+            Bucket=S3_BUCKET_NAME,
+            Key=s3_key,
+            Body=data,
+            ContentType=content_type
+        )
         return s3_key
-    except ClientError as e:
+    except Exception as e:
         print(f"⚠️  S3 upload hatası ({s3_key}): {e}")
         return None
 

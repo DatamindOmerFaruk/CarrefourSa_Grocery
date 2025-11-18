@@ -256,7 +256,7 @@ Sistemde 4 ana servis bulunmaktadır:
 - **Görevi**: S3'ten snapshot'ları alır, YOLO ile detection yapar, crop'lar oluşturur, collage'lar hazırlar, LLM ile çürük tespiti yapar ve sonuçları PostgreSQL'e kaydeder
 - **Çalışma Şekli**: Cron job ile saatlik çalışır (09:30-21:30 arası, camera-snapshot'tan 30 dakika sonra)
 - **Script'ler**:
-  1. **`ptz_face_blur.py`** (opsiyonel): Yüzlerin blur'lanması - S3'ten snapshot'ları alır, yüzleri tespit edip blur'lar, tekrar S3'e yükler
+  1. **`ptz_face_blur.py`**: Yüzlerin blur'lanması - S3'ten snapshot'ları alır, yüzleri tespit edip blur'lar, tekrar S3'e yükler
   2. **`ptz_yolo_llm_analysis.py`**: YOLO detection ve LLM analizi - S3'ten snapshot'ları alır, YOLOv12 ile detection yapar, crop'lar oluşturur, collage'lar hazırlar, Azure OpenAI ile çürük tespiti yapar, sonuçları `.llm.json` dosyalarına kaydeder ve S3'e yükler
   3. **`ptz_db_writer.py`**: Veritabanına yazma - S3'ten `.llm.json` dosyalarını okur ve PostgreSQL veritabanına sonuçları yazar
 - **Özellikler**:
@@ -443,7 +443,7 @@ chmod +x run_batch_processor.sh
 #### 2.3. PTZ Analysis Service Wrapper Script
 
 Bu script, 3 ayrı Python script'ini sırayla çalıştırır:
-1. `ptz_face_blur.py` (opsiyonel - şu an kapalı)
+1. `ptz_face_blur.py` (Yüz blur'lanması)
 2. `ptz_yolo_llm_analysis.py` (YOLO detection ve LLM analizi)
 3. `ptz_db_writer.py` (Veritabanına yazma)
 
@@ -469,23 +469,27 @@ source venv/bin/activate
 mkdir -p logs
 
 # ============================================
-# AŞAMA 1: Yüz Blur'lanması (OPSİYONEL)
+# AŞAMA 1: Yüz Blur'lanması
 # ============================================
-# Şu an kapalı, gerekirse yorum satırını kaldırın
-# echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Face Blur başlatılıyor..."
-# python ptz_face_blur.py >> logs/cron-ptz-face-blur.log 2>&1
-# FACE_BLUR_EXIT_CODE=$?
-# if [ $FACE_BLUR_EXIT_CODE -ne 0 ]; then
-#     echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Face Blur hatası: $FACE_BLUR_EXIT_CODE"
-#     exit $FACE_BLUR_EXIT_CODE
-# fi
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Face Blur başlatılıyor..."
+echo "============================================"
+python ptz_face_blur.py 2>&1 | tee -a logs/cron-ptz-face-blur.log
+FACE_BLUR_EXIT_CODE=${PIPESTATUS[0]}
+echo "============================================"
+
+if [ $FACE_BLUR_EXIT_CODE -ne 0 ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Face Blur hatası: $FACE_BLUR_EXIT_CODE"
+    exit $FACE_BLUR_EXIT_CODE
+fi
 
 # ============================================
 # AŞAMA 2: YOLO Detection ve LLM Analizi
 # ============================================
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis başlatılıyor..."
-python ptz_yolo_llm_analysis.py >> logs/cron-ptz-yolo-llm.log 2>&1
-YOLO_EXIT_CODE=$?
+echo "============================================"
+python ptz_yolo_llm_analysis.py 2>&1 | tee -a logs/cron-ptz-yolo-llm.log
+YOLO_EXIT_CODE=${PIPESTATUS[0]}
+echo "============================================"
 
 # YOLO analizi başarılı mı kontrol et
 if [ $YOLO_EXIT_CODE -eq 0 ]; then
@@ -495,8 +499,10 @@ if [ $YOLO_EXIT_CODE -eq 0 ]; then
     # AŞAMA 3: Veritabanına Yazma
     # ============================================
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer başlatılıyor..."
-    python ptz_db_writer.py >> logs/cron-ptz-db-writer.log 2>&1
-    DB_EXIT_CODE=$?
+    echo "============================================"
+    python ptz_db_writer.py 2>&1 | tee -a logs/cron-ptz-db-writer.log
+    DB_EXIT_CODE=${PIPESTATUS[0]}
+    echo "============================================"
     
     # Veritabanı yazma başarılı mı kontrol et
     if [ $DB_EXIT_CODE -eq 0 ]; then
@@ -564,18 +570,44 @@ cd /data/carrefoursa-kamera/CarrefourSa_Grocery
 source venv/bin/activate
 mkdir -p logs
 
+# ============================================
+# AŞAMA 1: Yüz Blur'lanması
+# ============================================
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Face Blur başlatılıyor..."
+echo "============================================"
+python ptz_face_blur.py 2>&1 | tee -a logs/cron-ptz-face-blur.log
+FACE_BLUR_EXIT_CODE=${PIPESTATUS[0]}
+echo "============================================"
+
+if [ $FACE_BLUR_EXIT_CODE -ne 0 ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Face Blur hatası: $FACE_BLUR_EXIT_CODE"
+    exit $FACE_BLUR_EXIT_CODE
+fi
+
+# ============================================
+# AŞAMA 2: YOLO Detection ve LLM Analizi
+# ============================================
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis başlatılıyor..."
-python ptz_yolo_llm_analysis.py >> logs/cron-ptz-yolo-llm.log 2>&1
-YOLO_EXIT_CODE=$?
+echo "============================================"
+python ptz_yolo_llm_analysis.py 2>&1 | tee -a logs/cron-ptz-yolo-llm.log
+YOLO_EXIT_CODE=${PIPESTATUS[0]}
+echo "============================================"
 
 if [ $YOLO_EXIT_CODE -eq 0 ]; then
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis tamamlandı"
+    
+    # ============================================
+    # AŞAMA 3: Veritabanına Yazma
+    # ============================================
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer başlatılıyor..."
-    python ptz_db_writer.py >> logs/cron-ptz-db-writer.log 2>&1
-    DB_EXIT_CODE=$?
+    echo "============================================"
+    python ptz_db_writer.py 2>&1 | tee -a logs/cron-ptz-db-writer.log
+    DB_EXIT_CODE=${PIPESTATUS[0]}
+    echo "============================================"
     
     if [ $DB_EXIT_CODE -eq 0 ]; then
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer tamamlandı"
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Tüm PTZ analiz işlemleri başarıyla tamamlandı"
         exit 0
     else
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ Database Writer hatası: $DB_EXIT_CODE"
@@ -583,6 +615,7 @@ if [ $YOLO_EXIT_CODE -eq 0 ]; then
     fi
 else
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] PTZ YOLO + LLM Analysis hatası: $YOLO_EXIT_CODE"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Veritabanı yazma işlemi atlandı (YOLO analizi başarısız)"
     exit $YOLO_EXIT_CODE
 fi
 EOF

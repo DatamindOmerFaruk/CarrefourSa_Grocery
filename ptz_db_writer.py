@@ -15,9 +15,15 @@ from botocore.exceptions import ClientError
 # .env dosyasını yükle
 load_dotenv()
 
+# AWS checksum hesaplama ve doğrulama için environment variable'ları ayarla
+# Bu, bazı S3 uyumlu sistemlerde (Cohesity gibi) Content-Length sorunlarını çözebilir
+os.environ.setdefault("AWS_REQUEST_CHECKSUM_CALCULATION", "when_required")
+os.environ.setdefault("AWS_RESPONSE_CHECKSUM_VALIDATION", "when_required")
+
 # === S3 Object Storage Ayarları ===
 try:
     import boto3
+    from botocore.config import Config
     # urllib3 SSL uyarılarını bastır (self-signed certificate için)
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -25,6 +31,7 @@ except Exception:
     import sys, subprocess
     subprocess.check_call([sys.executable, "-m", "pip", "install", "boto3>=1.34.0", "-q"])
     import boto3
+    from botocore.config import Config
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -43,11 +50,15 @@ def _ensure_s3_client():
         return None
     if _s3_client is None:
         _s3_client = boto3.client(
-            's3',
+            "s3",
             endpoint_url=S3_ENDPOINT_URL,
             aws_access_key_id=S3_ACCESS_KEY_ID,
             aws_secret_access_key=S3_SECRET_ACCESS_KEY,
-            verify=False  # Self-signed certificate için
+            verify=False,  # self-signed için
+            config=Config(
+                signature_version="s3v4",
+                s3={"addressing_style": "path"},  # ÖNEMLİ: path style
+            ),
         )
     return _s3_client
 
