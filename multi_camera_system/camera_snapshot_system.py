@@ -98,21 +98,24 @@ def _upload_file_to_s3(local_path: Path, s3_key: str, content_type: str = "image
             print(f"[HATA] Lokal dosya bulunamadı: {local_path}")
             return None
 
-        file_size = local_path.stat().st_size
+        # Dosyayı okuyup bytes olarak al
+        with open(local_path, "rb") as f:
+            data = f.read()
+        
+        file_size = len(data)
         print(
             f"[DEBUG] S3'e yükleniyor: bucket={S3_BUCKET_NAME}, key={s3_key}, "
             f"file={local_path.name} ({file_size} bytes)"
         )
 
-        # Dosyayı stream ederek gönder, ContentLength’i elle set et
-        with open(local_path, "rb") as f:
-            s3.put_object(
-                Bucket=S3_BUCKET_NAME,
-                Key=s3_key,
-                Body=f,
-                ContentType=content_type,
-                ContentLength=file_size,
-            )
+        # ContentLength'i string olarak gönder
+        s3.put_object(
+            Bucket=S3_BUCKET_NAME,
+            Key=s3_key,
+            Body=data,
+            ContentType=content_type,
+            ContentLength=str(len(data)),
+        )
 
         print(f"[DEBUG] S3'e başarıyla yüklendi: {s3_key}")
         return s3_key
