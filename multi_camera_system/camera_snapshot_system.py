@@ -108,13 +108,13 @@ def _upload_file_to_s3(local_path: Path, s3_key: str, content_type: str = "image
             f"file={local_path.name} ({file_size} bytes)"
         )
 
-        # ContentLength'i string olarak gönder
+        # ContentLength'i integer olarak gönder
         s3.put_object(
             Bucket=S3_BUCKET_NAME,
             Key=s3_key,
             Body=data,
             ContentType=content_type,
-            ContentLength=str(len(data)),
+            ContentLength=len(data),
         )
 
         print(f"[DEBUG] S3'e başarıyla yüklendi: {s3_key}")
