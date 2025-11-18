@@ -143,8 +143,8 @@ PG_HOST=45.84.18.76
 PG_PORT=5432
 PG_USER=grocerryadmin
 PG_PASSWORD=a08Iyr95vLHTYY
-PG_DATABASE=grocerryadmin
-PG_DSN=postgresql://grocerryadmin:a08Iyr95vLHTYY@45.84.18.76:5432/grocerryadmin
+PG_DATABASE=postgres
+PG_DSN=postgresql://grocerryadmin:a08Iyr95vLHTYY@45.84.18.76:5432/postgres
 
 # Azure OpenAI (LLM için)
 AZURE_OPENAI_ENDPOINT=https://your-endpoint.openai.azure.com/
@@ -1055,7 +1055,7 @@ python3 test_s3_upload.py
 
 - **Host**: `45.84.18.76`
 - **Port**: `5432`
-- **Database**: `grocerryadmin`
+- **Database**: `postgres`
 - **User**: `grocerryadmin`
 - **SSL Mode**: `prefer` (SSL varsa kullanır, yoksa SSL olmadan bağlanır)
 

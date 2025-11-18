@@ -95,7 +95,7 @@ def list_blobs_in_path(prefix: str) -> List[str]:
 # === PostgreSQL Ayarları ===
 PG_DSN = os.getenv(
     "PG_DSN",
-    "postgresql://grocerryadmin:a08Iyr95vLHTYY@45.84.18.76:5432/grocerryadmin"
+    "postgresql://grocerryadmin:a08Iyr95vLHTYY@45.84.18.76:5432/postgres"  # Veritabanı: postgres, Kullanıcı: grocerryadmin
 )
 
 if not PG_DSN:
