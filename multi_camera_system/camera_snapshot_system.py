@@ -10,12 +10,20 @@ import time
 import requests
 from requests.auth import HTTPDigestAuth
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from typing import Dict, List, Optional, Tuple
 import yaml
 from PIL import Image
 import numpy as np
 from ultralytics import YOLO
+
+# Türkiye saati (UTC+3) için timezone
+TURKEY_TZ = timezone(timedelta(hours=3))
+
+def get_turkey_time():
+    """Türkiye saatini döndürür (UTC+3) - Sistem saati yanlış olsa bile doğru saati kullanır"""
+    utc_now = datetime.now(timezone.utc)
+    return utc_now.astimezone(TURKEY_TZ)
 
 # S3 Object Storage için
 try:
@@ -206,7 +214,10 @@ class CameraController:
             if not self._is_ok(resp):
                 raise RuntimeError(f"Snapshot hata: {resp.status_code} - {resp.text[:200]}")
 
-            now = datetime.now()
+            # Türkiye saati (UTC+3) kullan
+            # Sistem saati yanlış olsa bile doğru saati kullanır
+            now = get_turkey_time()
+            
             ts_date = now.strftime("%Y-%m-%d")
             ts_hour = now.strftime("%H")
             ts_time = now.strftime("%H%M%S")
@@ -549,7 +560,7 @@ def capture_camera_snapshots(camera_id: str, config_path: str = 'cameras.yaml') 
                         'target_name': target_name,
                         'snapshot_path': str(snapshot_path),
                         'ptz_coords': {'azimuth': az, 'elevation': el, 'zoom': zz},
-                        'timestamp': datetime.now().isoformat()
+                        'timestamp': get_turkey_time().isoformat()
                     })
                 else:
                     print(f"[UYARI] {camera_id} - {target_name} snapshot alınamadı")
@@ -564,7 +575,7 @@ def capture_camera_snapshots(camera_id: str, config_path: str = 'cameras.yaml') 
             'camera_id': camera_id,
             'total_snapshots': len(results),
             'snapshots': results,
-            'timestamp': datetime.now().isoformat()
+            'timestamp': get_turkey_time().isoformat()
         }
         
     except Exception as e:
@@ -591,7 +602,7 @@ def process_single_configuration(config_path: str) -> Dict:
             'total_snapshots': 0,
             'snapshot_results': [],
             'status': 'no_cameras',
-            'timestamp': datetime.now().isoformat(),
+            'timestamp': get_turkey_time().isoformat(),
         }
 
     # Tüm kameraları sırayla işle
@@ -613,7 +624,7 @@ def process_single_configuration(config_path: str) -> Dict:
         'camera_ids': camera_ids,
         'total_snapshots': total_snapshots,
         'snapshot_results': snapshot_results,
-        'timestamp': datetime.now().isoformat(),
+        'timestamp': get_turkey_time().isoformat(),
         'status': 'success'
     }
 
@@ -657,7 +668,7 @@ def process_all_cameras(config_path: str = 'cameras.yaml', additional_configs: L
             'total_snapshots': total_snapshots,
             'snapshot_results': combined_snapshot_results,
             'config_runs': config_runs,
-            'timestamp': datetime.now().isoformat(),
+            'timestamp': get_turkey_time().isoformat(),
             'status': 'success'
         }
 
@@ -682,13 +693,13 @@ def main():
     print("Bu işlem birkaç dakika sürebilir (kamera sayısına göre)")
     print()
     
-    start_time = datetime.now()
+    start_time = get_turkey_time()
     
     try:
         # Tüm kameraları işle
         result = process_all_cameras()
         
-        end_time = datetime.now()
+        end_time = get_turkey_time()
         duration = (end_time - start_time).total_seconds()
         
         print()

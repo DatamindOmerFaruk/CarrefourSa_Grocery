@@ -816,6 +816,9 @@ python3 -c "import psycopg2; conn = psycopg2.connect('postgresql://grocerryadmin
 ```bash
 # S3 bağlantısını test et
 source venv/bin/activate
+python3 test_s3_upload.py
+
+# Veya manuel test
 python3 -c "
 import boto3
 s3 = boto3.client('s3',
@@ -828,6 +831,48 @@ print('S3 bağlantısı başarılı!')
 print('Buckets:', s3.list_buckets())
 "
 ```
+
+### 7. Sistem Saati Sorunları
+
+**ÖNEMLİ**: Sistem saati yanlışsa, fotoğrafların tarih/saat bilgileri ve klasör yapısı yanlış olur.
+
+#### 7.1. Sistem Saatini Kontrol Etme
+
+```bash
+# Mevcut sistem saatini kontrol et
+date
+
+# Timezone'u kontrol et
+timedatectl
+
+# UTC saatini kontrol et
+date -u
+```
+
+#### 7.2. Sistem Saatini Düzeltme (Önerilen)
+
+```bash
+# Timezone'u Türkiye saati (Europe/Istanbul) olarak ayarla
+sudo timedatectl set-timezone Europe/Istanbul
+
+# NTP ile senkronize et (otomatik saat düzeltme)
+sudo timedatectl set-ntp true
+
+# Saati kontrol et
+date
+timedatectl
+```
+
+#### 7.3. Kod İçinde Saat Düzeltmesi (Alternatif)
+
+**Not**: Kod zaten Türkiye saatini (UTC+3) kullanacak şekilde yapılandırılmıştır. Sistem saati yanlış olsa bile, kod UTC'den Türkiye saatine çevirir. Ancak sistem saatini düzeltmek daha iyidir çünkü:
+- Cron job'lar doğru saatte çalışır
+- Log dosyaları doğru tarih/saat ile oluşturulur
+- Tüm sistem tutarlı olur
+
+Kod içinde saat düzeltmesi:
+- `camera_snapshot_system.py` → `get_turkey_time()` fonksiyonu kullanılıyor
+- Fotoğraf klasör yapısı ve S3 key'leri Türkiye saatine göre oluşturuluyor
 
 ---
 
