@@ -111,22 +111,27 @@ class BatchProcessor:
             logger.error(f"Bağlantı hatası: {str(e)}")
             raise
     
-    def check_api_health(self):
-        """API'nin çalışıp çalışmadığını kontrol et"""
+    def check_api_health(self) -> bool:
+        """API'nin çalışıp çalışmadığını kontrol et. Başarılıysa True, başarısızsa False döndür."""
         try:
             health_url = f"{self.api_base_url}/health"
             logger.info(f"API health check: {health_url}")
             response = requests.get(health_url, timeout=5)
             if response.status_code == 200:
                 logger.info("API sağlık kontrolü başarılı")
+                return True
             else:
                 logger.warning(f"API health check başarısız: Status {response.status_code}")
+                return False
         except requests.exceptions.ConnectionError:
             logger.error(f"API'ye bağlanılamıyor: {self.api_base_url}")
             logger.error("Lütfen API'nin çalıştığından emin olun (systemd service: manav-api)")
             logger.error("API kontrolü için: sudo systemctl status manav-api")
+            logger.error("API başlatmak için: sudo systemctl start manav-api")
+            return False
         except Exception as e:
             logger.warning(f"API health check hatası: {str(e)}")
+            return False
             
     def get_all_images(self) -> List[Dict[str, str]]:
         """S3 Object Storage'dan tüm görselleri listele"""
@@ -458,6 +463,18 @@ class BatchProcessor:
             # Sadece Stock API'sini çağır
             stock_result = self.process_stock_api(s3_url, s3_url)
             
+            # API başarısızsa hata döndür
+            if not stock_result.get('success', False):
+                error_msg = stock_result.get('error', 'Bilinmeyen hata')
+                logger.error(f"Stock API başarısız ({blob_name}): {error_msg}")
+                return {
+                    'success': False,
+                    'blob_name': blob_name,
+                    'source_url': s3_url,
+                    'error': error_msg,
+                    'stock_success': False
+                }
+            
             # Sonuçları kaydet (S3 URL'i source_url olarak)
             self.save_stock_results(s3_url, stock_result)
             
@@ -465,7 +482,7 @@ class BatchProcessor:
                 'success': True,
                 'blob_name': blob_name,
                 'source_url': s3_url,
-                'stock_success': stock_result.get('success', False)
+                'stock_success': True
             }
             
         except Exception as e:
@@ -474,7 +491,8 @@ class BatchProcessor:
                 'success': False,
                 'blob_name': blob_name,
                 'source_url': s3_url,
-                'error': str(e)
+                'error': str(e),
+                'stock_success': False
             }
 
     def process_single_image(self, blob_info: Dict) -> Dict:
@@ -523,6 +541,16 @@ class BatchProcessor:
     def run_batch_processing(self):
         """Ana batch işlem döngüsü"""
         logger.info("Batch işlemi başlatılıyor...")
+        
+        # API sağlık kontrolü
+        if not self.check_api_health():
+            logger.error("=" * 60)
+            logger.error("API'ye bağlanılamadı! İşlem durduruluyor.")
+            logger.error("=" * 60)
+            logger.error("Lütfen API'yi başlatın ve tekrar deneyin:")
+            logger.error("  sudo systemctl start manav-api")
+            logger.error("  sudo systemctl status manav-api")
+            raise ConnectionError(f"API'ye bağlanılamıyor: {self.api_base_url}")
         
         try:
             # Tüm görselleri listele
@@ -584,6 +612,16 @@ class BatchProcessor:
     def run_stock_only_processing(self):
         """SADECE STOCK ANALİZİ için batch işlem döngüsü"""
         logger.info("Stock-Only Batch işlemi başlatılıyor...")
+        
+        # API sağlık kontrolü
+        if not self.check_api_health():
+            logger.error("=" * 60)
+            logger.error("API'ye bağlanılamadı! İşlem durduruluyor.")
+            logger.error("=" * 60)
+            logger.error("Lütfen API'yi başlatın ve tekrar deneyin:")
+            logger.error("  sudo systemctl start manav-api")
+            logger.error("  sudo systemctl status manav-api")
+            raise ConnectionError(f"API'ye bağlanılamıyor: {self.api_base_url}")
         
         try:
             # Tüm görselleri listele
