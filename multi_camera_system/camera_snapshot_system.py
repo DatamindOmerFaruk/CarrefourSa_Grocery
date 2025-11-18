@@ -45,8 +45,13 @@ def _ensure_s3_client():
     """S3 client'ı başlat"""
     global _s3_client
     if boto3 is None:
+        print("[HATA] boto3 kütüphanesi yüklü değil!")
         return None
     if not S3_ACCESS_KEY_ID or not S3_SECRET_ACCESS_KEY:
+        print("[HATA] S3_ACCESS_KEY_ID veya S3_SECRET_ACCESS_KEY tanımlı değil!")
+        print(f"[DEBUG] S3_ACCESS_KEY_ID: {'Tanımlı' if S3_ACCESS_KEY_ID else 'TANIMSIZ'}")
+        print(f"[DEBUG] S3_SECRET_ACCESS_KEY: {'Tanımlı' if S3_SECRET_ACCESS_KEY else 'TANIMSIZ'}")
+        print("[DEBUG] .env dosyasında S3_ACCESS_KEY_ID ve S3_SECRET_ACCESS_KEY değerlerini kontrol edin.")
         return None
     if _s3_client is None:
         try:
@@ -57,8 +62,9 @@ def _ensure_s3_client():
                 aws_secret_access_key=S3_SECRET_ACCESS_KEY,
                 verify=False  # Self-signed certificate için
             )
+            print(f"[DEBUG] S3 client oluşturuldu: endpoint={S3_ENDPOINT_URL}, bucket={S3_BUCKET_NAME}")
         except Exception as e:
-            print(f"[UYARI] S3 client oluşturulamadı: {e}")
+            print(f"[HATA] S3 client oluşturulamadı: {e}")
             return None
     return _s3_client
 
@@ -66,8 +72,14 @@ def _upload_file_to_s3(local_path: Path, s3_key: str, content_type: str = "image
     """Dosyayı S3'e yükle (varsa üzerine yazar)."""
     s3 = _ensure_s3_client()
     if not s3:
+        print(f"[HATA] S3 client mevcut değil, yükleme yapılamıyor: {s3_key}")
         return None
     try:
+        if not local_path.exists():
+            print(f"[HATA] Lokal dosya bulunamadı: {local_path}")
+            return None
+        
+        print(f"[DEBUG] S3'e yükleniyor: bucket={S3_BUCKET_NAME}, key={s3_key}, file={local_path.name}")
         with open(local_path, "rb") as f:
             s3.upload_fileobj(
                 f,
@@ -75,9 +87,12 @@ def _upload_file_to_s3(local_path: Path, s3_key: str, content_type: str = "image
                 s3_key,
                 ExtraArgs={'ContentType': content_type}
             )
+        print(f"[DEBUG] S3'e başarıyla yüklendi: {s3_key}")
         return s3_key
     except Exception as e:
-        print(f"[UYARI] S3 upload hatası ({s3_key}): {e}")
+        print(f"[HATA] S3 upload hatası ({s3_key}): {e}")
+        import traceback
+        print(f"[DEBUG] Traceback: {traceback.format_exc()}")
         return None
 
 def _to_snapshot_s3_key(local_path: Path, snapshots_root: Path) -> str:

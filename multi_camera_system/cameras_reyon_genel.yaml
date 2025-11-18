@@ -4,7 +4,7 @@
 cameras:
   camera_001:
     name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
-    host: "10.85.4.100:80"
+    host: "45.84.18.76:10131"
     username: "datamind"
     password: "Data321321."
     ptz_channel: 1
@@ -43,7 +43,7 @@ cameras:
 
   camera_002:
     name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
-    host: "10.101.128.160:80"
+    host: "45.84.18.76:36091"
     username: "datamind"
     password: "Data321321."
     ptz_channel: 1
@@ -73,7 +73,7 @@ cameras:
   
   camera_003:
     name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
-    host: "10.101.150.161:80"
+    host: "45.84.18.76:54852"
     username: "datamind"
     password: "Data321321."
     ptz_channel: 1
@@ -91,7 +91,7 @@ cameras:
   
   camera_004:
     name: "Meyve ve Sebze Reyonu - Merkezi Kamera"
-    host: "10.101.150.160:80"
+    host: "45.84.18.76:54851"
     username: "datamind"
     password: "Data321321."
     ptz_channel: 1

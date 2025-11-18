@@ -1,4 +1,0 @@
-Toplam: 300
-Çürük : 9
-Sağlıklı: 291
-Çürük Oranı: 3.00%
