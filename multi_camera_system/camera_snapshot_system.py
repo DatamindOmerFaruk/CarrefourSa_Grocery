@@ -94,15 +94,17 @@ def _upload_file_to_s3(local_path: Path, s3_key: str, content_type: str = "image
         file_size = local_path.stat().st_size
         print(f"[DEBUG] S3'e yükleniyor: bucket={S3_BUCKET_NAME}, key={s3_key}, file={local_path.name} ({file_size} bytes)")
         
-        # put_object kullan (ContentLength manuel olarak eklenir - Cohesity için gerekli)
+        # Dosyayı tamamen okuyup bytes olarak gönder (Cohesity için gerekli)
+        # Bu yöntem ContentLength'in otomatik olarak doğru hesaplanmasını sağlar
         with open(local_path, "rb") as f:
-            s3.put_object(
-                Bucket=S3_BUCKET_NAME,
-                Key=s3_key,
-                Body=f,
-                ContentType=content_type,
-                ContentLength=file_size
-            )
+            file_data = f.read()
+        
+        s3.put_object(
+            Bucket=S3_BUCKET_NAME,
+            Key=s3_key,
+            Body=file_data,
+            ContentType=content_type
+        )
         print(f"[DEBUG] S3'e başarıyla yüklendi: {s3_key}")
         return s3_key
     except Exception as e:
