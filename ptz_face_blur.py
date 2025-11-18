@@ -116,9 +116,23 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 mtcnn = MTCNN(keep_all=True, device=device)
 
 def _to_snapshot_blob_path(local_path: Path) -> str:
-    """SNAPSHOTS_ROOT'e göre bağıl yolu blob yoluna çevirir: snapshots/<...>"""
-    rel = local_path.relative_to(SNAPSHOTS_ROOT)
-    return f"snapshots/{rel.as_posix()}"
+    """Lokal dosya yolundan S3 blob yolunu oluşturur: snapshots/camera_XXX/YYYY-MM-DD/HH/filename.jpg"""
+    # Dosya yolundan camera_XXX/YYYY-MM-DD/HH/filename.jpg kısmını bul
+    parts = local_path.parts
+    # camera_XXX klasörünü bul
+    camera_idx = None
+    for i, part in enumerate(parts):
+        if part.startswith("camera_"):
+            camera_idx = i
+            break
+    
+    if camera_idx is None:
+        # Eğer camera_XXX bulunamazsa, dosya adını kullan
+        return f"snapshots/{local_path.name}"
+    
+    # camera_XXX'den sonraki kısmı al (camera_XXX/YYYY-MM-DD/HH/filename.jpg)
+    rel_parts = parts[camera_idx:]
+    return f"snapshots/{'/'.join(rel_parts)}"
 
 def blur_faces(img_path: Path):
     """Yüzleri bulanıklaştır, yerinde kaydet ve S3 Object Storage'a aynı yapıyla yükle."""
