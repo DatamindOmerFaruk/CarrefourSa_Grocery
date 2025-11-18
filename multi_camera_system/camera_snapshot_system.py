@@ -91,14 +91,16 @@ def _upload_file_to_s3(local_path: Path, s3_key: str, content_type: str = "image
             print(f"[HATA] Lokal dosya bulunamadı: {local_path}")
             return None
         
-        print(f"[DEBUG] S3'e yükleniyor: bucket={S3_BUCKET_NAME}, key={s3_key}, file={local_path.name}")
-        with open(local_path, "rb") as f:
-            s3.upload_fileobj(
-                f,
-                S3_BUCKET_NAME,
-                s3_key,
-                ExtraArgs={'ContentType': content_type}
-            )
+        file_size = local_path.stat().st_size
+        print(f"[DEBUG] S3'e yükleniyor: bucket={S3_BUCKET_NAME}, key={s3_key}, file={local_path.name} ({file_size} bytes)")
+        
+        # upload_file kullan (Content-Length otomatik eklenir)
+        s3.upload_file(
+            str(local_path),
+            S3_BUCKET_NAME,
+            s3_key,
+            ExtraArgs={'ContentType': content_type}
+        )
         print(f"[DEBUG] S3'e başarıyla yüklendi: {s3_key}")
         return s3_key
     except Exception as e:
