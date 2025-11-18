@@ -17,6 +17,7 @@ from PIL import Image
 import numpy as np
 from ultralytics import YOLO
 from dotenv import load_dotenv
+from botocore.config import Config
 
 # .env dosyasını yükle
 load_dotenv()
@@ -65,14 +66,19 @@ def _ensure_s3_client():
         print(f"[DEBUG] S3_SECRET_ACCESS_KEY: {'Tanımlı' if S3_SECRET_ACCESS_KEY else 'TANIMSIZ'}")
         print("[DEBUG] .env dosyasında S3_ACCESS_KEY_ID ve S3_SECRET_ACCESS_KEY değerlerini kontrol edin.")
         return None
+
     if _s3_client is None:
         try:
             _s3_client = boto3.client(
-                's3',
+                "s3",
                 endpoint_url=S3_ENDPOINT_URL,
                 aws_access_key_id=S3_ACCESS_KEY_ID,
                 aws_secret_access_key=S3_SECRET_ACCESS_KEY,
-                verify=False  # Self-signed certificate için
+                verify=False,  # self-signed için
+                config=Config(
+                    signature_version="s3v4",
+                    s3={"addressing_style": "path"},  # ÖNEMLİ: path style
+                ),
             )
             print(f"[DEBUG] S3 client oluşturuldu: endpoint={S3_ENDPOINT_URL}, bucket={S3_BUCKET_NAME}")
         except Exception as e:
@@ -86,32 +92,37 @@ def _upload_file_to_s3(local_path: Path, s3_key: str, content_type: str = "image
     if not s3:
         print(f"[HATA] S3 client mevcut değil, yükleme yapılamıyor: {s3_key}")
         return None
+
     try:
         if not local_path.exists():
             print(f"[HATA] Lokal dosya bulunamadı: {local_path}")
             return None
-        
+
         file_size = local_path.stat().st_size
-        print(f"[DEBUG] S3'e yükleniyor: bucket={S3_BUCKET_NAME}, key={s3_key}, file={local_path.name} ({file_size} bytes)")
-        
-        # Dosyayı tamamen okuyup bytes olarak gönder (Cohesity için gerekli)
-        # Bu yöntem ContentLength'in otomatik olarak doğru hesaplanmasını sağlar
-        with open(local_path, "rb") as f:
-            file_data = f.read()
-        
-        s3.put_object(
-            Bucket=S3_BUCKET_NAME,
-            Key=s3_key,
-            Body=file_data,
-            ContentType=content_type
+        print(
+            f"[DEBUG] S3'e yükleniyor: bucket={S3_BUCKET_NAME}, key={s3_key}, "
+            f"file={local_path.name} ({file_size} bytes)"
         )
+
+        # Dosyayı stream ederek gönder, ContentLength’i elle set et
+        with open(local_path, "rb") as f:
+            s3.put_object(
+                Bucket=S3_BUCKET_NAME,
+                Key=s3_key,
+                Body=f,
+                ContentType=content_type,
+                ContentLength=file_size,
+            )
+
         print(f"[DEBUG] S3'e başarıyla yüklendi: {s3_key}")
         return s3_key
+
     except Exception as e:
         print(f"[HATA] S3 upload hatası ({s3_key}): {e}")
         import traceback
         print(f"[DEBUG] Traceback: {traceback.format_exc()}")
         return None
+
 
 def _to_snapshot_s3_key(local_path: Path, snapshots_root: Path) -> str:
     """
