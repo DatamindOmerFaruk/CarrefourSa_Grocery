@@ -7,15 +7,18 @@ Bu rehber, tüm projeyi Linux sunucuda çalıştırmak için gerekli adımları 
 1. [Sistem Gereksinimleri](#sistem-gereksinimleri)
 2. [Kurulum Adımları](#kurulum-adımları)
 3. [Konfigürasyon](#konfigürasyon)
-4. [Servisleri Başlatma](#servisleri-başlatma)
-5. [İzleme ve Loglar](#izleme-ve-loglar)
-6. [Sorun Giderme](#sorun-giderme)
+4. [Servisler Hakkında](#servisler-hakkında)
+5. [Servisleri Başlatma](#servisleri-başlatma)
+6. [İzleme ve Loglar](#izleme-ve-loglar)
+7. [Sorun Giderme](#sorun-giderme)
+8. [Hızlı Başlangıç Özeti](#hızlı-başlangıç-özeti)
 
 ---
 
 ## 🖥️ Sistem Gereksinimleri
 
 ### Minimum Gereksinimler
+
 - **OS**: Ubuntu 20.04+ / Debian 11+ / CentOS 8+ / RHEL 8+
 - **Python**: 3.10 veya üzeri
 - **RAM**: 8 GB (16 GB önerilir - YOLO modeli için)
@@ -23,6 +26,7 @@ Bu rehber, tüm projeyi Linux sunucuda çalıştırmak için gerekli adımları 
 - **GPU**: Opsiyonel (CUDA destekli GPU varsa YOLO daha hızlı çalışır)
 
 ### Gerekli Sistem Paketleri
+
 ```bash
 sudo apt-get update
 sudo apt-get install -y \
@@ -75,6 +79,10 @@ source venv/bin/activate
 pip install --upgrade pip setuptools wheel
 ```
 
+**Virtual Environment Nedir?**
+
+Virtual environment, projeye özel Python paketlerini yönetmek için kullanılan izole bir ortamdır. Her proje kendi bağımlılıklarını yönetir, sistem Python'u etkilenmez. Bu sayede farklı projeler farklı paket sürümleri kullanabilir ve çakışmalar önlenir.
+
 ### 3. Bağımlılıkları Yükleme
 
 ```bash
@@ -85,11 +93,12 @@ pip install -r requirements.txt
 pip install \
     requests>=2.32.0 \
     Pillow>=10.0.0 \
-    PyYAML>=6.0.1 \
     numpy>=1.24.0 \
+    opencv-python>=4.8.0 \
+    PyYAML>=6.0.1 \
     ultralytics>=8.0.0 \
     torch>=2.0.0 \
-    torchvision>=0.15.0 \
+    facenet-pytorch \
     fastapi==0.104.1 \
     uvicorn==0.24.0 \
     python-multipart==0.0.6 \
@@ -97,7 +106,6 @@ pip install \
     boto3>=1.34.0 \
     psycopg2-binary>=2.9.0,<3.0.0 \
     azure-storage-blob==12.19.0 \
-    facenet-pytorch \
     openai>=1.30.0
 ```
 
@@ -105,7 +113,7 @@ pip install \
 
 ```bash
 # YOLO model dosyalarının varlığını kontrol et
-ls -lh best.pt yolov8s.pt
+ls -lh best.pt
 
 # Eğer yoksa, YOLO otomatik indirecek (ilk çalıştırmada)
 ```
@@ -144,11 +152,6 @@ AZURE_OPENAI_API_KEY=your-api-key
 AZURE_OPENAI_DEPLOYMENT=gpt-4.1
 AZURE_API_VERSION=2024-06-01
 
-# Azure Storage (Batch Processor için - eğer kullanılıyorsa)
-AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=...
-AZURE_CONTAINER_NAME=snapshot
-AZURE_SAS_TOKEN=...
-
 # API Ayarları (Batch Processor için)
 API_BASE_URL=http://localhost:8000
 BATCH_SIZE=10
@@ -160,6 +163,8 @@ MIN_CONF_ROTTEN=0.85
 COLLAGE_FONT=
 TEST_MODE=false
 ```
+
+**Not**: Azure Storage ayarları artık kullanılmıyor (S3'e geçildi), ancak eski kodlarla uyumluluk için `.env` dosyasında bırakılabilir.
 
 ### 2. Dosya İzinlerini Ayarlama
 
@@ -183,25 +188,47 @@ ls -lh multi_camera_system/cameras_reyon_genel.yaml
 nano multi_camera_system/cameras.yaml
 ```
 
+### 4. Sistem Saatini Ayarlama
+
+**ÖNEMLİ**: Sistem saati yanlışsa, fotoğrafların tarih/saat bilgileri ve klasör yapısı yanlış olur.
+
+```bash
+# Mevcut sistem saatini kontrol et
+date
+timedatectl
+
+# Timezone'u Türkiye saati (Europe/Istanbul) olarak ayarla
+sudo timedatectl set-timezone Europe/Istanbul
+
+# NTP ile senkronize et (otomatik saat düzeltme)
+sudo timedatectl set-ntp true
+
+# Saati kontrol et
+date
+```
+
+**Not**: Kod zaten Türkiye saatini (UTC+3) kullanacak şekilde yapılandırılmıştır. Sistem saati yanlış olsa bile, kod UTC'den Türkiye saatine çevirir. Ancak sistem saatini düzeltmek daha iyidir çünkü cron job'lar doğru saatte çalışır.
+
 ---
 
-## 🚀 Servisleri Başlatma
-
-### Servisler Hakkında
+## 🚀 Servisler Hakkında
 
 Sistemde 4 ana servis bulunmaktadır:
 
-#### 1. **Camera Snapshot System** (`camera_snapshot_system.py`)
+### 1. **Camera Snapshot System** (`multi_camera_system/camera_snapshot_system.py`)
+
 - **Görevi**: PTZ kameralardan görüntü alır, YOLO ile insan tespiti yapar, geçerli görüntüleri S3 Object Storage'a yükler
 - **Çalışma Şekli**: Cron job ile saatlik çalışır (09:00-21:00 arası, her saat başı)
 - **Özellikler**:
   - Çoklu kamera desteği
   - İnsan tespiti ile kalite kontrolü
   - Otomatik retry mekanizması
-  - S3'e otomatik yükleme
+  - S3'e otomatik yükleme (bucket: `Grocery`, prefix: `snapshots/`)
   - Lokal dosyaları S3'e yüklendikten sonra silme
+  - Türkiye saati (UTC+3) kullanımı
 
-#### 2. **Manav Analiz API** (`manav_analiz/main.py`)
+### 2. **Manav Analiz API** (`doluluk&reyonsıralaması/manav_analiz/main.py`)
+
 - **Görevi**: FastAPI tabanlı REST API servisi. Görüntü analizi için endpoint'ler sağlar
 - **Çalışma Şekli**: Systemd service olarak sürekli çalışır (7/24)
 - **Özellikler**:
@@ -210,20 +237,22 @@ Sistemde 4 ana servis bulunmaktadır:
   - Evaluation endpoint'i
   - Health check endpoint'i
   - Port: 8000
-- **Not**: Batch Processor bu API'yi kullanıyorsa gerekli, aksi halde kaldırılabilir
+- **Not**: Batch Processor bu API'yi kullanıyorsa gerekli
 
-#### 3. **Batch Processor** (`doluluk&reyonsıralaması/manav_analiz/batch_processor.py`)
-- **Görevi**: S3'ten görüntüleri alır, Manav Analiz API'ye gönderir, sonuçları PostgreSQL'e kaydeder
+### 3. **Batch Processor** (`doluluk&reyonsıralaması/manav_analiz/batch_processor.py`)
+
+- **Görevi**: S3 Object Storage'dan görüntüleri alır, Manav Analiz API'ye gönderir, sonuçları PostgreSQL'e kaydeder
 - **Çalışma Şekli**: Cron job ile saatlik çalışır (09:30-21:30 arası, camera-snapshot'tan 30 dakika sonra)
 - **Özellikler**:
-  - S3'ten görüntü listeleme
+  - S3'ten görüntü listeleme (`snapshots/` prefix'i altında)
   - Batch işleme (toplu analiz)
   - API çağrıları (Content, Stock, Evaluation)
   - PostgreSQL'e sonuç kaydetme
   - Retry mekanizması
   - İki mod: Tam analiz veya sadece stock analizi
 
-#### 4. **PTZ Analysis Service** (3 ayrı script: `ptz_face_blur.py`, `ptz_yolo_llm_analysis.py`, `ptz_db_writer.py`)
+### 4. **PTZ Analysis Service** (3 ayrı script)
+
 - **Görevi**: S3'ten snapshot'ları alır, YOLO ile detection yapar, crop'lar oluşturur, collage'lar hazırlar, LLM ile çürük tespiti yapar ve sonuçları PostgreSQL'e kaydeder
 - **Çalışma Şekli**: Cron job ile saatlik çalışır (09:30-21:30 arası, camera-snapshot'tan 30 dakika sonra)
 - **Script'ler**:
@@ -240,21 +269,24 @@ Sistemde 4 ana servis bulunmaktadır:
   - S3'e crop, collage ve rapor yükleme
   - Script'ler sırayla çalışır (bir hata olursa işlem durdurulur)
 
-### Servis Koordinasyonu
+### Servis Koordinasyonu ve Zamanlama
+
+Servisler aşağıdaki akışa göre çalışır:
 
 ```
-09:00 → Camera Snapshot çalışır → Görüntüler S3'e yüklenir
-09:30 → Batch Processor çalışır → S3'ten görüntüleri alır, API'ye gönderir, DB'ye kaydeder
-09:30 → PTZ Analysis Service çalışır → S3'ten snapshot'ları alır, YOLO+LLM analizi yapar, DB'ye kaydeder
-10:00 → Camera Snapshot çalışır → Yeni görüntüler S3'e yüklenir
-10:30 → Batch Processor çalışır → Yeni görüntüleri işler
-10:30 → PTZ Analysis Service çalışır → Yeni snapshot'ları işler
-...
-21:00 → Camera Snapshot çalışır (son)
-21:30 → Batch Processor çalışır (son)
-21:30 → PTZ Analysis Service çalışır (son)
+[09:00] → Camera Snapshot System (Görüntüleri S3'e yükler)
+[09:30] → Batch Processor (S3'ten yeni görüntüleri alır, API'ye gönderir, DB'ye kaydeder)
+[09:30] → PTZ Analysis Service (S3'ten yeni görüntüleri alır, YOLO+LLM analizi yapar, DB'ye kaydeder)
 
-Manav API → 7/24 sürekli çalışır (systemd service) - Batch Processor tarafından kullanılıyorsa gerekli
+[10:00] → Camera Snapshot System
+[10:30] → Batch Processor
+[10:30] → PTZ Analysis Service
+...
+[21:00] → Camera Snapshot System (Son çalışma)
+[21:30] → Batch Processor (Son çalışma)
+[21:30] → PTZ Analysis Service (Son çalışma)
+
+Manav API → 7/24 sürekli çalışır (systemd service)
 ```
 
 **Önemli Notlar:**
@@ -264,9 +296,15 @@ Manav API → 7/24 sürekli çalışır (systemd service) - Batch Processor tara
 - Batch Processor: API tabanlı analiz (doluluk ve reyon sıralaması için)
 - PTZ Analysis Service: YOLO + LLM tabanlı analiz (çürük tespiti için)
 
-### 1. Systemd Service Dosyası (Sadece Manav API)
+---
+
+## 🚀 Servisleri Başlatma
+
+### 1. Manav Analiz API (Systemd Service)
 
 Manav API sürekli çalışması gerektiği için systemd service olarak yapılandırılır:
+
+#### 1.1. Systemd Service Dosyası Oluşturma
 
 ```bash
 sudo nano /etc/systemd/system/manav-api.service
@@ -294,7 +332,9 @@ StandardError=append:/data/carrefoursa-kamera/CarrefourSa_Grocery/logs/manav-api
 WantedBy=multi-user.target
 ```
 
-### 2. Manav API Servisini Başlatma
+**Not**: `User=pam_aiuser` kısmını kendi kullanıcı adınızla değiştirin.
+
+#### 1.2. Servisi Başlatma
 
 ```bash
 # Systemd'yi yeniden yükle
@@ -310,30 +350,7 @@ sudo systemctl start manav-api.service
 sudo systemctl status manav-api.service
 ```
 
-### 3. PTZ Analysis Service Script'leri
-
-Notebook kodları 3 ayrı Python script'e ayrılmıştır:
-
-1. **`ptz_face_blur.py`** - Yüzlerin blur'lanması (Cell 1)
-   - S3'ten snapshot'ları alır
-   - Yüzleri tespit edip blur'lar
-   - Tekrar S3'e yükler
-
-2. **`ptz_yolo_llm_analysis.py`** - YOLO detection ve LLM analizi (Cell 2)
-   - S3'ten snapshot'ları alır
-   - YOLOv12 ile meyve/sebze tespiti yapar
-   - Crop'ları oluşturur ve S3'e yükler
-   - Collage'lar oluşturur
-   - Azure OpenAI ile çürük tespiti yapar
-   - Sonuçları `.llm.json` dosyalarına kaydeder ve S3'e yükler
-
-3. **`ptz_db_writer.py`** - Veritabanına yazma (Cell 3)
-   - S3'ten `.llm.json` dosyalarını okur
-   - PostgreSQL veritabanına sonuçları yazar
-
-**Not**: Bu script'ler proje içinde mevcuttur. Ek bir oluşturma işlemi gerekmez.
-
-### 4. Wrapper Script'leri Oluşturma
+### 2. Wrapper Script'leri Oluşturma
 
 Wrapper script'ler, Python script'lerini cron job'lardan çalıştırmak için kullanılan bash script'leridir. Bu script'ler:
 - Virtual environment'ı otomatik aktif eder
@@ -342,30 +359,17 @@ Wrapper script'ler, Python script'lerini cron job'lardan çalıştırmak için k
 - Hata kontrolü yapar
 - Log dosyalarına çıktı yazar
 
-#### 4.1. Wrapper Script Nedir ve Neden Gerekli?
+**ÖNEMLİ NOT**: Wrapper script'leri oluştururken **virtual environment'ın aktif olmasına gerek yoktur**. Wrapper script'ler bash script'leridir ve Python ortamından bağımsızdır. Virtual environment, script çalıştırıldığında script içinde otomatik olarak aktif edilir.
 
-**Wrapper Script'in Faydaları:**
-- **Virtual Environment Yönetimi**: Her çalıştırmada virtual environment'ı otomatik aktif eder
-- **Dizin Yönetimi**: Script'lerin doğru dizinde çalışmasını sağlar
-- **Hata Kontrolü**: Script başarısız olursa cron job'a hata kodu döner
-- **Log Yönetimi**: Tüm çıktıları log dosyalarına yazar
-- **Sıralı Çalıştırma**: Birden fazla script'i sırayla çalıştırabilir
+#### 2.1. Camera Snapshot Wrapper Script
 
-#### 4.2. Camera Snapshot Wrapper Script Oluşturma
-
-**Adım 1: Proje dizinine gidin**
+**Adım 1: Script dosyasını oluşturun**
 ```bash
-# Virtual environment aktif olmasa da olur
 cd /data/carrefoursa-kamera/CarrefourSa_Grocery
-```
-
-**Adım 2: Script dosyasını oluşturun**
-```bash
-# nano veya vi editörü ile dosyayı oluşturun
 nano run_camera_snapshot.sh
 ```
 
-**Adım 3: Aşağıdaki içeriği yapıştırın**
+**Adım 2: Aşağıdaki içeriği yapıştırın**
 ```bash
 #!/bin/bash
 # Camera Snapshot Wrapper Script
@@ -384,38 +388,29 @@ mkdir -p logs
 python multi_camera_system/camera_snapshot_system.py
 ```
 
-**Adım 4: Dosyayı kaydedin ve çıkın**
+**Adım 3: Dosyayı kaydedin ve çıkın**
 - `nano` kullanıyorsanız: `Ctrl+X`, sonra `Y`, sonra `Enter`
 - `vi` kullanıyorsanız: `Esc`, sonra `:wq`, sonra `Enter`
 
-**Adım 5: Script'e çalıştırma izni verin**
+**Adım 4: Script'e çalıştırma izni verin**
 ```bash
 chmod +x run_camera_snapshot.sh
 ```
 
-**Adım 6: Script'in çalıştığını test edin (opsiyonel)**
+**Adım 5: Script'i test edin (opsiyonel)**
 ```bash
-# Manuel olarak çalıştırarak test edin
 ./run_camera_snapshot.sh
 ```
 
-#### 4.3. Batch Processor Wrapper Script Oluşturma
+#### 2.2. Batch Processor Wrapper Script
 
-**ÖNEMLİ NOT**: Wrapper script'leri oluştururken **virtual environment'ın aktif olmasına gerek yoktur**. Wrapper script'ler bash script'leridir ve Python ortamından bağımsızdır. Virtual environment, script çalıştırıldığında script içinde otomatik olarak aktif edilir.
-
-**Adım 1: Proje dizinine gidin**
+**Adım 1: Script dosyasını oluşturun**
 ```bash
-# Virtual environment aktif olmasa da olur
 cd /data/carrefoursa-kamera/CarrefourSa_Grocery
-```
-
-**Adım 2: Script dosyasını oluşturun**
-```bash
-# nano veya vi editörü ile dosyayı oluşturun
 nano run_batch_processor.sh
 ```
 
-**Adım 3: Aşağıdaki içeriği yapıştırın**
+**Adım 2: Aşağıdaki içeriği yapıştırın**
 ```bash
 #!/bin/bash
 # Batch Processor Wrapper Script
@@ -432,42 +427,33 @@ source ../../venv/bin/activate
 echo "2" | python batch_processor.py
 ```
 
-**Adım 4: Dosyayı kaydedin ve çıkın**
+**Adım 3: Dosyayı kaydedin ve çıkın**
 - `nano` kullanıyorsanız: `Ctrl+X`, sonra `Y`, sonra `Enter`
-- `vi` kullanıyorsanız: `Esc`, sonra `:wq`, sonra `Enter`
 
-**Adım 5: Script'e çalıştırma izni verin**
+**Adım 4: Script'e çalıştırma izni verin**
 ```bash
 chmod +x run_batch_processor.sh
 ```
 
-**Adım 6: Script'in çalıştığını test edin (opsiyonel)**
+**Adım 5: Script'i test edin (opsiyonel)**
 ```bash
-# Manuel olarak çalıştırarak test edin
 ./run_batch_processor.sh
 ```
 
-#### 4.4. PTZ Analysis Service Wrapper Script Oluşturma
+#### 2.3. PTZ Analysis Service Wrapper Script
 
 Bu script, 3 ayrı Python script'ini sırayla çalıştırır:
 1. `ptz_face_blur.py` (opsiyonel - şu an kapalı)
 2. `ptz_yolo_llm_analysis.py` (YOLO detection ve LLM analizi)
 3. `ptz_db_writer.py` (Veritabanına yazma)
 
-**ÖNEMLİ NOT**: Virtual environment'ın aktif olmasına gerek yoktur. Script çalıştırıldığında virtual environment otomatik aktif edilir.
-
-**Adım 1: Proje dizinine gidin**
+**Adım 1: Script dosyasını oluşturun**
 ```bash
-# Virtual environment aktif olmasa da olur
 cd /data/carrefoursa-kamera/CarrefourSa_Grocery
-```
-
-**Adım 2: Script dosyasını oluşturun**
-```bash
 nano run_ptz_analysis.sh
 ```
 
-**Adım 3: Aşağıdaki içeriği yapıştırın**
+**Adım 2: Aşağıdaki içeriği yapıştırın**
 ```bash
 #!/bin/bash
 # PTZ Analysis Service Wrapper Script
@@ -528,17 +514,16 @@ else
 fi
 ```
 
-**Adım 4: Dosyayı kaydedin ve çıkın**
+**Adım 3: Dosyayı kaydedin ve çıkın**
 - `nano` kullanıyorsanız: `Ctrl+X`, sonra `Y`, sonra `Enter`
 
-**Adım 5: Script'e çalıştırma izni verin**
+**Adım 4: Script'e çalıştırma izni verin**
 ```bash
 chmod +x run_ptz_analysis.sh
 ```
 
-**Adım 6: Script'in çalıştığını test edin (opsiyonel)**
+**Adım 5: Script'i test edin (opsiyonel)**
 ```bash
-# Manuel olarak çalıştırarak test edin
 ./run_ptz_analysis.sh
 
 # Log dosyalarını kontrol edin
@@ -546,25 +531,7 @@ tail -f logs/cron-ptz-yolo-llm.log
 tail -f logs/cron-ptz-db-writer.log
 ```
 
-#### 4.5. Script İçeriği Açıklamaları
-
-**`#!/bin/bash`**: Script'in bash ile çalıştırılacağını belirtir
-
-**`cd /path/to/directory`**: Script'in çalışacağı dizini belirtir
-
-**`source venv/bin/activate`**: Virtual environment'ı aktif eder
-
-**`>> logs/file.log 2>&1`**: 
-- `>>`: Çıktıyı dosyaya ekler (üzerine yazmaz)
-- `2>&1`: Hata mesajlarını da aynı dosyaya yazar
-
-**`EXIT_CODE=$?`**: Son çalıştırılan komutun çıkış kodunu saklar (0 = başarılı, 0 dışı = hata)
-
-**`if [ $EXIT_CODE -eq 0 ]`**: Çıkış kodu 0 ise (başarılı) işlem yapar
-
-**`exit $EXIT_CODE`**: Script'i belirtilen çıkış kodu ile sonlandırır (cron job hata durumunu anlayabilir)
-
-#### 4.6. Alternatif: Tek Komutla Oluşturma
+#### 2.4. Alternatif: Tek Komutla Oluşturma
 
 Eğer yukarıdaki adımları tek tek yapmak istemiyorsanız, aşağıdaki komutları kullanabilirsiniz:
 
@@ -623,7 +590,25 @@ EOF
 chmod +x /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh
 ```
 
-#### 4.7. Script'leri Kontrol Etme
+#### 2.5. Script İçeriği Açıklamaları
+
+**`#!/bin/bash`**: Script'in bash ile çalıştırılacağını belirtir
+
+**`cd /path/to/directory`**: Script'in çalışacağı dizini belirtir
+
+**`source venv/bin/activate`**: Virtual environment'ı aktif eder
+
+**`>> logs/file.log 2>&1`**: 
+- `>>`: Çıktıyı dosyaya ekler (üzerine yazmaz)
+- `2>&1`: Hata mesajlarını da aynı dosyaya yazar
+
+**`EXIT_CODE=$?`**: Son çalıştırılan komutun çıkış kodunu saklar (0 = başarılı, 0 dışı = hata)
+
+**`if [ $EXIT_CODE -eq 0 ]`**: Çıkış kodu 0 ise (başarılı) işlem yapar
+
+**`exit $EXIT_CODE`**: Script'i belirtilen çıkış kodu ile sonlandırır (cron job hata durumunu anlayabilir)
+
+#### 2.6. Script'leri Kontrol Etme
 
 ```bash
 # Script dosyalarının varlığını kontrol edin
@@ -638,23 +623,9 @@ cat /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh
 cat /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh
 ```
 
-#### 4.8. Önemli Notlar
+### 3. Cron Job Yapılandırması
 
-1. **Virtual Environment Aktif Olması Gerekmez**: Wrapper script'leri oluştururken virtual environment'ın aktif olmasına gerek yoktur. Script'ler bash script'leridir ve Python ortamından bağımsızdır. Virtual environment, script çalıştırıldığında script içinde (`source venv/bin/activate`) otomatik olarak aktif edilir.
-
-2. **Dizin Yolları**: Script'lerdeki dizin yollarının (`/data/carrefoursa-kamera/CarrefourSa_Grocery`) doğru olduğundan emin olun
-
-3. **Virtual Environment Klasörü**: Virtual environment'ın `venv` klasöründe olduğundan emin olun (script içinde `source venv/bin/activate` komutu bu klasörü kullanır)
-
-4. **İzinler**: Script'lerin çalıştırılabilir (`chmod +x`) olduğundan emin olun
-
-5. **Test**: Cron job'a eklemeden önce script'leri manuel olarak test edin (test ederken virtual environment otomatik aktif edilir)
-
-6. **Log Dizini**: `logs` dizininin mevcut olduğundan emin olun (script otomatik oluşturur)
-
-### 5. Cron Job Yapılandırması
-
-Tüm servisler için cron job'ları yapılandırın:
+Camera Snapshot, Batch Processor ve PTZ Analysis Service, belirli saatlerde çalışması gerektiği için cron job olarak yapılandırılır:
 
 ```bash
 # Crontab'ı düzenle
@@ -672,7 +643,22 @@ crontab -e
 30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-analysis.log 2>&1
 ```
 
-### 6. Cron Job'ları Kontrol Etme
+**Cron Job Formatı Açıklaması:**
+```
+* * * * * komut
+│ │ │ │ │
+│ │ │ │ └─── Haftanın günü (0-7, 0 ve 7 = Pazar)
+│ │ │ └───── Ay (1-12)
+│ │ └─────── Ayın günü (1-31)
+│ └───────── Saat (0-23)
+└─────────── Dakika (0-59)
+```
+
+**Örnekler:**
+- `0 9-21 * * *` → Her gün 09:00-21:00 arası her saat başı (09:00, 10:00, ..., 21:00)
+- `30 9-21 * * *` → Her gün 09:30-21:30 arası her saatin 30. dakikasında (09:30, 10:30, ..., 21:30)
+
+### 4. Cron Job'ları Kontrol Etme
 
 ```bash
 # Aktif cron job'ları listele
@@ -752,6 +738,38 @@ curl http://localhost:8000/health
 curl http://localhost:8000/
 ```
 
+### S3 Object Storage Kontrolü
+
+```bash
+# S3 bağlantısını test et
+source venv/bin/activate
+python3 test_s3_upload.py
+
+# S3'teki fotoğrafları kontrol et (Python ile)
+python3 -c "
+import boto3
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+s3 = boto3.client('s3',
+    endpoint_url=os.getenv('S3_ENDPOINT_URL'),
+    aws_access_key_id=os.getenv('S3_ACCESS_KEY_ID'),
+    aws_secret_access_key=os.getenv('S3_SECRET_ACCESS_KEY'),
+    verify=False
+)
+
+# snapshots prefix'i altındaki object'leri listele
+response = s3.list_objects_v2(Bucket=os.getenv('S3_BUCKET_NAME'), Prefix='snapshots/', MaxKeys=20)
+if 'Contents' in response:
+    print(f'Toplam {len(response[\"Contents\"])} object bulundu (ilk 20):')
+    for obj in response['Contents']:
+        print(f'  - {obj[\"Key\"]} ({obj[\"Size\"]} bytes)')
+else:
+    print('snapshots/ prefix\'i altında object bulunamadı')
+"
+```
+
 ---
 
 ## 🔧 Sorun Giderme
@@ -808,8 +826,10 @@ psql -h 45.84.18.76 -U grocerryadmin -d grocerryadmin
 
 # Python'dan test
 source venv/bin/activate
-python3 -c "import psycopg2; conn = psycopg2.connect('postgresql://grocerryadmin:a08Iyr95vLHTYY@45.84.18.76:5432/grocerryadmin'); print('Bağlantı başarılı!')"
+python3 -c "import psycopg2; conn = psycopg2.connect('postgresql://grocerryadmin:a08Iyr95vLHTYY@45.84.18.76:5432/grocerryadmin?sslmode=prefer'); print('Bağlantı başarılı!')"
 ```
+
+**Not**: PostgreSQL sunucusu SSL desteklemiyorsa, kod otomatik olarak `sslmode=prefer` kullanır (SSL varsa kullanır, yoksa SSL olmadan bağlanır).
 
 ### 6. S3 Bağlantı Sorunları
 
@@ -817,20 +837,21 @@ python3 -c "import psycopg2; conn = psycopg2.connect('postgresql://grocerryadmin
 # S3 bağlantısını test et
 source venv/bin/activate
 python3 test_s3_upload.py
-
-# Veya manuel test
-python3 -c "
-import boto3
-s3 = boto3.client('s3',
-    endpoint_url='https://161cohesity.carrefoursa.com:3000',
-    aws_access_key_id='sWxdTl3ERx7myBE1qpW06_haVvuhATcdsmBbqaWkXYU',
-    aws_secret_access_key='Ti9Fonk3wYyG5PMx5LaGUmlcVyCuqsE5BLVV5vv8PU0',
-    verify=False
-)
-print('S3 bağlantısı başarılı!')
-print('Buckets:', s3.list_buckets())
-"
 ```
+
+**Olası Sorunlar ve Çözümler:**
+
+1. **S3 credentials tanımlı değil**
+   - Çözüm: `.env` dosyasında `S3_ACCESS_KEY_ID` ve `S3_SECRET_ACCESS_KEY` değerlerini kontrol edin
+
+2. **S3 client oluşturulamıyor**
+   - Çözüm: Endpoint URL'ini ve credentials'ı kontrol edin
+
+3. **Bucket bulunamıyor**
+   - Çözüm: Bucket adını kontrol edin (`Grocery`)
+
+4. **Yükleme başarısız**
+   - Çözüm: Log dosyalarını kontrol edin (`logs/cron-snapshot.log`)
 
 ### 7. Sistem Saati Sorunları
 
@@ -863,7 +884,7 @@ date
 timedatectl
 ```
 
-#### 7.3. Kod İçinde Saat Düzeltmesi (Alternatif)
+#### 7.3. Kod İçinde Saat Düzeltmesi
 
 **Not**: Kod zaten Türkiye saatini (UTC+3) kullanacak şekilde yapılandırılmıştır. Sistem saati yanlış olsa bile, kod UTC'den Türkiye saatine çevirir. Ancak sistem saatini düzeltmek daha iyidir çünkü:
 - Cron job'lar doğru saatte çalışır
@@ -873,6 +894,55 @@ timedatectl
 Kod içinde saat düzeltmesi:
 - `camera_snapshot_system.py` → `get_turkey_time()` fonksiyonu kullanılıyor
 - Fotoğraf klasör yapısı ve S3 key'leri Türkiye saatine göre oluşturuluyor
+
+### 8. S3'te Fotoğraf Görünmüyor
+
+**Olası Nedenler:**
+
+1. **S3 credentials yanlış veya tanımlı değil**
+   - Çözüm: `.env` dosyasını kontrol edin, `test_s3_upload.py` script'ini çalıştırın
+
+2. **S3'e yükleme başarısız oluyor**
+   - Çözüm: `logs/cron-snapshot.log` dosyasını kontrol edin, `[HATA]` veya `[UYARI]` mesajlarını arayın
+
+3. **Bucket veya prefix yanlış**
+   - Çözüm: Bucket adı `Grocery`, prefix `snapshots/` olmalı
+
+4. **Fotoğraflar henüz çekilmemiş**
+   - Çözüm: Camera Snapshot System'in çalıştığından emin olun
+
+**Kontrol Komutları:**
+
+```bash
+# S3 test script'ini çalıştır
+python3 test_s3_upload.py
+
+# Camera Snapshot log'larını kontrol et
+tail -100 logs/cron-snapshot.log | grep -i "s3\|upload\|hata"
+
+# S3'teki object'leri listele
+python3 -c "
+import boto3
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+s3 = boto3.client('s3',
+    endpoint_url=os.getenv('S3_ENDPOINT_URL'),
+    aws_access_key_id=os.getenv('S3_ACCESS_KEY_ID'),
+    aws_secret_access_key=os.getenv('S3_SECRET_ACCESS_KEY'),
+    verify=False
+)
+
+response = s3.list_objects_v2(Bucket=os.getenv('S3_BUCKET_NAME'), Prefix='snapshots/', MaxKeys=50)
+if 'Contents' in response:
+    print(f'Toplam {len(response[\"Contents\"])} object bulundu:')
+    for obj in response['Contents']:
+        print(f'  {obj[\"Key\"]}')
+else:
+    print('snapshots/ prefix\'i altında object bulunamadı')
+"
+```
 
 ---
 
@@ -899,18 +969,18 @@ nano .env
 # 4. Dizinleri oluştur
 mkdir -p snapshots crops logs
 
-# 5. Manav API systemd service dosyasını oluştur
+# 5. Sistem saatini ayarla
+sudo timedatectl set-timezone Europe/Istanbul
+sudo timedatectl set-ntp true
+
+# 6. Manav API systemd service dosyasını oluştur
 sudo nano /etc/systemd/system/manav-api.service
 # Yukarıdaki manav-api service içeriğini yapıştır
 
-# 6. Manav API servisini başlat
+# 7. Manav API servisini başlat
 sudo systemctl daemon-reload
 sudo systemctl enable manav-api.service
 sudo systemctl start manav-api.service
-
-# 7. PTZ Analysis Service script'leri kontrol et (notebook kodlarından oluşturulmuş)
-# ptz_face_blur.py, ptz_yolo_llm_analysis.py, ptz_db_writer.py dosyaları mevcut olmalı
-ls -lh ptz_*.py
 
 # 8. Wrapper script'leri oluştur
 # run_camera_snapshot.sh, run_batch_processor.sh ve run_ptz_analysis.sh script'lerini oluştur (yukarıdaki örneklere göre)
@@ -925,34 +995,49 @@ crontab -e
 # 10. Durumları kontrol et
 sudo systemctl status manav-api
 crontab -l
+
+# 11. S3 bağlantısını test et
+python3 test_s3_upload.py
 ```
+
+---
 
 ## ⚠️ Önemli Notlar
 
-### 1. PTZ Analysis Service Script'leri
-
-`ptz_snapshot_notebook.ipynb` dosyasındaki kodlar 3 ayrı Python script'e çevrilmiştir:
-
-- **`ptz_face_blur.py`** - Cell 1 kodları (Yüz blur'lanması, opsiyonel)
-- **`ptz_yolo_llm_analysis.py`** - Cell 2 kodları (YOLO detection + cropping + collage + LLM analizi)
-- **`ptz_db_writer.py`** - Cell 3 kodları (Veritabanına yazma)
-
-Bu script'ler proje içinde mevcuttur ve `run_ptz_analysis.sh` wrapper script'i tarafından sırayla çalıştırılır.
-
-### 2. Silinmesi Gereken Servisler
-
-**Şu anda silinmesi gereken servis yok.** Tüm servisler kullanılıyor:
-- **Manav API**: Batch Processor tarafından kullanılıyor (gerekli)
-- **Camera Snapshot**: Görüntü çekme için gerekli
-- **Batch Processor**: Doluluk ve reyon sıralaması analizi için gerekli
-- **PTZ Analysis Service**: Çürük tespiti analizi için gerekli (3 ayrı script olarak mevcut)
-
-### 3. Servis Bağımlılıkları
+### 1. Servis Bağımlılıkları
 
 - **Manav API** → Batch Processor tarafından kullanılıyor (7/24 çalışmalı)
 - **Camera Snapshot** → Batch Processor ve PTZ Analysis Service tarafından kullanılıyor (S3'e görüntü yükler)
 - **Batch Processor** → Manav API'ye bağımlı (API çalışmalı)
 - **PTZ Analysis Service** → Bağımsız çalışır (sadece S3 ve PostgreSQL'e bağlanır)
+
+### 2. S3 Object Storage
+
+- **Bucket**: `Grocery`
+- **Prefix**: `snapshots/` (fotoğraflar için)
+- **Format**: `snapshots/camera_XXX/YYYY-MM-DD/HH/filename.jpg`
+- Fotoğraflar S3'e yüklendikten sonra lokal dosyalar silinir
+
+### 3. PostgreSQL Veritabanı
+
+- **Host**: `45.84.18.76`
+- **Port**: `5432`
+- **Database**: `grocerryadmin`
+- **User**: `grocerryadmin`
+- **SSL Mode**: `prefer` (SSL varsa kullanır, yoksa SSL olmadan bağlanır)
+
+### 4. Sistem Saati
+
+- Kod Türkiye saatini (UTC+3) kullanır
+- Sistem saatini düzeltmek önerilir (cron job'lar için)
+- Sistem saati yanlış olsa bile kod doğru saati kullanır
+
+### 5. Wrapper Script'ler
+
+- 3 adet wrapper script gerekli:
+  1. `run_camera_snapshot.sh` - Camera Snapshot System için
+  2. `run_batch_processor.sh` - Batch Processor için
+  3. `run_ptz_analysis.sh` - PTZ Analysis Service için (3 script'i sırayla çalıştırır)
 
 ---
 
@@ -973,4 +1058,4 @@ Sorun yaşarsanız:
 2. Servis durumlarını kontrol edin
 3. Network bağlantılarını test edin
 4. Environment variables'ları doğrulayın
-
+5. `test_s3_upload.py` script'ini çalıştırarak S3 bağlantısını test edin

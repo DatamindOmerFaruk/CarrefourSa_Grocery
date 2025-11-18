@@ -16,6 +16,10 @@ import yaml
 from PIL import Image
 import numpy as np
 from ultralytics import YOLO
+from dotenv import load_dotenv
+
+# .env dosyasını yükle
+load_dotenv()
 
 # Türkiye saati (UTC+3) için timezone
 TURKEY_TZ = timezone(timedelta(hours=3))
