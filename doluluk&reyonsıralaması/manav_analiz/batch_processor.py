@@ -563,8 +563,10 @@ class BatchProcessor:
                     json.dumps(data, ensure_ascii=False)
                 ))
                     
-            logger.info(f"Stock sonuçları kaydedildi: {len(reyon_durumlari)} reyon (BASİT METİN)")
-            logger.info(f"Doluluk özeti: {doluluk_metni}")
+            logger.info(f"✅ VERİTABANI: Stock sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
+            logger.info(f"   - Tablo: analyze_stock_row")
+            logger.info(f"   - Kayıt sayısı: {len(reyon_durumlari)} reyon")
+            logger.info(f"   - Doluluk özeti: {doluluk_metni}")
             
         except Exception as e:
             logger.error(f"Stock kaydetme hatası: {str(e)}")
@@ -629,21 +631,25 @@ class BatchProcessor:
                         json.dumps(data, ensure_ascii=False)
                     ))
                     
-            logger.info(f"Evaluation sonuçları kaydedildi: {len(hatalar) or 1} satır")
+            logger.info(f"✅ VERİTABANI: Evaluation sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
+            logger.info(f"   - Tablo: analyze_evaluation_row")
+            logger.info(f"   - Kayıt sayısı: {len(hatalar) or 1} satır")
+            logger.info(f"   - Genel skor: {degerlendirme.get('genel_skor', 'N/A')}")
+            logger.info(f"   - Toplam hata: {degerlendirme.get('toplam_hata', 0)}, Kritik: {degerlendirme.get('kritik_hata', 0)}")
             
         except Exception as e:
             logger.error(f"Evaluation kaydetme hatası: {str(e)}")
             
     def process_single_image_stock_only(self, blob_info: Dict) -> Dict:
-        """Tek görseli işle - SADECE STOCK ANALİZİ"""
+        """Tek görseli işle - STOCK + EVALUATION ANALİZİ (Problem çıktıları için)"""
         s3_url = blob_info['sas_url']  # S3 URL'i source_url olarak kullan
         blob_name = blob_info['name']
         
-        logger.info(f"Stock analizi: {blob_name}")
+        logger.info(f"Stock + Evaluation analizi: {blob_name}")
         logger.info(f"S3 URL: {s3_url[:100]}...")
         
         try:
-            # Sadece Stock API'sini çağır
+            # Stock API'sini çağır
             stock_result = self.process_stock_api(s3_url, s3_url)
             
             # API başarısızsa hata döndür
@@ -658,14 +664,29 @@ class BatchProcessor:
                     'stock_success': False
                 }
             
-            # Sonuçları kaydet (S3 URL'i source_url olarak)
+            # Stock sonuçlarını kaydet
+            logger.info(f"✅ Stock API başarılı, veritabanına kaydediliyor...")
             self.save_stock_results(s3_url, stock_result)
+            
+            # Evaluation API'sini de çağır (problem çıktıları için)
+            time.sleep(self.delay_between_requests)
+            logger.info(f"Evaluation analizi başlatılıyor (problem çıktıları için)...")
+            evaluation_result = self.process_evaluation_api(s3_url, s3_url, content_data=None)
+            
+            # Evaluation sonuçlarını kaydet
+            if evaluation_result.get('success', False):
+                logger.info(f"✅ Evaluation API başarılı, veritabanına kaydediliyor...")
+                self.save_evaluation_results(s3_url, evaluation_result)
+                logger.info(f"✅ Veritabanına kayıt tamamlandı: {blob_name} (Stock + Evaluation)")
+            else:
+                logger.warning(f"⚠️  Evaluation API başarısız, sadece Stock kaydedildi")
             
             return {
                 'success': True,
                 'blob_name': blob_name,
                 'source_url': s3_url,
-                'stock_success': True
+                'stock_success': True,
+                'evaluation_success': evaluation_result.get('success', False)
             }
             
         except Exception as e:
@@ -793,8 +814,8 @@ class BatchProcessor:
             raise
             
     def run_stock_only_processing(self):
-        """SADECE STOCK ANALİZİ için batch işlem döngüsü"""
-        logger.info("Stock-Only Batch işlemi başlatılıyor...")
+        """STOCK + EVALUATION ANALİZİ için batch işlem döngüsü (Problem çıktıları ile)"""
+        logger.info("Stock + Evaluation Batch işlemi başlatılıyor...")
         
         # API sağlık kontrolü
         if not self.check_api_health():
@@ -820,7 +841,7 @@ class BatchProcessor:
             successful = 0
             failed = 0
             
-            logger.info(f"Toplam {total_images} görsel SADECE STOCK ANALİZİ için işlenecek")
+            logger.info(f"Toplam {total_images} görsel STOCK + EVALUATION ANALİZİ için işlenecek")
             
             # Batch'ler halinde işle
             for i in range(0, total_images, self.batch_size):
@@ -835,7 +856,9 @@ class BatchProcessor:
                     
                     if result['success']:
                         successful += 1
-                        logger.info(f"[STOCK OK] {result['blob_name']} başarılı ({processed}/{total_images})")
+                        stock_status = "✅" if result.get('stock_success') else "❌"
+                        eval_status = "✅" if result.get('evaluation_success') else "❌"
+                        logger.info(f"[STOCK {stock_status} | EVAL {eval_status}] {result['blob_name']} başarılı ({processed}/{total_images})")
                     else:
                         failed += 1
                         logger.error(f"[STOCK FAIL] {result['blob_name']} başarısız ({processed}/{total_images})")
@@ -855,7 +878,7 @@ class BatchProcessor:
                     
             # Final rapor
             logger.info("=" * 60)
-            logger.info("STOCK-ONLY BATCH İŞLEMİ TAMAMLANDI")
+            logger.info("STOCK + EVALUATION BATCH İŞLEMİ TAMAMLANDI")
             logger.info(f"Toplam işlenen: {processed}")
             logger.info(f"Başarılı: {successful}")
             logger.info(f"Başarısız: {failed}")
@@ -886,16 +909,16 @@ def main():
         # Kullanıcıdan mode seçimi
         print("\n🔍 Batch Processor Modları:")
         print("1. Tam Analiz (Content + Stock + Evaluation)")
-        print("2. Sadece Stock Analizi (Hızlı)")
+        print("2. Stock + Evaluation Analizi (Hızlı - Problem çıktıları ile)")
         
         while True:
             choice = input("\nHangi modu çalıştırmak istiyorsun? (1/2): ").strip()
             if choice == "1":
-                logger.info("TAM ANALİZ modu seçildi")
+                logger.info("TAM ANALİZ modu seçildi (Content + Stock + Evaluation)")
                 processor.run_batch_processing()
                 break
             elif choice == "2":
-                logger.info("SADECE STOCK ANALİZİ modu seçildi")
+                logger.info("STOCK + EVALUATION modu seçildi (Problem çıktıları ile)")
                 processor.run_stock_only_processing()
                 break
             else:
