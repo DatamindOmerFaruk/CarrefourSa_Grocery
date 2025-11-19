@@ -480,32 +480,48 @@ class BatchProcessor:
             satirlar = tablo_format.get('satirlar', [])
             
             with self.pg_connection.cursor() as cursor:
+                inserted_count = 0
                 for idx, satir in enumerate(satirlar):
                     # NOT NULL alanlar için varsayılan değerler
                     konum = satir.get('konum', '') or 'Bilinmeyen'
                     ana_urun = satir.get('ana_urun', '') or 'Bilinmeyen'
                     
-                    cursor.execute("""
-                        INSERT INTO analyze_row (
-                            source_url, satir_sayisi, sutun_sayisi, toplam_kasa,
-                            row_index, konum, ana_urun, yan_urunler, raw
-                        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
-                    """, (
-                        source_url,
-                        grid_info.get('satir_sayisi'),
-                        grid_info.get('sutun_sayisi'),
-                        grid_info.get('toplam_kasa'),
-                        idx,
-                        konum,
-                        ana_urun,
-                        satir.get('yan_urunler', ''),
-                        json.dumps(data, ensure_ascii=False)
-                    ))
+                    try:
+                        cursor.execute("""
+                            INSERT INTO analyze_row (
+                                source_url, satir_sayisi, sutun_sayisi, toplam_kasa,
+                                row_index, konum, ana_urun, yan_urunler, raw
+                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                        """, (
+                            source_url,
+                            grid_info.get('satir_sayisi'),
+                            grid_info.get('sutun_sayisi'),
+                            grid_info.get('toplam_kasa'),
+                            idx,
+                            konum,
+                            ana_urun,
+                            satir.get('yan_urunler', ''),
+                            json.dumps(data, ensure_ascii=False)
+                        ))
+                        inserted_count += cursor.rowcount
+                        logger.debug(f"Content satır {idx} kaydedildi: {konum} - {ana_urun}")
+                    except Exception as row_error:
+                        logger.error(f"Content satır {idx} kaydetme hatası: {str(row_error)}")
+                        logger.error(f"  Konum: {konum}, Ana ürün: {ana_urun}")
+                        raise
                     
-            logger.info(f"Content sonuçları kaydedildi: {len(satirlar)} satır")
+            # Commit kontrolü (autocommit=True olsa bile)
+            self.pg_connection.commit()
+            logger.info(f"✅ VERİTABANI: Content sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
+            logger.info(f"   - Tablo: analyze_row")
+            logger.info(f"   - Kayıt sayısı: {inserted_count}/{len(satirlar)} satır")
             
         except Exception as e:
-            logger.error(f"Content kaydetme hatası: {str(e)}")
+            logger.error(f"❌ Content kaydetme hatası: {str(e)}")
+            logger.error(f"   Source URL: {source_url[:100]}")
+            import traceback
+            logger.error(traceback.format_exc())
+            raise
             
     def save_stock_results(self, source_url: str, stock_data: Dict):
         """Stock sonuçlarını analyze_stock_row tablosuna kaydet - BASİT METİN FORMAT"""
@@ -551,31 +567,52 @@ class BatchProcessor:
             doluluk_metni = " | ".join(doluluk_ozeti) if doluluk_ozeti else "Veri yok"
             reyon_id = f"Toplam {ozet.get('toplam_kasa', len(reyon_durumlari))} kasa"
             
+            logger.debug(f"Stock kayıt hazırlanıyor: reyon_id={reyon_id}, doluluk_metni={doluluk_metni[:50]}...")
+            
+            inserted_count = 0
             with self.pg_connection.cursor() as cursor:
                 # Tek bir satır olarak kaydet (özet)
-                cursor.execute("""
-                    INSERT INTO analyze_stock_row (
-                        source_url, reyon_id, doluluk, durum, aciliyet,
-                        kasa_gorunurlugu, doluluk_seviyeleri, raw
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-                """, (
-                    source_url,
-                    reyon_id,
-                    None,  # Doluluk oranı (NUMERIC(6,4))
-                    f"Dolu:{ozet.get('dolu_kasa', 0)} Normal:{ozet.get('normal_kasa', 0)} Kritik:{ozet.get('kritik_kasa', 0)} Boş:{ozet.get('boş_kasa', 0)}",
-                    'orta' if ozet.get('kritik_kasa', 0) > 0 or ozet.get('boş_kasa', 0) > 0 else 'düşük',
-                    True,
-                    doluluk_metni,  # NOT NULL - BASİT METİN FORMAT!
-                    json.dumps(data, ensure_ascii=False)
-                ))
+                try:
+                    cursor.execute("""
+                        INSERT INTO analyze_stock_row (
+                            source_url, reyon_id, doluluk, durum, aciliyet,
+                            kasa_gorunurlugu, doluluk_seviyeleri, raw
+                        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                    """, (
+                        source_url,
+                        reyon_id,
+                        None,  # Doluluk oranı (NUMERIC(6,4))
+                        f"Dolu:{ozet.get('dolu_kasa', 0)} Normal:{ozet.get('normal_kasa', 0)} Kritik:{ozet.get('kritik_kasa', 0)} Boş:{ozet.get('boş_kasa', 0)}",
+                        'orta' if ozet.get('kritik_kasa', 0) > 0 or ozet.get('boş_kasa', 0) > 0 else 'düşük',
+                        True,
+                        doluluk_metni,  # NOT NULL - BASİT METİN FORMAT!
+                        json.dumps(data, ensure_ascii=False)
+                    ))
+                    inserted_count = cursor.rowcount
+                    logger.debug(f"Stock INSERT başarılı, rowcount: {inserted_count}")
+                except Exception as insert_error:
+                    logger.error(f"❌ Stock INSERT hatası: {str(insert_error)}")
+                    logger.error(f"   Source URL: {source_url[:100]}")
+                    logger.error(f"   Reyon ID: {reyon_id}")
+                    logger.error(f"   Doluluk metni uzunluğu: {len(doluluk_metni)}")
+                    import traceback
+                    logger.error(traceback.format_exc())
+                    raise
                     
+            # Commit kontrolü (autocommit=True olsa bile)
+            self.pg_connection.commit()
             logger.info(f"✅ VERİTABANI: Stock sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
             logger.info(f"   - Tablo: analyze_stock_row")
-            logger.info(f"   - Kayıt sayısı: {len(reyon_durumlari)} reyon")
-            logger.info(f"   - Doluluk özeti: {doluluk_metni}")
+            logger.info(f"   - Kayıt sayısı: {inserted_count} satır")
+            logger.info(f"   - Reyon sayısı: {len(reyon_durumlari)} reyon")
+            logger.info(f"   - Doluluk özeti: {doluluk_metni[:100]}...")
             
         except Exception as e:
-            logger.error(f"Stock kaydetme hatası: {str(e)}")
+            logger.error(f"❌ Stock kaydetme hatası: {str(e)}")
+            logger.error(f"   Source URL: {source_url[:100]}")
+            import traceback
+            logger.error(traceback.format_exc())
+            raise
             
     def save_evaluation_results(self, source_url: str, evaluation_data: Dict):
         """Evaluation sonuçlarını analyze_evaluation_row tablosuna kaydet"""
@@ -595,16 +632,52 @@ class BatchProcessor:
             genel_oneriler_json = json.dumps(genel_oneriler if genel_oneriler else [], ensure_ascii=False)
             raw_json = json.dumps(data, ensure_ascii=False)
             
+            logger.debug(f"Evaluation kayıt hazırlanıyor: {len(hatalar)} hata, genel_skor={degerlendirme.get('genel_skor')}")
+            
             with self.pg_connection.cursor() as cursor:
+                inserted_count = 0
                 if hatalar:
                     # Her hata için ayrı satır
-                    for hata in hatalar:
+                    for idx, hata in enumerate(hatalar):
+                        try:
+                            cursor.execute("""
+                                INSERT INTO analyze_evaluation_row (
+                                    source_url, genel_skor, toplam_hata, kritik_hata, uyari,
+                                    analiz_modu, hata_tipi, konum1, urun1, konum2, urun2,
+                                    problem, oneri, olumlu_yerlesimler, genel_oneriler, raw
+                                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                            """, (
+                                source_url,
+                                degerlendirme.get('genel_skor'),
+                                degerlendirme.get('toplam_hata'),
+                                degerlendirme.get('kritik_hata'),
+                                degerlendirme.get('uyari'),
+                                analiz_modu,
+                                hata.get('hata_tipi'),
+                                hata.get('konum1'),
+                                hata.get('urun1'),
+                                hata.get('konum2'),
+                                hata.get('urun2'),
+                                hata.get('problem'),
+                                hata.get('oneri'),
+                                olumlu_yerlesimler_json,  # NOT NULL
+                                genel_oneriler_json,  # NOT NULL
+                                raw_json  # NOT NULL
+                            ))
+                            inserted_count += cursor.rowcount
+                            logger.debug(f"Evaluation hata {idx} kaydedildi: {hata.get('hata_tipi')}")
+                        except Exception as row_error:
+                            logger.error(f"❌ Evaluation hata {idx} kaydetme hatası: {str(row_error)}")
+                            logger.error(f"   Hata tipi: {hata.get('hata_tipi')}")
+                            raise
+                else:
+                    # Hata yoksa tek satır
+                    try:
                         cursor.execute("""
                             INSERT INTO analyze_evaluation_row (
                                 source_url, genel_skor, toplam_hata, kritik_hata, uyari,
-                                analiz_modu, hata_tipi, konum1, urun1, konum2, urun2,
-                                problem, oneri, olumlu_yerlesimler, genel_oneriler, raw
-                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                                analiz_modu, olumlu_yerlesimler, genel_oneriler, raw
+                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
                         """, (
                             source_url,
                             degerlendirme.get('genel_skor'),
@@ -612,44 +685,33 @@ class BatchProcessor:
                             degerlendirme.get('kritik_hata'),
                             degerlendirme.get('uyari'),
                             analiz_modu,
-                            hata.get('hata_tipi'),
-                            hata.get('konum1'),
-                            hata.get('urun1'),
-                            hata.get('konum2'),
-                            hata.get('urun2'),
-                            hata.get('problem'),
-                            hata.get('oneri'),
                             olumlu_yerlesimler_json,  # NOT NULL
                             genel_oneriler_json,  # NOT NULL
                             raw_json  # NOT NULL
                         ))
-                else:
-                    # Hata yoksa tek satır
-                    cursor.execute("""
-                        INSERT INTO analyze_evaluation_row (
-                            source_url, genel_skor, toplam_hata, kritik_hata, uyari,
-                            analiz_modu, olumlu_yerlesimler, genel_oneriler, raw
-                        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
-                    """, (
-                        source_url,
-                        degerlendirme.get('genel_skor'),
-                        degerlendirme.get('toplam_hata'),
-                        degerlendirme.get('kritik_hata'),
-                        degerlendirme.get('uyari'),
-                        analiz_modu,
-                        olumlu_yerlesimler_json,  # NOT NULL
-                        genel_oneriler_json,  # NOT NULL
-                        raw_json  # NOT NULL
-                    ))
+                        inserted_count = cursor.rowcount
+                        logger.debug(f"Evaluation (hata yok) kaydedildi, rowcount: {inserted_count}")
+                    except Exception as insert_error:
+                        logger.error(f"❌ Evaluation INSERT hatası: {str(insert_error)}")
+                        logger.error(f"   Source URL: {source_url[:100]}")
+                        import traceback
+                        logger.error(traceback.format_exc())
+                        raise
                     
+            # Commit kontrolü (autocommit=True olsa bile)
+            self.pg_connection.commit()
             logger.info(f"✅ VERİTABANI: Evaluation sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
             logger.info(f"   - Tablo: analyze_evaluation_row")
-            logger.info(f"   - Kayıt sayısı: {len(hatalar) or 1} satır")
+            logger.info(f"   - Kayıt sayısı: {inserted_count} satır")
             logger.info(f"   - Genel skor: {degerlendirme.get('genel_skor', 'N/A')}")
             logger.info(f"   - Toplam hata: {degerlendirme.get('toplam_hata', 0)}, Kritik: {degerlendirme.get('kritik_hata', 0)}")
             
         except Exception as e:
-            logger.error(f"Evaluation kaydetme hatası: {str(e)}")
+            logger.error(f"❌ Evaluation kaydetme hatası: {str(e)}")
+            logger.error(f"   Source URL: {source_url[:100]}")
+            import traceback
+            logger.error(traceback.format_exc())
+            raise
             
     def process_single_image_stock_only(self, blob_info: Dict) -> Dict:
         """Tek görseli işle - STOCK + EVALUATION ANALİZİ (Problem çıktıları için)"""
