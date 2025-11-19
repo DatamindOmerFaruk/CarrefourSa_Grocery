@@ -10,6 +10,9 @@ import io
 from dotenv import load_dotenv
 from pathlib import Path
 import requests
+# urllib3 SSL uyarılarını bastır (self-signed certificate için)
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Ana klasördeki .env dosyasını yükle (2 seviye yukarı: manav_analiz -> doluluk&reyonsıralaması -> ana klasör)
 current_file = Path(__file__).resolve()
@@ -306,9 +309,10 @@ def encode_image_to_base64(image_bytes: bytes, enhance_quality: bool = True) -> 
 
 
 def download_image_from_url(image_url: str) -> bytes:
-    """URL'den görüntü indir"""
+    """URL'den görüntü indir - SSL doğrulaması devre dışı (self-signed certificate için)"""
     try:
-        response = requests.get(image_url, timeout=30)
+        # Self-signed certificate için SSL doğrulamasını devre dışı bırak
+        response = requests.get(image_url, timeout=30, verify=False)
         response.raise_for_status()
         return response.content
     except Exception as e:
