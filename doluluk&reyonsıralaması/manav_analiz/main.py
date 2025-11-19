@@ -14,6 +14,16 @@ import requests
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+# S3 Object Storage için
+try:
+    import boto3
+    from botocore.exceptions import ClientError
+    from botocore.config import Config
+except ImportError:
+    boto3 = None
+    ClientError = None
+    Config = None
+
 # Ana klasördeki .env dosyasını yükle (2 seviye yukarı: manav_analiz -> doluluk&reyonsıralaması -> ana klasör)
 current_file = Path(__file__).resolve()
 root_dir = current_file.parent.parent.parent  # Ana klasöre git
@@ -33,6 +43,39 @@ app = FastAPI(
     description="Mağaza manav bölümü görüntü analizi API'leri (Azure OpenAI GPT-4.1)",
     version="1.0.0"
 )
+
+# S3 Object Storage ayarları (S3'ten görüntü indirmek için)
+S3_ENDPOINT_URL = os.getenv('S3_ENDPOINT_URL', 'https://161cohesity.carrefoursa.com:3000')
+S3_ACCESS_KEY_ID = os.getenv('S3_ACCESS_KEY_ID', '')
+S3_SECRET_ACCESS_KEY = os.getenv('S3_SECRET_ACCESS_KEY', '')
+S3_BUCKET_NAME = os.getenv('S3_BUCKET_NAME', 'Grocery')
+
+# S3 Client (lazy initialization)
+_s3_client = None
+
+def get_s3_client():
+    """S3 client'ı oluştur veya mevcut olanı döndür"""
+    global _s3_client
+    if _s3_client is None and boto3 is not None and Config is not None:
+        if S3_ACCESS_KEY_ID and S3_SECRET_ACCESS_KEY:
+            try:
+                _s3_client = boto3.client(
+                    "s3",
+                    endpoint_url=S3_ENDPOINT_URL,
+                    aws_access_key_id=S3_ACCESS_KEY_ID,
+                    aws_secret_access_key=S3_SECRET_ACCESS_KEY,
+                    verify=False,  # self-signed certificate için
+                    config=Config(
+                        signature_version="s3v4",
+                        s3={"addressing_style": "path"},  # path style
+                    ),
+                )
+                print(f"[INFO] S3 client oluşturuldu: {S3_ENDPOINT_URL}")
+            except Exception as e:
+                print(f"[UYARI] S3 client oluşturulamadı: {e}")
+        else:
+            print(f"[UYARI] S3 credentials eksik: S3_ACCESS_KEY_ID veya S3_SECRET_ACCESS_KEY tanımlı değil")
+    return _s3_client
 
 # Azure OpenAI konfigürasyonu (GPT-4.1)
 AZURE_OPENAI_ENDPOINT = os.getenv('AZURE_OPENAI_ENDPOINT')
@@ -309,7 +352,31 @@ def encode_image_to_base64(image_bytes: bytes, enhance_quality: bool = True) -> 
 
 
 def download_image_from_url(image_url: str) -> bytes:
-    """URL'den görüntü indir - SSL doğrulaması devre dışı (self-signed certificate için)"""
+    """
+    URL'den görüntü indir - S3 veya HTTP/HTTPS destekler
+    
+    Önce S3 client ile denemeye çalışır, başarısız olursa HTTP/HTTPS ile indirir
+    """
+    # S3 URL kontrolü (161cohesity.carrefoursa.com içeriyorsa S3 kullan)
+    if '161cohesity.carrefoursa.com' in image_url and '/Grocery/' in image_url:
+        s3_client = get_s3_client()
+        if s3_client:
+            try:
+                # S3 URL'den key'i çıkar: https://...Grocery/snapshots/... -> snapshots/...
+                if '/Grocery/' in image_url:
+                    s3_key = image_url.split('/Grocery/')[1]
+                    # URL encoding'i decode et
+                    from urllib.parse import unquote
+                    s3_key = unquote(s3_key)
+                    
+                    # S3'ten indir
+                    response = s3_client.get_object(Bucket=S3_BUCKET_NAME, Key=s3_key)
+                    return response['Body'].read()
+            except Exception as e:
+                print(f"[UYARI] S3'ten indirme başarısız, HTTP/HTTPS ile denenecek: {e}")
+                # S3 başarısız olursa HTTP/HTTPS ile devam et
+    
+    # HTTP/HTTPS ile indir (fallback veya normal URL'ler için)
     try:
         # Self-signed certificate için SSL doğrulamasını devre dışı bırak
         response = requests.get(image_url, timeout=30, verify=False)
