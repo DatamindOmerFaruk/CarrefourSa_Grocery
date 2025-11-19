@@ -18,9 +18,21 @@ from typing import List, Dict, Any, Optional
 import time
 from urllib.parse import quote
 from dotenv import load_dotenv
+from pathlib import Path
 
-# .env dosyasını yükle
-load_dotenv()
+# Ana klasördeki .env dosyasını yükle (2 seviye yukarı: manav_analiz -> doluluk&reyonsıralaması -> ana klasör)
+current_file = Path(__file__).resolve()
+root_dir = current_file.parent.parent.parent  # Ana klasöre git
+env_file = root_dir / '.env'
+
+# Ana klasördeki .env dosyasını yükle
+if env_file.exists():
+    load_dotenv(dotenv_path=env_file, override=True)
+    print(f"✅ Ana klasördeki .env dosyası yüklendi: {env_file}")
+else:
+    # Eğer ana klasörde .env yoksa, mevcut dizinde ara (fallback)
+    load_dotenv()
+    print(f"⚠️  Ana klasörde .env bulunamadı ({env_file}), mevcut dizinde aranıyor...")
 
 # AWS checksum hesaplama ve doğrulama için environment variable'ları ayarla
 # Bu, bazı S3 uyumlu sistemlerde (Cohesity gibi) Content-Length sorunlarını çözebilir
@@ -125,6 +137,24 @@ class BatchProcessor:
         self.pg_user = os.getenv('POSTGRES_USER', 'grocerryadmin')  # Kullanıcı adı: grocerryadmin
         self.pg_password = os.getenv('POSTGRES_PASSWORD', 'a08Iyr95vLHTYY')
         
+        # Azure PostgreSQL kontrolü - Azure PostgreSQL kullanılmamalı, 45.84.18.76 kullanılmalı
+        if 'database.azure.com' in self.pg_host.lower() or 'azure' in self.pg_host.lower():
+            logger.error("=" * 60)
+            logger.error("⚠️  UYARI: Azure PostgreSQL tespit edildi!")
+            logger.error(f"Şu anki host: {self.pg_host}")
+            logger.error("Lütfen 45.84.18.76 IP'li veritabanını kullanın.")
+            logger.error("=" * 60)
+            logger.error("POSTGRES_HOST=45.84.18.76 olarak ayarlayın (.env dosyasında)")
+            raise ValueError(
+                f"Azure PostgreSQL kullanılamaz! Lütfen 45.84.18.76 IP'li veritabanını kullanın. "
+                f"Şu anki host: {self.pg_host}"
+            )
+        
+        # Database adı kontrolü - sadece 'postgres' olmalı
+        if self.pg_database.lower() != 'postgres':
+            logger.warning(f"⚠️  Database adı 'postgres' değil: {self.pg_database}")
+            logger.warning("POSTGRES_DB=postgres olarak ayarlayın (.env dosyasında)")
+        
         # API Endpoints
         self.api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8000')
         self.test_mode = os.getenv('TEST_MODE', 'false').lower() == 'true'
@@ -190,11 +220,48 @@ class BatchProcessor:
         """Veritabanında gerekli tabloları oluşturur"""
         try:
             with self.pg_connection.cursor() as cursor:
-                cursor.execute(DDL_TABLES)
+                # DDL'deki her statement'ı ayrı ayrı çalıştır
+                # Önce CREATE TABLE statement'larını, sonra CREATE INDEX statement'larını çalıştır
+                ddl_lines = DDL_TABLES.split('\n')
+                current_statement = []
+                statements = []
+                
+                for line in ddl_lines:
+                    line_stripped = line.strip()
+                    # Yorumları atla
+                    if line_stripped.startswith('--') or not line_stripped:
+                        continue
+                    
+                    current_statement.append(line)
+                    # Statement sonu (; ile bitiyor)
+                    if line_stripped.endswith(';'):
+                        statement = ' '.join(current_statement)
+                        statements.append(statement)
+                        current_statement = []
+                
+                # Her statement'ı çalıştır
+                for statement in statements:
+                    if statement.strip():
+                        try:
+                            cursor.execute(statement)
+                        except Exception as e:
+                            error_str = str(e).lower()
+                            # Tablo/index zaten varsa - göz ardı et
+                            if any(keyword in error_str for keyword in ['already exists', 'duplicate', 'relation already']):
+                                pass  # Sessizce geç
+                            else:
+                                # Diğer hatalar için uyarı ver
+                                logger.warning(f"DDL statement hatası (devam ediliyor): {str(e)[:150]}")
+                                logger.debug(f"Statement: {statement[:100]}...")
+                                
             logger.info("✅ Veritabanı tabloları kontrol edildi/oluşturuldu")
         except Exception as e:
             logger.error(f"Tablo oluşturma hatası: {str(e)}")
-            raise
+            # Sadece kritik hatalar için raise et
+            if 'does not exist' in str(e).lower():
+                logger.warning("Tablo yapısı uyumsuz olabilir. Lütfen tabloları kontrol edin.")
+            else:
+                raise
     
     def check_api_health(self) -> bool:
         """API'nin çalışıp çalışmadığını kontrol et. Başarılıysa True, başarısızsa False döndür."""

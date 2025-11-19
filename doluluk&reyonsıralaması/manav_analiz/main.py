@@ -8,9 +8,22 @@ from typing import Dict, Any, Optional
 from PIL import Image
 import io
 from dotenv import load_dotenv
+from pathlib import Path
 import requests
 
-load_dotenv()
+# Ana klasördeki .env dosyasını yükle (2 seviye yukarı: manav_analiz -> doluluk&reyonsıralaması -> ana klasör)
+current_file = Path(__file__).resolve()
+root_dir = current_file.parent.parent.parent  # Ana klasöre git
+env_file = root_dir / '.env'
+
+# Ana klasördeki .env dosyasını yükle
+if env_file.exists():
+    load_dotenv(dotenv_path=env_file, override=True)
+    print(f"✅ Ana klasördeki .env dosyası yüklendi: {env_file}")
+else:
+    # Eğer ana klasörde .env yoksa, mevcut dizinde ara (fallback)
+    load_dotenv()
+    print(f"⚠️  Ana klasörde .env bulunamadı ({env_file}), mevcut dizinde aranıyor...")
 
 app = FastAPI(
     title="Manav Analiz API",
