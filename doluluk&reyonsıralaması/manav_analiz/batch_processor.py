@@ -286,7 +286,15 @@ class BatchProcessor:
             return False
             
     def get_all_images(self) -> List[Dict[str, str]]:
-        """S3 Object Storage'dan tüm görselleri listele"""
+        """
+        S3 Object Storage'dan sadece genel reyon görüntülerini listele
+        
+        cameras_reyon_genel.yaml'dan alınan fotoğraflar S3'te şu formatta kaydedilir:
+        snapshots/camera_XXX/YYYY-MM-DD/HH/genel_gorunum_X_timestamp.jpg
+        
+        Lokal path: snapshots/reyon_genel/camera_XXX/...
+        S3 path: snapshots/camera_XXX/... (reyon_genel klasörü S3'te yok, direkt camera_XXX altında)
+        """
         try:
             # S3'ten tüm object'leri listele (snapshots prefix'i altında)
             prefix = "snapshots/"
@@ -301,22 +309,29 @@ class BatchProcessor:
                         obj_key = obj['Key']
                         # Sadece resim dosyalarını al
                         if obj_key.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif')):
-                            # S3 URL oluştur
-                            if self.s3_endpoint_url.endswith('/'):
-                                s3_url = f"{self.s3_endpoint_url}{self.s3_bucket_name}/{obj_key}"
-                            else:
-                                s3_url = f"{self.s3_endpoint_url}/{self.s3_bucket_name}/{obj_key}"
+                            # Dosya adını al (path'in son kısmı)
+                            filename = obj_key.split('/')[-1].lower()
                             
-                            blobs.append({
-                                'name': obj_key,
-                                'url': s3_url,
-                                'sas_url': s3_url,  # S3'te SAS token gerekmez, direkt URL kullanılır
-                                'folder': '/'.join(obj_key.split('/')[:-1]) if '/' in obj_key else '',
-                                'size': obj.get('Size', 0),
-                                'last_modified': obj.get('LastModified')
-                            })
+                            # Sadece "genel" kelimesi içeren görselleri al (genel reyon görüntüleri)
+                            # cameras_reyon_genel.yaml'dan alınan fotoğraflar "genel_gorunum_X" formatında
+                            if 'genel' in filename:
+                                # S3 URL oluştur
+                                if self.s3_endpoint_url.endswith('/'):
+                                    s3_url = f"{self.s3_endpoint_url}{self.s3_bucket_name}/{obj_key}"
+                                else:
+                                    s3_url = f"{self.s3_endpoint_url}/{self.s3_bucket_name}/{obj_key}"
+                                
+                                blobs.append({
+                                    'name': obj_key,
+                                    'url': s3_url,
+                                    'sas_url': s3_url,  # S3'te SAS token gerekmez, direkt URL kullanılır
+                                    'folder': '/'.join(obj_key.split('/')[:-1]) if '/' in obj_key else '',
+                                    'size': obj.get('Size', 0),
+                                    'last_modified': obj.get('LastModified')
+                                })
                     
-            logger.info(f"Toplam {len(blobs)} görsel dosyası bulundu")
+            logger.info(f"Toplam {len(blobs)} genel reyon görseli bulundu (cameras_reyon_genel.yaml'dan)")
+            logger.info(f"S3 path formatı: snapshots/camera_XXX/YYYY-MM-DD/HH/genel_gorunum_X_timestamp.jpg")
             return blobs
             
         except Exception as e:
