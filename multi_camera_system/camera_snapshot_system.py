@@ -135,13 +135,23 @@ def _upload_file_to_s3(local_path: Path, s3_key: str, content_type: str = "image
 def _to_snapshot_s3_key(local_path: Path, snapshots_root: Path) -> str:
     """
     Lokal snapshot path'ini S3 key'ine çevirir.
-    Format: snapshots/camera_XXX/YYYY-MM-DD/HH/filename.jpg
+    
+    Format:
+    - Normal: snapshots/camera_XXX/YYYY-MM-DD/HH/filename.jpg
+    - Genel görünüm (reyon_genel): snapshots/genel_gorunum/camera_XXX/YYYY-MM-DD/HH/filename.jpg
     """
     try:
         # snapshots_root'a göre bağıl yolu al
         rel_path = local_path.relative_to(snapshots_root)
-        # S3 key formatı: snapshots/camera_XXX/YYYY-MM-DD/HH/filename.jpg
-        s3_key = f"snapshots/{rel_path.as_posix()}"
+        
+        # Eğer snapshots_root içinde "reyon_genel" varsa, genel_gorunum klasörü kullan
+        snapshots_root_str = str(snapshots_root)
+        if 'reyon_genel' in snapshots_root_str:
+            # Genel görünüm için: snapshots/genel_gorunum/camera_XXX/YYYY-MM-DD/HH/filename.jpg
+            s3_key = f"snapshots/genel_gorunum/{rel_path.as_posix()}"
+        else:
+            # Normal snapshot için: snapshots/camera_XXX/YYYY-MM-DD/HH/filename.jpg
+            s3_key = f"snapshots/{rel_path.as_posix()}"
         return s3_key
     except ValueError:
         # Eğer path relative değilse, direkt path'i kullan
@@ -150,6 +160,9 @@ def _to_snapshot_s3_key(local_path: Path, snapshots_root: Path) -> str:
         if 'snapshots' in parts:
             idx = parts.index('snapshots')
             s3_key = '/'.join(parts[idx:])
+            # Eğer reyon_genel içeriyorsa, genel_gorunum'e çevir
+            if 'reyon_genel' in s3_key:
+                s3_key = s3_key.replace('reyon_genel', 'genel_gorunum')
             return s3_key
         # Fallback: direkt dosya adını snapshots altına koy (ideal değil ama çalışır)
         return f"snapshots/{local_path.name}"
@@ -414,7 +427,8 @@ def capture_snapshot_with_retry(
     snapshots_root: Optional[Path] = None,
     max_retries: int = 5,
     min_coverage_ratio: float = 0.15,
-    retry_delay: float = 3.0
+    retry_delay: float = 3.0,
+    skip_human_detection: bool = False  # Genel görünüm için insan algılama yapılmaz
 ) -> Optional[Path]:
     """
     Snapshot al ve insan algılanırsa tekrar çek
@@ -464,11 +478,18 @@ def capture_snapshot_with_retry(
                     continue
                 return None
             
-            # İnsan algılama kontrolü
-            has_human, coverage_ratio, person_count = detect_humans_in_image(
-                snapshot_path, 
-                min_coverage_ratio
-            )
+            # İnsan algılama kontrolü (genel görünüm için atlanır)
+            if skip_human_detection:
+                # Genel görünüm için insan algılama yapılmaz, direkt kabul et
+                has_human = False
+                coverage_ratio = 0.0
+                person_count = 0
+                print(f"[GENEL GÖRÜNÜM] {target_name} - İnsan algılama atlandı (batch için)")
+            else:
+                has_human, coverage_ratio, person_count = detect_humans_in_image(
+                    snapshot_path, 
+                    min_coverage_ratio
+                )
             
             if has_human:
                 print(f"[İNSAN ALGILANDI] {target_name} - Kaplama: {coverage_ratio:.1%}, İnsan sayısı: {person_count}")
@@ -572,6 +593,10 @@ def capture_camera_snapshots(camera_id: str, config_path: str = 'cameras.yaml') 
                 
                 # Snapshot al (insan algılama ile tekrar çekme özelliği ile)
                 ptz_coords = {'azimuth': az, 'elevation': el, 'zoom': zz}
+                
+                # Genel görünüm için insan algılama yapılmaz (reyon_genel klasörü kontrolü)
+                is_genel_gorunum = 'reyon_genel' in str(snapshots_root)
+                
                 snapshot_path = capture_snapshot_with_retry(
                     controller=controller,
                     camera_config=camera_config,
@@ -581,7 +606,8 @@ def capture_camera_snapshots(camera_id: str, config_path: str = 'cameras.yaml') 
                     snapshots_root=snapshots_root,
                     max_retries=5,  # Maksimum 5 deneme
                     min_coverage_ratio=0.15,  # %15 kaplama oranı
-                    retry_delay=3.0  # 3 saniye bekleme
+                    retry_delay=3.0,  # 3 saniye bekleme
+                    skip_human_detection=is_genel_gorunum  # Genel görünüm için insan algılama yapılmaz
                 )
                 
                 if snapshot_path:
