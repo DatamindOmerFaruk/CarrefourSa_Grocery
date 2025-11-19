@@ -55,46 +55,47 @@ DDL_TABLES = """
 -- Content analiz sonuçları tablosu
 CREATE TABLE IF NOT EXISTS analyze_row (
     id BIGSERIAL PRIMARY KEY,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     source_url TEXT NOT NULL,
+    ts TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     satir_sayisi INT,
     sutun_sayisi INT,
     toplam_kasa INT,
-    row_index INT,
-    konum TEXT,
-    ana_urun TEXT,
+    row_index INT NOT NULL,
+    konum TEXT NOT NULL,
+    ana_urun TEXT NOT NULL,
     yan_urunler TEXT,
-    raw JSONB
+    raw JSONB NOT NULL
 );
 
-CREATE INDEX IF NOT EXISTS idx_analyze_row_source_url ON analyze_row(source_url);
-CREATE INDEX IF NOT EXISTS idx_analyze_row_created_at ON analyze_row(created_at);
-CREATE INDEX IF NOT EXISTS idx_analyze_row_ana_urun ON analyze_row(ana_urun);
+CREATE INDEX IF NOT EXISTS idx_analyze_row_sourceurl ON analyze_row(source_url);
+CREATE INDEX IF NOT EXISTS idx_analyze_row_ts ON analyze_row(ts);
+CREATE INDEX IF NOT EXISTS idx_analyze_row_urun ON analyze_row(ana_urun);
 
 -- Stock analiz sonuçları tablosu
 CREATE TABLE IF NOT EXISTS analyze_stock_row (
     id BIGSERIAL PRIMARY KEY,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     source_url TEXT NOT NULL,
-    reyon_id TEXT,
-    doluluk REAL,
+    ts TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    reyon_id TEXT NOT NULL,
+    doluluk NUMERIC(6,4),
     durum TEXT,
     aciliyet TEXT,
     kasa_gorunurlugu BOOLEAN,
-    doluluk_seviyeleri TEXT,
-    raw JSONB
+    doluluk_seviyeleri TEXT NOT NULL,
+    raw JSONB NOT NULL
 );
 
-CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_source_url ON analyze_stock_row(source_url);
-CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_created_at ON analyze_stock_row(created_at);
+CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_source ON analyze_stock_row(source_url);
+CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_ts ON analyze_stock_row(ts);
 CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_durum ON analyze_stock_row(durum);
+CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_reyon ON analyze_stock_row(reyon_id);
 
 -- Evaluation analiz sonuçları tablosu
 CREATE TABLE IF NOT EXISTS analyze_evaluation_row (
     id BIGSERIAL PRIMARY KEY,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     source_url TEXT NOT NULL,
-    genel_skor REAL,
+    ts TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    genel_skor NUMERIC(6,3),
     toplam_hata INT,
     kritik_hata INT,
     uyari INT,
@@ -106,14 +107,14 @@ CREATE TABLE IF NOT EXISTS analyze_evaluation_row (
     urun2 TEXT,
     problem TEXT,
     oneri TEXT,
-    olumlu_yerlesimler JSONB,
-    genel_oneriler JSONB,
-    raw JSONB
+    olumlu_yerlesimler JSONB NOT NULL,
+    genel_oneriler JSONB NOT NULL,
+    raw JSONB NOT NULL
 );
 
-CREATE INDEX IF NOT EXISTS idx_analyze_evaluation_row_source_url ON analyze_evaluation_row(source_url);
-CREATE INDEX IF NOT EXISTS idx_analyze_evaluation_row_created_at ON analyze_evaluation_row(created_at);
-CREATE INDEX IF NOT EXISTS idx_analyze_evaluation_row_genel_skor ON analyze_evaluation_row(genel_skor);
+CREATE INDEX IF NOT EXISTS idx_eval_row_source ON analyze_evaluation_row(source_url);
+CREATE INDEX IF NOT EXISTS idx_eval_row_ts ON analyze_evaluation_row(ts);
+CREATE INDEX IF NOT EXISTS idx_eval_row_tip ON analyze_evaluation_row(hata_tipi);
 """
 
 class BatchProcessor:
@@ -480,6 +481,10 @@ class BatchProcessor:
             
             with self.pg_connection.cursor() as cursor:
                 for idx, satir in enumerate(satirlar):
+                    # NOT NULL alanlar için varsayılan değerler
+                    konum = satir.get('konum', '') or 'Bilinmeyen'
+                    ana_urun = satir.get('ana_urun', '') or 'Bilinmeyen'
+                    
                     cursor.execute("""
                         INSERT INTO analyze_row (
                             source_url, satir_sayisi, sutun_sayisi, toplam_kasa,
@@ -491,8 +496,8 @@ class BatchProcessor:
                         grid_info.get('sutun_sayisi'),
                         grid_info.get('toplam_kasa'),
                         idx,
-                        satir.get('konum', ''),
-                        satir.get('ana_urun', ''),
+                        konum,
+                        ana_urun,
                         satir.get('yan_urunler', ''),
                         json.dumps(data, ensure_ascii=False)
                     ))
@@ -543,7 +548,8 @@ class BatchProcessor:
             if bos_reyonlar:
                 doluluk_ozeti.append(f"BOŞ: {', '.join(bos_reyonlar)}")
             
-            doluluk_metni = " | ".join(doluluk_ozeti)
+            doluluk_metni = " | ".join(doluluk_ozeti) if doluluk_ozeti else "Veri yok"
+            reyon_id = f"Toplam {ozet.get('toplam_kasa', len(reyon_durumlari))} kasa"
             
             with self.pg_connection.cursor() as cursor:
                 # Tek bir satır olarak kaydet (özet)
@@ -554,12 +560,12 @@ class BatchProcessor:
                     ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                 """, (
                     source_url,
-                    f"Toplam {ozet.get('toplam_kasa', len(reyon_durumlari))} kasa",
-                    None,  # Doluluk oranı gerek yok
+                    reyon_id,
+                    None,  # Doluluk oranı (NUMERIC(6,4))
                     f"Dolu:{ozet.get('dolu_kasa', 0)} Normal:{ozet.get('normal_kasa', 0)} Kritik:{ozet.get('kritik_kasa', 0)} Boş:{ozet.get('boş_kasa', 0)}",
                     'orta' if ozet.get('kritik_kasa', 0) > 0 or ozet.get('boş_kasa', 0) > 0 else 'düşük',
                     True,
-                    doluluk_metni,  # BASİT METİN FORMAT!
+                    doluluk_metni,  # NOT NULL - BASİT METİN FORMAT!
                     json.dumps(data, ensure_ascii=False)
                 ))
                     
@@ -583,6 +589,11 @@ class BatchProcessor:
             olumlu_yerlesimler = data.get('olumlu_yerlesimler', [])
             genel_oneriler = data.get('genel_oneriler', [])
             analiz_modu = data.get('analiz_modu', '')
+            
+            # NOT NULL alanlar için varsayılan değerler
+            olumlu_yerlesimler_json = json.dumps(olumlu_yerlesimler if olumlu_yerlesimler else [], ensure_ascii=False)
+            genel_oneriler_json = json.dumps(genel_oneriler if genel_oneriler else [], ensure_ascii=False)
+            raw_json = json.dumps(data, ensure_ascii=False)
             
             with self.pg_connection.cursor() as cursor:
                 if hatalar:
@@ -608,9 +619,9 @@ class BatchProcessor:
                             hata.get('urun2'),
                             hata.get('problem'),
                             hata.get('oneri'),
-                            json.dumps(olumlu_yerlesimler, ensure_ascii=False),
-                            json.dumps(genel_oneriler, ensure_ascii=False),
-                            json.dumps(data, ensure_ascii=False)
+                            olumlu_yerlesimler_json,  # NOT NULL
+                            genel_oneriler_json,  # NOT NULL
+                            raw_json  # NOT NULL
                         ))
                 else:
                     # Hata yoksa tek satır
@@ -626,9 +637,9 @@ class BatchProcessor:
                         degerlendirme.get('kritik_hata'),
                         degerlendirme.get('uyari'),
                         analiz_modu,
-                        json.dumps(olumlu_yerlesimler, ensure_ascii=False),
-                        json.dumps(genel_oneriler, ensure_ascii=False),
-                        json.dumps(data, ensure_ascii=False)
+                        olumlu_yerlesimler_json,  # NOT NULL
+                        genel_oneriler_json,  # NOT NULL
+                        raw_json  # NOT NULL
                     ))
                     
             logger.info(f"✅ VERİTABANI: Evaluation sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
