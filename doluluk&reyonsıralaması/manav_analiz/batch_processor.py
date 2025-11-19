@@ -159,6 +159,12 @@ class BatchProcessor:
         self.api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8000')
         self.test_mode = os.getenv('TEST_MODE', 'false').lower() == 'true'
         
+        # API URL kontrolü - localhost yerine 127.0.0.1 veya gerçek IP kullanılmalı
+        if 'localhost' in self.api_base_url.lower():
+            logger.warning(f"⚠️  API_BASE_URL localhost kullanıyor: {self.api_base_url}")
+            logger.warning("Linux sunucuda localhost yerine 127.0.0.1 veya gerçek IP kullanın")
+            logger.warning("Örnek: API_BASE_URL=http://127.0.0.1:8000 veya API_BASE_URL=http://45.84.18.76:8000")
+        
         # Batch ayarları
         self.batch_size = int(os.getenv('BATCH_SIZE', '10'))
         self.retry_count = int(os.getenv('RETRY_COUNT', '3'))
@@ -268,18 +274,34 @@ class BatchProcessor:
         try:
             health_url = f"{self.api_base_url}/health"
             logger.info(f"API health check: {health_url}")
-            response = requests.get(health_url, timeout=5)
+            
+            # SSL uyarılarını bastır
+            response = requests.get(health_url, timeout=5, verify=False)
+            
             if response.status_code == 200:
-                logger.info("API sağlık kontrolü başarılı")
+                logger.info("✅ API sağlık kontrolü başarılı")
                 return True
             else:
                 logger.warning(f"API health check başarısız: Status {response.status_code}")
                 return False
-        except requests.exceptions.ConnectionError:
-            logger.error(f"API'ye bağlanılamıyor: {self.api_base_url}")
+        except requests.exceptions.ConnectionError as e:
+            logger.error("=" * 60)
+            logger.error(f"❌ API'ye bağlanılamıyor: {self.api_base_url}")
+            logger.error("=" * 60)
             logger.error("Lütfen API'nin çalıştığından emin olun (systemd service: manav-api)")
-            logger.error("API kontrolü için: sudo systemctl status manav-api")
-            logger.error("API başlatmak için: sudo systemctl start manav-api")
+            logger.error("")
+            logger.error("API kontrolü için:")
+            logger.error("  sudo systemctl status manav-api")
+            logger.error("")
+            logger.error("API başlatmak için:")
+            logger.error("  sudo systemctl start manav-api")
+            logger.error("")
+            logger.error("API yeniden başlatmak için (SSL düzeltmesi için gerekli):")
+            logger.error("  sudo systemctl restart manav-api")
+            logger.error("")
+            logger.error("API loglarını kontrol etmek için:")
+            logger.error("  sudo journalctl -u manav-api -f")
+            logger.error("=" * 60)
             return False
         except Exception as e:
             logger.warning(f"API health check hatası: {str(e)}")
