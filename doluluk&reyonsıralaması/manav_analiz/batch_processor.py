@@ -38,6 +38,72 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# === PostgreSQL Tablo DDL'leri ===
+DDL_TABLES = """
+-- Content analiz sonuçları tablosu
+CREATE TABLE IF NOT EXISTS analyze_row (
+    id BIGSERIAL PRIMARY KEY,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    source_url TEXT NOT NULL,
+    satir_sayisi INT,
+    sutun_sayisi INT,
+    toplam_kasa INT,
+    row_index INT,
+    konum TEXT,
+    ana_urun TEXT,
+    yan_urunler TEXT,
+    raw JSONB
+);
+
+CREATE INDEX IF NOT EXISTS idx_analyze_row_source_url ON analyze_row(source_url);
+CREATE INDEX IF NOT EXISTS idx_analyze_row_created_at ON analyze_row(created_at);
+CREATE INDEX IF NOT EXISTS idx_analyze_row_ana_urun ON analyze_row(ana_urun);
+
+-- Stock analiz sonuçları tablosu
+CREATE TABLE IF NOT EXISTS analyze_stock_row (
+    id BIGSERIAL PRIMARY KEY,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    source_url TEXT NOT NULL,
+    reyon_id TEXT,
+    doluluk REAL,
+    durum TEXT,
+    aciliyet TEXT,
+    kasa_gorunurlugu BOOLEAN,
+    doluluk_seviyeleri TEXT,
+    raw JSONB
+);
+
+CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_source_url ON analyze_stock_row(source_url);
+CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_created_at ON analyze_stock_row(created_at);
+CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_durum ON analyze_stock_row(durum);
+
+-- Evaluation analiz sonuçları tablosu
+CREATE TABLE IF NOT EXISTS analyze_evaluation_row (
+    id BIGSERIAL PRIMARY KEY,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    source_url TEXT NOT NULL,
+    genel_skor REAL,
+    toplam_hata INT,
+    kritik_hata INT,
+    uyari INT,
+    analiz_modu TEXT,
+    hata_tipi TEXT,
+    konum1 TEXT,
+    urun1 TEXT,
+    konum2 TEXT,
+    urun2 TEXT,
+    problem TEXT,
+    oneri TEXT,
+    olumlu_yerlesimler JSONB,
+    genel_oneriler JSONB,
+    raw JSONB
+);
+
+CREATE INDEX IF NOT EXISTS idx_analyze_evaluation_row_source_url ON analyze_evaluation_row(source_url);
+CREATE INDEX IF NOT EXISTS idx_analyze_evaluation_row_created_at ON analyze_evaluation_row(created_at);
+CREATE INDEX IF NOT EXISTS idx_analyze_evaluation_row_genel_skor ON analyze_evaluation_row(genel_skor);
+"""
+
 class BatchProcessor:
     def __init__(self):
         """Konfigürasyonları yükle"""
@@ -107,6 +173,10 @@ class BatchProcessor:
             self.pg_connection.autocommit = True
             
             logger.info(f"✅ PostgreSQL bağlantısı başarılı: {self.pg_host}:{self.pg_port}/{self.pg_database}")
+            
+            # Tabloları oluştur
+            self.ensure_tables()
+            
             logger.info("S3 Object Storage ve PostgreSQL bağlantıları başarılı")
             
             # API health check
@@ -114,6 +184,16 @@ class BatchProcessor:
             
         except Exception as e:
             logger.error(f"Bağlantı hatası: {str(e)}")
+            raise
+    
+    def ensure_tables(self):
+        """Veritabanında gerekli tabloları oluşturur"""
+        try:
+            with self.pg_connection.cursor() as cursor:
+                cursor.execute(DDL_TABLES)
+            logger.info("✅ Veritabanı tabloları kontrol edildi/oluşturuldu")
+        except Exception as e:
+            logger.error(f"Tablo oluşturma hatası: {str(e)}")
             raise
     
     def check_api_health(self) -> bool:
