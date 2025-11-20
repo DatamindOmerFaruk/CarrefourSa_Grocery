@@ -35,9 +35,6 @@ boto3>=1.34.0
 # PostgreSQL
 psycopg2-binary>=2.9.0,<3.0.0
 
-# Azure Storage (Batch Processor için)
-azure-storage-blob==12.19.0
-
 # Azure OpenAI (LLM için)
 openai>=1.30.0
 

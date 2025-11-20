@@ -1,6 +1,6 @@
 """
 PTZ Face Blur Service
-Notebook Cell 1: Yüzlerin Blur'lanması
+Yüzlerin Blur'lanması
 S3'ten snapshot'ları alır, yüzleri blur'lar ve tekrar S3'e yükler.
 """
 import os

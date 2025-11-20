@@ -94,7 +94,7 @@ else
     warning_msg "requirements.txt bulunamadı, temel paketler yükleniyor..."
     pip install requests Pillow PyYAML numpy ultralytics torch torchvision \
         fastapi uvicorn python-multipart python-dotenv boto3 psycopg2-binary \
-        azure-storage-blob facenet-pytorch openai || error_exit "Bağımlılıklar yüklenemedi"
+        facenet-pytorch openai || error_exit "Bağımlılıklar yüklenemedi"
     success_msg "Temel bağımlılıklar yüklendi"
 fi
 

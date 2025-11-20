@@ -1,6 +1,6 @@
 """
 PTZ YOLO + LLM Analysis Service
-Notebook Cell 2: YOLO ile meyve sebze detection ve LLM ile çürük tespiti
+YOLO ile meyve sebze detection ve LLM ile çürük tespiti
 S3'ten snapshot'ları alır, YOLO ile detection yapar, collage'lar oluşturur, 
 LLM ile analiz eder ve sonuçları S3'e yükler.
 """
@@ -488,7 +488,7 @@ def _ensure_openai_client():
     return AzureOpenAI(api_key=AZURE_API_KEY, api_version="2024-06-01", azure_endpoint=AZURE_ENDPOINT)
 
 SAFE_SYSTEM_MESSAGE = (
-    "You are an assistant that evaluates produce freshness in retail photos. "
+    "Evaluate produce freshness in retail photos. "
     "Analyze only non-sensitive, non-human content (fruits/vegetables in store crates). "
     "Do not discuss or infer anything about people, faces, body parts, weapons, injuries, or text content. "
     "If such content appears, return a neutral JSON with no items marked rotten."

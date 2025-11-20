@@ -11,8 +11,10 @@ from botocore.config import Config
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import logging
-from typing import List, Dict
+from typing import List, Dict, Optional, Tuple, Any
 import time
+import re
+import yaml
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -20,6 +22,7 @@ from pathlib import Path
 current_file = Path(__file__).resolve()
 root_dir = current_file.parent.parent.parent  # Ana klasöre git
 env_file = root_dir / '.env'
+cameras_yaml = root_dir / 'multi_camera_system' / 'cameras.yaml'
 
 # Ana klasördeki .env dosyasını yükle
 if env_file.exists():
@@ -303,9 +306,96 @@ class BatchProcessor:
             logger.warning(f"API health check hatası: {str(e)}")
             return False
             
+    def find_latest_date_hour_for_camera(self, camera_id: str) -> Optional[Tuple[str, str, List[str]]]:
+        """
+        S3 Object Storage'dan belirli bir kamera için en son tarih/saat klasörünü bulur.
+        Returns: (date_name, hour_name, s3_keys_list) veya None
+        """
+        DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+        HOUR_RE = re.compile(r"^\d{1,2}$")
+        
+        prefix = f"snapshots/genel_gorunum/{camera_id}/"
+        all_blobs = []
+        
+        try:
+            paginator = self.s3_client.get_paginator('list_objects_v2')
+            pages = paginator.paginate(Bucket=self.s3_bucket_name, Prefix=prefix)
+            
+            for page in pages:
+                if 'Contents' in page:
+                    for obj in page['Contents']:
+                        obj_key = obj['Key']
+                        if obj_key.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif')):
+                            all_blobs.append(obj_key)
+        except Exception as e:
+            logger.warning(f"{camera_id} için S3 listesi alınamadı: {str(e)}")
+            return None
+        
+        if not all_blobs:
+            return None
+        
+        dates = set()
+        hour_blobs = {}
+        
+        for blob_path in all_blobs:
+            parts = blob_path.replace(prefix, "").split("/")
+            if len(parts) >= 2 and DATE_RE.match(parts[0]) and HOUR_RE.match(parts[1]):
+                date_name = parts[0]
+                hour_name = parts[1]
+                dates.add(date_name)
+                key = (date_name, hour_name)
+                if key not in hour_blobs:
+                    hour_blobs[key] = []
+                hour_blobs[key].append(blob_path)
+        
+        if not dates:
+            return None
+        
+        sorted_dates = sorted(dates)
+        last_date = sorted_dates[-1]
+        
+        last_hour_blobs = {k: v for k, v in hour_blobs.items() if k[0] == last_date}
+        if not last_hour_blobs:
+            return None
+        
+        def get_hour_num(key):
+            try:
+                return int(key[1])
+            except:
+                return -1
+        
+        sorted_hours = sorted(last_hour_blobs.keys(), key=get_hour_num)
+        last_hour_key = sorted_hours[-1]
+        
+        return last_hour_key[0], last_hour_key[1], hour_blobs[last_hour_key]
+
+    def find_all_cameras(self) -> List[str]:
+        """S3 Object Storage'dan tüm camera_XXX klasörlerini bulur (genel_gorunum altında)"""
+        prefix = "snapshots/genel_gorunum/"
+        cameras = set()
+        
+        try:
+            paginator = self.s3_client.get_paginator('list_objects_v2')
+            pages = paginator.paginate(Bucket=self.s3_bucket_name, Prefix=prefix, Delimiter='/')
+            
+            for page in pages:
+                if 'CommonPrefixes' in page:
+                    for prefix_info in page['CommonPrefixes']:
+                        folder_path = prefix_info['Prefix']
+                        # snapshots/genel_gorunum/camera_XXX/ formatından camera_XXX'i çıkar
+                        parts = folder_path.replace(prefix, "").split("/")
+                        if parts[0].startswith("camera_"):
+                            cameras.add(parts[0])
+        except Exception as e:
+            logger.error(f"Kamera listesi alınamadı: {str(e)}")
+            return []
+        
+        return sorted(list(cameras))
+
     def get_all_images(self) -> List[Dict[str, str]]:
         """
         S3 Object Storage'dan sadece genel reyon görüntülerini listele
+        Sadece her kamera için en son tarih/saat klasöründeki görselleri alır.
         
         cameras_reyon_genel.yaml'dan alınan fotoğraflar S3'te şu formatta kaydedilir:
         snapshots/genel_gorunum/camera_XXX/YYYY-MM-DD/HH/genel_gorunum_X_timestamp.jpg
@@ -314,35 +404,49 @@ class BatchProcessor:
         S3 path: snapshots/genel_gorunum/camera_XXX/... (genel görünüm klasörü altında)
         """
         try:
-            # S3'ten sadece genel_gorunum klasöründeki görselleri listele
-            prefix = "snapshots/genel_gorunum/"
+            # Tüm kameraları bul
+            cameras = self.find_all_cameras()
+            
+            if not cameras:
+                logger.warning("S3'te genel_gorunum altında kamera bulunamadı")
+                return []
+            
+            logger.info(f"Bulunan kameralar: {len(cameras)} adet")
+            
             blobs = []
             
-            paginator = self.s3_client.get_paginator('list_objects_v2')
-            pages = paginator.paginate(Bucket=self.s3_bucket_name, Prefix=prefix)
-            
-            for page in pages:
-                if 'Contents' in page:
-                    for obj in page['Contents']:
-                        obj_key = obj['Key']
-                        # Sadece resim dosyalarını al
-                        if obj_key.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif')):
-                            # S3 URL oluştur
-                            if self.s3_endpoint_url.endswith('/'):
-                                s3_url = f"{self.s3_endpoint_url}{self.s3_bucket_name}/{obj_key}"
-                            else:
-                                s3_url = f"{self.s3_endpoint_url}/{self.s3_bucket_name}/{obj_key}"
-                            
-                            blobs.append({
-                                'name': obj_key,
-                                'url': s3_url,
-                                'sas_url': s3_url,  # S3'te SAS token gerekmez, direkt URL kullanılır
-                                'folder': '/'.join(obj_key.split('/')[:-1]) if '/' in obj_key else '',
-                                'size': obj.get('Size', 0),
-                                'last_modified': obj.get('LastModified')
-                            })
+            # Her kamera için en son tarih/saat klasöründeki görselleri al
+            for camera_id in cameras:
+                # Mağaza bilgisini al
+                store_name = self.get_store_name(camera_id)
+                
+                found = self.find_latest_date_hour_for_camera(camera_id)
+                if not found:
+                    logger.warning(f"{camera_id} ({store_name}): En son tarih/saat klasörü bulunamadı")
+                    continue
+                
+                date_name, hour_name, s3_keys = found
+                logger.info(f"{camera_id} ({store_name}): En son klasör {date_name}/{hour_name} ({len(s3_keys)} görsel)")
+                
+                for obj_key in s3_keys:
+                    # S3 URL oluştur
+                    if self.s3_endpoint_url.endswith('/'):
+                        s3_url = f"{self.s3_endpoint_url}{self.s3_bucket_name}/{obj_key}"
+                    else:
+                        s3_url = f"{self.s3_endpoint_url}/{self.s3_bucket_name}/{obj_key}"
                     
-            logger.info(f"Toplam {len(blobs)} genel reyon görseli bulundu (snapshots/genel_gorunum/ klasöründen)")
+                    blobs.append({
+                        'name': obj_key,
+                        'url': s3_url,
+                        'sas_url': s3_url,  # S3'te SAS token gerekmez, direkt URL kullanılır
+                        'folder': '/'.join(obj_key.split('/')[:-1]) if '/' in obj_key else '',
+                        'size': 0,  # Size bilgisi için ekstra S3 çağrısı gerekir, şimdilik 0
+                        'last_modified': None,
+                        'camera_id': camera_id,
+                        'store_name': store_name  # Mağaza bilgisi eklendi
+                    })
+                    
+            logger.info(f"Toplam {len(blobs)} genel reyon görseli bulundu (sadece en son tarih/saat klasörlerinden)")
             logger.info(f"S3 path formatı: snapshots/genel_gorunum/camera_XXX/YYYY-MM-DD/HH/genel_gorunum_X_timestamp.jpg")
             return blobs
             
@@ -906,12 +1010,16 @@ class BatchProcessor:
                     result = self.process_single_image(blob_info)
                     processed += 1
                     
+                    # Mağaza bilgisini al
+                    store_name = blob_info.get('store_name', 'Bilinmeyen Mağaza')
+                    camera_id = blob_info.get('camera_id', 'Bilinmeyen Kamera')
+                    
                     if result['success']:
                         successful += 1
-                        logger.info(f"[OK] {result['blob_name']} başarılı ({processed}/{total_images})")
+                        logger.info(f"[OK] {store_name} ({camera_id}) - {result['blob_name']} başarılı ({processed}/{total_images})")
                     else:
                         failed += 1
-                        logger.error(f"[FAIL] {result['blob_name']} başarısız ({processed}/{total_images})")
+                        logger.error(f"[FAIL] {store_name} ({camera_id}) - {result['blob_name']} başarısız ({processed}/{total_images})")
                         
                     # Progress raporu
                     if processed % 10 == 0:
@@ -977,15 +1085,19 @@ class BatchProcessor:
                     result = self.process_single_image_stock_only(blob_info)
                     processed += 1
                     
+                    # Mağaza bilgisini al
+                    store_name = blob_info.get('store_name', 'Bilinmeyen Mağaza')
+                    camera_id = blob_info.get('camera_id', 'Bilinmeyen Kamera')
+                    
                     if result['success']:
                         successful += 1
                         content_status = "✅" if result.get('content_success') else "❌"
                         stock_status = "✅" if result.get('stock_success') else "❌"
                         eval_status = "✅" if result.get('evaluation_success') else "❌"
-                        logger.info(f"[CONTENT {content_status} | STOCK {stock_status} | EVAL {eval_status}] {result['blob_name']} başarılı ({processed}/{total_images})")
+                        logger.info(f"[CONTENT {content_status} | STOCK {stock_status} | EVAL {eval_status}] {store_name} ({camera_id}) - {result['blob_name']} başarılı ({processed}/{total_images})")
                     else:
                         failed += 1
-                        logger.error(f"[STOCK FAIL] {result['blob_name']} başarısız ({processed}/{total_images})")
+                        logger.error(f"[STOCK FAIL] {store_name} ({camera_id}) - {result['blob_name']} başarısız ({processed}/{total_images})")
                         
                     # Progress raporu
                     if processed % 10 == 0:

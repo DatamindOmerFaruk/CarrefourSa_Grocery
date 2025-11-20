@@ -1,6 +1,6 @@
 """
 PTZ Database Writer Service
-Notebook Cell 3: LLM analiz sonuçlarını PostgreSQL veritabanına yazar
+LLM analiz sonuçlarını PostgreSQL veritabanına yazar
 S3'ten .llm.json dosyalarını okur ve sonuçları veritabanına kaydeder.
 """
 import os

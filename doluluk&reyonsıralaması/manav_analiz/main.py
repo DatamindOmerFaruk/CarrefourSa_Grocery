@@ -1,5 +1,4 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException, Form
-from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import base64
 import json
@@ -86,7 +85,7 @@ AZURE_API_VERSION = os.getenv('AZURE_API_VERSION', '2024-12-01-preview')
 if not AZURE_OPENAI_ENDPOINT or not AZURE_OPENAI_API_KEY:
     raise ValueError("Azure OpenAI konfigürasyonu gerekli: AZURE_OPENAI_ENDPOINT ve AZURE_OPENAI_API_KEY")
 
-# Prompt şablonları - GPT-4.1 için optimize edilmiş ve geliştirilmiş
+# Prompt şablonları
 CONTENT_PROMPT = """
 Bu mağaza manav bölümü görüntüsünü detaylı analiz ederek meyve/sebze türlerini YÜKSEK DOĞRULUKLA tespit et!
 
@@ -586,7 +585,7 @@ async def analyze_content(
     """
     🔍 API 1: Reyon İçerik Analizi - Dinamik Grid Sistemi ile
     
-    GPT-4.1 ile otomatik grid boyutu tespiti ve yüksek doğrulukla meyve/sebze tanıma
+    Otomatik grid boyutu tespiti ve meyve/sebze tanıma
     İki mod: file upload veya image_url
     """
     try:
@@ -660,7 +659,7 @@ async def analyze_stock(
     """
     📊 API 2: Kritik Stok Analizi
     
-    GPT-4.1 ile boş reyonlar ve kritik seviyeler
+    Boş reyonlar ve kritik seviyeler tespiti
     """
     try:
         # Girdi validasyonu
