@@ -4,19 +4,15 @@ S3 Object Storage'dan görselleri alıp API'lara göndererek PostgreSQL'e yazan 
 import os
 import requests
 import psycopg2
-from psycopg2.extras import RealDictCursor
 import json
 import boto3
-from botocore.exceptions import ClientError
 from botocore.config import Config
-from datetime import datetime, timedelta
 # urllib3 SSL uyarılarını bastır (self-signed certificate için)
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import logging
-from typing import List, Dict, Any, Optional
+from typing import List, Dict
 import time
-from urllib.parse import quote
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -158,7 +154,6 @@ class BatchProcessor:
         
         # API Endpoints
         self.api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8000')
-        self.test_mode = os.getenv('TEST_MODE', 'false').lower() == 'true'
         
         # API URL kontrolü - localhost yerine 127.0.0.1 veya gerçek IP kullanılmalı
         if 'localhost' in self.api_base_url.lower():
@@ -355,40 +350,6 @@ class BatchProcessor:
             logger.error(f"S3 Object Storage'dan dosya listesi alınamadı: {str(e)}")
             raise
             
-    def download_image(self, s3_key: str) -> bytes:
-        """Görseli S3 Object Storage'dan indir"""
-        try:
-            response = self.s3_client.get_object(Bucket=self.s3_bucket_name, Key=s3_key)
-            return response['Body'].read()
-            
-        except ClientError as e:
-            logger.error(f"Görsel indirilemedi ({s3_key}): {str(e)}")
-            raise
-            
-    def call_api(self, endpoint: str, image_bytes: bytes, additional_data: Dict = None) -> Dict:
-        """API endpoint'ine görsel gönder"""
-        url = f"{self.api_base_url}/{endpoint}"
-        
-        files = {'file': ('image.jpg', image_bytes, 'image/jpeg')}
-        data = additional_data or {}
-        
-        for attempt in range(self.retry_count):
-            try:
-                logger.info(f"API çağrısı: {url}")
-                response = requests.post(url, files=files, data=data, timeout=120)
-                logger.info(f"Response status: {response.status_code}")
-                if response.status_code != 200:
-                    logger.error(f"Response content: {response.text}")
-                response.raise_for_status()
-                json_result = response.json()
-                logger.debug(f"📥 API JSON response keys: {list(json_result.keys()) if isinstance(json_result, dict) else 'Not a dict'}")
-                logger.debug(f"📥 API JSON response (first 500 chars): {json.dumps(json_result, ensure_ascii=False)[:500]}...")
-                return json_result
-                
-            except Exception as e:
-                logger.warning(f"API çağrısı başarısız (deneme {attempt + 1}/{self.retry_count}): {str(e)}")
-                if attempt == self.retry_count - 1:
-                    raise
     def call_api_with_url(self, endpoint: str, image_url: str, additional_data: Dict = None) -> Dict:
         """API endpoint'ine S3 URL gönder"""
         url = f"{self.api_base_url}/{endpoint}"
