@@ -1,4 +1,5 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException, Form
+from fastapi.responses import Response
 from pydantic import BaseModel
 import base64
 import json
@@ -781,6 +782,65 @@ Hangi ürünün hangi konumda olduğu belli, buna göre yan yana olan ürünleri
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/images/{s3_path:path}")
+async def get_image(s3_path: str):
+    """
+    S3 Object Storage'dan görseli alıp arayüze servis eder
+    
+    Kullanım:
+    - Veritabanındaki source_url: https://161cohesity.carrefoursa.com:3000/Grocery/snapshots/genel_gorunum/camera_001/2024-01-15/14/photo.jpg
+    - Arayüzden erişim: http://localhost:8000/images/snapshots/genel_gorunum/camera_001/2024-01-15/14/photo.jpg
+    
+    Bu endpoint S3'ten görseli indirir ve uygun Content-Type header'ı ile döndürür.
+    """
+    try:
+        # S3 path'ini tam URL'ye çevir
+        if s3_path.startswith('http://') or s3_path.startswith('https://'):
+            # Zaten tam URL ise direkt kullan
+            image_url = s3_path
+        else:
+            # Sadece path ise, tam S3 URL oluştur
+            if S3_ENDPOINT_URL.endswith('/'):
+                image_url = f"{S3_ENDPOINT_URL}{S3_BUCKET_NAME}/{s3_path}"
+            else:
+                image_url = f"{S3_ENDPOINT_URL}/{S3_BUCKET_NAME}/{s3_path}"
+        
+        # S3'ten görseli indir (mevcut download_image_from_url fonksiyonunu kullan)
+        image_bytes = download_image_from_url(image_url)
+        
+        # Dosya uzantısına göre Content-Type belirle
+        s3_path_lower = s3_path.lower()
+        if s3_path_lower.endswith('.jpg') or s3_path_lower.endswith('.jpeg'):
+            content_type = 'image/jpeg'
+        elif s3_path_lower.endswith('.png'):
+            content_type = 'image/png'
+        elif s3_path_lower.endswith('.gif'):
+            content_type = 'image/gif'
+        elif s3_path_lower.endswith('.bmp'):
+            content_type = 'image/bmp'
+        elif s3_path_lower.endswith('.webp'):
+            content_type = 'image/webp'
+        else:
+            # Varsayılan olarak jpeg
+            content_type = 'image/jpeg'
+        
+        # Görseli Response olarak döndür
+        return Response(
+            content=image_bytes,
+            media_type=content_type,
+            headers={
+                "Cache-Control": "public, max-age=3600",  # 1 saat cache
+                "Content-Disposition": f'inline; filename="{os.path.basename(s3_path)}"'
+            }
+        )
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Görsel bulunamadı veya indirilemedi: {str(e)}"
+        )
 
 
 if __name__ == "__main__":
