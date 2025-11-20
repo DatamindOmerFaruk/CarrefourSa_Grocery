@@ -380,7 +380,10 @@ class BatchProcessor:
                 if response.status_code != 200:
                     logger.error(f"Response content: {response.text}")
                 response.raise_for_status()
-                return response.json()
+                json_result = response.json()
+                logger.debug(f"📥 API JSON response keys: {list(json_result.keys()) if isinstance(json_result, dict) else 'Not a dict'}")
+                logger.debug(f"📥 API JSON response (first 500 chars): {json.dumps(json_result, ensure_ascii=False)[:500]}...")
+                return json_result
                 
             except Exception as e:
                 logger.warning(f"API çağrısı başarısız (deneme {attempt + 1}/{self.retry_count}): {str(e)}")
@@ -402,7 +405,10 @@ class BatchProcessor:
                 if response.status_code != 200:
                     logger.error(f"Response content: {response.text}")
                 response.raise_for_status()
-                return response.json()
+                json_result = response.json()
+                logger.debug(f"📥 API JSON response keys: {list(json_result.keys()) if isinstance(json_result, dict) else 'Not a dict'}")
+                logger.debug(f"📥 API JSON response (first 500 chars): {json.dumps(json_result, ensure_ascii=False)[:500]}...")
+                return json_result
                 
             except Exception as e:
                 logger.warning(f"API çağrısı başarısız (deneme {attempt + 1}/{self.retry_count}): {str(e)}")
@@ -471,13 +477,28 @@ class BatchProcessor:
     def save_content_results(self, source_url: str, content_data: Dict):
         """Content sonuçlarını analyze_row tablosuna kaydet"""
         if not content_data.get('success'):
+            logger.warning(f"⚠️  Content sonuçları kaydedilmedi (success=False): {source_url[:100]}")
+            logger.warning(f"   Hata: {content_data.get('error', 'Bilinmeyen hata')}")
             return
             
         try:
-            data = content_data['data']
+            # JSON verisini logla
+            logger.debug(f"📝 Content JSON verisi alındı: {json.dumps(content_data, ensure_ascii=False)[:200]}...")
+            
+            data = content_data.get('data', {})
+            if not data:
+                logger.error(f"❌ Content data boş: {source_url[:100]}")
+                logger.error(f"   Content data: {content_data}")
+                return
+                
             grid_info = data.get('grid_bilgisi', {})
             tablo_format = data.get('tablo_format', {})
             satirlar = tablo_format.get('satirlar', [])
+            
+            if not satirlar:
+                logger.warning(f"⚠️  Content satırları boş: {source_url[:100]}")
+                logger.warning(f"   Tablo format: {tablo_format}")
+                return
             
             with self.pg_connection.cursor() as cursor:
                 inserted_count = 0
@@ -506,30 +527,49 @@ class BatchProcessor:
                         inserted_count += cursor.rowcount
                         logger.debug(f"Content satır {idx} kaydedildi: {konum} - {ana_urun}")
                     except Exception as row_error:
-                        logger.error(f"Content satır {idx} kaydetme hatası: {str(row_error)}")
-                        logger.error(f"  Konum: {konum}, Ana ürün: {ana_urun}")
-                        raise
+                        logger.error(f"❌ Content satır {idx} kaydetme hatası: {str(row_error)}")
+                        logger.error(f"   Konum: {konum}, Ana ürün: {ana_urun}")
+                        import traceback
+                        logger.error(traceback.format_exc())
+                        # Devam et, diğer satırları kaydetmeye çalış
+                        continue
                     
             # Commit kontrolü (autocommit=True olsa bile)
-            self.pg_connection.commit()
-            logger.info(f"✅ VERİTABANI: Content sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
-            logger.info(f"   - Tablo: analyze_row")
-            logger.info(f"   - Kayıt sayısı: {inserted_count}/{len(satirlar)} satır")
+            try:
+                self.pg_connection.commit()
+                logger.info(f"✅ VERİTABANI: Content sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
+                logger.info(f"   - Tablo: analyze_row")
+                logger.info(f"   - Kayıt sayısı: {inserted_count}/{len(satirlar)} satır")
+            except Exception as commit_error:
+                logger.error(f"❌ Content commit hatası: {str(commit_error)}")
+                import traceback
+                logger.error(traceback.format_exc())
+                raise
             
         except Exception as e:
-            logger.error(f"❌ Content kaydetme hatası: {str(e)}")
+            logger.error(f"❌ Content kaydetme genel hatası: {str(e)}")
             logger.error(f"   Source URL: {source_url[:100]}")
             import traceback
             logger.error(traceback.format_exc())
-            raise
+            # Exception'ı yukarı fırlatma, işleme devam et
+            logger.warning("⚠️  Content kaydetme hatası nedeniyle bu görsel atlandı, diğer görsellere devam ediliyor...")
             
     def save_stock_results(self, source_url: str, stock_data: Dict):
         """Stock sonuçlarını analyze_stock_row tablosuna kaydet - BASİT METİN FORMAT"""
         if not stock_data.get('success'):
+            logger.warning(f"⚠️  Stock sonuçları kaydedilmedi (success=False): {source_url[:100]}")
+            logger.warning(f"   Hata: {stock_data.get('error', 'Bilinmeyen hata')}")
             return
             
         try:
-            data = stock_data['data']
+            # JSON verisini logla
+            logger.debug(f"📝 Stock JSON verisi alındı: {json.dumps(stock_data, ensure_ascii=False)[:200]}...")
+            
+            data = stock_data.get('data', {})
+            if not data:
+                logger.error(f"❌ Stock data boş: {source_url[:100]}")
+                logger.error(f"   Stock data: {stock_data}")
+                return
             reyon_durumlari = data.get('reyon_durumları', [])
             ozet = data.get('özet', {})
             
@@ -600,27 +640,43 @@ class BatchProcessor:
                     raise
                     
             # Commit kontrolü (autocommit=True olsa bile)
-            self.pg_connection.commit()
-            logger.info(f"✅ VERİTABANI: Stock sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
-            logger.info(f"   - Tablo: analyze_stock_row")
-            logger.info(f"   - Kayıt sayısı: {inserted_count} satır")
-            logger.info(f"   - Reyon sayısı: {len(reyon_durumlari)} reyon")
-            logger.info(f"   - Doluluk özeti: {doluluk_metni[:100]}...")
+            try:
+                self.pg_connection.commit()
+                logger.info(f"✅ VERİTABANI: Stock sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
+                logger.info(f"   - Tablo: analyze_stock_row")
+                logger.info(f"   - Kayıt sayısı: {inserted_count} satır")
+                logger.info(f"   - Reyon sayısı: {len(reyon_durumlari)} reyon")
+                logger.info(f"   - Doluluk özeti: {doluluk_metni[:100]}...")
+            except Exception as commit_error:
+                logger.error(f"❌ Stock commit hatası: {str(commit_error)}")
+                import traceback
+                logger.error(traceback.format_exc())
+                raise
             
         except Exception as e:
-            logger.error(f"❌ Stock kaydetme hatası: {str(e)}")
+            logger.error(f"❌ Stock kaydetme genel hatası: {str(e)}")
             logger.error(f"   Source URL: {source_url[:100]}")
             import traceback
             logger.error(traceback.format_exc())
-            raise
+            # Exception'ı yukarı fırlatma, işleme devam et
+            logger.warning("⚠️  Stock kaydetme hatası nedeniyle bu görsel atlandı, diğer görsellere devam ediliyor...")
             
     def save_evaluation_results(self, source_url: str, evaluation_data: Dict):
         """Evaluation sonuçlarını analyze_evaluation_row tablosuna kaydet"""
         if not evaluation_data.get('success'):
+            logger.warning(f"⚠️  Evaluation sonuçları kaydedilmedi (success=False): {source_url[:100]}")
+            logger.warning(f"   Hata: {evaluation_data.get('error', 'Bilinmeyen hata')}")
             return
             
         try:
-            data = evaluation_data['data']
+            # JSON verisini logla
+            logger.debug(f"📝 Evaluation JSON verisi alındı: {json.dumps(evaluation_data, ensure_ascii=False)[:200]}...")
+            
+            data = evaluation_data.get('data', {})
+            if not data:
+                logger.error(f"❌ Evaluation data boş: {source_url[:100]}")
+                logger.error(f"   Evaluation data: {evaluation_data}")
+                return
             degerlendirme = data.get('degerlendirme_sonucu', {})
             hatalar = data.get('tespit_edilen_hatalar', [])
             olumlu_yerlesimler = data.get('olumlu_yerlesimler', [])
@@ -669,7 +725,10 @@ class BatchProcessor:
                         except Exception as row_error:
                             logger.error(f"❌ Evaluation hata {idx} kaydetme hatası: {str(row_error)}")
                             logger.error(f"   Hata tipi: {hata.get('hata_tipi')}")
-                            raise
+                            import traceback
+                            logger.error(traceback.format_exc())
+                            # Devam et, diğer hataları kaydetmeye çalış
+                            continue
                 else:
                     # Hata yoksa tek satır
                     try:
@@ -699,19 +758,26 @@ class BatchProcessor:
                         raise
                     
             # Commit kontrolü (autocommit=True olsa bile)
-            self.pg_connection.commit()
-            logger.info(f"✅ VERİTABANI: Evaluation sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
-            logger.info(f"   - Tablo: analyze_evaluation_row")
-            logger.info(f"   - Kayıt sayısı: {inserted_count} satır")
-            logger.info(f"   - Genel skor: {degerlendirme.get('genel_skor', 'N/A')}")
-            logger.info(f"   - Toplam hata: {degerlendirme.get('toplam_hata', 0)}, Kritik: {degerlendirme.get('kritik_hata', 0)}")
+            try:
+                self.pg_connection.commit()
+                logger.info(f"✅ VERİTABANI: Evaluation sonuçları kaydedildi ({self.pg_host}/{self.pg_database})")
+                logger.info(f"   - Tablo: analyze_evaluation_row")
+                logger.info(f"   - Kayıt sayısı: {inserted_count} satır")
+                logger.info(f"   - Genel skor: {degerlendirme.get('genel_skor', 'N/A')}")
+                logger.info(f"   - Toplam hata: {degerlendirme.get('toplam_hata', 0)}, Kritik: {degerlendirme.get('kritik_hata', 0)}")
+            except Exception as commit_error:
+                logger.error(f"❌ Evaluation commit hatası: {str(commit_error)}")
+                import traceback
+                logger.error(traceback.format_exc())
+                raise
             
         except Exception as e:
-            logger.error(f"❌ Evaluation kaydetme hatası: {str(e)}")
+            logger.error(f"❌ Evaluation kaydetme genel hatası: {str(e)}")
             logger.error(f"   Source URL: {source_url[:100]}")
             import traceback
             logger.error(traceback.format_exc())
-            raise
+            # Exception'ı yukarı fırlatma, işleme devam et
+            logger.warning("⚠️  Evaluation kaydetme hatası nedeniyle bu görsel atlandı, diğer görsellere devam ediliyor...")
             
     def process_single_image_stock_only(self, blob_info: Dict) -> Dict:
         """Tek görseli işle - CONTENT + STOCK + EVALUATION ANALİZİ (Tüm tablolar için)"""
@@ -729,9 +795,13 @@ class BatchProcessor:
             # Content sonuçlarını kaydet
             if content_result.get('success', False):
                 logger.info(f"✅ Content API başarılı, veritabanına kaydediliyor...")
+                logger.debug(f"📊 Content result keys: {list(content_result.keys())}")
+                logger.debug(f"📊 Content data keys: {list(content_result.get('data', {}).keys())}")
                 self.save_content_results(s3_url, content_result)
             else:
                 logger.warning(f"⚠️  Content API başarısız, devam ediliyor...")
+                logger.warning(f"   Content error: {content_result.get('error', 'Bilinmeyen hata')}")
+                logger.warning(f"   Content result: {content_result}")
             
             # Stock API'sini çağır
             stock_result = self.process_stock_api(s3_url, s3_url)
@@ -751,6 +821,8 @@ class BatchProcessor:
             
             # Stock sonuçlarını kaydet
             logger.info(f"✅ Stock API başarılı, veritabanına kaydediliyor...")
+            logger.debug(f"📊 Stock result keys: {list(stock_result.keys())}")
+            logger.debug(f"📊 Stock data keys: {list(stock_result.get('data', {}).keys())}")
             self.save_stock_results(s3_url, stock_result)
             
             # Evaluation API'sini çağır (Content verisi ile - detayli_analiz için)
@@ -761,10 +833,14 @@ class BatchProcessor:
             # Evaluation sonuçlarını kaydet
             if evaluation_result.get('success', False):
                 logger.info(f"✅ Evaluation API başarılı, veritabanına kaydediliyor...")
+                logger.debug(f"📊 Evaluation result keys: {list(evaluation_result.keys())}")
+                logger.debug(f"📊 Evaluation data keys: {list(evaluation_result.get('data', {}).keys())}")
                 self.save_evaluation_results(s3_url, evaluation_result)
                 logger.info(f"✅ Veritabanına kayıt tamamlandı: {blob_name} (Content + Stock + Evaluation)")
             else:
                 logger.warning(f"⚠️  Evaluation API başarısız, sadece Content + Stock kaydedildi")
+                logger.warning(f"   Evaluation error: {evaluation_result.get('error', 'Bilinmeyen hata')}")
+                logger.warning(f"   Evaluation result: {evaluation_result}")
             
             return {
                 'success': True,
