@@ -789,9 +789,14 @@ async def get_image(s3_path: str):
     """
     S3 Object Storage'dan görseli alıp arayüze servis eder
     
+    Desteklenen path formatları:
+    - Genel görünüm: snapshots/genel_gorunum/camera_XXX/YYYY-MM-DD/HH/filename.jpg
+    - Normal PTZ: snapshots/camera_XXX/YYYY-MM-DD/HH/filename.jpg
+    
     Kullanım:
     - Veritabanındaki source_url: https://161cohesity.carrefoursa.com:3000/Grocery/snapshots/genel_gorunum/camera_001/2024-01-15/14/photo.jpg
     - Arayüzden erişim: http://localhost:8000/images/snapshots/genel_gorunum/camera_001/2024-01-15/14/photo.jpg
+    - Normal PTZ: http://localhost:8000/images/snapshots/camera_004/2025-11-21/14/konum3_140908.jpg
     
     Bu endpoint S3'ten görseli indirir ve uygun Content-Type header'ı ile döndürür.
     """
@@ -802,6 +807,7 @@ async def get_image(s3_path: str):
             image_url = s3_path
         else:
             # Sadece path ise, tam S3 URL oluştur
+            # Her iki formatı destekle: snapshots/genel_gorunum/... ve snapshots/camera_XXX/...
             if S3_ENDPOINT_URL.endswith('/'):
                 image_url = f"{S3_ENDPOINT_URL}{S3_BUCKET_NAME}/{s3_path}"
             else:
@@ -837,9 +843,13 @@ async def get_image(s3_path: str):
         )
         
     except Exception as e:
+        # Daha detaylı hata mesajı
+        error_detail = f"Görsel bulunamadı veya indirilemedi: {str(e)}"
+        print(f"[ERROR] /images endpoint hatası: {error_detail}")
+        print(f"[ERROR] İstenen path: {s3_path}")
         raise HTTPException(
             status_code=404,
-            detail=f"Görsel bulunamadı veya indirilemedi: {str(e)}"
+            detail=error_detail
         )
 
 
