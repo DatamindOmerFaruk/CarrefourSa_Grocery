@@ -22,7 +22,8 @@ from pathlib import Path
 current_file = Path(__file__).resolve()
 root_dir = current_file.parent.parent.parent  # Ana klasöre git
 env_file = root_dir / '.env'
-cameras_yaml = root_dir / 'multi_camera_system' / 'cameras.yaml'
+# Batch processor sadece genel reyon görüntülerini işlediği için cameras_reyon_genel.yaml kullanılır
+cameras_reyon_genel_yaml = root_dir / 'multi_camera_system' / 'cameras_reyon_genel.yaml'
 
 # Ana klasördeki .env dosyasını yükle
 if env_file.exists():
@@ -121,6 +122,25 @@ class BatchProcessor:
         """Konfigürasyonları yükle"""
         self.load_config()
         self.setup_connections()
+    
+    def load_camera_config(self, camera_id: str) -> Dict[str, Any]:
+        """cameras_reyon_genel.yaml'dan belirli bir kameranın bilgilerini çek"""
+        try:
+            if not cameras_reyon_genel_yaml.exists(): 
+                return {"store_name": "Bilinmeyen Mağaza"}
+            with open(cameras_reyon_genel_yaml, "r", encoding="utf-8") as f:
+                data = yaml.safe_load(f) or {}
+            cameras = data.get("cameras", {})
+            camera = cameras.get(camera_id, {})
+            return camera
+        except Exception as e:
+            logger.warning(f"Kamera konfigürasyonu yüklenemedi ({camera_id}): {str(e)}")
+            return {"store_name": "Bilinmeyen Mağaza"}
+    
+    def get_store_name(self, camera_id: str) -> str:
+        """Kamera ID'sine göre mağaza ismini al"""
+        config = self.load_camera_config(camera_id)
+        return config.get("store_name", camera_id or "Bilinmeyen Mağaza")
         
     def load_config(self):
         """Çevre değişkenlerinden konfigürasyonları yükle"""

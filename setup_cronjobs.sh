@@ -81,12 +81,12 @@ echo "   Her saat başı (9:00 - 21:00 arası)"
 echo "   Format: 0 9-21 * * *"
 echo ""
 echo -e "${YELLOW}2. Batch Processor:${NC}"
-echo "   Her saat 30'da (9:30 - 21:30 arası)"
-echo "   Format: 30 9-21 * * *"
+echo "   Her saat 35'de (9:35 - 21:35 arası)"
+echo "   Format: 35 9-21 * * *"
 echo ""
 echo -e "${YELLOW}3. PTZ Analysis:${NC}"
-echo "   Her saat 30'da (9:30 - 21:30 arası)"
-echo "   Format: 30 9-21 * * *"
+echo "   Her saat 20'de (9:20 - 21:20 arası)"
+echo "   Format: 20 9-21 * * *"
 echo ""
 
 # Kullanıcıdan onay al
@@ -126,17 +126,17 @@ sed -i '/run_ptz_analysis.sh/d' "$TEMP_CRON"
         echo ""
     fi
     
-    # Batch Processor - Her saat 30'da (9:30-21:30)
+    # Batch Processor - Her saat 35'de (9:35-21:35)
     if [[ " ${SCRIPTS[@]} " =~ " run_batch_processor.sh " ]]; then
-        echo "# Batch Processor - Her saat 30'da (9:30-21:30)"
-        echo "30 9-21 * * * $PROJECT_DIR/run_batch_processor.sh >> $PROJECT_DIR/logs/cron-batch.log 2>&1"
+        echo "# Batch Processor - Her saat 35'de (9:35-21:35)"
+        echo "35 9-21 * * * $PROJECT_DIR/run_batch_processor.sh >> $PROJECT_DIR/logs/cron-batch.log 2>&1"
         echo ""
     fi
     
-    # PTZ Analysis - Her saat 30'da (9:30-21:30)
+    # PTZ Analysis - Her saat 20'de (9:20-21:20)
     if [[ " ${SCRIPTS[@]} " =~ " run_ptz_analysis.sh " ]]; then
-        echo "# PTZ Analysis - Her saat 30'da (9:30-21:30)"
-        echo "30 9-21 * * * $PROJECT_DIR/run_ptz_analysis.sh >> $PROJECT_DIR/logs/cron-ptz-analysis.log 2>&1"
+        echo "# PTZ Analysis - Her saat 20'de (9:20-21:20)"
+        echo "20 9-21 * * * $PROJECT_DIR/run_ptz_analysis.sh >> $PROJECT_DIR/logs/cron-ptz-analysis.log 2>&1"
         echo ""
     fi
     

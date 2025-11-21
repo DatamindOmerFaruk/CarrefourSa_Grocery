@@ -122,10 +122,10 @@ Sistemde 4 ana servis bulunmaktadır:
    - Çalışma: Systemd service olarak 7/24 sürekli
 
 3. **Batch Processor** - S3'ten görüntüleri alır, API'ye gönderir, PostgreSQL'e kaydeder
-   - Çalışma: Cron job ile saatlik (09:30-21:30, her saatin 30. dakikasında)
+   - Çalışma: Cron job ile saatlik (09:35-21:35, her saatin 35. dakikasında)
 
 4. **PTZ Analysis Service** - YOLO detection, LLM analizi, çürük tespiti
-   - Çalışma: Cron job ile saatlik (09:30-21:30)
+   - Çalışma: Cron job ile saatlik (09:20-21:20, her saatin 20. dakikasında)
    - Script'ler: `ptz_face_blur.py` → `ptz_yolo_llm_analysis.py` → `ptz_db_writer.py`
 
 ---
@@ -206,8 +206,8 @@ chmod +x check_cronjobs.sh
 | Script | Zaman | Format |
 |--------|-------|--------|
 | Camera Snapshot | Her saat başı (9:00-21:00) | `0 9-21 * * *` |
-| Batch Processor | Her saat 30'da (9:30-21:30) | `30 9-21 * * *` |
-| PTZ Analysis | Her saat 30'da (9:30-21:30) | `30 9-21 * * *` |
+| Batch Processor | Her saat 35'de (9:35-21:35) | `35 9-21 * * *` |
+| PTZ Analysis | Her saat 20'de (9:20-21:20) | `20 9-21 * * *` |
 
 ### Manuel Kurulum (Alternatif)
 
@@ -219,8 +219,8 @@ Aşağıdaki satırları ekle:
 
 ```
 0 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_camera_snapshot.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-snapshot.log 2>&1
-30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-batch.log 2>&1
-30 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-analysis.log 2>&1
+35 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_batch_processor.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-batch.log 2>&1
+20 9-21 * * * /data/carrefoursa-kamera/CarrefourSa_Grocery/run_ptz_analysis.sh >> /data/carrefoursa-kamera/CarrefourSa_Grocery/logs/cron-ptz-analysis.log 2>&1
 ```
 
 ---
