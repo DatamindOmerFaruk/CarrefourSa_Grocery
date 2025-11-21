@@ -57,6 +57,7 @@ CREATE TABLE IF NOT EXISTS analyze_row (
     id BIGSERIAL PRIMARY KEY,
     source_url TEXT NOT NULL,
     ts TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    store_name TEXT,
     satir_sayisi INT,
     sutun_sayisi INT,
     toplam_kasa INT,
@@ -70,12 +71,14 @@ CREATE TABLE IF NOT EXISTS analyze_row (
 CREATE INDEX IF NOT EXISTS idx_analyze_row_sourceurl ON analyze_row(source_url);
 CREATE INDEX IF NOT EXISTS idx_analyze_row_ts ON analyze_row(ts);
 CREATE INDEX IF NOT EXISTS idx_analyze_row_urun ON analyze_row(ana_urun);
+CREATE INDEX IF NOT EXISTS idx_analyze_row_store ON analyze_row(store_name);
 
 -- Stock analiz sonuçları tablosu
 CREATE TABLE IF NOT EXISTS analyze_stock_row (
     id BIGSERIAL PRIMARY KEY,
     source_url TEXT NOT NULL,
     ts TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    store_name TEXT,
     reyon_id TEXT NOT NULL,
     doluluk NUMERIC(6,4),
     durum TEXT,
@@ -89,12 +92,14 @@ CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_source ON analyze_stock_row(sou
 CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_ts ON analyze_stock_row(ts);
 CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_durum ON analyze_stock_row(durum);
 CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_reyon ON analyze_stock_row(reyon_id);
+CREATE INDEX IF NOT EXISTS idx_analyze_stock_row_store ON analyze_stock_row(store_name);
 
 -- Evaluation analiz sonuçları tablosu
 CREATE TABLE IF NOT EXISTS analyze_evaluation_row (
     id BIGSERIAL PRIMARY KEY,
     source_url TEXT NOT NULL,
     ts TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    store_name TEXT,
     genel_skor NUMERIC(6,3),
     toplam_hata INT,
     kritik_hata INT,
@@ -115,6 +120,7 @@ CREATE TABLE IF NOT EXISTS analyze_evaluation_row (
 CREATE INDEX IF NOT EXISTS idx_eval_row_source ON analyze_evaluation_row(source_url);
 CREATE INDEX IF NOT EXISTS idx_eval_row_ts ON analyze_evaluation_row(ts);
 CREATE INDEX IF NOT EXISTS idx_eval_row_tip ON analyze_evaluation_row(hata_tipi);
+CREATE INDEX IF NOT EXISTS idx_eval_row_store ON analyze_evaluation_row(store_name);
 """
 
 class BatchProcessor:
@@ -559,7 +565,7 @@ class BatchProcessor:
             logger.error(f"Evaluation API hatası ({source_url}): {str(e)}")
             return {'success': False, 'error': str(e)}
             
-    def save_content_results(self, source_url: str, content_data: Dict):
+    def save_content_results(self, source_url: str, content_data: Dict, store_name: str = None):
         """Content sonuçlarını analyze_row tablosuna kaydet"""
         if not content_data.get('success'):
             logger.warning(f"⚠️  Content sonuçları kaydedilmedi (success=False): {source_url[:100]}")
@@ -595,11 +601,12 @@ class BatchProcessor:
                     try:
                         cursor.execute("""
                             INSERT INTO analyze_row (
-                                source_url, satir_sayisi, sutun_sayisi, toplam_kasa,
+                                source_url, store_name, satir_sayisi, sutun_sayisi, toplam_kasa,
                                 row_index, konum, ana_urun, yan_urunler, raw
-                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                         """, (
                             source_url,
+                            store_name,  # Mağaza bilgisi cameras_reyon_genel.yaml'dan gelir
                             grid_info.get('satir_sayisi'),
                             grid_info.get('sutun_sayisi'),
                             grid_info.get('toplam_kasa'),
@@ -639,7 +646,7 @@ class BatchProcessor:
             # Exception'ı yukarı fırlatma, işleme devam et
             logger.warning("⚠️  Content kaydetme hatası nedeniyle bu görsel atlandı, diğer görsellere devam ediliyor...")
             
-    def save_stock_results(self, source_url: str, stock_data: Dict):
+    def save_stock_results(self, source_url: str, stock_data: Dict, store_name: str = None):
         """Stock sonuçlarını analyze_stock_row tablosuna kaydet - BASİT METİN FORMAT"""
         if not stock_data.get('success'):
             logger.warning(f"⚠️  Stock sonuçları kaydedilmedi (success=False): {source_url[:100]}")
@@ -700,11 +707,12 @@ class BatchProcessor:
                 try:
                     cursor.execute("""
                         INSERT INTO analyze_stock_row (
-                            source_url, reyon_id, doluluk, durum, aciliyet,
+                            source_url, store_name, reyon_id, doluluk, durum, aciliyet,
                             kasa_gorunurlugu, doluluk_seviyeleri, raw
-                        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
                     """, (
                         source_url,
+                        store_name,  # Mağaza bilgisi cameras_reyon_genel.yaml'dan gelir
                         reyon_id,
                         None,  # Doluluk oranı (NUMERIC(6,4))
                         f"Dolu:{ozet.get('dolu_kasa', 0)} Normal:{ozet.get('normal_kasa', 0)} Kritik:{ozet.get('kritik_kasa', 0)} Boş:{ozet.get('boş_kasa', 0)}",
@@ -746,7 +754,7 @@ class BatchProcessor:
             # Exception'ı yukarı fırlatma, işleme devam et
             logger.warning("⚠️  Stock kaydetme hatası nedeniyle bu görsel atlandı, diğer görsellere devam ediliyor...")
             
-    def save_evaluation_results(self, source_url: str, evaluation_data: Dict):
+    def save_evaluation_results(self, source_url: str, evaluation_data: Dict, store_name: str = None):
         """Evaluation sonuçlarını analyze_evaluation_row tablosuna kaydet"""
         if not evaluation_data.get('success'):
             logger.warning(f"⚠️  Evaluation sonuçları kaydedilmedi (success=False): {source_url[:100]}")
@@ -783,12 +791,13 @@ class BatchProcessor:
                         try:
                             cursor.execute("""
                                 INSERT INTO analyze_evaluation_row (
-                                    source_url, genel_skor, toplam_hata, kritik_hata, uyari,
+                                    source_url, store_name, genel_skor, toplam_hata, kritik_hata, uyari,
                                     analiz_modu, hata_tipi, konum1, urun1, konum2, urun2,
                                     problem, oneri, olumlu_yerlesimler, genel_oneriler, raw
-                                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                             """, (
                                 source_url,
+                                store_name,  # Mağaza bilgisi cameras_reyon_genel.yaml'dan gelir
                                 degerlendirme.get('genel_skor'),
                                 degerlendirme.get('toplam_hata'),
                                 degerlendirme.get('kritik_hata'),
@@ -819,11 +828,12 @@ class BatchProcessor:
                     try:
                         cursor.execute("""
                             INSERT INTO analyze_evaluation_row (
-                                source_url, genel_skor, toplam_hata, kritik_hata, uyari,
+                                source_url, store_name, genel_skor, toplam_hata, kritik_hata, uyari,
                                 analiz_modu, olumlu_yerlesimler, genel_oneriler, raw
-                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                         """, (
                             source_url,
+                            store_name,  # Mağaza bilgisi cameras_reyon_genel.yaml'dan gelir
                             degerlendirme.get('genel_skor'),
                             degerlendirme.get('toplam_hata'),
                             degerlendirme.get('kritik_hata'),
@@ -877,12 +887,15 @@ class BatchProcessor:
             content_result = self.process_content_api(s3_url, s3_url)
             time.sleep(self.delay_between_requests)
             
+            # Mağaza bilgisini al (cameras_reyon_genel.yaml'dan)
+            store_name = blob_info.get('store_name', 'Bilinmeyen Mağaza')
+            
             # Content sonuçlarını kaydet
             if content_result.get('success', False):
                 logger.info(f"✅ Content API başarılı, veritabanına kaydediliyor...")
                 logger.debug(f"📊 Content result keys: {list(content_result.keys())}")
                 logger.debug(f"📊 Content data keys: {list(content_result.get('data', {}).keys())}")
-                self.save_content_results(s3_url, content_result)
+                self.save_content_results(s3_url, content_result, store_name)
             else:
                 logger.warning(f"⚠️  Content API başarısız, devam ediliyor...")
                 logger.warning(f"   Content error: {content_result.get('error', 'Bilinmeyen hata')}")
@@ -908,7 +921,7 @@ class BatchProcessor:
             logger.info(f"✅ Stock API başarılı, veritabanına kaydediliyor...")
             logger.debug(f"📊 Stock result keys: {list(stock_result.keys())}")
             logger.debug(f"📊 Stock data keys: {list(stock_result.get('data', {}).keys())}")
-            self.save_stock_results(s3_url, stock_result)
+            self.save_stock_results(s3_url, stock_result, store_name)
             
             # Evaluation API'sini çağır (Content verisi ile - detayli_analiz için)
             time.sleep(self.delay_between_requests)
@@ -920,7 +933,7 @@ class BatchProcessor:
                 logger.info(f"✅ Evaluation API başarılı, veritabanına kaydediliyor...")
                 logger.debug(f"📊 Evaluation result keys: {list(evaluation_result.keys())}")
                 logger.debug(f"📊 Evaluation data keys: {list(evaluation_result.get('data', {}).keys())}")
-                self.save_evaluation_results(s3_url, evaluation_result)
+                self.save_evaluation_results(s3_url, evaluation_result, store_name)
                 logger.info(f"✅ Veritabanına kayıt tamamlandı: {blob_name} (Content + Stock + Evaluation)")
             else:
                 logger.warning(f"⚠️  Evaluation API başarısız, sadece Content + Stock kaydedildi")
@@ -955,6 +968,9 @@ class BatchProcessor:
         logger.info(f"S3 URL source_url olarak kaydedilecek: {s3_url[:100]}...")
         
         try:
+            # Mağaza bilgisini al (cameras_reyon_genel.yaml'dan)
+            store_name = blob_info.get('store_name', 'Bilinmeyen Mağaza')
+            
             # API'leri sırayla çağır (S3 URL ile)
             content_result = self.process_content_api(s3_url, s3_url)
             time.sleep(self.delay_between_requests)
@@ -966,10 +982,10 @@ class BatchProcessor:
                 s3_url, s3_url, content_result
             )
             
-            # Sonuçları kaydet (S3 URL'i source_url olarak)
-            self.save_content_results(s3_url, content_result)
-            self.save_stock_results(s3_url, stock_result)
-            self.save_evaluation_results(s3_url, evaluation_result)
+            # Sonuçları kaydet (S3 URL'i source_url olarak, mağaza bilgisi ile)
+            self.save_content_results(s3_url, content_result, store_name)
+            self.save_stock_results(s3_url, stock_result, store_name)
+            self.save_evaluation_results(s3_url, evaluation_result, store_name)
             
             return {
                 'success': True,
