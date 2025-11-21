@@ -170,9 +170,9 @@ CAMERAS_YAML = Path("multi_camera_system/cameras.yaml")
 MODEL_PATH = Path("best.pt")
 TEMP_DIR = Path(tempfile.mkdtemp(prefix="crops_"))
 
-BATCH_SIZE = 25
+BATCH_SIZE = 20
 GRID_COLS = 5
-GRID_ROWS = 5
+GRID_ROWS = 4
 TILE_SIZE = (256, 256)
 CAPTION_H = 28
 PADDING = 6
